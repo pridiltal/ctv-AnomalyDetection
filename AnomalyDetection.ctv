@@ -1,0 +1,33 @@
+<!--Hey Emacs, make this -*- mode: XML -*- -->
+<CRANTaskView>
+
+   <name>AnomalyDetection</name>
+   <topic>Anomaly Detection with R</topic>
+   <maintainer email="Dilini.Talagala@monash.edu">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
+   <version>2019-10-07</version>
+
+  <info>
+    <p>
+    This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets, and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
+    </p>
+    <p>
+     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, faults, deviants, discordant observations, extreme values/ cases,  change points,  events,  intrusions,  misuses, exceptions, aberrations, surprises, peculiarities, or contaminants in different application domains. These variants are also considered for this view. The packages in this view can be roughly structured into the following topics.
+    </p>
+    <p>
+    The deveolpment of this task view is fairly new and  still in its early stages and therefore subject to changes. Please send suggestions for additions and extensions for this task view to the task view maintainer.
+    </p>
+
+  </info>
+
+  <packagelist>
+    <pkg>abodOutlier</pkg>
+  </packagelist>
+
+  <links>
+  <view>Cluster</view>
+    <view>ExtremeValue</view>
+    <a href="https://github.com/pridiltal/ctv-AnomalyDetection">GitHub repository for this Task View</a>
+  </links>
+
+</CRANTaskView>
+
