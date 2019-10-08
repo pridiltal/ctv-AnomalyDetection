@@ -8,91 +8,62 @@
 
   <info>
     <p>
-    This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets, and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
+    This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
     </p>
     <p>
-     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, faults, deviants, discordant observations, extreme values/ cases,  change points,  events,  intrusions,  misuses, exceptions, aberrations, surprises, peculiarities, or contaminants in different application domains. These variants are also considered for this view. The packages in this view can be roughly structured into the following topics.
+     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values in different application domains. These variants are also considered for this view.
     </p>
     <p>
     The deveolpment of this task view is fairly new and  still in its early stages and therefore subject to changes. Please send suggestions for additions and extensions for this task view to the task view maintainer.
     </p>
     
-     <p>
-      <strong>Specific types of input data</strong>
+    <p>
+      <strong>High Dimensional Data</strong>
+    </p>
+    <ul>	 
+      <li> The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
+      </li>
+      <li><i> Local anomaly</i>:
+      </li>
+      <li><i> Global anomaly</i>: 
+      </li>
+      <li><i>  Micro cluster</i>:
+      </li>
+    </ul>
+    
+    <p>
+      <strong>Temporal Data</strong>
     </p>
     <ul>	     
-      <li><i> High Dimensional Data</i>: Local anomaly, Global anomaly, Micro cluster
-      </li>
-      <li><i> Temporal Data</i>:
-      Streaming data, Batch Data       <br/>
+      <li>Streaming data, Batch Data       <br/>
       Point anomaly, contexual anomaly, collective anomaly, anomalous series within a large collection of time series
       </li>
-      <li><i> Functional Data</i>:
-      </li>
-      <li><i> Spacio-Temporal data</i>:
-      </li>
-      <li><i> Non numeric data </i>
-      </li>
+    </ul>
+    
+    <p>
+      <strong>Functional Data</strong>
+    </p>
+    
+    <p>
+      <strong>Spacio-Temporal data</strong>
+    </p>
+     
+    <p>
+      <strong>Non numeric data</strong>
+    </p>
+     
       
-     </ul>
+
      
-    <p>
-    <strong>Modeling Approches</strong>
-    </p>
-      <ul>	     
-      <li><i> Distance based </i>:
-      Nearest neighbour based techniques
-      </li>
-      <li><i> Density based</i>:
-      </li>
-      <li><i> Angle based</i>:
-      </li>
-      <li><i> Depth based</i>:
-      </li>
-      <li><i> Classification based</i>:
-      </li>
-      <li><i> Clustering based</i>:
-      </li>
-      <li><i> Prjection Pursuit based</i>:
-      </li>
-      <li><i> Distribution based</i>:
-      </li>
-      
-     </ul>
+   
+
      
      
-    <p>
-    <strong>Nature of the Methods</strong>
-    </p>
-     <ul>	     
-      <li><i> Supervised</i>:
-      </li>
-      <li><i> Unsupervised</i>:
-      </li>
-      <li><i> Semi-supervised</i>:
-      </li>
-      
-     </ul>
+  
      
-    <p>
-    <strong>Anomalous threshold calculation methos</strong>
-    </p>
-    <ul>	     
-      <li><i> User defined threshold</i>:
-      </li>
-      <li><i> Extreme values theory based apparoach</i>:
-      </li>
-     </ul>
+   
      
-    <p>
-    <strong>Output of an algorithm</strong>
-    </p>
-    <ul>	     
-      <li><i> Scores</i>:
-      </li>
-      <li><i> Lables</i>:
-      </li>
-     </ul>
+   
      
     <p>
     <strong>Visualization of anomalies</strong>
@@ -103,7 +74,7 @@
     </ul>
     
     <p>
-    <strong>Anomaly detection data</strong>
+    <strong>Data sets</strong>
     </p>
     <ul>	
     <li><i> Labeled</i>:
@@ -118,7 +89,7 @@
      
   </info>
 
-  <packagelist>
+ <packagelist>
     <pkg>abodOutlier</pkg>
  <pkg>adamethods</pkg>
  <pkg>amelie</pkg>
@@ -217,7 +188,7 @@
  <pkg>quokar</pkg>
  <pkg>qpcR</pkg>
  <pkg>RaceID</pkg>
- <pkg>Rainbow</pkg>
+ <pkg>rainbow</pkg>
  <pkg>RaPKod</pkg>
  <pkg>rapportools</pkg>
  <pkg>rAverage</pkg>
