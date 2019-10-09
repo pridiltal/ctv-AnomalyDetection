@@ -92,8 +92,21 @@ distributions.
       </li>
       <li> Package <pkg>tsoutliers</pkg> implements the Chen-Liu approach for detection of time series outliers such as  innovational outliers, additive outliers, level shifts, temporary changes and seasonal level shifts.
       </li>
+      <li> Package  <pkg>seasonal</pkg> provides easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including outlier detection. 
+      </li>
+      <li> Package  <pkg>npphen</pkg>   implements basic and high-level functions for detection of anomalies in vector data (numerical series/ time series) and raster data (satellite derived products). Processing of very large raster files is supported.
+      </li>
     </ul>
-
+    
+     <p>
+      <strong>Spatial outliers</strong>
+    </p>
+    <ul>
+      <li> Spatial objects whose non-spatial attribute values are markedly different from those of their spatial neighbors are known as Spatial outliers or abnormal spatial patterns (Kou Y., Lu CT., 2017).
+      </li>
+      <li> Package  <pkg>RWBP</pkg> detects spatial outliers using a Random Walk on Bipartite Graph.
+      </li>
+    </ul>
     
     <p>
       <strong>Spatio-Temporal data</strong>
@@ -156,6 +169,8 @@ distributions.
       </li>
       <li> Package <pkg>waterData</pkg> imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
       </li>
+      <li> Package     <pkg>survBootOutliers</pkg> provides concordance based bootstrap methods for outlier detection in survival analysis.
+      </li>
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
@@ -188,6 +203,7 @@ distributions.
     <pkg>kmodR</pkg>
     <pkg>ldbod</pkg>
     <pkg>mvoutlier</pkg>
+    <pkg>npphen</pkg>
     <pkg>OutlierDetection</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
@@ -195,8 +211,11 @@ distributions.
     <pkg>probout</pkg>
     <pkg>rainbow</pkg>
     <pkg>Routliers</pkg>
+    <pkg>RWBP</pkg>
     <pkg>scanstatistics</pkg>
+    <pkg>seasonal</pkg>
     <pkg>sGMRFmix</pkg>
+    <pkg>survBootOutliers</pkg>
     <pkg>trendsegmentR</pkg>
     <pkg>tsoutliers</pkg>
     <pkg>univOutl</pkg>

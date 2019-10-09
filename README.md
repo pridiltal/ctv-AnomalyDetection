@@ -147,6 +147,22 @@ additions and extensions for this task view to the task view maintainer.
     the Chen-Liu approach for detection of time series outliers such as
     innovational outliers, additive outliers, level shifts, temporary
     changes and seasonal level shifts.
+  - Package [seasonal](https://cran.r-project.org/package=seasonal) provides
+    easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment
+    software by the US Census Bureau. It offers full access to almost
+    all options and outputs of X-13, including outlier detection.
+  - Package [npphen](https://cran.r-project.org/package=npphen) implements basic and
+    high-level functions for detection of anomalies in vector data
+    (numerical series/ time series) and raster data (satellite derived
+    products). Processing of very large raster files is supported.
+
+**Spatial outliers**
+
+  - Spatial objects whose non-spatial attribute values are markedly
+    different from those of their spatial neighbors are known as Spatial
+    outliers or abnormal spatial patterns (Kou Y., Lu CT., 2017).
+  - Package [RWBP](https://cran.r-project.org/package=RWBP) detects spatial outliers
+    using a Random Walk on Bipartite Graph.
 
 **Spatio-Temporal data**
 
@@ -200,6 +216,9 @@ additions and extensions for this task view to the task view maintainer.
   - Package [waterData](https://cran.r-project.org/package=waterData) imports U.S.
     Geological Survey (USGS) daily hydrologic data from USGS web
     services and provides functions to calculate and plot anomalies.
+  - Package [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
+    provides concordance based bootstrap methods for outlier detection
+    in survival analysis.
 
 **Miscellaneous**
 
@@ -232,6 +251,7 @@ additions and extensions for this task view to the task view maintainer.
   - [kmodR](https://cran.r-project.org/package=kmodR)
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
+  - [npphen](https://cran.r-project.org/package=npphen)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
@@ -239,8 +259,11 @@ additions and extensions for this task view to the task view maintainer.
   - [probout](https://cran.r-project.org/package=probout)
   - [rainbow](https://cran.r-project.org/package=rainbow)
   - [Routliers](https://cran.r-project.org/package=Routliers)
+  - [RWBP](https://cran.r-project.org/package=RWBP)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
+  - [seasonal](https://cran.r-project.org/package=seasonal)
   - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
+  - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
   - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
   - [tsoutliers](https://cran.r-project.org/package=tsoutliers)
   - [univOutl](https://cran.r-project.org/package=univOutl)
