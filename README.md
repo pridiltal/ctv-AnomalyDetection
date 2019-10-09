@@ -108,6 +108,16 @@ additions and extensions for this task view to the task view maintainer.
     well-known probability distributions.
   - Package [ANN2](https://cran.r-project.org/package=ANN2) implements artificial
     neural networks for anomaly detection.
+  - Package [HDoutliers](https://cran.r-project.org/package=HDoutliers) provides an
+    implementation of an algorithm for univariate and multivariate
+    outlier detection that can handle data with a mixed categorical and
+    continuous variables and outlier masking problem.
+  - Package [probout](https://cran.r-project.org/package=probout) estimates
+    unsupervised outlier probabilities for multivariate numeric data
+    with many observations from a nonparametric outlier statistic.
+  - Package [abodOutlier](https://cran.r-project.org/package=abodOutlier) performs
+    angle-based outlier detection on high dimensional data. A complete,
+    a randomized and a knn based methods are available.
 
 **Temporal Data**
 
@@ -191,10 +201,17 @@ additions and extensions for this task view to the task view maintainer.
     Geological Survey (USGS) daily hydrologic data from USGS web
     services and provides functions to calculate and plot anomalies.
 
+**Miscellaneous**
+
+  - Package [CircOutlier](https://cran.r-project.org/package=CircOutlier) enables
+    detection of outliers in circular-circular regression models,
+    modifying its and estimating of models parameters.
+
 </div>
 
 ### CRAN packages:
 
+  - [abodOutlier](https://cran.r-project.org/package=abodOutlier)
   - [adamethods](https://cran.r-project.org/package=adamethods)
   - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
@@ -203,10 +220,12 @@ additions and extensions for this task view to the task view maintainer.
   - [anomaly](https://cran.r-project.org/package=anomaly)
   - [cbar](https://cran.r-project.org/package=cbar)
   - [cellWise](https://cran.r-project.org/package=cellWise)
+  - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [dobin](https://cran.r-project.org/package=dobin)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
+  - [HDoutliers](https://cran.r-project.org/package=HDoutliers)
   - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
   - [kernlab](https://cran.r-project.org/package=kernlab)
@@ -217,6 +236,7 @@ additions and extensions for this task view to the task view maintainer.
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
   - [precintcon](https://cran.r-project.org/package=precintcon)
+  - [probout](https://cran.r-project.org/package=probout)
   - [rainbow](https://cran.r-project.org/package=rainbow)
   - [Routliers](https://cran.r-project.org/package=Routliers)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)

@@ -60,6 +60,12 @@ distributions.
       </li>
       <li> Package <pkg>ANN2</pkg> implements artificial neural networks for anomaly detection.
       </li>
+      <li> Package   <pkg>HDoutliers</pkg> provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
+      </li>
+      <li> Package  <pkg>probout</pkg> estimates unsupervised outlier probabilities for multivariate numeric data with many observations from a nonparametric outlier statistic.
+      </li>
+      <li> Package <pkg>abodOutlier</pkg> performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
+      </li>
     </ul>
     
     
@@ -151,10 +157,17 @@ distributions.
       <li> Package <pkg>waterData</pkg> imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
       </li>
     </ul>
+    
+    <p><strong>Miscellaneous</strong></p>
+    <ul>
+      <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
+      </li>
+    </ul>
      
   </info>
 
  <packagelist>
+    <pkg>abodOutlier</pkg>
     <pkg>adamethods</pkg>
     <pkg>alphaOutlier</pkg>
     <pkg>amelie</pkg>
@@ -163,10 +176,12 @@ distributions.
     <pkg>anomaly</pkg>
     <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
+    <pkg>CircOutlier</pkg>
     <pkg>dbscan</pkg>
     <pkg>dobin</pkg>
     <pkg>extremevalues</pkg>
     <pkg>fpmoutliers</pkg>
+    <pkg>HDoutliers</pkg>
     <pkg>HighDimOut</pkg>
     <pkg>ICSOutlier</pkg>
     <pkg>kernlab</pkg>
@@ -177,6 +192,7 @@ distributions.
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
     <pkg>precintcon</pkg>
+    <pkg>probout</pkg>
     <pkg>rainbow</pkg>
     <pkg>Routliers</pkg>
     <pkg>scanstatistics</pkg>
