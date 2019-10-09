@@ -106,6 +106,8 @@ additions and extensions for this task view to the task view maintainer.
   - Package [alphaOutlier](https://cran.r-project.org/package=alphaOutlier) provides
     Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for
     well-known probability distributions.
+  - Package [ANN2](https://cran.r-project.org/package=ANN2) implements artificial
+    neural networks for anomaly detection.
 
 **Temporal Data**
 
@@ -196,6 +198,7 @@ additions and extensions for this task view to the task view maintainer.
   - [adamethods](https://cran.r-project.org/package=adamethods)
   - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
+  - [ANN2](https://cran.r-project.org/package=ANN2)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
   - [cbar](https://cran.r-project.org/package=cbar)

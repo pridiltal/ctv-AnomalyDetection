@@ -58,6 +58,8 @@ a kd-tree to speed up kNN search.
       <li> Package <pkg>alphaOutlier</pkg> provides  Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for well-known probability
 distributions.
       </li>
+      <li> Package <pkg>ANN2</pkg> implements artificial neural networks for anomaly detection.
+      </li>
     </ul>
     
     
@@ -156,6 +158,7 @@ distributions.
     <pkg>adamethods</pkg>
     <pkg>alphaOutlier</pkg>
     <pkg>amelie</pkg>
+    <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
     <pkg>cbar</pkg>
