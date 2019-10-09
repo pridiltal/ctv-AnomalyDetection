@@ -48,6 +48,37 @@ additions and extensions for this task view to the task view maintainer.
     Vector Machines for *novelty* detection.
   - Package [mvoutlier](https://cran.r-project.org/package=mvoutlier) provides
     multivariate outlier detection based on robust methods.
+  - Package [amelie](https://cran.r-project.org/package=amelie) implements anomaly
+    detection as binary classification for cross-sectional data
+    (multivariate) using maximum likelihood estimates and normal
+    probability functions.
+  - Package [cellWise](https://cran.r-project.org/package=cellWise) provides tools
+    for detecting cellwise outliers and robust methods to analyze data
+    which may contain them. Cellwise outliers are entries in the data
+    matrix which are substantially higher or lower than what could be
+    expected based on the other cells in its column as well as the other
+    cells in its row, taking the relations between the columns into
+    account.
+  - Package [kmodR](https://cran.r-project.org/package=kmodR) presents a unified
+    approach for simultaneously clustering and discovering outliers in
+    high dimensional data. Their approach is formalized as a
+    generalization of the k-MEANS problem.
+  - Package [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
+    provides different implementations for outlier detection namely
+    model based, distance based, dispersion based, depth based and
+    density based. This package provides labelling of observations as
+    outliers and outlierliness of each outlier. For univariate,
+    bivariate and trivariate data, visualization is also provided.
+  - Package [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) implements
+    a set of algorithms for detection of outliers based on frequent
+    pattern mining. Such algorithms follow the paradigm: if an instance
+    contains more frequent patterns,it means that this data instance is
+    unlikely to be an anomaly.
+  - Package [ICSOutlier](https://cran.r-project.org/package=ICSOutlier) performs
+    multivariate outlier detection using invariant coordinates and
+    offers different methods to choose the appropriate components. The
+    current implementation targets data sets with only a small
+    percentage of outliers but future extensions are under preparation.
 
 **Temporal Data**
 
@@ -73,6 +104,12 @@ additions and extensions for this task view to the task view maintainer.
 
 **Functional Data**
 
+  - Function `foutliers()` from package
+    [rainbow](https://cran.r-project.org/package=rainbow) provides functional
+    outlier detection methods. Bagplots and boxplots for functional data
+    can also be used to identify outliers, which have either the lowest
+    depth (distance from the centre) or the lowest density,
+    respectively.
   - Package [adamethods](https://cran.r-project.org/package=adamethods) provides a
     collection of several algorithms to obtain archetypoids with small
     and large databases and with both classical multivariate data and
@@ -85,6 +122,13 @@ additions and extensions for this task view to the task view maintainer.
 
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
 
+**Processing methods for anomaly detection**
+
+  - Package [dobin](https://cran.r-project.org/package=dobin) provides dimension
+    reduction technique for outlier detection using neighbours,
+    constructs a set of basis vectors for outlier detection. It brings
+    outliers to the fore-front using fewer basis vectors.
+
 **Data sets**
 
   - Package [anomaly](https://cran.r-project.org/package=anomaly) contains
@@ -94,18 +138,31 @@ additions and extensions for this task view to the task view maintainer.
 
 **Specific application fields**
 
+  - Package [precintcon](https://cran.r-project.org/package=precintcon) contains
+    functions to analyze the precipitation intensity, concentration and
+    anomaly.
+
 </div>
 
 ### CRAN packages:
 
   - [adamethods](https://cran.r-project.org/package=adamethods)
+  - [amelie](https://cran.r-project.org/package=amelie)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
+  - [cellWise](https://cran.r-project.org/package=cellWise)
+  - [dobin](https://cran.r-project.org/package=dobin)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
+  - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
+  - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
   - [kernlab](https://cran.r-project.org/package=kernlab)
+  - [kmodR](https://cran.r-project.org/package=kmodR)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
+  - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
+  - [precintcon](https://cran.r-project.org/package=precintcon)
+  - [rainbow](https://cran.r-project.org/package=rainbow)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
 
 ### Related links:

@@ -30,6 +30,18 @@
       <li>Package <pkg>kernlab</pkg>  provides kernel-based machine learning methods including one-class Support Vector Machines for <i>novelty</i> detection. </li>
       <li> Package <pkg>mvoutlier</pkg> provides multivariate outlier detection based on robust methods.
       </li>
+      <li> Package   <pkg>amelie</pkg> implements anomaly detection as binary classification for cross-sectional data (multivariate) using maximum likelihood estimates and normal probability functions.
+      </li>
+      <li>  Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them. Cellwise outliers  are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account.
+      </li>
+      <li> Package  <pkg>kmodR</pkg> presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
+      </li>
+      <li> Package <pkg>OutlierDetection</pkg> provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
+      </li>
+      <li> Package <pkg>fpmoutliers</pkg> implements a set of algorithms for detection of outliers based on frequent pattern mining. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
+      </li>
+      <li> Package  <pkg>ICSOutlier</pkg>  performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
+      </li>
     </ul>
     
     
@@ -62,7 +74,9 @@
     <p>
       <strong>Functional Data</strong>
     </p>
-    <ul>	     
+    <ul>	 
+      <li> Function <code>foutliers()</code> from package  <pkg>rainbow</pkg>  provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
+      </li>
       <li> Package <pkg>adamethods</pkg> provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
       </li>
     </ul>
@@ -81,6 +95,14 @@
     </ul>
     
     <p>
+    <strong>Processing methods for anomaly detection</strong>
+    </p>
+     <ul>	
+    <li> Package <pkg>dobin</pkg> provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
+    </li>
+    </ul>
+    
+    <p>
     <strong>Data sets</strong>
     </p>
     <ul>	
@@ -88,24 +110,37 @@
     from the Kepler telescope.
     </li>
     <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg>.
-    </li>
+    </li> Unlabeled :     <pkg>cellWise</pkg>
     </ul>
          
     <p>
     <strong>Specific application fields</strong>
     </p>
+    <ul>
+      <li> Package <pkg>precintcon</pkg> contains functions to analyze the precipitation intensity, concentration and anomaly. 
+      </li>
+    </ul>
      
   </info>
 
  <packagelist>
     <pkg>adamethods</pkg>
+    <pkg>amelie</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
+    <pkg>cellWise</pkg>
+    <pkg>dobin</pkg>
     <pkg>extremevalues</pkg>
+    <pkg>fpmoutliers</pkg>
+    <pkg>ICSOutlier</pkg>
     <pkg>kernlab</pkg>
+    <pkg>kmodR</pkg>
     <pkg>mvoutlier</pkg>
+    <pkg>OutlierDetection</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
+    <pkg>precintcon</pkg>
+    <pkg>rainbow</pkg>
     <pkg>scanstatistics</pkg>
   </packagelist>
   
