@@ -23,13 +23,13 @@
     <ul>	 
       <li> The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
       </li>
-      <li><i> Local anomaly</i>:
+      <li> Package <pkg>outliers</pkg> provides a collection of some tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a dataframe, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
       </li>
-      <li><i> Global anomaly</i>: 
-      </li>
+      <li>Package <pkg>kernlab</pkg>  provides kernel-based machine learning methods including one-class Support Vector Machines for <i>novelty</i> detection. </li>
       <li><i>  Micro cluster</i>:
       </li>
     </ul>
+    
     
     <p>
       <strong>Temporal Data</strong>
@@ -40,30 +40,21 @@
       </li>
     </ul>
     
+    
     <p>
       <strong>Functional Data</strong>
     </p>
+    
     
     <p>
       <strong>Spacio-Temporal data</strong>
     </p>
      
+     
     <p>
       <strong>Non numeric data</strong>
     </p>
-     
-      
 
-     
-   
-
-     
-     
-  
-     
-   
-     
-   
      
     <p>
     <strong>Visualization of anomalies</strong>
@@ -90,152 +81,16 @@
   </info>
 
  <packagelist>
-    <pkg>abodOutlier</pkg>
- <pkg>adamethods</pkg>
- <pkg>amelie</pkg>
- <pkg>analysisPipelines</pkg>
- <pkg>analytics</pkg>
- <pkg>ANN2</pkg>
- <pkg>anomazlize</pkg>
- <pkg>anomaly</pkg>
- <pkg>anomalyDetection</pkg>
- <pkg>alphaOutlier</pkg>
- <pkg>altmeta</pkg>
- <pkg>BAS</pkg>
- <pkg>Benchmarking</pkg>
- <pkg>biogeo</pkg>
- <pkg>carx</pkg>
- <pkg>cbar</pkg>
- <pkg>cellWise</pkg>
- <pkg>CerioliOutlierDetection</pkg>
- <pkg>cmsaf</pkg>
- <pkg>CoordinateCleaner</pkg>
- <pkg>compositions</pkg>
- <pkg>CORElearn</pkg>
- <pkg>CircOutlier</pkg>
- <pkg>ctmm</pkg>
- <pkg>CVXR</pkg>
- <pkg>daewr</pkg>
- <pkg>dave</pkg>
- <pkg>dbscan</pkg>
- <pkg>ddalpha</pkg>
- <pkg>DDoutlier</pkg>
- <pkg>DescTools</pkg>
- <pkg>depth.plot</pkg>
- <pkg>DJL</pkg>
- <pkg>doex</pkg>
- <pkg>dlookr</pkg>
- <pkg>DMwR</pkg>
- <pkg>DMwR2</pkg>
- <pkg>drsmooth</pkg>
- <pkg>dsa</pkg>
- <pkg>evtclass</pkg>
- <pkg>extremevalues</pkg>
- <pkg>EnvStats</pkg>
- <pkg>enpls</pkg>
- <pkg>FactoInvestigate</pkg>
- <pkg>faoutlier</pkg>
- <pkg>fda.usc</pkg>
- <pkg>fdasrvf</pkg>
- <pkg>fpmoutliers</pkg>
- <pkg>forecast:tsoutlier</pkg>
- <pkg>fsdaR</pkg>
- <pkg>funModeling</pkg>
- <pkg>fwdmsa</pkg>
- <pkg>gcookbook</pkg>
- <pkg>ggpol</pkg>
- <pkg>ggplot2</pkg>
- <pkg>ggformula</pkg>
- <pkg>ggstane</pkg>
- <pkg>GmAMisc</pkg>
- <pkg>h2o</pkg>
- <pkg>HDoutliers</pkg>
- <pkg>HighDimOut</pkg>
- <pkg>hotspots</pkg>
- <pkg>ICSOutlier</pkg>
- <pkg>jmotif</pkg>
- <pkg>kmodR</pkg>
- <pkg>ldbod</pkg>
- <pkg>MALDIrppa</pkg>
- <pkg>mbgraphic</pkg>
- <pkg>MCMC.OTU</pkg>
- <pkg>MCMC.qpcr</pkg>
- <pkg>metaplus</pkg>
- <pkg>metafor</pkg>
- <pkg>metR</pkg>
- <pkg>MIPHENO</pkg>
- <pkg>modi</pkg>
- <pkg>MoEClust</pkg>
- <pkg>mrfDepth</pkg>
- <pkg>muma</pkg>
- <pkg>mvoutlier</pkg>
- <pkg>MVN</pkg>
- <pkg>NMAoutlier</pkg>
- <pkg>npphen </pkg>
- <pkg>Ncmisc</pkg>
- <pkg>nlr</pkg>
- <pkg>oce</pkg>
- <pkg>OutlierDC</pkg>
- <pkg>OutlierDM</pkg>
- <pkg>OutlierDetection</pkg>
- <pkg>outliers</pkg>
- <pkg>OutliersO3</pkg>
- <pkg>pcadapt</pkg>
- <pkg>PMCMRplus</pkg>
- <pkg>precintcon</pkg>
- <pkg>psych</pkg>
- <pkg>probout</pkg>
- <pkg>quokar</pkg>
- <pkg>qpcR</pkg>
- <pkg>RaceID</pkg>
- <pkg>rainbow</pkg>
- <pkg>RaPKod</pkg>
- <pkg>rapportools</pkg>
- <pkg>rAverage</pkg>
- <pkg>referenceIntervals</pkg>
- <pkg>REPPlab</pkg>
- <pkg>Rfast</pkg>
- <pkg>Rlof</pkg>
- <pkg>rgam</pkg>
- <pkg>robfilter</pkg>
- <pkg>robmixglm</pkg>
- <pkg>robustbase</pkg>
- <pkg>robCompositions</pkg>
- <pkg>robustarima</pkg>
- <pkg>RWBP</pkg>
- <pkg>rrcov</pkg>
- <pkg>rrcovHD</pkg>
- <pkg>rucrdtw</pkg>
- <pkg>s2dverification</pkg>
- <pkg>scanstatistics</pkg>
- <pkg>SCORPIUS</pkg>
- <pkg>seasonal</pkg>
- <pkg>seawaveQ</pkg>
- <pkg>seismicRoll</pkg>
- <pkg>SeleMix</pkg>
- <pkg>semdiag</pkg>
- <pkg>sGMRFmix</pkg>
- <pkg>SMLoutliers</pkg>
- <pkg>SmartSifter</pkg>
- <pkg>solitude</pkg>
- <pkg>spikes</pkg>
- <pkg>StatDA</pkg>
- <pkg>survBootOutliers</pkg>
- <pkg>surveyoutliers</pkg>
- <pkg>tsoutliers</pkg>
- <pkg>TSA</pkg>
- <pkg>univOutl</pkg>
- <pkg>washeR</pkg>
- <pkg>waterData</pkg>
- <pkg>wql</pkg>
- <pkg>xray</pkg>
+    <pkg>kernlab</pkg>
+    <pkg>outliers</pkg>
+    <pkg>OutliersO3</pkg>
   </packagelist>
   
   
   
 
   <links>
-  <view>Cluster</view>
+    <view>Cluster</view>
     <view>ExtremeValue</view>
     <a href="https://github.com/pridiltal/ctv-AnomalyDetection">GitHub repository for this Task View</a>
   </links>
