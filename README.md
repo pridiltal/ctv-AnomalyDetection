@@ -34,12 +34,14 @@ additions and extensions for this task view to the task view maintainer.
     when it is distinct from, and compared with, its local
     neighbourhood. Micro clusters or clusters of anomalies may cause
     masking problems.
-  - [outliers](https://cran.r-project.org/package=outliers) provides a collection of
-    some tests commonly used for identifying outliers. For most
-    functions the input is a numeric vector. If argument is a dataframe,
-    then outlier is calculated for each column by sapply. The same
-    behavior is applied by apply when the matrix is given.
-  - *Global anomaly* :
+  - Package [outliers](https://cran.r-project.org/package=outliers) provides a
+    collection of some tests commonly used for identifying *outliers* .
+    For most functions the input is a numeric vector. If argument is a
+    dataframe, then outlier is calculated for each column by sapply. The
+    same behavior is applied by apply when the matrix is given.
+  - Package [kernlab](https://cran.r-project.org/package=kernlab) provides
+    kernel-based machine learning methods including one-class Support
+    Vector Machines for *novelty* detection.
   - *Micro cluster* :
 
 **Temporal Data**
@@ -69,6 +71,7 @@ additions and extensions for this task view to the task view maintainer.
 
 ### CRAN packages:
 
+  - [kernlab](https://cran.r-project.org/package=kernlab)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
 
