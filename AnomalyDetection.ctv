@@ -20,8 +20,10 @@
     <p>
       <strong>High Dimensional Data</strong>
     </p>
-    <ul>	 
+    <ul>	
       <li> The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
+      </li>
+      <li> Package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
       </li>
       <li> Package <pkg>outliers</pkg> provides a collection of some tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
       </li>
@@ -42,6 +44,20 @@
       </li>
       <li> Package  <pkg>ICSOutlier</pkg>  performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
       </li>
+      <li> Package <pkg>HighDimOut</pkg> provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
+      </li>
+      <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
+a kd-tree to speed up kNN search. 
+      </li>
+      <li> Package <pkg>ldbod</pkg>  provides flexible functions for computing local density-based outlier scores. It allows for subsampling of input data or a user specified reference data set to compute outlier scores against, so both unsupervised and semi-supervised outlier detection can be done.
+      </li>
+      <li> Package  <pkg>sGMRFmix</pkg> provides an anomaly detection method for multivariate noisy sensor data using sparse Gaussian Markov random field mixtures. It can compute variable-wise anomaly scores.
+      </li>
+      <li> Package <pkg>Routliers</pkg> provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
+      </li>
+      <li> Package <pkg>alphaOutlier</pkg> provides  Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for well-known probability
+distributions.
+      </li>
     </ul>
     
     
@@ -53,12 +69,20 @@
       Point anomaly, contextual anomaly, collective anomaly, anomalous
       series within a large collection of time series
       </li>
+      <li> Package  <pkg>trendsegmentR</pkg> performs the detection of point anomalies and linear trend changes for univariate time series by implementing the bottom-up unbalanced wavelet transformation. 
+      </li>
       <li> Package <pkg>anomaly</pkg> implements Collective And Point
       Anomaly (CAPA) , Multi-Variate Collective And Point Anomaly (MVCAPA),
       and Proportion Adaptive Segment Selection (PASS) methods for the
       detection of <i>anomalies</i> in time series data.  
       </li>
       <li> The <pkg>anomalize</pkg> package enables a "tidy" workflow for detecting anomalies in data. The main functions are <code>time_decompose()</code>, <code>anomalize()</code>, and <code>time_recompose()</code>.
+      </li>
+      <li> Package <pkg>cbar</pkg> detect contextual anomalies in time-series data with Bayesian data analysis. It focuses on determining a normal range of target value, and provides simple-to-use functions to abstract the outcome.
+      </li>
+      <li> Package  <pkg>washeR</pkg>  performs time series outlier detection using non parametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series)
+      </li>
+      <li> Package <pkg>tsoutliers</pkg> implements the Chen-Liu approach for detection of time series outliers such as  innovational outliers, additive outliers, level shifts, temporary changes and seasonal level shifts.
       </li>
     </ul>
 
@@ -110,7 +134,10 @@
     from the Kepler telescope.
     </li>
     <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg>.
-    </li> Unlabeled :     <pkg>cellWise</pkg>
+    </li> 
+    <li> Unlabeled :     <pkg>cellWise</pkg>
+    </li>
+    
     </ul>
          
     <p>
@@ -119,29 +146,43 @@
     <ul>
       <li> Package <pkg>precintcon</pkg> contains functions to analyze the precipitation intensity, concentration and anomaly. 
       </li>
+      <li> Package <pkg>waterData</pkg> imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
+      </li>
     </ul>
      
   </info>
 
  <packagelist>
     <pkg>adamethods</pkg>
+    <pkg>alphaOutlier</pkg>
     <pkg>amelie</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
+    <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
+    <pkg>dbscan</pkg>
     <pkg>dobin</pkg>
     <pkg>extremevalues</pkg>
     <pkg>fpmoutliers</pkg>
+    <pkg>HighDimOut</pkg>
     <pkg>ICSOutlier</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
+    <pkg>ldbod</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>OutlierDetection</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
     <pkg>precintcon</pkg>
     <pkg>rainbow</pkg>
+    <pkg>Routliers</pkg>
     <pkg>scanstatistics</pkg>
+    <pkg>sGMRFmix</pkg>
+    <pkg>trendsegmentR</pkg>
+    <pkg>tsoutliers</pkg>
+    <pkg>univOutl</pkg>
+    <pkg>washeR</pkg>
+    <pkg>waterData</pkg>
   </packagelist>
   
   

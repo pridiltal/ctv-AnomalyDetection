@@ -34,6 +34,10 @@ additions and extensions for this task view to the task view maintainer.
     when it is distinct from, and compared with, its local
     neighbourhood. Micro clusters or clusters of anomalies may cause
     masking problems.
+  - Package [univOutl](https://cran.r-project.org/package=univOutl) includes various
+    methods for detecting univariate outliers, e.g. the
+    Hidiroglou-Berthelot method. Methods to deal with skewed
+    distribution are also included in this package.
   - Package [outliers](https://cran.r-project.org/package=outliers) provides a
     collection of some tests commonly used for identifying *outliers* .
     For most functions the input is a numeric vector. If argument is a
@@ -79,12 +83,39 @@ additions and extensions for this task view to the task view maintainer.
     offers different methods to choose the appropriate components. The
     current implementation targets data sets with only a small
     percentage of outliers but future extensions are under preparation.
+  - Package [HighDimOut](https://cran.r-project.org/package=HighDimOut) provides
+    three high-dimensional outlier detection algorithms (angle-based,
+    subspace based, feature bagging-based) and an outlier unification
+    scheme.
+  - Functions `LOF()` and `GLOSH` in package
+    [dbscan](https://cran.r-project.org/package=dbscan) provides density based
+    anomaly detection methods using a kd-tree to speed up kNN search.
+  - Package [ldbod](https://cran.r-project.org/package=ldbod) provides flexible
+    functions for computing local density-based outlier scores. It
+    allows for subsampling of input data or a user specified reference
+    data set to compute outlier scores against, so both unsupervised and
+    semi-supervised outlier detection can be done.
+  - Package [sGMRFmix](https://cran.r-project.org/package=sGMRFmix) provides an
+    anomaly detection method for multivariate noisy sensor data using
+    sparse Gaussian Markov random field mixtures. It can compute
+    variable-wise anomaly scores.
+  - Package [Routliers](https://cran.r-project.org/package=Routliers) provides
+    robust methods to detect univariate (Median Absolute Deviation
+    method) and multivariate outliers (Mahalanobis-Minimum Covariance
+    Determinant method).
+  - Package [alphaOutlier](https://cran.r-project.org/package=alphaOutlier) provides
+    Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for
+    well-known probability distributions.
 
 **Temporal Data**
 
   - Streaming data, Batch Data  
     Point anomaly, contextual anomaly, collective anomaly, anomalous
     series within a large collection of time series
+  - Package [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
+    performs the detection of point anomalies and linear trend changes
+    for univariate time series by implementing the bottom-up unbalanced
+    wavelet transformation.
   - Package [anomaly](https://cran.r-project.org/package=anomaly) implements
     Collective And Point Anomaly (CAPA) , Multi-Variate Collective And
     Point Anomaly (MVCAPA), and Proportion Adaptive Segment Selection
@@ -92,6 +123,18 @@ additions and extensions for this task view to the task view maintainer.
   - The [anomalize](https://cran.r-project.org/package=anomalize) package enables a
     "tidy" workflow for detecting anomalies in data. The main functions
     are `time_decompose()`, `anomalize()`, and `time_recompose()`.
+  - Package [cbar](https://cran.r-project.org/package=cbar) detect contextual
+    anomalies in time-series data with Bayesian data analysis. It
+    focuses on determining a normal range of target value, and provides
+    simple-to-use functions to abstract the outcome.
+  - Package [washeR](https://cran.r-project.org/package=washeR) performs time series
+    outlier detection using non parametric test. An input can be a data
+    frame (grouped time series: phenomenon+date+group+values) or a
+    vector (single time series)
+  - Package [tsoutliers](https://cran.r-project.org/package=tsoutliers) implements
+    the Chen-Liu approach for detection of time series outliers such as
+    innovational outliers, additive outliers, level shifts, temporary
+    changes and seasonal level shifts.
 
 **Spatio-Temporal data**
 
@@ -135,35 +178,51 @@ additions and extensions for this task view to the task view maintainer.
     lightcurve time series data from the Kepler telescope.
   - Various high dimensional datasets are provided by
     [mvoutlier](https://cran.r-project.org/package=mvoutlier).
+  - Unlabeled : [cellWise](https://cran.r-project.org/package=cellWise)
 
 **Specific application fields**
 
   - Package [precintcon](https://cran.r-project.org/package=precintcon) contains
     functions to analyze the precipitation intensity, concentration and
     anomaly.
+  - Package [waterData](https://cran.r-project.org/package=waterData) imports U.S.
+    Geological Survey (USGS) daily hydrologic data from USGS web
+    services and provides functions to calculate and plot anomalies.
 
 </div>
 
 ### CRAN packages:
 
   - [adamethods](https://cran.r-project.org/package=adamethods)
+  - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
+  - [cbar](https://cran.r-project.org/package=cbar)
   - [cellWise](https://cran.r-project.org/package=cellWise)
+  - [dbscan](https://cran.r-project.org/package=dbscan)
   - [dobin](https://cran.r-project.org/package=dobin)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
+  - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
+  - [ldbod](https://cran.r-project.org/package=ldbod)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
   - [precintcon](https://cran.r-project.org/package=precintcon)
   - [rainbow](https://cran.r-project.org/package=rainbow)
+  - [Routliers](https://cran.r-project.org/package=Routliers)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
+  - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
+  - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
+  - [tsoutliers](https://cran.r-project.org/package=tsoutliers)
+  - [univOutl](https://cran.r-project.org/package=univOutl)
+  - [washeR](https://cran.r-project.org/package=washeR)
+  - [waterData](https://cran.r-project.org/package=waterData)
 
 ### Related links:
 
