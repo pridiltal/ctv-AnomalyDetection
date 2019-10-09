@@ -122,7 +122,7 @@ additions and extensions for this task view to the task view maintainer.
 
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
 
-**Processing methods for anomaly detection**
+**Pre-processing methods for anomaly detection**
 
   - Package [dobin](https://cran.r-project.org/package=dobin) provides dimension
     reduction technique for outlier detection using neighbours,

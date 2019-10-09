@@ -95,7 +95,7 @@
     </ul>
     
     <p>
-    <strong>Processing methods for anomaly detection</strong>
+    <strong>Pre-processing methods for anomaly detection</strong>
     </p>
      <ul>	
     <li> Package <pkg>dobin</pkg> provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
