@@ -23,6 +23,8 @@
     <ul>	
       <li> The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
       </li>
+      <li> Package <pkg>dixonTest</pkg> provides Dixon's ratio test for outlier detection in small and normally distributed samples.
+      </li> 
       <li> Package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
       </li>
       <li> Package <pkg>outliers</pkg> provides a collection of some tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
@@ -46,10 +48,14 @@
       </li>
       <li> Package <pkg>HighDimOut</pkg> provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
       </li>
+      <li> Package    <pkg>SMLoutliers</pkg> provides an implementation of the Local Correlation Integral method  ( Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values.
+      </li>
       <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
 a kd-tree to speed up kNN search. 
       </li>
       <li> Package <pkg>ldbod</pkg>  provides flexible functions for computing local density-based outlier scores. It allows for subsampling of input data or a user specified reference data set to compute outlier scores against, so both unsupervised and semi-supervised outlier detection can be done.
+      </li>
+      <li> Package  <pkg>DDoutlier</pkg> provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
       </li>
       <li> Package  <pkg>sGMRFmix</pkg> provides an anomaly detection method for multivariate noisy sensor data using sparse Gaussian Markov random field mixtures. It can compute variable-wise anomaly scores.
       </li>
@@ -65,6 +71,8 @@ distributions.
       <li> Package  <pkg>probout</pkg> estimates unsupervised outlier probabilities for multivariate numeric data with many observations from a nonparametric outlier statistic.
       </li>
       <li> Package <pkg>abodOutlier</pkg> performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
+      </li>
+      <li> Package <pkg>outliertree</pkg> provides explainable outlier detection method through decision tree conditioning.
       </li>
     </ul>
     
@@ -96,6 +104,8 @@ distributions.
       </li>
       <li> Package  <pkg>npphen</pkg>   implements basic and high-level functions for detection of anomalies in vector data (numerical series/ time series) and raster data (satellite derived products). Processing of very large raster files is supported.
       </li>
+      <li> Package  <pkg>SmartSifter</pkg>  provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
+      </li>
     </ul>
     
      <p>
@@ -113,6 +123,8 @@ distributions.
     </p>
     <ul>	 
       <li>Scan statistics are used to detect anomalous clusters in spatial or space-time data. Package <pkg>scanstatistics</pkg> provides functions   for detection of anomalous space-time clusters using the scan statistics  methodology. Focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies. 
+      </li>
+      <li> Package  <pkg>solitude</pkg>  provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
       </li>
     </ul>	 
          
@@ -135,7 +147,7 @@ distributions.
     <strong>Visualization of anomalies</strong>
     </p>
      <ul>	
-    <li><pkg>OutliersO3</pkg>
+    <li>  Package <pkg>OutliersO3</pkg> provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
     </li>
     </ul>
     
@@ -171,11 +183,16 @@ distributions.
       </li>
       <li> Package     <pkg>survBootOutliers</pkg> provides concordance based bootstrap methods for outlier detection in survival analysis.
       </li>
+      <li> Package <pkg>pcadapt</pkg> provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
+Principal Component Analysis.
+      </li>
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
     <ul>
       <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
+      </li>
+      <li> Package <pkg>oclust</pkg> provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
       </li>
     </ul>
      
@@ -193,6 +210,8 @@ distributions.
     <pkg>cellWise</pkg>
     <pkg>CircOutlier</pkg>
     <pkg>dbscan</pkg>
+    <pkg>DDoutlier</pkg>
+    <pkg>dixonTest</pkg>
     <pkg>dobin</pkg>
     <pkg>extremevalues</pkg>
     <pkg>fpmoutliers</pkg>
@@ -204,9 +223,11 @@ distributions.
     <pkg>ldbod</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>npphen</pkg>
+    <pkg>oclust</pkg>
     <pkg>OutlierDetection</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
+    <pkg>outliertree</pkg>
     <pkg>precintcon</pkg>
     <pkg>probout</pkg>
     <pkg>rainbow</pkg>
@@ -215,6 +236,9 @@ distributions.
     <pkg>scanstatistics</pkg>
     <pkg>seasonal</pkg>
     <pkg>sGMRFmix</pkg>
+    <pkg>SmartSifter</pkg>
+    <pkg>SMLoutliers</pkg>
+    <pkg>solitude</pkg>
     <pkg>survBootOutliers</pkg>
     <pkg>trendsegmentR</pkg>
     <pkg>tsoutliers</pkg>

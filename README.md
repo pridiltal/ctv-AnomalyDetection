@@ -34,6 +34,9 @@ additions and extensions for this task view to the task view maintainer.
     when it is distinct from, and compared with, its local
     neighbourhood. Micro clusters or clusters of anomalies may cause
     masking problems.
+  - Package [dixonTest](https://cran.r-project.org/package=dixonTest) provides
+    Dixon's ratio test for outlier detection in small and normally
+    distributed samples.
   - Package [univOutl](https://cran.r-project.org/package=univOutl) includes various
     methods for detecting univariate outliers, e.g. the
     Hidiroglou-Berthelot method. Methods to deal with skewed
@@ -87,6 +90,10 @@ additions and extensions for this task view to the task view maintainer.
     three high-dimensional outlier detection algorithms (angle-based,
     subspace based, feature bagging-based) and an outlier unification
     scheme.
+  - Package [SMLoutliers](https://cran.r-project.org/package=SMLoutliers) provides
+    an implementation of the Local Correlation Integral method ( Lof:
+    Identifying density-based local outliers) for outlier detection in
+    multivariate data which consists of numeric values.
   - Functions `LOF()` and `GLOSH` in package
     [dbscan](https://cran.r-project.org/package=dbscan) provides density based
     anomaly detection methods using a kd-tree to speed up kNN search.
@@ -95,6 +102,9 @@ additions and extensions for this task view to the task view maintainer.
     allows for subsampling of input data or a user specified reference
     data set to compute outlier scores against, so both unsupervised and
     semi-supervised outlier detection can be done.
+  - Package [DDoutlier](https://cran.r-project.org/package=DDoutlier) provides a
+    wide variety of distance- and density-based outlier detection
+    functions mainly focusing local outliers in high-dimensional data.
   - Package [sGMRFmix](https://cran.r-project.org/package=sGMRFmix) provides an
     anomaly detection method for multivariate noisy sensor data using
     sparse Gaussian Markov random field mixtures. It can compute
@@ -118,6 +128,9 @@ additions and extensions for this task view to the task view maintainer.
   - Package [abodOutlier](https://cran.r-project.org/package=abodOutlier) performs
     angle-based outlier detection on high dimensional data. A complete,
     a randomized and a knn based methods are available.
+  - Package [outliertree](https://cran.r-project.org/package=outliertree) provides
+    explainable outlier detection method through decision tree
+    conditioning.
 
 **Temporal Data**
 
@@ -155,6 +168,9 @@ additions and extensions for this task view to the task view maintainer.
     high-level functions for detection of anomalies in vector data
     (numerical series/ time series) and raster data (satellite derived
     products). Processing of very large raster files is supported.
+  - Package [SmartSifter](https://cran.r-project.org/package=SmartSifter) provides
+    online unsupervised outlier detection methods using finite mixtures
+    with discounting learning algorithms.
 
 **Spatial outliers**
 
@@ -172,6 +188,10 @@ additions and extensions for this task view to the task view maintainer.
     functions for detection of anomalous space-time clusters using the
     scan statistics methodology. Focuses on prospective surveillance of
     data streams, scanning for clusters with ongoing anomalies.
+  - Package [solitude](https://cran.r-project.org/package=solitude) provides an
+    implementation of Isolation forest which detects anomalies purely
+    based on the concept of isolation without employing any distance or
+    density measure.
 
 **Functional Data**
 
@@ -191,7 +211,11 @@ additions and extensions for this task view to the task view maintainer.
 
 **Visualization of anomalies**
 
-  - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
+  - Package [OutliersO3](https://cran.r-project.org/package=OutliersO3) provides
+    tools to aid in the display and understanding of patterns of
+    multivariate outliers. It uses the results of identifying outliers
+    for every possible combination of dataset variables to provide
+    insight into why particular cases are outliers.
 
 **Pre-processing methods for anomaly detection**
 
@@ -219,12 +243,18 @@ additions and extensions for this task view to the task view maintainer.
   - Package [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
     provides concordance based bootstrap methods for outlier detection
     in survival analysis.
+  - Package [pcadapt](https://cran.r-project.org/package=pcadapt) provides methods
+    to detect genetic markers involved in biological adaptation using
+    statistical tools based on Principal Component Analysis.
 
 **Miscellaneous**
 
   - Package [CircOutlier](https://cran.r-project.org/package=CircOutlier) enables
     detection of outliers in circular-circular regression models,
     modifying its and estimating of models parameters.
+  - Package [oclust](https://cran.r-project.org/package=oclust) provides a function
+    to detect and trim outliers in Gaussian mixture model based
+    clustering using methods described in Clark and McNicholas (2019).
 
 </div>
 
@@ -241,6 +271,8 @@ additions and extensions for this task view to the task view maintainer.
   - [cellWise](https://cran.r-project.org/package=cellWise)
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [dbscan](https://cran.r-project.org/package=dbscan)
+  - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
+  - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [dobin](https://cran.r-project.org/package=dobin)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
@@ -252,9 +284,11 @@ additions and extensions for this task view to the task view maintainer.
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
+  - [oclust](https://cran.r-project.org/package=oclust)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
+  - [outliertree](https://cran.r-project.org/package=outliertree)
   - [precintcon](https://cran.r-project.org/package=precintcon)
   - [probout](https://cran.r-project.org/package=probout)
   - [rainbow](https://cran.r-project.org/package=rainbow)
@@ -263,6 +297,9 @@ additions and extensions for this task view to the task view maintainer.
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
   - [seasonal](https://cran.r-project.org/package=seasonal)
   - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
+  - [SmartSifter](https://cran.r-project.org/package=SmartSifter)
+  - [SMLoutliers](https://cran.r-project.org/package=SMLoutliers)
+  - [solitude](https://cran.r-project.org/package=solitude)
   - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
   - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
   - [tsoutliers](https://cran.r-project.org/package=tsoutliers)
