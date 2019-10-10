@@ -53,6 +53,8 @@
       <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
 a kd-tree to speed up kNN search. 
       </li>
+      <li> Package <pkg>Rlof</pkg> provides parallel implementation of Local Outlier Factor(LOF) which uses multiple CPUs to significantly speed up the LOF computation for large datasets.
+      </li>
       <li> Package <pkg>ldbod</pkg>  provides flexible functions for computing local density-based outlier scores. It allows for subsampling of input data or a user specified reference data set to compute outlier scores against, so both unsupervised and semi-supervised outlier detection can be done.
       </li>
       <li> Package  <pkg>DDoutlier</pkg> provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
@@ -73,6 +75,14 @@ distributions.
       <li> Package <pkg>abodOutlier</pkg> performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
       </li>
       <li> Package <pkg>outliertree</pkg> provides explainable outlier detection method through decision tree conditioning.
+      </li>
+      <li> Package <pkg>RaPKod</pkg> implements a kernel method that performs online outlier detection through random lowdimensional projections in a kernel space on the basis of a reference set of non-outliers.
+      </li>
+      <li> Package <pkg>modi</pkg> implements Mahalanobis distance or depth-based algorithms for multivariate outlier detection in the presence of  missing values (incomplete survey data).
+      </li>
+      <li> Package     <pkg>CerioliOutlierDetection</pkg> implements the iterated RMCD method of Cerioli (2010) for multivariate outlier detection via robust Mahalanobis distances. 
+      </li>
+      <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.
       </li>
     </ul>
     
@@ -106,6 +116,8 @@ distributions.
       </li>
       <li> Package  <pkg>SmartSifter</pkg>  provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
       </li>
+      <li> Package   <pkg>mmppr</pkg> (markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
+      </li>
     </ul>
     
      <p>
@@ -136,6 +148,7 @@ distributions.
       </li>
       <li> Package <pkg>adamethods</pkg> provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
       </li>
+      
     </ul>
       
     <p>
@@ -149,14 +162,18 @@ distributions.
      <ul>	
     <li>  Package <pkg>OutliersO3</pkg> provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
     </li>
+    <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeld landmarks.
+    </li>
     </ul>
     
     <p>
     <strong>Pre-processing methods for anomaly detection</strong>
     </p>
-     <ul>	
-    <li> Package <pkg>dobin</pkg> provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
-    </li>
+    <ul>	
+       <li> Package <pkg>preprocomb</pkg>  provides an S4 framework for creating and evaluating preprocessing combinations for classification, clustering and outlier detection. 
+       </li>
+       <li> Package <pkg>dobin</pkg> provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
+       </li>
     </ul>
     
     <p>
@@ -190,6 +207,8 @@ Principal Component Analysis.
     
     <p><strong>Miscellaneous</strong></p>
     <ul>
+      <li> Package  <pkg>analytics</pkg> provides support for (among other functions) outlier detection in a fitted linear model.
+      </li>
       <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
       </li>
       <li> Package <pkg>oclust</pkg> provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
@@ -203,11 +222,13 @@ Principal Component Analysis.
     <pkg>adamethods</pkg>
     <pkg>alphaOutlier</pkg>
     <pkg>amelie</pkg>
+    <pkg>analytics</pkg>
     <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
     <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
+    <pkg>CerioliOutlierDetection</pkg>
     <pkg>CircOutlier</pkg>
     <pkg>dbscan</pkg>
     <pkg>DDoutlier</pkg>
@@ -221,6 +242,10 @@ Principal Component Analysis.
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
     <pkg>ldbod</pkg>
+    <pkg>mmppr</pkg>
+    <pkg>modi</pkg>
+    <pkg>Morpho</pkg>
+    <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
@@ -228,9 +253,13 @@ Principal Component Analysis.
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
     <pkg>outliertree</pkg>
+    <pkg>pcadapt</pkg>
     <pkg>precintcon</pkg>
+    <pkg>preprocomb</pkg>
     <pkg>probout</pkg>
     <pkg>rainbow</pkg>
+    <pkg>RaPKod</pkg>
+    <pkg>Rlof</pkg>
     <pkg>Routliers</pkg>
     <pkg>RWBP</pkg>
     <pkg>scanstatistics</pkg>

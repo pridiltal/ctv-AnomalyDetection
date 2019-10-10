@@ -97,6 +97,9 @@ additions and extensions for this task view to the task view maintainer.
   - Functions `LOF()` and `GLOSH` in package
     [dbscan](https://cran.r-project.org/package=dbscan) provides density based
     anomaly detection methods using a kd-tree to speed up kNN search.
+  - Package [Rlof](https://cran.r-project.org/package=Rlof) provides parallel
+    implementation of Local Outlier Factor(LOF) which uses multiple CPUs
+    to significantly speed up the LOF computation for large datasets.
   - Package [ldbod](https://cran.r-project.org/package=ldbod) provides flexible
     functions for computing local density-based outlier scores. It
     allows for subsampling of input data or a user specified reference
@@ -131,6 +134,22 @@ additions and extensions for this task view to the task view maintainer.
   - Package [outliertree](https://cran.r-project.org/package=outliertree) provides
     explainable outlier detection method through decision tree
     conditioning.
+  - Package [RaPKod](https://cran.r-project.org/package=RaPKod) implements a kernel
+    method that performs online outlier detection through random
+    lowdimensional projections in a kernel space on the basis of a
+    reference set of non-outliers.
+  - Package [modi](https://cran.r-project.org/package=modi) implements Mahalanobis
+    distance or depth-based algorithms for multivariate outlier
+    detection in the presence of missing values (incomplete survey
+    data).
+  - Package
+    [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
+    implements the iterated RMCD method of Cerioli (2010) for
+    multivariate outlier detection via robust Mahalanobis distances.
+  - Package [mrfDepth](https://cran.r-project.org/package=mrfDepth) provides tools
+    to compute depth measures and implementations of related tasks such
+    as outlier detection, data exploration and classification of
+    multivariate, regression and functional data.
 
 **Temporal Data**
 
@@ -171,6 +190,9 @@ additions and extensions for this task view to the task view maintainer.
   - Package [SmartSifter](https://cran.r-project.org/package=SmartSifter) provides
     online unsupervised outlier detection methods using finite mixtures
     with discounting learning algorithms.
+  - Package [mmppr](https://cran.r-project.org/package=mmppr) (markov modulated
+    Poisson process) provides a framework for detecting anomalous events
+    in time series of counts using an unsupervised learning approach.
 
 **Spatial outliers**
 
@@ -216,9 +238,16 @@ additions and extensions for this task view to the task view maintainer.
     multivariate outliers. It uses the results of identifying outliers
     for every possible combination of dataset variables to provide
     insight into why particular cases are outliers.
+  - Package [Morpho](https://cran.r-project.org/package=Morpho) provides a
+    collection of tools for Geometric Morphometrics and mesh processing.
+    Apart from the core functions it provides a graphical interface to
+    find outliers and/or to switch mislabeld landmarks.
 
 **Pre-processing methods for anomaly detection**
 
+  - Package [preprocomb](https://cran.r-project.org/package=preprocomb) provides an
+    S4 framework for creating and evaluating preprocessing combinations
+    for classification, clustering and outlier detection.
   - Package [dobin](https://cran.r-project.org/package=dobin) provides dimension
     reduction technique for outlier detection using neighbours,
     constructs a set of basis vectors for outlier detection. It brings
@@ -249,12 +278,16 @@ additions and extensions for this task view to the task view maintainer.
 
 **Miscellaneous**
 
+  - Package [analytics](https://cran.r-project.org/package=analytics) provides
+    support for (among other functions) outlier detection in a fitted
+    linear model.
   - Package [CircOutlier](https://cran.r-project.org/package=CircOutlier) enables
     detection of outliers in circular-circular regression models,
     modifying its and estimating of models parameters.
   - Package [oclust](https://cran.r-project.org/package=oclust) provides a function
     to detect and trim outliers in Gaussian mixture model based
-    clustering using methods described in Clark and McNicholas (2019).
+    clustering using methods described in Clark and McNicholas
+    (2019).
 
 </div>
 
@@ -264,11 +297,13 @@ additions and extensions for this task view to the task view maintainer.
   - [adamethods](https://cran.r-project.org/package=adamethods)
   - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
+  - [analytics](https://cran.r-project.org/package=analytics)
   - [ANN2](https://cran.r-project.org/package=ANN2)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
   - [cbar](https://cran.r-project.org/package=cbar)
   - [cellWise](https://cran.r-project.org/package=cellWise)
+  - [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
@@ -282,6 +317,10 @@ additions and extensions for this task view to the task view maintainer.
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
   - [ldbod](https://cran.r-project.org/package=ldbod)
+  - [mmppr](https://cran.r-project.org/package=mmppr)
+  - [modi](https://cran.r-project.org/package=modi)
+  - [Morpho](https://cran.r-project.org/package=Morpho)
+  - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
@@ -289,9 +328,13 @@ additions and extensions for this task view to the task view maintainer.
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
   - [outliertree](https://cran.r-project.org/package=outliertree)
+  - [pcadapt](https://cran.r-project.org/package=pcadapt)
   - [precintcon](https://cran.r-project.org/package=precintcon)
+  - [preprocomb](https://cran.r-project.org/package=preprocomb)
   - [probout](https://cran.r-project.org/package=probout)
   - [rainbow](https://cran.r-project.org/package=rainbow)
+  - [RaPKod](https://cran.r-project.org/package=RaPKod)
+  - [Rlof](https://cran.r-project.org/package=Rlof)
   - [Routliers](https://cran.r-project.org/package=Routliers)
   - [RWBP](https://cran.r-project.org/package=RWBP)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
