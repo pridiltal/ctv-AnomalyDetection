@@ -11,7 +11,7 @@
     This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
     </p>
     <p>
-     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, extreme values in different application domains. These variants are also considered for this view.
+     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, extreme values, faults in different application domains. These variants are also considered for this view.
     </p>
     <p>
     The development of this task view is fairly new and  still in its early stages and therefore subject to changes. Please send suggestions for additions and extensions for this task view to the task view maintainer.
@@ -84,6 +84,8 @@ distributions.
       </li>
       <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.
       </li>
+      <li> Package <pkg>evtclass</pkg> provides two classifiers for open set recognition and novelty detection based on extreme value theory.
+      </li>
     </ul>
     
     
@@ -117,6 +119,8 @@ distributions.
       <li> Package  <pkg>SmartSifter</pkg>  provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
       </li>
       <li> Package   <pkg>mmppr</pkg> (markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
+      </li>
+      <li> Package <pkg>otsad</pkg> implements a set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques. It can handle both stationary and  non-stationary environments.
       </li>
     </ul>
     
@@ -203,6 +207,10 @@ distributions.
       <li> Package <pkg>pcadapt</pkg> provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
 Principal Component Analysis.
       </li>
+      <li> Package <pkg>rgr</pkg> supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
+      </li>
+      <li> Package  <pkg>NMAoutlier</pkg> implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
+      </li>
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
@@ -212,6 +220,10 @@ Principal Component Analysis.
       <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
       </li>
       <li> Package <pkg>oclust</pkg> provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
+      </li>
+      <li> Package   <pkg>semdiag</pkg>  implements  outlier and leverage diagnostics for Structural equation modeling.
+      </li>
+      <li> Package  <pkg>SeleMix</pkg> provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
       </li>
     </ul>
      
@@ -234,6 +246,7 @@ Principal Component Analysis.
     <pkg>DDoutlier</pkg>
     <pkg>dixonTest</pkg>
     <pkg>dobin</pkg>
+    <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
     <pkg>fpmoutliers</pkg>
     <pkg>HDoutliers</pkg>
@@ -247,8 +260,10 @@ Principal Component Analysis.
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>
+    <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
+    <pkg>otsad</pkg>
     <pkg>OutlierDetection</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
@@ -259,11 +274,14 @@ Principal Component Analysis.
     <pkg>probout</pkg>
     <pkg>rainbow</pkg>
     <pkg>RaPKod</pkg>
+    <pkg>rgr</pkg>
     <pkg>Rlof</pkg>
     <pkg>Routliers</pkg>
     <pkg>RWBP</pkg>
     <pkg>scanstatistics</pkg>
     <pkg>seasonal</pkg>
+    <pkg>SeleMix</pkg>
+    <pkg>semdiag</pkg>
     <pkg>sGMRFmix</pkg>
     <pkg>SmartSifter</pkg>
     <pkg>SMLoutliers</pkg>

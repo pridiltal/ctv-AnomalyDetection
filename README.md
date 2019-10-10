@@ -17,8 +17,8 @@ output, etc. This leads to wide variations in problem formulations,
 which need to be addressed through different analytical approaches.
 
 Anomalies are often mentioned under several alternative names such as
-outliers, novelty, odd values, extreme values in different application
-domains. These variants are also considered for this view.
+outliers, novelty, odd values, extreme values, faults in different
+application domains. These variants are also considered for this view.
 
 The development of this task view is fairly new and still in its early
 stages and therefore subject to changes. Please send suggestions for
@@ -150,6 +150,9 @@ additions and extensions for this task view to the task view maintainer.
     to compute depth measures and implementations of related tasks such
     as outlier detection, data exploration and classification of
     multivariate, regression and functional data.
+  - Package [evtclass](https://cran.r-project.org/package=evtclass) provides two
+    classifiers for open set recognition and novelty detection based on
+    extreme value theory.
 
 **Temporal Data**
 
@@ -193,6 +196,10 @@ additions and extensions for this task view to the task view maintainer.
   - Package [mmppr](https://cran.r-project.org/package=mmppr) (markov modulated
     Poisson process) provides a framework for detecting anomalous events
     in time series of counts using an unsupervised learning approach.
+  - Package [otsad](https://cran.r-project.org/package=otsad) implements a set of
+    online fault (anomaly) detectors for time series using
+    prediction-based and window-based techniques. It can handle both
+    stationary and non-stationary environments.
 
 **Spatial outliers**
 
@@ -275,6 +282,13 @@ additions and extensions for this task view to the task view maintainer.
   - Package [pcadapt](https://cran.r-project.org/package=pcadapt) provides methods
     to detect genetic markers involved in biological adaptation using
     statistical tools based on Principal Component Analysis.
+  - Package [rgr](https://cran.r-project.org/package=rgr) supports exploratory data
+    analysis with applied geochemical data, with special application to
+    the estimation of background ranges and identification of anomalies
+    to support mineral exploration and environmental studies.
+  - Package [NMAoutlier](https://cran.r-project.org/package=NMAoutlier) implements
+    the forward search algorithm for the detection of outlying studies
+    (studies with extreme results) in network meta-analysis.
 
 **Miscellaneous**
 
@@ -286,8 +300,15 @@ additions and extensions for this task view to the task view maintainer.
     modifying its and estimating of models parameters.
   - Package [oclust](https://cran.r-project.org/package=oclust) provides a function
     to detect and trim outliers in Gaussian mixture model based
-    clustering using methods described in Clark and McNicholas
-    (2019).
+    clustering using methods described in Clark and McNicholas (2019).
+  - Package [semdiag](https://cran.r-project.org/package=semdiag) implements outlier
+    and leverage diagnostics for Structural equation modeling.
+  - Package [SeleMix](https://cran.r-project.org/package=SeleMix) provides functions
+    for detection of outliers and influential errors using a latent
+    variable model. A mixture model (Gaussian contamination model) based
+    on response(s) y and a depended set of covariates is fit to the data
+    to quantify the impact of errors to the
+    estimates.
 
 </div>
 
@@ -309,6 +330,7 @@ additions and extensions for this task view to the task view maintainer.
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [dobin](https://cran.r-project.org/package=dobin)
+  - [evtclass](https://cran.r-project.org/package=evtclass)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [HDoutliers](https://cran.r-project.org/package=HDoutliers)
@@ -322,8 +344,10 @@ additions and extensions for this task view to the task view maintainer.
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
+  - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
+  - [otsad](https://cran.r-project.org/package=otsad)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
@@ -334,11 +358,14 @@ additions and extensions for this task view to the task view maintainer.
   - [probout](https://cran.r-project.org/package=probout)
   - [rainbow](https://cran.r-project.org/package=rainbow)
   - [RaPKod](https://cran.r-project.org/package=RaPKod)
+  - [rgr](https://cran.r-project.org/package=rgr)
   - [Rlof](https://cran.r-project.org/package=Rlof)
   - [Routliers](https://cran.r-project.org/package=Routliers)
   - [RWBP](https://cran.r-project.org/package=RWBP)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
   - [seasonal](https://cran.r-project.org/package=seasonal)
+  - [SeleMix](https://cran.r-project.org/package=SeleMix)
+  - [semdiag](https://cran.r-project.org/package=semdiag)
   - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
   - [SmartSifter](https://cran.r-project.org/package=SmartSifter)
   - [SMLoutliers](https://cran.r-project.org/package=SMLoutliers)
