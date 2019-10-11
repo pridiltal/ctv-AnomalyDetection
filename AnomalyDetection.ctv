@@ -141,6 +141,8 @@ unique and negative values to help you understand the distribution and quality o
       </li>
       <li> Package  <pkg>RWBP</pkg> detects spatial outliers using a Random Walk on Bipartite Graph.
       </li>
+      <li> Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package     <pkg>EFDR</pkg> implements wavelet-based Enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
+      </li>
     </ul>
     
     <p>
@@ -198,6 +200,9 @@ unique and negative values to help you understand the distribution and quality o
     </li>
     <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg>.
     </li> 
+    <li> Package     <pkg>leri</pkg>  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning. 
+systems.
+    </li>
     <li> Unlabeled :     <pkg>cellWise</pkg>
     </li>
     
@@ -220,6 +225,7 @@ Principal Component Analysis.
       </li>
       <li> Package  <pkg>NMAoutlier</pkg> implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
       </li>
+
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
@@ -238,6 +244,10 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
       <li> Package  <pkg>SeleMix</pkg> provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
       </li>
       <li>  outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in  <code>outCoDa()</code> function of <pkg>robCompositions</pkg> package.
+      </li>
+      <li> Package     <pkg>kuiper.2samp</pkg> performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
+      </li>
+      <li> The function <code>enpls.od()</code> in  Package <pkg>enpls</pkg> performs outlier detection with ensemble partial least squares.
       </li>
       
     </ul>
@@ -263,6 +273,8 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>dixonTest</pkg>
     <pkg>dlookr</pkg>
     <pkg>dobin</pkg>
+    <pkg>EFDR</pkg>
+    <pkg>enpls</pkg>
     <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
     <pkg>FastRCS</pkg>
@@ -273,7 +285,9 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>jmotif</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
+    <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
+    <pkg>leri</pkg>
     <pkg>mmppr</pkg>
     <pkg>modi</pkg>
     <pkg>Morpho</pkg>

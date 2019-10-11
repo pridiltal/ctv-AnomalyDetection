@@ -224,6 +224,12 @@ additions and extensions for this task view to the task view maintainer.
     outliers or abnormal spatial patterns (Kou Y., Lu CT., 2017).
   - Package [RWBP](https://cran.r-project.org/package=RWBP) detects spatial outliers
     using a Random Walk on Bipartite Graph.
+  - Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies
+    in an image. Package [EFDR](https://cran.r-project.org/package=EFDR) implements
+    wavelet-based Enhanced FDR for detecting signals from complete or
+    incomplete spatially aggregated data. The package also provides
+    elementary tools to interpolate spatially irregular data onto a grid
+    of the required size.
 
 **Spatio-Temporal data**
 
@@ -282,6 +288,11 @@ additions and extensions for this task view to the task view maintainer.
     lightcurve time series data from the Kepler telescope.
   - Various high dimensional datasets are provided by
     [mvoutlier](https://cran.r-project.org/package=mvoutlier).
+  - Package [leri](https://cran.r-project.org/package=leri) finds and downloads
+    Landscape Evaporative Response Index (LERI) data, then reads the
+    data into R. The LERI product measures anomalies in actual
+    evapotranspiration, to support drought monitoring and early warning.
+    systems.
   - Unlabeled : [cellWise](https://cran.r-project.org/package=cellWise)
 
 **Specific application fields**
@@ -330,8 +341,14 @@ additions and extensions for this task view to the task view maintainer.
   - outlier detection for compositional data using (robust) Mahalanobis
     distances in isometric logratio coordinates is implemented in
     `outCoDa()` function of
-    [robCompositions](https://cran.r-project.org/package=robCompositions)
-    package.
+    [robCompositions](https://cran.r-project.org/package=robCompositions) package.
+  - Package [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp) performs
+    the two-sample Kuiper test to assess the anomaly of continuous,
+    one-dimensional probability distributions.
+  - The function `enpls.od()` in Package
+    [enpls](https://cran.r-project.org/package=enpls) performs outlier detection
+    with ensemble partial least
+    squares.
 
 </div>
 
@@ -355,6 +372,8 @@ additions and extensions for this task view to the task view maintainer.
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [dlookr](https://cran.r-project.org/package=dlookr)
   - [dobin](https://cran.r-project.org/package=dobin)
+  - [EFDR](https://cran.r-project.org/package=EFDR)
+  - [enpls](https://cran.r-project.org/package=enpls)
   - [evtclass](https://cran.r-project.org/package=evtclass)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [FastRCS](https://cran.r-project.org/package=FastRCS)
@@ -365,7 +384,9 @@ additions and extensions for this task view to the task view maintainer.
   - [jmotif](https://cran.r-project.org/package=jmotif)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
+  - [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp)
   - [ldbod](https://cran.r-project.org/package=ldbod)
+  - [leri](https://cran.r-project.org/package=leri)
   - [mmppr](https://cran.r-project.org/package=mmppr)
   - [modi](https://cran.r-project.org/package=modi)
   - [Morpho](https://cran.r-project.org/package=Morpho)
