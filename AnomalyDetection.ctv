@@ -92,7 +92,10 @@ distributions.
       </li>
       <li> Package <pkg>dlookr</pkg> provides a collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and
 unique and negative values to help you understand the distribution and quality of your data.
-      </li>
+      </li> 
+      <li> The Projection Congruent Subset (PCS) is a method for
+finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by  <pkg>FastPCS</pkg> package. 
+       </li>
     </ul>
     
     
@@ -143,6 +146,8 @@ unique and negative values to help you understand the distribution and quality o
       </li>
       <li> Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package     <pkg>EFDR</pkg> implements wavelet-based Enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
       </li>
+        <li> The function <code>spatial.outlier</code> in     <pkg>depth.plot</pkg> package helps to identify multivariate spatial outlier within a p-variate data cloud or  if any p-variate observation is an outlier with respect to a p-variate data cloud.
+      </li>
     </ul>
     
     <p>
@@ -179,6 +184,7 @@ unique and negative values to help you understand the distribution and quality o
     </li>
     <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
     </li>
+
     </ul>
     
     <p>
@@ -225,12 +231,16 @@ Principal Component Analysis.
       </li>
       <li> Package  <pkg>NMAoutlier</pkg> implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
       </li>
+      <li> Package     <pkg>KRIS</pkg> provides useful functions which are needed for bioinformatic analysis including  detction of rough structures and outliers using unsupervised clustering.
+      </li>
 
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
     <ul>
       <li> Package  <pkg>analytics</pkg> provides support for (among other functions) outlier detection in a fitted linear model.
+      </li>
+        <li>  Package   <pkg>nlr</pkg> include tools to detecting outliers in nonlinear regression. 
       </li>
       <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
       </li>
@@ -249,6 +259,9 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
       </li>
       <li> The function <code>enpls.od()</code> in  Package <pkg>enpls</pkg> performs outlier detection with ensemble partial least squares.
       </li>
+      <li> Package     <pkg>surveyoutliers</pkg> helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
+      </li>
+    
       
     </ul>
      
@@ -270,6 +283,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>CircOutlier</pkg>
     <pkg>dbscan</pkg>
     <pkg>DDoutlier</pkg>
+    <pkg>depth.plot</pkg>
     <pkg>dixonTest</pkg>
     <pkg>dlookr</pkg>
     <pkg>dobin</pkg>
@@ -277,6 +291,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>enpls</pkg>
     <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
+    <pkg>FastPCS</pkg>
     <pkg>FastRCS</pkg>
     <pkg>fpmoutliers</pkg>
     <pkg>HDoutliers</pkg>
@@ -285,6 +300,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>jmotif</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
+    <pkg>KRIS</pkg>
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
     <pkg>leri</pkg>
@@ -293,6 +309,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>
+    <pkg>nlr</pkg>
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
@@ -322,6 +339,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>SMLoutliers</pkg>
     <pkg>solitude</pkg>
     <pkg>survBootOutliers</pkg>
+    <pkg>surveyoutliers</pkg>
     <pkg>trendsegmentR</pkg>
     <pkg>tsoutliers</pkg>
     <pkg>univOutl</pkg>

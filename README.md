@@ -166,6 +166,10 @@ additions and extensions for this task view to the task view maintainer.
     visualization of missing values and outliers and unique and negative
     values to help you understand the distribution and quality of your
     data.
+  - The Projection Congruent Subset (PCS) is a method for finding
+    multivariate outliers by searching for a subset which minimizes a
+    criterion. PCS is supported by
+    [FastPCS](https://cran.r-project.org/package=FastPCS) package.
 
 **Temporal Data**
 
@@ -230,6 +234,11 @@ additions and extensions for this task view to the task view maintainer.
     incomplete spatially aggregated data. The package also provides
     elementary tools to interpolate spatially irregular data onto a grid
     of the required size.
+  - The function `spatial.outlier` in
+    [depth.plot](https://cran.r-project.org/package=depth.plot) package helps to
+    identify multivariate spatial outlier within a p-variate data cloud
+    or if any p-variate observation is an outlier with respect to a
+    p-variate data cloud.
 
 **Spatio-Temporal data**
 
@@ -316,12 +325,18 @@ additions and extensions for this task view to the task view maintainer.
   - Package [NMAoutlier](https://cran.r-project.org/package=NMAoutlier) implements
     the forward search algorithm for the detection of outlying studies
     (studies with extreme results) in network meta-analysis.
+  - Package [KRIS](https://cran.r-project.org/package=KRIS) provides useful
+    functions which are needed for bioinformatic analysis including
+    detction of rough structures and outliers using unsupervised
+    clustering.
 
 **Miscellaneous**
 
   - Package [analytics](https://cran.r-project.org/package=analytics) provides
     support for (among other functions) outlier detection in a fitted
     linear model.
+  - Package [nlr](https://cran.r-project.org/package=nlr) include tools to detecting
+    outliers in nonlinear regression.
   - Package [CircOutlier](https://cran.r-project.org/package=CircOutlier) enables
     detection of outliers in circular-circular regression models,
     modifying its and estimating of models parameters.
@@ -347,8 +362,11 @@ additions and extensions for this task view to the task view maintainer.
     one-dimensional probability distributions.
   - The function `enpls.od()` in Package
     [enpls](https://cran.r-project.org/package=enpls) performs outlier detection
-    with ensemble partial least
-    squares.
+    with ensemble partial least squares.
+  - Package [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
+    helps manage outliers in sample surveys by calculating optimal
+    one-sided winsorizing
+    cutoffs.
 
 </div>
 
@@ -369,6 +387,7 @@ additions and extensions for this task view to the task view maintainer.
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
+  - [depth.plot](https://cran.r-project.org/package=depth.plot)
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [dlookr](https://cran.r-project.org/package=dlookr)
   - [dobin](https://cran.r-project.org/package=dobin)
@@ -376,6 +395,7 @@ additions and extensions for this task view to the task view maintainer.
   - [enpls](https://cran.r-project.org/package=enpls)
   - [evtclass](https://cran.r-project.org/package=evtclass)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
+  - [FastPCS](https://cran.r-project.org/package=FastPCS)
   - [FastRCS](https://cran.r-project.org/package=FastRCS)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [HDoutliers](https://cran.r-project.org/package=HDoutliers)
@@ -384,6 +404,7 @@ additions and extensions for this task view to the task view maintainer.
   - [jmotif](https://cran.r-project.org/package=jmotif)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
+  - [KRIS](https://cran.r-project.org/package=KRIS)
   - [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp)
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [leri](https://cran.r-project.org/package=leri)
@@ -392,6 +413,7 @@ additions and extensions for this task view to the task view maintainer.
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
+  - [nlr](https://cran.r-project.org/package=nlr)
   - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
@@ -421,6 +443,7 @@ additions and extensions for this task view to the task view maintainer.
   - [SMLoutliers](https://cran.r-project.org/package=SMLoutliers)
   - [solitude](https://cran.r-project.org/package=solitude)
   - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
+  - [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
   - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
   - [tsoutliers](https://cran.r-project.org/package=tsoutliers)
   - [univOutl](https://cran.r-project.org/package=univOutl)
