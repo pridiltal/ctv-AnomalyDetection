@@ -50,6 +50,8 @@
       </li>
       <li> Package    <pkg>SMLoutliers</pkg> provides an implementation of the Local Correlation Integral method  ( Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values.
       </li>
+      <li> Package     <pkg>bigutilsr</pkg>  provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
+      </li>
       <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
 a kd-tree to speed up kNN search. 
       </li>
@@ -76,15 +78,20 @@ distributions.
       </li>
       <li> Package <pkg>outliertree</pkg> provides explainable outlier detection method through decision tree conditioning.
       </li>
-      <li> Package <pkg>RaPKod</pkg> implements a kernel method that performs online outlier detection through random lowdimensional projections in a kernel space on the basis of a reference set of non-outliers.
+      <li> Package <pkg>RaPKod</pkg> implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
       </li>
       <li> Package <pkg>modi</pkg> implements Mahalanobis distance or depth-based algorithms for multivariate outlier detection in the presence of  missing values (incomplete survey data).
       </li>
       <li> Package     <pkg>CerioliOutlierDetection</pkg> implements the iterated RMCD method of Cerioli (2010) for multivariate outlier detection via robust Mahalanobis distances. 
       </li>
-      <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.
+      <li> Package     <pkg>rrcovHD</pkg> performs outlier identification using robust multivariate methods based on robust mahalanobis distances and principal component analysis. 
+      </li>
+      <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
       </li>
       <li> Package <pkg>evtclass</pkg> provides two classifiers for open set recognition and novelty detection based on extreme value theory.
+      </li>
+      <li> Package <pkg>dlookr</pkg> provides a collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and
+unique and negative values to help you understand the distribution and quality of your data.
       </li>
     </ul>
     
@@ -118,9 +125,11 @@ distributions.
       </li>
       <li> Package  <pkg>SmartSifter</pkg>  provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
       </li>
-      <li> Package   <pkg>mmppr</pkg> (markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
+      <li> Package   <pkg>mmppr</pkg> (Markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
       </li>
       <li> Package <pkg>otsad</pkg> implements a set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques. It can handle both stationary and  non-stationary environments.
+      </li>
+      <li> Package <pkg>jmotif</pkg> provides tools based on Symbolic aggregate for finding  discords (i.e. time series anomaly/ unusual time series subsequence).
       </li>
     </ul>
     
@@ -166,7 +175,7 @@ distributions.
      <ul>	
     <li>  Package <pkg>OutliersO3</pkg> provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
     </li>
-    <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeld landmarks.
+    <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
     </li>
     </ul>
     
@@ -219,12 +228,18 @@ Principal Component Analysis.
       </li>
       <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
       </li>
+      <li> The Residual Congruent Subset (RCS) is a  method for
+finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</pkg> package.
+      </li>
       <li> Package <pkg>oclust</pkg> provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
       </li>
       <li> Package   <pkg>semdiag</pkg>  implements  outlier and leverage diagnostics for Structural equation modeling.
       </li>
       <li> Package  <pkg>SeleMix</pkg> provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
       </li>
+      <li>  outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in  <code>outCoDa()</code> function of <pkg>robCompositions</pkg> package.
+      </li>
+      
     </ul>
      
   </info>
@@ -238,6 +253,7 @@ Principal Component Analysis.
     <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
+    <pkg>bigutilsr</pkg>
     <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
@@ -245,13 +261,16 @@ Principal Component Analysis.
     <pkg>dbscan</pkg>
     <pkg>DDoutlier</pkg>
     <pkg>dixonTest</pkg>
+    <pkg>dlookr</pkg>
     <pkg>dobin</pkg>
     <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
+    <pkg>FastRCS</pkg>
     <pkg>fpmoutliers</pkg>
     <pkg>HDoutliers</pkg>
     <pkg>HighDimOut</pkg>
     <pkg>ICSOutlier</pkg>
+    <pkg>jmotif</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
     <pkg>ldbod</pkg>
@@ -276,7 +295,9 @@ Principal Component Analysis.
     <pkg>RaPKod</pkg>
     <pkg>rgr</pkg>
     <pkg>Rlof</pkg>
+    <pkg>robCompositions</pkg>
     <pkg>Routliers</pkg>
+    <pkg>rrcovHD</pkg>
     <pkg>RWBP</pkg>
     <pkg>scanstatistics</pkg>
     <pkg>seasonal</pkg>
