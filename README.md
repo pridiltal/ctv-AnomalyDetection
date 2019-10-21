@@ -210,6 +210,8 @@ additions and extensions for this task view to the task view maintainer.
     The ranking is obtained on the basis of the path each case follows
     within the merging steps of a agglomerative hierarchical clustering
     method.
+  - Package [quokar](https://cran.r-project.org/package=quokar) provides quantile
+    regression outlier diagnostics with K Left Out Analysis.
 
 **Temporal Data**
 
@@ -260,6 +262,9 @@ additions and extensions for this task view to the task view maintainer.
   - Package [jmotif](https://cran.r-project.org/package=jmotif) provides tools based
     on Symbolic aggregate for finding discords (i.e. time series
     anomaly/ unusual time series subsequence).
+  - Functions `detectAO` and `detectIO` in
+    [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
+    outlier and innovative outlier in time series data.
 
 **Spatial outliers**
 
@@ -340,6 +345,8 @@ additions and extensions for this task view to the task view maintainer.
     collection of tools for Geometric Morphometrics and mesh processing.
     Apart from the core functions it provides a graphical interface to
     find outliers and/or to switch mislabeled landmarks.
+  - Package [StatDA](https://cran.r-project.org/package=StatDA) provides
+    visualization tools to locate outliers in environmental data.
 
 **Pre-processing methods for anomaly detection**
 
@@ -405,6 +412,27 @@ additions and extensions for this task view to the task view maintainer.
   - Package [OutlierDC](https://cran.r-project.org/package=OutlierDC) implements
     algorithms to detect outliers based on quantile regression for
     censored survival data.
+  - Package [qpcR](https://cran.r-project.org/package=qpcR) implements methods for
+    kinetic outlier detection (KOD) in real-time polymerase chain
+    reaction (qPCR).
+  - Package
+    [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
+    provides a collection of tools including outlier detcetion to allow
+    the medical professional to calculate appropriate reference ranges
+    (intervals) with confidence intervals around the limits for
+    diagnostic purposes.
+  - The Hampel filter is a robust outlier detector using Median Absolute
+    Deviation (MAD). Package
+    [seismicRoll](https://cran.r-project.org/package=seismicRoll) provides fast
+    rolling functions for seismology including outlier detection with a
+    rolling Hampel Filter.
+  - Package [spikes](https://cran.r-project.org/package=spikes) provides tool to
+    detect election fraud from irregularities in vote-share
+    distributions using re-sampled kernel density method.
+  - Package [wql](https://cran.r-project.org/package=wql) stands for \`water
+    quality' provides functions including anomaly dtection to assist in
+    the processing and exploration of data from environmental monitoring
+    programs.
 
 **Miscellaneous**
 
@@ -531,8 +559,11 @@ additions and extensions for this task view to the task view maintainer.
   - [precintcon](https://cran.r-project.org/package=precintcon)
   - [preprocomb](https://cran.r-project.org/package=preprocomb)
   - [probout](https://cran.r-project.org/package=probout)
+  - [qpcR](https://cran.r-project.org/package=qpcR)
+  - [quokar](https://cran.r-project.org/package=quokar)
   - [rainbow](https://cran.r-project.org/package=rainbow)
   - [RaPKod](https://cran.r-project.org/package=RaPKod)
+  - [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
   - [rgr](https://cran.r-project.org/package=rgr)
   - [Rlof](https://cran.r-project.org/package=Rlof)
   - [robCompositions](https://cran.r-project.org/package=robCompositions)
@@ -541,19 +572,24 @@ additions and extensions for this task view to the task view maintainer.
   - [RWBP](https://cran.r-project.org/package=RWBP)
   - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
   - [seasonal](https://cran.r-project.org/package=seasonal)
+  - [seismicRoll](https://cran.r-project.org/package=seismicRoll)
   - [SeleMix](https://cran.r-project.org/package=SeleMix)
   - [semdiag](https://cran.r-project.org/package=semdiag)
   - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
   - [SmartSifter](https://cran.r-project.org/package=SmartSifter)
   - [SMLoutliers](https://cran.r-project.org/package=SMLoutliers)
   - [solitude](https://cran.r-project.org/package=solitude)
+  - [spikes](https://cran.r-project.org/package=spikes)
+  - [StatDA](https://cran.r-project.org/package=StatDA)
   - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
   - [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
   - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
+  - [TSA](https://cran.r-project.org/package=TSA)
   - [tsoutliers](https://cran.r-project.org/package=tsoutliers)
   - [univOutl](https://cran.r-project.org/package=univOutl)
   - [washeR](https://cran.r-project.org/package=washeR)
   - [waterData](https://cran.r-project.org/package=waterData)
+  - [wql](https://cran.r-project.org/package=wql)
 
 ### Related links:
 

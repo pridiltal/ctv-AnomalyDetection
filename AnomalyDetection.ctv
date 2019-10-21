@@ -116,6 +116,8 @@ finding multivariate outliers by searching for a subset which minimizes a criter
        </li>
       <li> Package     <pkg>DMwR2</pkg> uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
       </li>
+      <li> Package     <pkg>quokar</pkg>  provides quantile regression outlier diagnostics with K Left Out Analysis.
+      </li>
     </ul>
     
     
@@ -153,6 +155,8 @@ finding multivariate outliers by searching for a subset which minimizes a criter
       <li> Package <pkg>otsad</pkg> implements a set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques. It can handle both stationary and  non-stationary environments.
       </li>
       <li> Package <pkg>jmotif</pkg> provides tools based on Symbolic aggregate for finding  discords (i.e. time series anomaly/ unusual time series subsequence).
+      </li>
+      <li> Functions <code>detectAO</code> and <code>detectIO</code> in   <pkg>TSA</pkg> package support detecting additive outlier  and   innovative outlier in time series data. 
       </li>
     </ul>
     
@@ -214,6 +218,8 @@ finding multivariate outliers by searching for a subset which minimizes a criter
     </li>
     <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
     </li>
+    <li> Package     <pkg>StatDA</pkg> provides visualization tools to locate outliers in environmental data.
+    </li>
 
     </ul>
     
@@ -273,6 +279,17 @@ Principal Component Analysis.
       </li>
       <li>  Package     <pkg>OutlierDC</pkg> implements algorithms to detect outliers based on quantile regression for censored survival data.
       </li>
+      <li> Package     <pkg>qpcR</pkg>  implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
+      </li>
+      <li> Package  <pkg>referenceIntervals</pkg> provides a collection of tools including outlier detcetion to allow the medical professional to calculate appropriate reference ranges (intervals) with confidence intervals around the limits for diagnostic purposes.
+      </li>
+      <li> The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). Package  <pkg>seismicRoll</pkg> provides fast rolling functions for seismology including outlier detection with a rolling Hampel Filter.
+      </li>
+      <li> Package     <pkg>spikes</pkg> provides tool to detect election fraud from irregularities in vote-share distributions using  re-sampled kernel density method.
+      </li>
+      <li> Package     <pkg>wql</pkg>  stands for `water quality' provides functions including anomaly dtection to assist in the processing and
+exploration of data from environmental monitoring programs.
+       </li>
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
@@ -387,8 +404,11 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>precintcon</pkg>
     <pkg>preprocomb</pkg>
     <pkg>probout</pkg>
+    <pkg>quokar</pkg>
+    <pkg>qpcR</pkg>
     <pkg>rainbow</pkg>
     <pkg>RaPKod</pkg>
+    <pkg>referenceIntervals</pkg>
     <pkg>rgr</pkg>
     <pkg>Rlof</pkg>
     <pkg>robCompositions</pkg>
@@ -397,19 +417,24 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>RWBP</pkg>
     <pkg>scanstatistics</pkg>
     <pkg>seasonal</pkg>
+    <pkg>seismicRoll</pkg>
     <pkg>SeleMix</pkg>
     <pkg>semdiag</pkg>
     <pkg>sGMRFmix</pkg>
     <pkg>SmartSifter</pkg>
     <pkg>SMLoutliers</pkg>
     <pkg>solitude</pkg>
+    <pkg>spikes</pkg>
+    <pkg>StatDA</pkg>
     <pkg>survBootOutliers</pkg>
     <pkg>surveyoutliers</pkg>
     <pkg>trendsegmentR</pkg>
+    <pkg>TSA</pkg>
     <pkg>tsoutliers</pkg>
     <pkg>univOutl</pkg>
     <pkg>washeR</pkg>
     <pkg>waterData</pkg>
+    <pkg>wql</pkg>
   </packagelist>
   
   
