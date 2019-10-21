@@ -52,6 +52,8 @@
       </li>
       <li> Package     <pkg>bigutilsr</pkg>  provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
       </li>
+      <li> Package    <pkg>DescTools</pkg> provides functions for outlier detection using LOF and Tukey’s boxplot definition.
+      </li>
       <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
 a kd-tree to speed up kNN search. 
       </li>
@@ -86,6 +88,8 @@ distributions.
       </li>
       <li> Package     <pkg>rrcovHD</pkg> performs outlier identification using robust multivariate methods based on robust mahalanobis distances and principal component analysis. 
       </li>
+      <li> Function <code>dm.mahalanobis</code> in <pkg>DJL</pkg> package  implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
+      </li>
       <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
       </li>
       <li> Package <pkg>evtclass</pkg> provides two classifiers for open set recognition and novelty detection based on extreme value theory.
@@ -98,10 +102,14 @@ finding multivariate outliers by searching for a subset which minimizes a criter
        </li>
        <li>  The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
        </li>
-       <li>  Package  <pkg>FastHCS</pkg> implements robust Aalgorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. <pkg>FastHCS</pkg>
+       <li>  Package  <pkg>FastHCS</pkg> implements robust algorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. <pkg>FastHCS</pkg>
+       </li>
+       <li> Package     <pkg>FactoInvestigate</pkg> implements PCA based outlier detection tools. 
        </li>
        <li>  Package  <pkg>CrossClustering</pkg> implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
        </li>
+      <li> Package     <pkg>DMwR2</pkg> uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
+      </li>
     </ul>
     
     
@@ -166,7 +174,7 @@ finding multivariate outliers by searching for a subset which minimizes a criter
       </li>
       <li> Package  <pkg>biogeo</pkg> provides functions for error detection and correction in point data quality datasets that are used in species distribution modelling.
       </li>
-      <li>   Package  <pkg>CoordinateCleaner</pkg> provides fucntions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
+      <li>   Package  <pkg>CoordinateCleaner</pkg> provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
       </li>
     </ul>	 
          
@@ -177,6 +185,12 @@ finding multivariate outliers by searching for a subset which minimizes a criter
       <li> Function <code>foutliers()</code> from package  <pkg>rainbow</pkg>  provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
       </li>
       <li> Package <pkg>adamethods</pkg> provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
+      </li>
+      <li> Function <code>shape.fd.outliers</code> in    <pkg>ddalpha</pkg> package  detects functional outliers of first three orders, based on the order extended integrated depth for functional data.
+      </li>
+      <li> Package    <pkg>fda.usc</pkg> provides tool for  outlier detection in functional data  (atypical curves detection) using different approaches such as likelihood ratio test, depth measures, quantiles of the bootstrap samples.
+      </li>
+      <li> Package  <pkg>fdasrvf</pkg> supports outlier detection in functional data using the square-root velocity framework which allows for elastic analysis of functional data through phase and amplitude separation. 
       </li>
       
     </ul>
@@ -241,7 +255,9 @@ Principal Component Analysis.
       </li>
       <li> Package  <pkg>NMAoutlier</pkg> implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
       </li>
-      <li> Package     <pkg>KRIS</pkg> provides useful functions which are needed for bioinformatic analysis including  detction of rough structures and outliers using unsupervised clustering.
+      <li> Package     <pkg>KRIS</pkg> provides useful functions which are needed for bioinformatic analysis including  detection of rough structures and outliers using unsupervised clustering.
+      </li>
+      <li> Package     <pkg>dave</pkg> provides a collection of functions for  data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
       </li>
 
     </ul>
@@ -273,6 +289,8 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
       </li>
       <li> Package     <pkg>surveyoutliers</pkg> helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
       </li>
+      <li> Package     <pkg>faoutlier</pkg> provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
+      </li>
     
       
     </ul>
@@ -297,20 +315,29 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>compositions</pkg>
     <pkg>CoordinateCleaner</pkg>
     <pkg>CrossClustering</pkg>
+    <pkg>dave</pkg>
     <pkg>dbscan</pkg>
+    <pkg>ddalpha</pkg>
     <pkg>DDoutlier</pkg>
     <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
+    <pkg>DescTools</pkg>
     <pkg>dixonTest</pkg>
+    <pkg>DJL</pkg>
     <pkg>dlookr</pkg>
     <pkg>dobin</pkg>
+    <pkg>DMwR2</pkg>
     <pkg>EFDR</pkg>
     <pkg>enpls</pkg>
     <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
+    <pkg>FactoInvestigate</pkg>
+    <pkg>faoutlier</pkg>
     <pkg>FastHCS</pkg>
     <pkg>FastPCS</pkg>
     <pkg>FastRCS</pkg>
+    <pkg>fdasrvf</pkg>
+    <pkg>fda.usc</pkg>
     <pkg>fpmoutliers</pkg>
     <pkg>HDoutliers</pkg>
     <pkg>HighDimOut</pkg>
