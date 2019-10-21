@@ -170,6 +170,10 @@ additions and extensions for this task view to the task view maintainer.
     multivariate outliers by searching for a subset which minimizes a
     criterion. PCS is supported by
     [FastPCS](https://cran.r-project.org/package=FastPCS) package.
+  - The estimated density ratio function in
+    [densratio](https://cran.r-project.org/package=densratio) package can be used in
+    many applications such as anomaly detection, change-point detection,
+    covariate shift adaptation.
 
 **Temporal Data**
 
@@ -387,6 +391,7 @@ additions and extensions for this task view to the task view maintainer.
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
+  - [densratio](https://cran.r-project.org/package=densratio)
   - [depth.plot](https://cran.r-project.org/package=depth.plot)
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [dlookr](https://cran.r-project.org/package=dlookr)

@@ -96,6 +96,12 @@ unique and negative values to help you understand the distribution and quality o
       <li> The Projection Congruent Subset (PCS) is a method for
 finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by  <pkg>FastPCS</pkg> package. 
        </li>
+       <li>  The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
+       </li>
+       <li>  Package  <pkg>FastHCS</pkg> implements robust Aalgorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. <pkg>FastHCS</pkg>
+       </li>
+       <li>  Package  <pkg>CrossClustering</pkg> implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
+       </li>
     </ul>
     
     
@@ -157,6 +163,10 @@ finding multivariate outliers by searching for a subset which minimizes a criter
       <li>Scan statistics are used to detect anomalous clusters in spatial or space-time data. Package <pkg>scanstatistics</pkg> provides functions   for detection of anomalous space-time clusters using the scan statistics  methodology. Focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies. 
       </li>
       <li> Package  <pkg>solitude</pkg>  provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
+      </li>
+      <li> Package  <pkg>biogeo</pkg> provides functions for error detection and correction in point data quality datasets that are used in species distribution modelling.
+      </li>
+      <li>   Package  <pkg>CoordinateCleaner</pkg> provides fucntions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
       </li>
     </ul>	 
          
@@ -255,6 +265,8 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
       </li>
       <li>  outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in  <code>outCoDa()</code> function of <pkg>robCompositions</pkg> package.
       </li>
+      <li> Package <pkg>compositions</pkg> provides functions  to detect various types of outliers in compositional datasets.
+      </li>
       <li> Package     <pkg>kuiper.2samp</pkg> performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
       </li>
       <li> The function <code>enpls.od()</code> in  Package <pkg>enpls</pkg> performs outlier detection with ensemble partial least squares.
@@ -276,13 +288,18 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
+    <pkg>biogeo</pkg>
     <pkg>bigutilsr</pkg>
     <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
     <pkg>CircOutlier</pkg>
+    <pkg>compositions</pkg>
+    <pkg>CoordinateCleaner</pkg>
+    <pkg>CrossClustering</pkg>
     <pkg>dbscan</pkg>
     <pkg>DDoutlier</pkg>
+    <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
     <pkg>dixonTest</pkg>
     <pkg>dlookr</pkg>
@@ -291,6 +308,7 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>enpls</pkg>
     <pkg>evtclass</pkg>
     <pkg>extremevalues</pkg>
+    <pkg>FastHCS</pkg>
     <pkg>FastPCS</pkg>
     <pkg>FastRCS</pkg>
     <pkg>fpmoutliers</pkg>
