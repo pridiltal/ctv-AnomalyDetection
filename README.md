@@ -41,6 +41,14 @@ additions and extensions for this task view to the task view maintainer.
     methods for detecting univariate outliers, e.g. the
     Hidiroglou-Berthelot method. Methods to deal with skewed
     distribution are also included in this package.
+  - Univariate outliers detection is supported by `outlier()` function
+    in [GmAMisc](https://cran.r-project.org/package=GmAMisc) which implements three
+    different methods (mean-base, median-based, boxplot-based).
+  - Package [hotspots](https://cran.r-project.org/package=hotspots) supports
+    univariate outlier detection by identifying values that are
+    disproportionately high based on both the deviance of any given
+    value from a statistical distribution and its similarity to other
+    values.
   - Package [outliers](https://cran.r-project.org/package=outliers) provides a
     collection of some tests commonly used for identifying *outliers* .
     For most functions the input is a numeric vector. If argument is a
@@ -98,6 +106,12 @@ additions and extensions for this task view to the task view maintainer.
     utility functions for outlier detection in large-scale data. It
     includes LOF and outlier detection method based on departure from
     histogram.
+  - Package [DescTools](https://cran.r-project.org/package=DescTools) provides
+    functions for outlier detection using LOF and Tukey’s boxplot
+    definition.
+  - Package [funModeling](https://cran.r-project.org/package=funModeling) provides
+    tools for outlier detection using top/bottom X%, Tukey’s boxplot
+    definition and Hampel’s method.
   - Functions `LOF()` and `GLOSH` in package
     [dbscan](https://cran.r-project.org/package=dbscan) provides density based
     anomaly detection methods using a kd-tree to speed up kNN search.
@@ -153,6 +167,11 @@ additions and extensions for this task view to the task view maintainer.
   - Package [rrcovHD](https://cran.r-project.org/package=rrcovHD) performs outlier
     identification using robust multivariate methods based on robust
     mahalanobis distances and principal component analysis.
+  - Function `dm.mahalanobis` in [DJL](https://cran.r-project.org/package=DJL)
+    package implements Mahalanobis distance measure for outlier
+    detection. In addition to the basic distance measure, boxplots are
+    provided with potential outlier(s) to give an insight into the early
+    stage of data cleansing task.
   - Package [mrfDepth](https://cran.r-project.org/package=mrfDepth) provides tools
     to compute depth measures and implementations of related tasks such
     as outlier detection, data exploration and classification of
@@ -174,6 +193,23 @@ additions and extensions for this task view to the task view maintainer.
     [densratio](https://cran.r-project.org/package=densratio) package can be used in
     many applications such as anomaly detection, change-point detection,
     covariate shift adaptation.
+  - Package [FastHCS](https://cran.r-project.org/package=FastHCS) implements robust
+    algorithm for principal component analysis and thereby provide
+    robust PCA modelling and associated outlier detection and diagnostic
+    tools for high-dimensional data.
+    [FastHCS](https://cran.r-project.org/package=FastHCS)
+  - Package [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate)
+    implements PCA based outlier detection tools.
+  - Package [CrossClustering](https://cran.r-project.org/package=CrossClustering)
+    implements a partial clustering algorithm that combines the Ward's
+    minimum variance and Complete Linkage algorithms, providing
+    automatic estimation of a suitable number of clusters and
+    identification of outlier elements.
+  - Package [DMwR2](https://cran.r-project.org/package=DMwR2) uses hierarchical
+    clustering to obtain a ranking of outlierness for a set of cases.
+    The ranking is obtained on the basis of the path each case follows
+    within the merging steps of a agglomerative hierarchical clustering
+    method.
 
 **Temporal Data**
 
@@ -256,6 +292,14 @@ additions and extensions for this task view to the task view maintainer.
     implementation of Isolation forest which detects anomalies purely
     based on the concept of isolation without employing any distance or
     density measure.
+  - Package [biogeo](https://cran.r-project.org/package=biogeo) provides functions
+    for error detection and correction in point data quality datasets
+    that are used in species distribution modelling.
+  - Package
+    [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
+    provides functions for flagging of common spatial and temporal
+    outliers (errors) in biological and paleontological collection data,
+    for the use in conservation, ecology and paleontology.
 
 **Functional Data**
 
@@ -270,6 +314,18 @@ additions and extensions for this task view to the task view maintainer.
     and large databases and with both classical multivariate data and
     functional data (univariate and multivariate). Some of these
     algorithms also allow to detect anomalies.
+  - Function `shape.fd.outliers` in
+    [ddalpha](https://cran.r-project.org/package=ddalpha) package detects functional
+    outliers of first three orders, based on the order extended
+    integrated depth for functional data.
+  - Package [fda.usc](https://cran.r-project.org/package=fda.usc) provides tool for
+    outlier detection in functional data (atypical curves detection)
+    using different approaches such as likelihood ratio test, depth
+    measures, quantiles of the bootstrap samples.
+  - Package [fdasrvf](https://cran.r-project.org/package=fdasrvf) supports outlier
+    detection in functional data using the square-root velocity
+    framework which allows for elastic analysis of functional data
+    through phase and amplitude separation.
 
 **Non numeric data**
 
@@ -331,8 +387,24 @@ additions and extensions for this task view to the task view maintainer.
     (studies with extreme results) in network meta-analysis.
   - Package [KRIS](https://cran.r-project.org/package=KRIS) provides useful
     functions which are needed for bioinformatic analysis including
-    detction of rough structures and outliers using unsupervised
+    detection of rough structures and outliers using unsupervised
     clustering.
+  - Package [dave](https://cran.r-project.org/package=dave) provides a collection of
+    functions for data analysis in vegetation ecology including outlier
+    detection using nearest neighbour distances.
+  - Package [MALDIrppa](https://cran.r-project.org/package=MALDIrppa) provides
+    methods for quality control and robust pre-processing and analysis
+    of MALDI mass spectrometry data.
+  - Package [MIPHENO](https://cran.r-project.org/package=MIPHENO) contains functions
+    to carry out processing of high throughput data analysis and
+    detection of putative hits/mutants.
+  - Package [OutlierDM](https://cran.r-project.org/package=OutlierDM) OutlierDM
+    provides functions to detect outlying values such as genes, peptides
+    or samples for multi-replicated high-throughput high-dimensional
+    data.
+  - Package [OutlierDC](https://cran.r-project.org/package=OutlierDC) implements
+    algorithms to detect outliers based on quantile regression for
+    censored survival data.
 
 **Miscellaneous**
 
@@ -361,6 +433,9 @@ additions and extensions for this task view to the task view maintainer.
     distances in isometric logratio coordinates is implemented in
     `outCoDa()` function of
     [robCompositions](https://cran.r-project.org/package=robCompositions) package.
+  - Package [compositions](https://cran.r-project.org/package=compositions) provides
+    functions to detect various types of outliers in compositional
+    datasets.
   - Package [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp) performs
     the two-sample Kuiper test to assess the anomaly of continuous,
     one-dimensional probability distributions.
@@ -369,8 +444,12 @@ additions and extensions for this task view to the task view maintainer.
     with ensemble partial least squares.
   - Package [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
     helps manage outliers in sample surveys by calculating optimal
-    one-sided winsorizing
-    cutoffs.
+    one-sided winsorizing cutoffs.
+  - Package [faoutlier](https://cran.r-project.org/package=faoutlier) provides tools
+    for detecting and summarize influential cases that can affect
+    exploratory and confirmatory factor analysis models and structural
+    equation
+    models.
 
 </div>
 
@@ -385,26 +464,43 @@ additions and extensions for this task view to the task view maintainer.
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
   - [bigutilsr](https://cran.r-project.org/package=bigutilsr)
+  - [biogeo](https://cran.r-project.org/package=biogeo)
   - [cbar](https://cran.r-project.org/package=cbar)
   - [cellWise](https://cran.r-project.org/package=cellWise)
   - [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
+  - [compositions](https://cran.r-project.org/package=compositions)
+  - [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
+  - [CrossClustering](https://cran.r-project.org/package=CrossClustering)
+  - [dave](https://cran.r-project.org/package=dave)
   - [dbscan](https://cran.r-project.org/package=dbscan)
+  - [ddalpha](https://cran.r-project.org/package=ddalpha)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
   - [densratio](https://cran.r-project.org/package=densratio)
   - [depth.plot](https://cran.r-project.org/package=depth.plot)
+  - [DescTools](https://cran.r-project.org/package=DescTools)
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
+  - [DJL](https://cran.r-project.org/package=DJL)
   - [dlookr](https://cran.r-project.org/package=dlookr)
+  - [DMwR2](https://cran.r-project.org/package=DMwR2)
   - [dobin](https://cran.r-project.org/package=dobin)
   - [EFDR](https://cran.r-project.org/package=EFDR)
   - [enpls](https://cran.r-project.org/package=enpls)
   - [evtclass](https://cran.r-project.org/package=evtclass)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
+  - [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate)
+  - [faoutlier](https://cran.r-project.org/package=faoutlier)
+  - [FastHCS](https://cran.r-project.org/package=FastHCS)
   - [FastPCS](https://cran.r-project.org/package=FastPCS)
   - [FastRCS](https://cran.r-project.org/package=FastRCS)
+  - [fda.usc](https://cran.r-project.org/package=fda.usc)
+  - [fdasrvf](https://cran.r-project.org/package=fdasrvf)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
+  - [funModeling](https://cran.r-project.org/package=funModeling)
+  - [GmAMisc](https://cran.r-project.org/package=GmAMisc)
   - [HDoutliers](https://cran.r-project.org/package=HDoutliers)
   - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
+  - [hotspots](https://cran.r-project.org/package=hotspots)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
   - [jmotif](https://cran.r-project.org/package=jmotif)
   - [kernlab](https://cran.r-project.org/package=kernlab)
@@ -413,6 +509,8 @@ additions and extensions for this task view to the task view maintainer.
   - [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp)
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [leri](https://cran.r-project.org/package=leri)
+  - [MALDIrppa](https://cran.r-project.org/package=MALDIrppa)
+  - [MIPHENO](https://cran.r-project.org/package=MIPHENO)
   - [mmppr](https://cran.r-project.org/package=mmppr)
   - [modi](https://cran.r-project.org/package=modi)
   - [Morpho](https://cran.r-project.org/package=Morpho)
@@ -423,7 +521,9 @@ additions and extensions for this task view to the task view maintainer.
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
   - [otsad](https://cran.r-project.org/package=otsad)
+  - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
+  - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
   - [outliertree](https://cran.r-project.org/package=outliertree)

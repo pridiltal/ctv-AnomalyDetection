@@ -27,6 +27,10 @@
       </li> 
       <li> Package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
       </li>
+      <li>  Univariate outliers detection is supported by  <code>outlier()</code> function in <pkg>GmAMisc</pkg>  which implements three different methods (mean-base, median-based, boxplot-based).    
+      </li>
+      <li> Package     <pkg>hotspots</pkg>  supports univariate outlier detection by identifying values that are disproportionately high based on both the deviance of any given value from a statistical distribution and its similarity to other values.
+      </li>
       <li> Package <pkg>outliers</pkg> provides a collection of some tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
       </li>
       <li> Package  <pkg>extremevalues</pkg> offers outlier detection and plot functions for univariate data. In this work a value in the data is an outlier when it is unlikely to be drawn from the estimated distribution.
@@ -53,6 +57,8 @@
       <li> Package     <pkg>bigutilsr</pkg>  provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
       </li>
       <li> Package    <pkg>DescTools</pkg> provides functions for outlier detection using LOF and Tukey’s boxplot definition.
+      </li>
+      <li> Package     <pkg>funModeling</pkg>  provides tools for outlier detection using top/bottom X%, Tukey’s boxplot definition and  Hampel’s method.
       </li>
       <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
 a kd-tree to speed up kNN search. 
@@ -259,7 +265,14 @@ Principal Component Analysis.
       </li>
       <li> Package     <pkg>dave</pkg> provides a collection of functions for  data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
       </li>
-
+      <li> Package <pkg>MALDIrppa</pkg> provides methods for quality control and robust pre-processing and analysis of MALDI mass spectrometry data. 
+      </li>
+      <li> Package     <pkg>MIPHENO</pkg> contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
+      </li>
+      <li> Package     <pkg>OutlierDM</pkg> OutlierDM provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data. 
+      </li>
+      <li>  Package     <pkg>OutlierDC</pkg> implements algorithms to detect outliers based on quantile regression for censored survival data.
+      </li>
     </ul>
     
     <p><strong>Miscellaneous</strong></p>
@@ -339,8 +352,11 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
     <pkg>fpmoutliers</pkg>
+    <pkg>funModeling</pkg>
+    <pkg>GmAMisc</pkg>
     <pkg>HDoutliers</pkg>
     <pkg>HighDimOut</pkg>
+    <pkg>hotspots</pkg>
     <pkg>ICSOutlier</pkg>
     <pkg>jmotif</pkg>
     <pkg>kernlab</pkg>
@@ -349,6 +365,8 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
     <pkg>leri</pkg>
+    <pkg>MALDIrppa</pkg>
+    <pkg>MIPHENO</pkg>
     <pkg>mmppr</pkg>
     <pkg>modi</pkg>
     <pkg>Morpho</pkg>
@@ -359,7 +377,9 @@ finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</p
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
     <pkg>otsad</pkg>
+    <pkg>OutlierDC</pkg>
     <pkg>OutlierDetection</pkg>
+    <pkg>OutlierDM</pkg>
     <pkg>outliers</pkg>
     <pkg>OutliersO3</pkg>
     <pkg>outliertree</pkg>
