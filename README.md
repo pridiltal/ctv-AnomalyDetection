@@ -34,191 +34,207 @@ additions and extensions for this task view to the task view maintainer.
     when it is distinct from, and compared with, its local
     neighbourhood. Micro clusters or clusters of anomalies may cause
     masking problems.
-  - Package [dixonTest](https://cran.r-project.org/package=dixonTest) provides
-    Dixon's ratio test for outlier detection in small and normally
-    distributed samples.
-  - Package [univOutl](https://cran.r-project.org/package=univOutl) includes various
-    methods for detecting univariate outliers, e.g. the
+
+<sub>Univariate Outlier Detection</sub>
+
+  - *Univariate outlier* detection methods focus on values in a single
+    feature space. Package [univOutl](https://cran.r-project.org/package=univOutl)
+    includes various methods for detecting univariate outliers, e.g. the
     Hidiroglou-Berthelot method. Methods to deal with skewed
     distribution are also included in this package.
-  - Univariate outliers detection is supported by `outlier()` function
-    in [GmAMisc](https://cran.r-project.org/package=GmAMisc) which implements three
-    different methods (mean-base, median-based, boxplot-based).
-  - Package [hotspots](https://cran.r-project.org/package=hotspots) supports
+  - The [dixonTest](https://cran.r-project.org/package=dixonTest) package provides
+    Dixon's ratio test for outlier detection in small and normally
+    distributed samples.
+  - Univariate outliers detection is also supported by `outlier()`
+    function in [GmAMisc](https://cran.r-project.org/package=GmAMisc) which
+    implements three different methods (mean-base, median-based,
+    boxplot-based).
+  - The [hotspots](https://cran.r-project.org/package=hotspots) package supports
     univariate outlier detection by identifying values that are
     disproportionately high based on both the deviance of any given
     value from a statistical distribution and its similarity to other
     values.
-  - Package [outliers](https://cran.r-project.org/package=outliers) provides a
-    collection of some tests commonly used for identifying *outliers* .
-    For most functions the input is a numeric vector. If argument is a
-    data frame, then outlier is calculated for each column by sapply.
-    The same behavior is applied by apply when the matrix is given.
-  - Package [extremevalues](https://cran.r-project.org/package=extremevalues) offers
-    outlier detection and plot functions for univariate data. In this
-    work a value in the data is an outlier when it is unlikely to be
-    drawn from the estimated distribution.
-  - Package [kernlab](https://cran.r-project.org/package=kernlab) provides
-    kernel-based machine learning methods including one-class Support
-    Vector Machines for *novelty* detection.
-  - Package [mvoutlier](https://cran.r-project.org/package=mvoutlier) provides
-    multivariate outlier detection based on robust methods.
-  - Package [amelie](https://cran.r-project.org/package=amelie) implements anomaly
-    detection as binary classification for cross-sectional data
-    (multivariate) using maximum likelihood estimates and normal
-    probability functions.
-  - Package [cellWise](https://cran.r-project.org/package=cellWise) provides tools
-    for detecting cellwise outliers and robust methods to analyze data
-    which may contain them. Cellwise outliers are entries in the data
-    matrix which are substantially higher or lower than what could be
-    expected based on the other cells in its column as well as the other
-    cells in its row, taking the relations between the columns into
-    account.
-  - Package [kmodR](https://cran.r-project.org/package=kmodR) presents a unified
-    approach for simultaneously clustering and discovering outliers in
-    high dimensional data. Their approach is formalized as a
-    generalization of the k-MEANS problem.
-  - Package [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
-    provides different implementations for outlier detection namely
-    model based, distance based, dispersion based, depth based and
-    density based. This package provides labelling of observations as
-    outliers and outlierliness of each outlier. For univariate,
-    bivariate and trivariate data, visualization is also provided.
-  - Package [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) implements
-    a set of algorithms for detection of outliers based on frequent
-    pattern mining. Such algorithms follow the paradigm: if an instance
-    contains more frequent patterns,it means that this data instance is
-    unlikely to be an anomaly.
-  - Package [ICSOutlier](https://cran.r-project.org/package=ICSOutlier) performs
-    multivariate outlier detection using invariant coordinates and
-    offers different methods to choose the appropriate components. The
-    current implementation targets data sets with only a small
-    percentage of outliers but future extensions are under preparation.
-  - Package [HighDimOut](https://cran.r-project.org/package=HighDimOut) provides
-    three high-dimensional outlier detection algorithms (angle-based,
-    subspace based, feature bagging-based) and an outlier unification
-    scheme.
-  - Package [SMLoutliers](https://cran.r-project.org/package=SMLoutliers) provides
-    an implementation of the Local Correlation Integral method ( Lof:
-    Identifying density-based local outliers) for outlier detection in
-    multivariate data which consists of numeric values.
-  - Package [bigutilsr](https://cran.r-project.org/package=bigutilsr) provides
-    utility functions for outlier detection in large-scale data. It
-    includes LOF and outlier detection method based on departure from
-    histogram.
-  - Package [DescTools](https://cran.r-project.org/package=DescTools) provides
+  - The [outliers](https://cran.r-project.org/package=outliers) package provides a
+    collection of tests commonly used for identifying *outliers* . For
+    most functions the input is a numeric vector. If argument is a data
+    frame, then outlier is calculated for each column by sapply. The
+    same behavior is applied by apply when the matrix is given.
+  - The [extremevalues](https://cran.r-project.org/package=extremevalues) package
+    offers outlier detection and plot functions for univariate data. In
+    this work a value in the data is an outlier when it is unlikely to
+    be drawn from the estimated distribution.
+  - The [funModeling](https://cran.r-project.org/package=funModeling) package
+    provides tools for outlier detection using top/bottom X%, Tukey’s
+    boxplot definition and Hampel’s method.
+  - The [alphaOutlier](https://cran.r-project.org/package=alphaOutlier) package
+    provides Alpha-Outlier regions (as proposed by Davies and Gather
+    (1993)) for well-known probability distributions.
+
+<sub>Multivariate Outlier Detection</sub>
+
+  - Under *multivariate or multidimensional scenario* , where the focus
+    is on n (\>2) - dimensional space, all attributes might be of same
+    type or might be a mixture of different types such as categorical or
+    numerical, which has a direct impact on the implementation and scope
+    of the algorithm.
+  - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
+    wide variety of distance- and density-based outlier detection
+    functions mainly focusing local outliers in high-dimensional data.
+  - *Local Outlier Factor (LOF)* is an algorithm for detecting anomalous
+    data points by measuring the local deviation of a given data point
+    with respect to its neighbours. This algorithm with some variations
+    is supported by many packages. The
+    [DescTools](https://cran.r-project.org/package=DescTools) package provides
     functions for outlier detection using LOF and Tukey’s boxplot
-    definition.
-  - Package [funModeling](https://cran.r-project.org/package=funModeling) provides
-    tools for outlier detection using top/bottom X%, Tukey’s boxplot
-    definition and Hampel’s method.
-  - Functions `LOF()` and `GLOSH` in package
+    definition. Functions `LOF()` and `GLOSH` in package
     [dbscan](https://cran.r-project.org/package=dbscan) provides density based
     anomaly detection methods using a kd-tree to speed up kNN search.
-  - Package [Rlof](https://cran.r-project.org/package=Rlof) provides parallel
-    implementation of Local Outlier Factor(LOF) which uses multiple CPUs
-    to significantly speed up the LOF computation for large datasets.
-  - Package [ldbod](https://cran.r-project.org/package=ldbod) provides flexible
+    Parallel implementation of LOF which uses multiple CPUs to
+    significantly speed up the LOF computation for large datasets is
+    available in [Rlof](https://cran.r-project.org/package=Rlof) package. Package
+    [bigutilsr](https://cran.r-project.org/package=bigutilsr) provides utility
+    functions for outlier detection in large-scale data. It includes LOF
+    and outlier detection method based on departure from histogram.
+  - The [SMLoutliers](https://cran.r-project.org/package=SMLoutliers) package
+    provides an implementation of the Local Correlation Integral method
+    ( Lof: Identifying density-based local outliers) for outlier
+    detection in multivariate data which consists of numeric values.
+  - The [ldbod](https://cran.r-project.org/package=ldbod) package provides flexible
     functions for computing local density-based outlier scores. It
     allows for subsampling of input data or a user specified reference
     data set to compute outlier scores against, so both unsupervised and
     semi-supervised outlier detection can be done.
-  - Package [DDoutlier](https://cran.r-project.org/package=DDoutlier) provides a
-    wide variety of distance- and density-based outlier detection
-    functions mainly focusing local outliers in high-dimensional data.
-  - Package [sGMRFmix](https://cran.r-project.org/package=sGMRFmix) provides an
-    anomaly detection method for multivariate noisy sensor data using
-    sparse Gaussian Markov random field mixtures. It can compute
-    variable-wise anomaly scores.
-  - Package [Routliers](https://cran.r-project.org/package=Routliers) provides
+  - The [kernlab](https://cran.r-project.org/package=kernlab) package provides
+    kernel-based machine learning methods including one-class Support
+    Vector Machines for *novelty* detection.
+  - The [amelie](https://cran.r-project.org/package=amelie) package implements
+    anomaly detection as binary classification for multivariate
+    (cross-sectional) data using maximum likelihood estimates and normal
+    probability functions.
+  - The estimated density ratio function in
+    [densratio](https://cran.r-project.org/package=densratio) package can be used in
+    many applications such as anomaly detection, change-point detection,
+    covariate shift adaptation.
+  - The [HDoutliers](https://cran.r-project.org/package=HDoutliers) package provides
+    an implementation of an algorithm for univariate and multivariate
+    outlier detection that can handle data with a mixed categorical and
+    continuous variables and outlier masking problem.
+  - The [mvoutlier](https://cran.r-project.org/package=mvoutlier) package provides
+    multivariate outlier detection based on robust methods.
+  - The [Routliers](https://cran.r-project.org/package=Routliers) package provides
     robust methods to detect univariate (Median Absolute Deviation
     method) and multivariate outliers (Mahalanobis-Minimum Covariance
     Determinant method).
-  - Package [alphaOutlier](https://cran.r-project.org/package=alphaOutlier) provides
-    Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for
-    well-known probability distributions.
-  - Package [ANN2](https://cran.r-project.org/package=ANN2) implements artificial
-    neural networks for anomaly detection.
-  - Package [HDoutliers](https://cran.r-project.org/package=HDoutliers) provides an
-    implementation of an algorithm for univariate and multivariate
-    outlier detection that can handle data with a mixed categorical and
-    continuous variables and outlier masking problem.
-  - Package [probout](https://cran.r-project.org/package=probout) estimates
-    unsupervised outlier probabilities for multivariate numeric data
-    with many observations from a nonparametric outlier statistic.
-  - Package [abodOutlier](https://cran.r-project.org/package=abodOutlier) performs
-    angle-based outlier detection on high dimensional data. A complete,
-    a randomized and a knn based methods are available.
-  - Package [outliertree](https://cran.r-project.org/package=outliertree) provides
-    explainable outlier detection method through decision tree
-    conditioning.
-  - Package [RaPKod](https://cran.r-project.org/package=RaPKod) implements a kernel
-    method that performs online outlier detection through random low
-    dimensional projections in a kernel space on the basis of a
-    reference set of non-outliers.
-  - Package [modi](https://cran.r-project.org/package=modi) implements Mahalanobis
-    distance or depth-based algorithms for multivariate outlier
-    detection in the presence of missing values (incomplete survey
-    data).
-  - Package
+  - The [abodOutlier](https://cran.r-project.org/package=abodOutlier) package
+    performs angle-based outlier detection on high dimensional data. A
+    complete, a randomized and a knn based methods are available.
+  - The [modi](https://cran.r-project.org/package=modi) package implements
+    Mahalanobis distance or depth-based algorithms for multivariate
+    outlier detection in the presence of missing values (incomplete
+    survey data).
+  - The
     [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
-    implements the iterated RMCD method of Cerioli (2010) for
+    package implements the iterated RMCD method of Cerioli (2010) for
     multivariate outlier detection via robust Mahalanobis distances.
-  - Package [rrcovHD](https://cran.r-project.org/package=rrcovHD) performs outlier
-    identification using robust multivariate methods based on robust
-    mahalanobis distances and principal component analysis.
+  - The [rrcovHD](https://cran.r-project.org/package=rrcovHD) package performs
+    outlier identification using robust multivariate methods based on
+    robust mahalanobis distances and principal component analysis.
   - Function `dm.mahalanobis` in [DJL](https://cran.r-project.org/package=DJL)
     package implements Mahalanobis distance measure for outlier
     detection. In addition to the basic distance measure, boxplots are
     provided with potential outlier(s) to give an insight into the early
     stage of data cleansing task.
-  - Package [mrfDepth](https://cran.r-project.org/package=mrfDepth) provides tools
-    to compute depth measures and implementations of related tasks such
-    as outlier detection, data exploration and classification of
-    multivariate, regression and functional data.
-  - Package [evtclass](https://cran.r-project.org/package=evtclass) provides two
-    classifiers for open set recognition and novelty detection based on
-    extreme value theory.
-  - Package [dlookr](https://cran.r-project.org/package=dlookr) provides a
-    collection of tools that support data diagnosis, exploration, and
-    transformation. Data diagnostics provides information and
-    visualization of missing values and outliers and unique and negative
-    values to help you understand the distribution and quality of your
-    data.
-  - The Projection Congruent Subset (PCS) is a method for finding
-    multivariate outliers by searching for a subset which minimizes a
-    criterion. PCS is supported by
-    [FastPCS](https://cran.r-project.org/package=FastPCS) package.
-  - The estimated density ratio function in
-    [densratio](https://cran.r-project.org/package=densratio) package can be used in
-    many applications such as anomaly detection, change-point detection,
-    covariate shift adaptation.
-  - Package [FastHCS](https://cran.r-project.org/package=FastHCS) implements robust
-    algorithm for principal component analysis and thereby provide
-    robust PCA modelling and associated outlier detection and diagnostic
-    tools for high-dimensional data.
-    [FastHCS](https://cran.r-project.org/package=FastHCS)
-  - Package [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate)
-    implements PCA based outlier detection tools.
-  - Package [CrossClustering](https://cran.r-project.org/package=CrossClustering)
-    implements a partial clustering algorithm that combines the Ward's
-    minimum variance and Complete Linkage algorithms, providing
+  - The [kmodR](https://cran.r-project.org/package=kmodR) package presents a unified
+    approach for simultaneously clustering and discovering outliers in
+    high dimensional data. Their approach is formalized as a
+    generalization of the k-MEANS problem.
+  - The [CrossClustering](https://cran.r-project.org/package=CrossClustering)
+    package implements a partial clustering algorithm that combines the
+    Ward's minimum variance and Complete Linkage algorithms, providing
     automatic estimation of a suitable number of clusters and
     identification of outlier elements.
-  - Package [DMwR2](https://cran.r-project.org/package=DMwR2) uses hierarchical
+  - The [DMwR2](https://cran.r-project.org/package=DMwR2) package uses hierarchical
     clustering to obtain a ranking of outlierness for a set of cases.
     The ranking is obtained on the basis of the path each case follows
     within the merging steps of a agglomerative hierarchical clustering
     method.
+  - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
+    package provides different implementations for outlier detection
+    namely model based, distance based, dispersion based, depth based
+    and density based. This package provides labelling of observations
+    as outliers and outlierliness of each outlier. For univariate,
+    bivariate and trivariate data, visualization is also provided.
+  - A set of algorithms for detection of outliers based on frequent
+    pattern mining is available in
+    [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) package. Such
+    algorithms follow the paradigm: if an instance contains more
+    frequent patterns,it means that this data instance is unlikely to be
+    an anomaly.
+  - The [ICSOutlier](https://cran.r-project.org/package=ICSOutlier) package performs
+    multivariate outlier detection using invariant coordinates and
+    offers different methods to choose the appropriate components. The
+    current implementation targets data sets with only a small
+    percentage of outliers but future extensions are under preparation.
+  - The [HighDimOut](https://cran.r-project.org/package=HighDimOut) package provides
+    three high-dimensional outlier detection algorithms (angle-based,
+    subspace based, feature bagging-based) and an outlier unification
+    scheme.
+  - The [sGMRFmix](https://cran.r-project.org/package=sGMRFmix) package provides an
+    anomaly detection method for multivariate noisy sensor data using
+    sparse Gaussian Markov random field mixtures. It can compute
+    variable-wise anomaly scores.
+  - Artificial neural networks for anomaly detection is implemented in
+    [ANN2](https://cran.r-project.org/package=ANN2) package.
+  - The [probout](https://cran.r-project.org/package=probout) package estimates
+    unsupervised outlier probabilities for multivariate numeric data
+    with many observations from a nonparametric outlier statistic.
+  - Explainable outlier detection method through decision tree
+    conditioning is facilitated by
+    [outliertree](https://cran.r-project.org/package=outliertree) package .
+  - The [mrfDepth](https://cran.r-project.org/package=mrfDepth) package provides
+    tools to compute depth measures and implementations of related tasks
+    such as outlier detection, data exploration and classification of
+    multivariate, regression and functional data.
+  - The [evtclass](https://cran.r-project.org/package=evtclass) package provides two
+    classifiers for open set recognition and novelty detection based on
+    extreme value theory.
+  - The [dlookr](https://cran.r-project.org/package=dlookr) package provides a
+    collection of tools that support data diagnosis, exploration, and
+    transformation. Data diagnostics provides information and
+    visualization of missing values and outliers and unique and negative
+    values to understand the distribution and quality of data.
   - Package [quokar](https://cran.r-project.org/package=quokar) provides quantile
     regression outlier diagnostics with K Left Out Analysis.
+  - The [RaPKod](https://cran.r-project.org/package=RaPKod) package implements a
+    kernel method that performs online outlier detection through random
+    low dimensional projections in a kernel space on the basis of a
+    reference set of non-outliers.
+  - The [FastHCS](https://cran.r-project.org/package=FastHCS) package implements
+    robust algorithm for principal component analysis and thereby
+    provide robust PCA modelling and associated outlier detection and
+    diagnostic tools for high-dimensional data. PCA based outlier
+    detection tools are also available via
+    [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate) package.
+  - *Cellwise outliers* are entries in the data matrix which are
+    substantially higher or lower than what could be expected based on
+    the other cells in its column as well as the other cells in its row,
+    taking the relations between the columns into account. Package
+    [cellWise](https://cran.r-project.org/package=cellWise) provides tools for
+    detecting cellwise outliers and robust methods to analyze data which
+    may contain them.
+  - *The Projection Congruent Subset (PCS)* is a method for finding
+    multivariate outliers by searching for a subset which minimizes a
+    criterion. PCS is supported by
+    [FastPCS](https://cran.r-project.org/package=FastPCS) package.
 
 **Temporal Data**
 
-  - Streaming data, Batch Data  
-    Point anomaly, contextual anomaly, collective anomaly, anomalous
-    series within a large collection of time series
-  - Package [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
+  - The problems of anomaly detection for temporal data are 3-fold: (a)
+    the detection of contextual anomalies (point anomalies) within a
+    given series; (b) the detection of anomalous subsequences within a
+    given series; and (c) the detection of anomalous series within a
+    collection of series
+  - The [trendsegmentR](https://cran.r-project.org/package=trendsegmentR) package
     performs the detection of point anomalies and linear trend changes
     for univariate time series by implementing the bottom-up unbalanced
     wavelet transformation.
@@ -229,40 +245,40 @@ additions and extensions for this task view to the task view maintainer.
   - The [anomalize](https://cran.r-project.org/package=anomalize) package enables a
     "tidy" workflow for detecting anomalies in data. The main functions
     are `time_decompose()`, `anomalize()`, and `time_recompose()`.
-  - Package [cbar](https://cran.r-project.org/package=cbar) detect contextual
+  - The [cbar](https://cran.r-project.org/package=cbar) package detect contextual
     anomalies in time-series data with Bayesian data analysis. It
     focuses on determining a normal range of target value, and provides
     simple-to-use functions to abstract the outcome.
-  - Package [washeR](https://cran.r-project.org/package=washeR) performs time series
-    outlier detection using non parametric test. An input can be a data
-    frame (grouped time series: phenomenon+date+group+values) or a
-    vector (single time series)
-  - Package [tsoutliers](https://cran.r-project.org/package=tsoutliers) implements
-    the Chen-Liu approach for detection of time series outliers such as
-    innovational outliers, additive outliers, level shifts, temporary
-    changes and seasonal level shifts.
-  - Package [seasonal](https://cran.r-project.org/package=seasonal) provides
+  - The [washeR](https://cran.r-project.org/package=washeR) package performs time
+    series outlier detection using non parametric test. An input can be
+    a data frame (grouped time series: phenomenon+date+group+values) or
+    a vector (single time series)
+  - The [tsoutliers](https://cran.r-project.org/package=tsoutliers) package
+    implements the Chen-Liu approach for detection of time series
+    outliers such as innovational outliers, additive outliers, level
+    shifts, temporary changes and seasonal level shifts.
+  - The [seasonal](https://cran.r-project.org/package=seasonal) package provides
     easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment
     software by the US Census Bureau. It offers full access to almost
     all options and outputs of X-13, including outlier detection.
-  - Package [npphen](https://cran.r-project.org/package=npphen) implements basic and
-    high-level functions for detection of anomalies in vector data
+  - The [npphen](https://cran.r-project.org/package=npphen) package implements basic
+    and high-level functions for detection of anomalies in vector data
     (numerical series/ time series) and raster data (satellite derived
     products). Processing of very large raster files is supported.
-  - Package [SmartSifter](https://cran.r-project.org/package=SmartSifter) provides
-    online unsupervised outlier detection methods using finite mixtures
-    with discounting learning algorithms.
+  - The [SmartSifter](https://cran.r-project.org/package=SmartSifter) package
+    provides online unsupervised outlier detection methods using finite
+    mixtures with discounting learning algorithms.
   - Package [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated
     Poisson process) provides a framework for detecting anomalous events
     in time series of counts using an unsupervised learning approach.
-  - Package [otsad](https://cran.r-project.org/package=otsad) implements a set of
-    online fault (anomaly) detectors for time series using
-    prediction-based and window-based techniques. It can handle both
+  - A set of online fault (anomaly) detectors for time series using
+    prediction-based and window-based techniques are available via
+    [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
     stationary and non-stationary environments.
-  - Package [jmotif](https://cran.r-project.org/package=jmotif) provides tools based
-    on Symbolic aggregate for finding discords (i.e. time series
+  - The [jmotif](https://cran.r-project.org/package=jmotif) package provides tools
+    based on Symbolic aggregate for finding discords (i.e. time series
     anomaly/ unusual time series subsequence).
-  - Functions `detectAO` and `detectIO` in
+  - The `detectAO` and `detectIO` functions in
     [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
     outlier and innovative outlier in time series data.
 
@@ -270,7 +286,7 @@ additions and extensions for this task view to the task view maintainer.
 
   - Spatial objects whose non-spatial attribute values are markedly
     different from those of their spatial neighbors are known as Spatial
-    outliers or abnormal spatial patterns (Kou Y., Lu CT., 2017).
+    outliers or abnormal spatial patterns.
   - Package [RWBP](https://cran.r-project.org/package=RWBP) detects spatial outliers
     using a Random Walk on Bipartite Graph.
   - Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies
@@ -428,7 +444,7 @@ additions and extensions for this task view to the task view maintainer.
     detect election fraud from irregularities in vote-share
     distributions using re-sampled kernel density method.
   - Package [wql](https://cran.r-project.org/package=wql) stands for \`water
-    quality' provides functions including anomaly dtection to assist in
+    quality' provides functions including anomaly detection to assist in
     the processing and exploration of data from environmental monitoring
     programs.
 
