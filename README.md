@@ -72,7 +72,7 @@ additions and extensions for this task view to the task view maintainer.
 
 <sub>Multivariate Outlier Detection</sub>
 
-  - Under *multivariate or multidimensional scenario* , where the focus
+  - Under *multivariate or multidimensional scenario,* where the focus
     is on n (\>2) - dimensional space, all attributes might be of same
     type or might be a mixture of different types such as categorical or
     numerical, which has a direct impact on the implementation and scope
@@ -80,6 +80,12 @@ additions and extensions for this task view to the task view maintainer.
   - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
     wide variety of distance- and density-based outlier detection
     functions mainly focusing local outliers in high-dimensional data.
+  - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
+    package provides different implementations for outlier detection
+    namely model based, distance based, dispersion based, depth based
+    and density based. This package provides labelling of observations
+    as outliers and outlierliness of each outlier. For univariate,
+    bivariate and trivariate data, visualization is also provided.
   - *Local Outlier Factor (LOF)* is an algorithm for detecting anomalous
     data points by measuring the local deviation of a given data point
     with respect to its neighbours. This algorithm with some variations
@@ -125,9 +131,6 @@ additions and extensions for this task view to the task view maintainer.
     robust methods to detect univariate (Median Absolute Deviation
     method) and multivariate outliers (Mahalanobis-Minimum Covariance
     Determinant method).
-  - The [abodOutlier](https://cran.r-project.org/package=abodOutlier) package
-    performs angle-based outlier detection on high dimensional data. A
-    complete, a randomized and a knn based methods are available.
   - The [modi](https://cran.r-project.org/package=modi) package implements
     Mahalanobis distance or depth-based algorithms for multivariate
     outlier detection in the presence of missing values (incomplete
@@ -158,12 +161,13 @@ additions and extensions for this task view to the task view maintainer.
     The ranking is obtained on the basis of the path each case follows
     within the merging steps of a agglomerative hierarchical clustering
     method.
-  - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
-    package provides different implementations for outlier detection
-    namely model based, distance based, dispersion based, depth based
-    and density based. This package provides labelling of observations
-    as outliers and outlierliness of each outlier. For univariate,
-    bivariate and trivariate data, visualization is also provided.
+  - The [abodOutlier](https://cran.r-project.org/package=abodOutlier) package
+    performs angle-based outlier detection on high dimensional data. A
+    complete, a randomized and a knn based methods are available.
+  - The [HighDimOut](https://cran.r-project.org/package=HighDimOut) package provides
+    three high-dimensional outlier detection algorithms (angle-based,
+    subspace based, feature bagging-based) and an outlier unification
+    scheme.
   - A set of algorithms for detection of outliers based on frequent
     pattern mining is available in
     [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) package. Such
@@ -175,10 +179,6 @@ additions and extensions for this task view to the task view maintainer.
     offers different methods to choose the appropriate components. The
     current implementation targets data sets with only a small
     percentage of outliers but future extensions are under preparation.
-  - The [HighDimOut](https://cran.r-project.org/package=HighDimOut) package provides
-    three high-dimensional outlier detection algorithms (angle-based,
-    subspace based, feature bagging-based) and an outlier unification
-    scheme.
   - The [sGMRFmix](https://cran.r-project.org/package=sGMRFmix) package provides an
     anomaly detection method for multivariate noisy sensor data using
     sparse Gaussian Markov random field mixtures. It can compute
@@ -203,8 +203,6 @@ additions and extensions for this task view to the task view maintainer.
     transformation. Data diagnostics provides information and
     visualization of missing values and outliers and unique and negative
     values to understand the distribution and quality of data.
-  - Package [quokar](https://cran.r-project.org/package=quokar) provides quantile
-    regression outlier diagnostics with K Left Out Analysis.
   - The [RaPKod](https://cran.r-project.org/package=RaPKod) package implements a
     kernel method that performs online outlier detection through random
     low dimensional projections in a kernel space on the basis of a
@@ -282,7 +280,7 @@ additions and extensions for this task view to the task view maintainer.
     [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
     outlier and innovative outlier in time series data.
 
-**Spatial outliers**
+**Spatial Outliers**
 
   - Spatial objects whose non-spatial attribute values are markedly
     different from those of their spatial neighbors are known as Spatial
@@ -301,7 +299,7 @@ additions and extensions for this task view to the task view maintainer.
     or if any p-variate observation is an outlier with respect to a
     p-variate data cloud.
 
-**Spatio-Temporal data**
+**Spatio-Temporal Data**
 
   - Scan statistics are used to detect anomalous clusters in spatial or
     space-time data. The
@@ -349,7 +347,7 @@ additions and extensions for this task view to the task view maintainer.
     framework which allows for elastic analysis of functional data
     through phase and amplitude separation.
 
-**Visualization of anomalies**
+**Visualization of Anomalies**
 
   - The [OutliersO3](https://cran.r-project.org/package=OutliersO3) package provides
     tools to aid in the display and understanding of patterns of
@@ -363,7 +361,7 @@ additions and extensions for this task view to the task view maintainer.
   - The [StatDA](https://cran.r-project.org/package=StatDA) package provides
     visualization tools to locate outliers in environmental data.
 
-**Pre-processing methods for anomaly detection**
+**Pre-processing Methods for Anomaly Detection**
 
   - The [preprocomb](https://cran.r-project.org/package=preprocomb) package provides
     an S4 framework for creating and evaluating preprocessing
@@ -373,22 +371,7 @@ additions and extensions for this task view to the task view maintainer.
     constructs a set of basis vectors for outlier detection. It brings
     outliers to the fore-front using fewer basis vectors.
 
-**Data sets**
-
-  - The [anomaly](https://cran.r-project.org/package=anomaly) package contains
-    lightcurve time series data from the Kepler telescope.
-  - Various high dimensional datasets are provided by
-    [mvoutlier](https://cran.r-project.org/package=mvoutlier) package.
-  - The [leri](https://cran.r-project.org/package=leri) package finds and downloads
-    Landscape Evaporative Response Index (LERI) data, then reads the
-    data into R. The LERI product measures anomalies in actual
-    evapotranspiration, to support drought monitoring and early warning.
-    systems.
-  - The [waterData](https://cran.r-project.org/package=waterData) package imports
-    U.S. Geological Survey (USGS) daily hydrologic data from USGS web
-    services and provides functions to calculate and plot anomalies.
-
-**Specific application fields**
+**Specific Application Fields**
 
   - The [precintcon](https://cran.r-project.org/package=precintcon) package contains
     functions to analyze the precipitation intensity, concentration and
@@ -448,6 +431,21 @@ additions and extensions for this task view to the task view maintainer.
     the processing and exploration of data from environmental monitoring
     programs.
 
+**Data Sets**
+
+  - The [anomaly](https://cran.r-project.org/package=anomaly) package contains
+    lightcurve time series data from the Kepler telescope.
+  - Various high dimensional datasets are provided by
+    [mvoutlier](https://cran.r-project.org/package=mvoutlier) package.
+  - The [leri](https://cran.r-project.org/package=leri) package finds and downloads
+    Landscape Evaporative Response Index (LERI) data, then reads the
+    data into R. The LERI product measures anomalies in actual
+    evapotranspiration, to support drought monitoring and early warning
+    systems.
+  - The [waterData](https://cran.r-project.org/package=waterData) package imports
+    U.S. Geological Survey (USGS) daily hydrologic data from USGS web
+    services and provides functions to calculate and plot anomalies.
+
 **Miscellaneous**
 
   - The [analytics](https://cran.r-project.org/package=analytics) package provides
@@ -461,6 +459,8 @@ additions and extensions for this task view to the task view maintainer.
   - The Residual Congruent Subset (RCS) is a method for finding outliers
     in the regression setting. RCS is supported by
     [FastRCS](https://cran.r-project.org/package=FastRCS) package.
+  - Package [quokar](https://cran.r-project.org/package=quokar) provides quantile
+    regression outlier diagnostics with K Left Out Analysis.
   - The [oclust](https://cran.r-project.org/package=oclust) package provides a
     function to detect and trim outliers in Gaussian mixture model based
     clustering using methods described in Clark and McNicholas (2019).

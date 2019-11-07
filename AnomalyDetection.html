@@ -1,0 +1,869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>CRAN Task View: Anomaly Detection with R</title>
+  <link rel="stylesheet" type="text/css" href="../CRAN_web.css" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="citation_title" content="CRAN Task View: Anomaly Detection with R" />
+  <meta name="citation_author" content="Priyanga Dilini Talagala, Rob J. Hyndman" />
+  <meta name="citation_publication_date" content="2019-10-07" />
+  <meta name="citation_public_url" content="https://CRAN.R-project.org/view=AnomalyDetection" />
+  <meta name="DC.title" content="CRAN Task View: Anomaly Detection with R" />
+  <meta name="DC.creator" content="Priyanga Dilini Talagala, Rob J. Hyndman" />
+  <meta name="DC.issued" content="2019-10-07" />
+  <meta name="DC.identifier" content="https://CRAN.R-project.org/view=AnomalyDetection" />
+</head>
+
+<body>
+  <h2>CRAN Task View: Anomaly Detection with R</h2>
+  <table summary="AnomalyDetection task view information">
+    <tr><td valign="top"><b>Maintainer:</b></td><td>Priyanga Dilini Talagala, Rob J. Hyndman</td></tr>
+    <tr><td valign="top"><b>Contact:</b></td><td>&#x44;&#x69;&#x6c;&#x69;&#x6e;&#x69;&#x2e;&#x54;&#x61;&#x6c;&#x61;&#x67;&#x61;&#x6c;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x6f;&#x6e;&#x61;&#x73;&#x68;&#x2e;&#x65;&#x64;&#x75;</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2019-10-07</td></tr>
+    <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=AnomalyDetection">https://CRAN.R-project.org/view=AnomalyDetection</a></td></tr>
+  </table>
+
+    <div>
+      <p>
+        This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
+      </p>
+      <p>
+        Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, extreme values, faults in different application domains. These variants are also considered for this view.
+      </p>
+      <p>
+        The development of this task view is fairly new and  still in its early stages and therefore subject to changes. Please send suggestions for additions and extensions for this task view to the task view maintainer.
+      </p>
+      <p>
+        <strong>
+          High Dimensional Data
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
+        </li>
+      </ul>
+      <sub>
+        Univariate Outlier Detection
+      </sub>
+      <ul>
+        <li>
+          <i>
+            Univariate  outlier
+          </i>
+          detection methods focus on values in a single feature space. Package
+<a href="../packages/univOutl/index.html">univOutl</a>
+          includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
+        </li>
+        <li>
+          The
+<a href="../packages/dixonTest/index.html">dixonTest</a>
+          package provides Dixon's ratio test for outlier detection in small and normally distributed samples.
+        </li>
+        <li>
+          Univariate outliers detection is also supported by
+<tt>outlier()</tt>
+          function in
+<a href="../packages/GmAMisc/index.html">GmAMisc</a>
+          which implements three different methods (mean-base, median-based, boxplot-based).
+        </li>
+        <li>
+          The
+<a href="../packages/hotspots/index.html">hotspots</a>
+          package supports univariate outlier detection by identifying values that are disproportionately high based on both the deviance of any given value from a statistical distribution and its similarity to other values.
+        </li>
+        <li>
+          The
+<a href="../packages/outliers/index.html">outliers</a>
+          package provides a collection of tests commonly used for identifying
+          <i>
+            outliers
+          </i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
+        </li>
+        <li>
+          The
+<a href="../packages/extremevalues/index.html">extremevalues</a>
+          package offers outlier detection and plot functions for univariate data. In this work a value in the data is an outlier when it is unlikely to be drawn from the estimated distribution.
+        </li>
+        <li>
+          The
+<a href="../packages/funModeling/index.html">funModeling</a>
+          package  provides tools for outlier detection using top/bottom X%, Tukey’s boxplot definition and  Hampel’s method.
+        </li>
+        <li>
+          The
+<a href="../packages/alphaOutlier/index.html">alphaOutlier</a>
+          package provides  Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for well-known probability distributions.
+        </li>
+      </ul>
+      <sub>
+        Multivariate Outlier Detection
+      </sub>
+      <ul>
+        <li>
+          Under
+          <i>
+            multivariate or multidimensional scenario,
+          </i>
+          where the focus is on n (&gt;2) - dimensional space,  all attributes might be of same type or might be a mixture of different types such as categorical or numerical, which has a direct impact on the implementation and scope of the algorithm.
+        </li>
+        <p>
+          <i>
+            Density-based outlier detection
+          </i>
+        </p>
+        <li>
+          The
+<a href="../packages/DDoutlier/index.html">DDoutlier</a>
+          package provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
+        </li>
+        <li>
+          The
+<a href="../packages/OutlierDetection/index.html">OutlierDetection</a>
+          package provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
+        </li>
+        <li>
+          <i>
+            Local Outlier Factor (LOF)
+          </i>
+          is an algorithm for detecting anomalous data points by measuring the local deviation of a given data point with respect to its neighbours. This algorithm with some variations is supported by many packages. The
+<a href="../packages/DescTools/index.html">DescTools</a>
+          package provides functions for outlier detection using LOF and Tukey’s boxplot definition. Functions
+<tt>LOF()</tt>
+          and
+<tt>GLOSH</tt>
+          in package
+<a href="../packages/dbscan/index.html">dbscan</a>
+          provides density based anomaly detection methods using a kd-tree to speed up kNN search. Parallel implementation of LOF which uses multiple CPUs to significantly speed up the LOF computation for large datasets is available in
+<a href="../packages/Rlof/index.html">Rlof</a>
+          package. Package
+<a href="../packages/bigutilsr/index.html">bigutilsr</a>
+          provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
+        </li>
+        <li>
+          The
+<a href="../packages/SMLoutliers/index.html">SMLoutliers</a>
+          package provides an implementation of the Local Correlation Integral method  ( Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values.
+        </li>
+        <li>
+          The
+<a href="../packages/ldbod/index.html">ldbod</a>
+          package  provides flexible functions for computing local density-based outlier scores. It allows for subsampling of input data or a user specified reference data set to compute outlier scores against, so both unsupervised and semi-supervised outlier detection can be done.
+        </li>
+        <li>
+          The
+<a href="../packages/kernlab/index.html">kernlab</a>
+          package  provides kernel-based machine learning methods including one-class Support Vector Machines for
+          <i>
+            novelty
+          </i>
+          detection.
+        </li>
+        <li>
+          The
+<a href="../packages/amelie/index.html">amelie</a>
+          package implements anomaly detection as binary classification for multivariate (cross-sectional) data using maximum likelihood estimates and normal probability functions.
+        </li>
+        <li>
+          The estimated density ratio function in
+<a href="../packages/densratio/index.html">densratio</a>
+          package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation.
+        </li>
+        <p>
+          <i>
+            Distance-based outlier detection
+          </i>
+        </p>
+        <li>
+          The
+<a href="../packages/HDoutliers/index.html">HDoutliers</a>
+          package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
+        </li>
+        <li>
+          The
+<a href="../packages/mvoutlier/index.html">mvoutlier</a>
+          package provides multivariate outlier detection based on robust methods.
+        </li>
+        <li>
+          The
+<a href="../packages/Routliers/index.html">Routliers</a>
+          package provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
+        </li>
+        <li>
+          The
+<a href="../packages/modi/index.html">modi</a>
+          package implements Mahalanobis distance or depth-based algorithms for multivariate outlier detection in the presence of  missing values (incomplete survey data).
+        </li>
+        <li>
+          The
+<a href="../packages/CerioliOutlierDetection/index.html">CerioliOutlierDetection</a>
+          package implements the iterated RMCD method of Cerioli (2010) for multivariate outlier detection via robust Mahalanobis distances.
+        </li>
+        <li>
+          The
+<a href="../packages/rrcovHD/index.html">rrcovHD</a>
+          package performs outlier identification using robust multivariate methods based on robust mahalanobis distances and principal component analysis.
+        </li>
+        <li>
+          Function
+<tt>dm.mahalanobis</tt>
+          in
+<a href="../packages/DJL/index.html">DJL</a>
+          package  implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
+        </li>
+        <p>
+          <i>
+            Clustering-based outlier detection
+          </i>
+        </p>
+        <li>
+          The
+<a href="../packages/kmodR/index.html">kmodR</a>
+          package presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
+        </li>
+        <li>
+          The
+<a href="../packages/CrossClustering/index.html">CrossClustering</a>
+          package implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
+        </li>
+        <li>
+          The
+<a href="../packages/DMwR2/index.html">DMwR2</a>
+          package uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
+        </li>
+        <p>
+          <i>
+            Angle-based outlier detection
+          </i>
+        </p>
+        <li>
+          The
+<a href="../packages/abodOutlier/index.html">abodOutlier</a>
+          package performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
+        </li>
+        <li>
+          The
+<a href="../packages/HighDimOut/index.html">HighDimOut</a>
+          package provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme.
+        </li>
+        <p>
+          <i>
+            Other approaches
+          </i>
+        </p>
+        <li>
+          A set of algorithms for detection of outliers based on frequent pattern mining is available in
+<a href="../packages/fpmoutliers/index.html">fpmoutliers</a>
+          package. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly.
+        </li>
+        <li>
+          The
+<a href="../packages/ICSOutlier/index.html">ICSOutlier</a>
+          package performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation.
+        </li>
+        <li>
+          The
+<a href="../packages/sGMRFmix/index.html">sGMRFmix</a>
+          package provides an anomaly detection method for multivariate noisy sensor data using sparse Gaussian Markov random field mixtures. It can compute variable-wise anomaly scores.
+        </li>
+        <li>
+          Artificial neural networks for anomaly detection is implemented in
+<a href="../packages/ANN2/index.html">ANN2</a>
+          package.
+        </li>
+        <li>
+          The
+<a href="../packages/probout/index.html">probout</a>
+          package estimates unsupervised outlier probabilities for multivariate numeric data with many observations from a nonparametric outlier statistic.
+        </li>
+        <li>
+          Explainable outlier detection method through decision tree conditioning is facilitated by
+<a href="../packages/outliertree/index.html">outliertree</a>
+          package .
+        </li>
+        <li>
+          The
+<a href="../packages/mrfDepth/index.html">mrfDepth</a>
+          package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.
+        </li>
+        <li>
+          The
+<a href="../packages/evtclass/index.html">evtclass</a>
+          package provides two classifiers for open set recognition and novelty detection based on extreme value theory.
+        </li>
+        <li>
+          The
+<a href="../packages/dlookr/index.html">dlookr</a>
+          package provides a collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and
+unique and negative values to understand the distribution and quality of  data.
+        </li>
+        <li>
+          The
+<a href="../packages/RaPKod/index.html">RaPKod</a>
+          package implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
+        </li>
+        <li>
+          The
+<a href="../packages/FastHCS/index.html">FastHCS</a>
+          package implements robust algorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data.  PCA based outlier detection tools are also available via
+<a href="../packages/FactoInvestigate/index.html">FactoInvestigate</a>
+          package.
+        </li>
+        <li>
+          <i>
+            Cellwise outliers
+          </i>
+          are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package
+<a href="../packages/cellWise/index.html">cellWise</a>
+          provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them.
+        </li>
+        <li>
+          <i>
+            The Projection Congruent Subset (PCS)
+          </i>
+          is a method for finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by
+<a href="../packages/FastPCS/index.html">FastPCS</a>
+          package.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Temporal Data
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The problems of anomaly detection for temporal data are 3-fold: (a) the detection of contextual anomalies (point anomalies) within a given series; (b) the detection of anomalous subsequences within a given series; and (c) the detection of anomalous series within a collection of series
+        </li>
+        <li>
+          The
+<a href="../packages/trendsegmentR/index.html">trendsegmentR</a>
+          package performs the detection of point anomalies and linear trend changes for univariate time series by implementing the bottom-up unbalanced wavelet transformation.
+        </li>
+        <li>
+          The
+<a href="../packages/anomaly/index.html">anomaly</a>
+          package implements Collective And Point
+      Anomaly (CAPA) , Multi-Variate Collective And Point Anomaly (MVCAPA),
+      and Proportion Adaptive Segment Selection (PASS) methods for the
+      detection of
+          <i>
+            anomalies
+          </i>
+          in time series data.
+        </li>
+        <li>
+          The
+<a href="../packages/anomalize/index.html">anomalize</a>
+          package enables a &quot;tidy&quot; workflow for detecting anomalies in data. The main functions are
+<tt>time_decompose()</tt>,
+<tt>anomalize()</tt>, and
+<tt>time_recompose()</tt>.
+        </li>
+        <li>
+          The
+<a href="../packages/cbar/index.html">cbar</a>
+          package  detect contextual anomalies in time-series data with Bayesian data analysis. It focuses on determining a normal range of target value, and provides simple-to-use functions to abstract the outcome.
+        </li>
+        <li>
+          The
+<a href="../packages/washeR/index.html">washeR</a>
+          package  performs time series outlier detection using non parametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series)
+        </li>
+        <li>
+          The
+<a href="../packages/tsoutliers/index.html">tsoutliers</a>
+          package implements the Chen-Liu approach for detection of time series outliers such as  innovational outliers, additive outliers, level shifts, temporary changes and seasonal level shifts.
+        </li>
+        <li>
+          The
+<a href="../packages/seasonal/index.html">seasonal</a>
+          package provides easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including outlier detection.
+        </li>
+        <li>
+          The
+<a href="../packages/npphen/index.html">npphen</a>
+          package  implements basic and high-level functions for detection of anomalies in vector data (numerical series/ time series) and raster data (satellite derived products). Processing of very large raster files is supported.
+        </li>
+        <li>
+          The
+<a href="../packages/SmartSifter/index.html">SmartSifter</a>
+          package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
+        </li>
+        <li>
+          Package
+<a href="../packages/mmppr/index.html">mmppr</a>
+          (Markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
+        </li>
+        <li>
+          A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via
+<a href="../packages/otsad/index.html">otsad</a>
+          package. It can handle both stationary and  non-stationary environments.
+        </li>
+        <li>
+          The
+<a href="../packages/jmotif/index.html">jmotif</a>
+          package provides tools based on Symbolic aggregate for finding  discords (i.e. time series anomaly/ unusual time series subsequence).
+        </li>
+        <li>
+          The
+<tt>detectAO</tt>
+          and
+<tt>detectIO</tt>
+          functions in
+<a href="../packages/TSA/index.html">TSA</a>
+          package support detecting additive outlier  and   innovative outlier in time series data.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Spatial Outliers
+        </strong>
+      </p>
+      <ul>
+        <li>
+          Spatial objects whose non-spatial attribute values are markedly different from those of their spatial neighbors are known as Spatial outliers or abnormal spatial patterns.
+        </li>
+        <li>
+          The
+<a href="../packages/RWBP/index.html">RWBP</a>
+          package detects spatial outliers using a Random Walk on Bipartite Graph.
+        </li>
+        <li>
+          Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package
+<a href="../packages/EFDR/index.html">EFDR</a>
+          implements wavelet-based Enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
+        </li>
+        <li>
+          The function
+<tt>spatial.outlier</tt>
+          in
+<a href="../packages/depth.plot/index.html">depth.plot</a>
+          package helps to identify multivariate spatial outlier within a p-variate data cloud or  if any p-variate observation is an outlier with respect to a p-variate data cloud.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Spatio-Temporal Data
+        </strong>
+      </p>
+      <ul>
+        <li>
+          Scan statistics are used to detect anomalous clusters in spatial or space-time data. The
+<a href="../packages/scanstatistics/index.html">scanstatistics</a>
+          package  provides functions   for detection of anomalous space-time clusters using the scan statistics  methodology. It focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies.
+        </li>
+        <li>
+          The
+<a href="../packages/solitude/index.html">solitude</a>
+          package provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
+        </li>
+        <li>
+          Functions for error detection and correction in point data quality datasets that are used in species distribution modelling are available via
+<a href="../packages/biogeo/index.html">biogeo</a>
+          package.
+        </li>
+        <li>
+          The
+<a href="../packages/CoordinateCleaner/index.html">CoordinateCleaner</a>
+          package provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Functional Data
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<tt>foutliers()</tt>
+          function from
+<a href="../packages/rainbow/index.html">rainbow</a>
+          package provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
+        </li>
+        <li>
+          The
+<a href="../packages/adamethods/index.html">adamethods</a>
+          package provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
+        </li>
+        <li>
+          The
+<tt>shape.fd.outliers</tt>
+          function in
+<a href="../packages/ddalpha/index.html">ddalpha</a>
+          package  detects functional outliers of first three orders, based on the order extended integrated depth for functional data.
+        </li>
+        <li>
+          The
+<a href="../packages/fda.usc/index.html">fda.usc</a>
+          package provides tools for  outlier detection in functional data  (atypical curves detection) using different approaches such as likelihood ratio test, depth measures, quantiles of the bootstrap samples.
+        </li>
+        <li>
+          The
+<a href="../packages/fdasrvf/index.html">fdasrvf</a>
+          package supports outlier detection in functional data using the square-root velocity framework which allows for elastic analysis of functional data through phase and amplitude separation.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Visualization of Anomalies
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<a href="../packages/OutliersO3/index.html">OutliersO3</a>
+          package provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
+        </li>
+        <li>
+          The
+<a href="../packages/Morpho/index.html">Morpho</a>
+          package provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
+        </li>
+        <li>
+          The
+<a href="../packages/StatDA/index.html">StatDA</a>
+          package provides visualization tools to locate outliers in environmental data.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Pre-processing Methods for Anomaly Detection
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<a href="../packages/preprocomb/index.html">preprocomb</a>
+          package provides an S4 framework for creating and evaluating preprocessing combinations for classification, clustering and outlier detection.
+        </li>
+        <li>
+          The
+<a href="../packages/dobin/index.html">dobin</a>
+          package provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Specific Application Fields
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<a href="../packages/precintcon/index.html">precintcon</a>
+          package contains functions to analyze the precipitation intensity, concentration and anomaly.
+        </li>
+        <li>
+          The
+<a href="../packages/survBootOutliers/index.html">survBootOutliers</a>
+          package provides concordance based bootstrap methods for outlier detection in survival analysis.
+        </li>
+        <li>
+          The
+<a href="../packages/pcadapt/index.html">pcadapt</a>
+          package provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
+Principal Component Analysis.
+        </li>
+        <li>
+          The
+<a href="../packages/rgr/index.html">rgr</a>
+          package supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
+        </li>
+        <li>
+          The
+<a href="../packages/NMAoutlier/index.html">NMAoutlier</a>
+          package  implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis.
+        </li>
+        <li>
+          The
+<a href="../packages/KRIS/index.html">KRIS</a>
+          package  provides useful functions which are needed for bioinformatic analysis including  detection of rough structures and outliers using unsupervised clustering.
+        </li>
+        <li>
+          The
+<a href="../packages/dave/index.html">dave</a>
+          package provides a collection of functions for  data analysis in vegetation ecology including outlier detection using nearest neighbour distances.
+        </li>
+        <li>
+          The
+<a href="../packages/MALDIrppa/index.html">MALDIrppa</a>
+          package provides methods for quality control and robust pre-processing and analysis of MALDI mass spectrometry data.
+        </li>
+        <li>
+          The
+<a href="../packages/MIPHENO/index.html">MIPHENO</a>
+          package contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
+        </li>
+        <li>
+          The
+<a href="../packages/OutlierDM/index.html">OutlierDM</a>
+          package  provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data.
+        </li>
+        <li>
+          The
+<a href="../packages/OutlierDC/index.html">OutlierDC</a>
+          package implements algorithms to detect outliers based on quantile regression for censored survival data.
+        </li>
+        <li>
+          The
+<a href="../packages/qpcR/index.html">qpcR</a>
+          package  implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
+        </li>
+        <li>
+          The
+<a href="../packages/referenceIntervals/index.html">referenceIntervals</a>
+          package  provides a collection of tools including outlier detcetion to allow the medical professional to calculate appropriate reference ranges (intervals) with confidence intervals around the limits for diagnostic purposes.
+        </li>
+        <li>
+          The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). The
+<a href="../packages/seismicRoll/index.html">seismicRoll</a>
+          package  provides fast rolling functions for seismology including outlier detection with a rolling Hampel Filter.
+        </li>
+        <li>
+          The
+<a href="../packages/spikes/index.html">spikes</a>
+          package provides tool to detect election fraud from irregularities in vote-share distributions using  re-sampled kernel density method.
+        </li>
+        <li>
+          The
+<a href="../packages/wql/index.html">wql</a>
+          package   stands for `water quality' provides functions including anomaly detection to assist in the processing and
+exploration of data from environmental monitoring programs.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Data Sets
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<a href="../packages/anomaly/index.html">anomaly</a>
+          package contains lightcurve time series data 
+    from the Kepler telescope.
+        </li>
+        <li>
+          Various high dimensional datasets are provided by
+<a href="../packages/mvoutlier/index.html">mvoutlier</a>
+          package.
+        </li>
+        <li>
+          The
+<a href="../packages/leri/index.html">leri</a>
+          package  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning systems.
+        </li>
+        <li>
+          The
+<a href="../packages/waterData/index.html">waterData</a>
+          package imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Miscellaneous
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
+<a href="../packages/analytics/index.html">analytics</a>
+          package provides support for (among other functions) outlier detection in a fitted linear model.
+        </li>
+        <li>
+          The
+<a href="../packages/nlr/index.html">nlr</a>
+          package include tools to detecting outliers in nonlinear regression.
+        </li>
+        <li>
+          The
+<a href="../packages/CircOutlier/index.html">CircOutlier</a>
+          package enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
+        </li>
+        <li>
+          The Residual Congruent Subset (RCS) is a  method for
+finding outliers in the regression setting.  RCS is supported by
+<a href="../packages/FastRCS/index.html">FastRCS</a>
+          package.
+        </li>
+        <li>
+          Package
+<a href="../packages/quokar/index.html">quokar</a>
+          provides quantile regression outlier diagnostics with K Left Out Analysis.
+        </li>
+        <li>
+          The
+<a href="../packages/oclust/index.html">oclust</a>
+          package provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
+        </li>
+        <li>
+          The
+<a href="../packages/semdiag/index.html">semdiag</a>
+          package  implements  outlier and leverage diagnostics for Structural equation modeling.
+        </li>
+        <li>
+          The
+<a href="../packages/SeleMix/index.html">SeleMix</a>
+          package provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
+        </li>
+        <li>
+          outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in
+<tt>outCoDa()</tt>
+          function of
+<a href="../packages/robCompositions/index.html">robCompositions</a>
+          package.
+        </li>
+        <li>
+          The
+<a href="../packages/compositions/index.html">compositions</a>
+          package provides functions  to detect various types of outliers in compositional datasets.
+        </li>
+        <li>
+          The
+<a href="../packages/kuiper.2samp/index.html">kuiper.2samp</a>
+          package performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
+        </li>
+        <li>
+          The
+<tt>enpls.od()</tt>
+          function in
+<a href="../packages/enpls/index.html">enpls</a>
+          package performs outlier detection with ensemble partial least squares.
+        </li>
+        <li>
+          The
+<a href="../packages/surveyoutliers/index.html">surveyoutliers</a>
+          package helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
+        </li>
+        <li>
+          The
+<a href="../packages/faoutlier/index.html">faoutlier</a>
+          package provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
+        </li>
+      </ul>
+    </div>
+
+  <h3>CRAN packages:</h3>
+  <ul>
+    <li><a href="../packages/abodOutlier/index.html">abodOutlier</a></li>
+    <li><a href="../packages/adamethods/index.html">adamethods</a></li>
+    <li><a href="../packages/alphaOutlier/index.html">alphaOutlier</a></li>
+    <li><a href="../packages/amelie/index.html">amelie</a></li>
+    <li><a href="../packages/analytics/index.html">analytics</a></li>
+    <li><a href="../packages/ANN2/index.html">ANN2</a></li>
+    <li><a href="../packages/anomalize/index.html">anomalize</a></li>
+    <li><a href="../packages/anomaly/index.html">anomaly</a></li>
+    <li><a href="../packages/bigutilsr/index.html">bigutilsr</a></li>
+    <li><a href="../packages/biogeo/index.html">biogeo</a></li>
+    <li><a href="../packages/cbar/index.html">cbar</a></li>
+    <li><a href="../packages/cellWise/index.html">cellWise</a></li>
+    <li><a href="../packages/CerioliOutlierDetection/index.html">CerioliOutlierDetection</a></li>
+    <li><a href="../packages/CircOutlier/index.html">CircOutlier</a></li>
+    <li><a href="../packages/compositions/index.html">compositions</a></li>
+    <li><a href="../packages/CoordinateCleaner/index.html">CoordinateCleaner</a></li>
+    <li><a href="../packages/CrossClustering/index.html">CrossClustering</a></li>
+    <li><a href="../packages/dave/index.html">dave</a></li>
+    <li><a href="../packages/dbscan/index.html">dbscan</a></li>
+    <li><a href="../packages/ddalpha/index.html">ddalpha</a></li>
+    <li><a href="../packages/DDoutlier/index.html">DDoutlier</a></li>
+    <li><a href="../packages/densratio/index.html">densratio</a></li>
+    <li><a href="../packages/depth.plot/index.html">depth.plot</a></li>
+    <li><a href="../packages/DescTools/index.html">DescTools</a></li>
+    <li><a href="../packages/dixonTest/index.html">dixonTest</a></li>
+    <li><a href="../packages/DJL/index.html">DJL</a></li>
+    <li><a href="../packages/dlookr/index.html">dlookr</a></li>
+    <li><a href="../packages/DMwR2/index.html">DMwR2</a></li>
+    <li><a href="../packages/dobin/index.html">dobin</a></li>
+    <li><a href="../packages/EFDR/index.html">EFDR</a></li>
+    <li><a href="../packages/enpls/index.html">enpls</a></li>
+    <li><a href="../packages/evtclass/index.html">evtclass</a></li>
+    <li><a href="../packages/extremevalues/index.html">extremevalues</a></li>
+    <li><a href="../packages/FactoInvestigate/index.html">FactoInvestigate</a></li>
+    <li><a href="../packages/faoutlier/index.html">faoutlier</a></li>
+    <li><a href="../packages/FastHCS/index.html">FastHCS</a></li>
+    <li><a href="../packages/FastPCS/index.html">FastPCS</a></li>
+    <li><a href="../packages/FastRCS/index.html">FastRCS</a></li>
+    <li><a href="../packages/fda.usc/index.html">fda.usc</a></li>
+    <li><a href="../packages/fdasrvf/index.html">fdasrvf</a></li>
+    <li><a href="../packages/fpmoutliers/index.html">fpmoutliers</a></li>
+    <li><a href="../packages/funModeling/index.html">funModeling</a></li>
+    <li><a href="../packages/GmAMisc/index.html">GmAMisc</a></li>
+    <li><a href="../packages/HDoutliers/index.html">HDoutliers</a></li>
+    <li><a href="../packages/HighDimOut/index.html">HighDimOut</a></li>
+    <li><a href="../packages/hotspots/index.html">hotspots</a></li>
+    <li><a href="../packages/ICSOutlier/index.html">ICSOutlier</a></li>
+    <li><a href="../packages/jmotif/index.html">jmotif</a></li>
+    <li><a href="../packages/kernlab/index.html">kernlab</a></li>
+    <li><a href="../packages/kmodR/index.html">kmodR</a></li>
+    <li><a href="../packages/KRIS/index.html">KRIS</a></li>
+    <li><a href="../packages/kuiper.2samp/index.html">kuiper.2samp</a></li>
+    <li><a href="../packages/ldbod/index.html">ldbod</a></li>
+    <li><a href="../packages/leri/index.html">leri</a></li>
+    <li><a href="../packages/MALDIrppa/index.html">MALDIrppa</a></li>
+    <li><a href="../packages/MIPHENO/index.html">MIPHENO</a></li>
+    <li><a href="../packages/mmppr/index.html">mmppr</a></li>
+    <li><a href="../packages/modi/index.html">modi</a></li>
+    <li><a href="../packages/Morpho/index.html">Morpho</a></li>
+    <li><a href="../packages/mrfDepth/index.html">mrfDepth</a></li>
+    <li><a href="../packages/mvoutlier/index.html">mvoutlier</a></li>
+    <li><a href="../packages/nlr/index.html">nlr</a></li>
+    <li><a href="../packages/NMAoutlier/index.html">NMAoutlier</a></li>
+    <li><a href="../packages/npphen/index.html">npphen</a></li>
+    <li><a href="../packages/oclust/index.html">oclust</a></li>
+    <li><a href="../packages/otsad/index.html">otsad</a></li>
+    <li><a href="../packages/OutlierDC/index.html">OutlierDC</a></li>
+    <li><a href="../packages/OutlierDetection/index.html">OutlierDetection</a></li>
+    <li><a href="../packages/OutlierDM/index.html">OutlierDM</a></li>
+    <li><a href="../packages/outliers/index.html">outliers</a></li>
+    <li><a href="../packages/OutliersO3/index.html">OutliersO3</a></li>
+    <li><a href="../packages/outliertree/index.html">outliertree</a></li>
+    <li><a href="../packages/pcadapt/index.html">pcadapt</a></li>
+    <li><a href="../packages/precintcon/index.html">precintcon</a></li>
+    <li><a href="../packages/preprocomb/index.html">preprocomb</a></li>
+    <li><a href="../packages/probout/index.html">probout</a></li>
+    <li><a href="../packages/qpcR/index.html">qpcR</a></li>
+    <li><a href="../packages/quokar/index.html">quokar</a></li>
+    <li><a href="../packages/rainbow/index.html">rainbow</a></li>
+    <li><a href="../packages/RaPKod/index.html">RaPKod</a></li>
+    <li><a href="../packages/referenceIntervals/index.html">referenceIntervals</a></li>
+    <li><a href="../packages/rgr/index.html">rgr</a></li>
+    <li><a href="../packages/Rlof/index.html">Rlof</a></li>
+    <li><a href="../packages/robCompositions/index.html">robCompositions</a></li>
+    <li><a href="../packages/Routliers/index.html">Routliers</a></li>
+    <li><a href="../packages/rrcovHD/index.html">rrcovHD</a></li>
+    <li><a href="../packages/RWBP/index.html">RWBP</a></li>
+    <li><a href="../packages/scanstatistics/index.html">scanstatistics</a></li>
+    <li><a href="../packages/seasonal/index.html">seasonal</a></li>
+    <li><a href="../packages/seismicRoll/index.html">seismicRoll</a></li>
+    <li><a href="../packages/SeleMix/index.html">SeleMix</a></li>
+    <li><a href="../packages/semdiag/index.html">semdiag</a></li>
+    <li><a href="../packages/sGMRFmix/index.html">sGMRFmix</a></li>
+    <li><a href="../packages/SmartSifter/index.html">SmartSifter</a></li>
+    <li><a href="../packages/SMLoutliers/index.html">SMLoutliers</a></li>
+    <li><a href="../packages/solitude/index.html">solitude</a></li>
+    <li><a href="../packages/spikes/index.html">spikes</a></li>
+    <li><a href="../packages/StatDA/index.html">StatDA</a></li>
+    <li><a href="../packages/survBootOutliers/index.html">survBootOutliers</a></li>
+    <li><a href="../packages/surveyoutliers/index.html">surveyoutliers</a></li>
+    <li><a href="../packages/trendsegmentR/index.html">trendsegmentR</a></li>
+    <li><a href="../packages/TSA/index.html">TSA</a></li>
+    <li><a href="../packages/tsoutliers/index.html">tsoutliers</a></li>
+    <li><a href="../packages/univOutl/index.html">univOutl</a></li>
+    <li><a href="../packages/washeR/index.html">washeR</a></li>
+    <li><a href="../packages/waterData/index.html">waterData</a></li>
+    <li><a href="../packages/wql/index.html">wql</a></li>
+  </ul>
+
+  <h3>Related links:</h3>
+  <ul>
+    <li>CRAN Task View: <a href="Cluster.html">Cluster</a></li>
+    <li>CRAN Task View: <a href="ExtremeValue.html">ExtremeValue</a></li>
+    <li><a href="https://github.com/pridiltal/ctv-AnomalyDetection">
+  GitHub repository for this Task View
+</a></li>
+  </ul>
+
+</body>
+</html>
