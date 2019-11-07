@@ -332,8 +332,6 @@ additions and extensions for this task view to the task view maintainer.
     framework which allows for elastic analysis of functional data
     through phase and amplitude separation.
 
-**Non numeric data**
-
 **Visualization of anomalies**
 
   - Package [OutliersO3](https://cran.r-project.org/package=OutliersO3) provides

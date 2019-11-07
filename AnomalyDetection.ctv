@@ -23,70 +23,58 @@
     <ul>	
       <li> The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems.
       </li>
+          </ul>
+    
+    <sub> Univariate Outlier Detection</sub>
+        <ul>
+      <li> <i>Univariate  outlier</i>  detection methods focus on values in a single feature space. Package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
+      </li> 
       <li> Package <pkg>dixonTest</pkg> provides Dixon's ratio test for outlier detection in small and normally distributed samples.
       </li> 
-      <li> Package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the Hidiroglou-Berthelot method. Methods to deal with skewed distribution are also included in this package.
-      </li>
-      <li>  Univariate outliers detection is supported by  <code>outlier()</code> function in <pkg>GmAMisc</pkg>  which implements three different methods (mean-base, median-based, boxplot-based).    
+      <li>  Univariate outliers detection is also supported by  <code>outlier()</code> function in <pkg>GmAMisc</pkg>  which implements three different methods (mean-base, median-based, boxplot-based).    
       </li>
       <li> Package     <pkg>hotspots</pkg>  supports univariate outlier detection by identifying values that are disproportionately high based on both the deviance of any given value from a statistical distribution and its similarity to other values.
       </li>
-      <li> Package <pkg>outliers</pkg> provides a collection of some tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
+      <li> Package <pkg>outliers</pkg> provides a collection of tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
       </li>
       <li> Package  <pkg>extremevalues</pkg> offers outlier detection and plot functions for univariate data. In this work a value in the data is an outlier when it is unlikely to be drawn from the estimated distribution.
       </li>
-      <li>Package <pkg>kernlab</pkg>  provides kernel-based machine learning methods including one-class Support Vector Machines for <i>novelty</i> detection. </li>
-      <li> Package <pkg>mvoutlier</pkg> provides multivariate outlier detection based on robust methods.
+       <li> Package     <pkg>funModeling</pkg>  provides tools for outlier detection using top/bottom X%, Tukey’s boxplot definition and  Hampel’s method.
       </li>
-      <li> Package   <pkg>amelie</pkg> implements anomaly detection as binary classification for cross-sectional data (multivariate) using maximum likelihood estimates and normal probability functions.
+      <li> Package <pkg>alphaOutlier</pkg> provides  Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for well-known probability distributions.
       </li>
-      <li>  Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them. Cellwise outliers  are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account.
+     </ul>
+     
+    <sub> Multivariate Outlier Detection</sub>
+         <ul>
+         <li> Under <i>multivariate or multidimensional scenario</i>, where the focus is on n (>2) - dimensional space,  all attributes might be of same type or might be a mixture of different types such as categorical or numerical, which has a direct impact on the implementation and scope of the algorithm.
+         </li>
+         
+         <p> <i> Density-based outlier detection </i>  </p>
+         <li> Package  <pkg>DDoutlier</pkg> provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
       </li>
-      <li> Package  <pkg>kmodR</pkg> presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
+       <li> <i>Local Outlier Factor (LOF) </i>is an algorithm for detecting anomalous data points by measuring the local deviation of a given data point with respect to its neighbours. This algorithm with some variations is supported by many packages. Package  <pkg>DescTools</pkg> provides functions for outlier detection using LOF and Tukey’s boxplot definition. Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using a kd-tree to speed up kNN search. Parallel implementation of LOF which uses multiple CPUs to significantly speed up the LOF computation for large datasets is available in <pkg>Rlof</pkg> package. Package     <pkg>bigutilsr</pkg>  provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
       </li>
-      <li> Package <pkg>OutlierDetection</pkg> provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
-      </li>
-      <li> Package <pkg>fpmoutliers</pkg> implements a set of algorithms for detection of outliers based on frequent pattern mining. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
-      </li>
-      <li> Package  <pkg>ICSOutlier</pkg>  performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
-      </li>
-      <li> Package <pkg>HighDimOut</pkg> provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
-      </li>
-      <li> Package    <pkg>SMLoutliers</pkg> provides an implementation of the Local Correlation Integral method  ( Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values.
-      </li>
-      <li> Package     <pkg>bigutilsr</pkg>  provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
-      </li>
-      <li> Package    <pkg>DescTools</pkg> provides functions for outlier detection using LOF and Tukey’s boxplot definition.
-      </li>
-      <li> Package     <pkg>funModeling</pkg>  provides tools for outlier detection using top/bottom X%, Tukey’s boxplot definition and  Hampel’s method.
-      </li>
-      <li> Functions <code>LOF()</code> and <code>GLOSH</code> in package     <pkg>dbscan</pkg> provides density based anomaly detection methods using
-a kd-tree to speed up kNN search. 
-      </li>
-      <li> Package <pkg>Rlof</pkg> provides parallel implementation of Local Outlier Factor(LOF) which uses multiple CPUs to significantly speed up the LOF computation for large datasets.
+      <li>Package    <pkg>SMLoutliers</pkg> provides an implementation of the Local Correlation Integral method  ( Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values. 
       </li>
       <li> Package <pkg>ldbod</pkg>  provides flexible functions for computing local density-based outlier scores. It allows for subsampling of input data or a user specified reference data set to compute outlier scores against, so both unsupervised and semi-supervised outlier detection can be done.
       </li>
-      <li> Package  <pkg>DDoutlier</pkg> provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
+       <li>Package <pkg>kernlab</pkg>  provides kernel-based machine learning methods including one-class Support Vector Machines for <i>novelty</i> detection. </li>
+      <li> Package   <pkg>amelie</pkg> implements anomaly detection as binary classification for multivariate (cross-sectional) data using maximum likelihood estimates and normal probability functions.
       </li>
-      <li> Package  <pkg>sGMRFmix</pkg> provides an anomaly detection method for multivariate noisy sensor data using sparse Gaussian Markov random field mixtures. It can compute variable-wise anomaly scores.
+             <li>  The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
+       </li>
+      
+      
+          <p> <i> Distance-based outlier detection </i>  </p>
+      
+       <li> Package   <pkg>HDoutliers</pkg> provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
       </li>
-      <li> Package <pkg>Routliers</pkg> provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
+       <li> Package <pkg>mvoutlier</pkg> provides multivariate outlier detection based on robust methods.
       </li>
-      <li> Package <pkg>alphaOutlier</pkg> provides  Alpha-Outlier regions (as proposed by Davies and Gather (1993)) for well-known probability
-distributions.
+       <li> Package <pkg>Routliers</pkg> provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
       </li>
-      <li> Package <pkg>ANN2</pkg> implements artificial neural networks for anomaly detection.
-      </li>
-      <li> Package   <pkg>HDoutliers</pkg> provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
-      </li>
-      <li> Package  <pkg>probout</pkg> estimates unsupervised outlier probabilities for multivariate numeric data with many observations from a nonparametric outlier statistic.
-      </li>
-      <li> Package <pkg>abodOutlier</pkg> performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
-      </li>
-      <li> Package <pkg>outliertree</pkg> provides explainable outlier detection method through decision tree conditioning.
-      </li>
-      <li> Package <pkg>RaPKod</pkg> implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
+            <li> Package <pkg>abodOutlier</pkg> performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
       </li>
       <li> Package <pkg>modi</pkg> implements Mahalanobis distance or depth-based algorithms for multivariate outlier detection in the presence of  missing values (incomplete survey data).
       </li>
@@ -96,6 +84,37 @@ distributions.
       </li>
       <li> Function <code>dm.mahalanobis</code> in <pkg>DJL</pkg> package  implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
       </li>
+      
+       <p> <i> Clustering-based outlier detection </i>  </p>
+ <li> Package  <pkg>kmodR</pkg> presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
+      </li>
+      <li>  Package  <pkg>CrossClustering</pkg> implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
+       </li>
+             <li> Package     <pkg>DMwR2</pkg> uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
+      </li>
+
+     <p> <i> Other approaches </i>  </p>
+
+
+      <li> Package <pkg>OutlierDetection</pkg> provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
+      </li>
+
+      <li> Package <pkg>fpmoutliers</pkg> implements a set of algorithms for detection of outliers based on frequent pattern mining. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
+      </li>
+      <li> Package  <pkg>ICSOutlier</pkg>  performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
+      </li>
+      <li> Package <pkg>HighDimOut</pkg> provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
+      </li>
+      <li> Package  <pkg>sGMRFmix</pkg> provides an anomaly detection method for multivariate noisy sensor data using sparse Gaussian Markov random field mixtures. It can compute variable-wise anomaly scores.
+      </li>
+      <li> Package <pkg>ANN2</pkg> implements artificial neural networks for anomaly detection.
+      </li>
+      <li> Package  <pkg>probout</pkg> estimates unsupervised outlier probabilities for multivariate numeric data with many observations from a nonparametric outlier statistic.
+      </li>
+     <li> Package <pkg>outliertree</pkg> provides explainable outlier detection method through decision tree conditioning.
+      </li>
+      <li> Package <pkg>RaPKod</pkg> implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
+      </li>
       <li> Package <pkg>mrfDepth</pkg> provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
       </li>
       <li> Package <pkg>evtclass</pkg> provides two classifiers for open set recognition and novelty detection based on extreme value theory.
@@ -103,21 +122,16 @@ distributions.
       <li> Package <pkg>dlookr</pkg> provides a collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and
 unique and negative values to help you understand the distribution and quality of your data.
       </li> 
-      <li> The Projection Congruent Subset (PCS) is a method for
-finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by  <pkg>FastPCS</pkg> package. 
-       </li>
-       <li>  The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
-       </li>
        <li>  Package  <pkg>FastHCS</pkg> implements robust algorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. <pkg>FastHCS</pkg>
        </li>
        <li> Package     <pkg>FactoInvestigate</pkg> implements PCA based outlier detection tools. 
        </li>
-       <li>  Package  <pkg>CrossClustering</pkg> implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
-       </li>
-      <li> Package     <pkg>DMwR2</pkg> uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
-      </li>
       <li> Package     <pkg>quokar</pkg>  provides quantile regression outlier diagnostics with K Left Out Analysis.
       </li>
+       <li> <i> Cellwise outliers </i> are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them.
+      </li>
+       <li> <i>The Projection Congruent Subset (PCS) </i> is a method forfinding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by  <pkg>FastPCS</pkg> package. 
+       </li>
     </ul>
     
     
@@ -204,10 +218,6 @@ finding multivariate outliers by searching for a subset which minimizes a criter
       </li>
       
     </ul>
-      
-    <p>
-      <strong>Non numeric data</strong>
-    </p>
 
      
     <p>
@@ -287,7 +297,7 @@ Principal Component Analysis.
       </li>
       <li> Package     <pkg>spikes</pkg> provides tool to detect election fraud from irregularities in vote-share distributions using  re-sampled kernel density method.
       </li>
-      <li> Package     <pkg>wql</pkg>  stands for `water quality' provides functions including anomaly dtection to assist in the processing and
+      <li> Package     <pkg>wql</pkg>  stands for `water quality' provides functions including anomaly detection to assist in the processing and
 exploration of data from environmental monitoring programs.
        </li>
     </ul>
