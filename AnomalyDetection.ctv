@@ -301,32 +301,32 @@ exploration of data from environmental monitoring programs.
     
     <p><strong>Miscellaneous</strong></p>
     <ul>
-      <li> Package  <pkg>analytics</pkg> provides support for (among other functions) outlier detection in a fitted linear model.
+      <li> The  <pkg>analytics</pkg> package provides support for (among other functions) outlier detection in a fitted linear model.
       </li>
-        <li>  Package   <pkg>nlr</pkg> include tools to detecting outliers in nonlinear regression. 
+        <li>  The   <pkg>nlr</pkg> package include tools to detecting outliers in nonlinear regression. 
       </li>
-      <li> Package  <pkg>CircOutlier</pkg> enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
+      <li> The  <pkg>CircOutlier</pkg> package enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
       </li>
       <li> The Residual Congruent Subset (RCS) is a  method for
 finding outliers in the regression setting.  RCS is supported by <pkg>FastRCS</pkg> package.
       </li>
-      <li> Package <pkg>oclust</pkg> provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
+      <li> The <pkg>oclust</pkg> package provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
       </li>
-      <li> Package   <pkg>semdiag</pkg>  implements  outlier and leverage diagnostics for Structural equation modeling.
+      <li> The   <pkg>semdiag</pkg> package  implements  outlier and leverage diagnostics for Structural equation modeling.
       </li>
-      <li> Package  <pkg>SeleMix</pkg> provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
+      <li> The  <pkg>SeleMix</pkg> package provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
       </li>
       <li>  outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in  <code>outCoDa()</code> function of <pkg>robCompositions</pkg> package.
       </li>
-      <li> Package <pkg>compositions</pkg> provides functions  to detect various types of outliers in compositional datasets.
+      <li> The <pkg>compositions</pkg> package provides functions  to detect various types of outliers in compositional datasets.
       </li>
-      <li> Package     <pkg>kuiper.2samp</pkg> performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
+      <li> The     <pkg>kuiper.2samp</pkg>  package performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
       </li>
-      <li> The function <code>enpls.od()</code> in  Package <pkg>enpls</pkg> performs outlier detection with ensemble partial least squares.
+      <li> The  <code>enpls.od()</code>  function in <pkg>enpls</pkg> package performs outlier detection with ensemble partial least squares.
       </li>
-      <li> Package     <pkg>surveyoutliers</pkg> helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
+      <li> The     <pkg>surveyoutliers</pkg>  package helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
       </li>
-      <li> Package     <pkg>faoutlier</pkg> provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
+      <li> The     <pkg>faoutlier</pkg>  package provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
       </li>
     
       

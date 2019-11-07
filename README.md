@@ -450,45 +450,45 @@ additions and extensions for this task view to the task view maintainer.
 
 **Miscellaneous**
 
-  - Package [analytics](https://cran.r-project.org/package=analytics) provides
+  - The [analytics](https://cran.r-project.org/package=analytics) package provides
     support for (among other functions) outlier detection in a fitted
     linear model.
-  - Package [nlr](https://cran.r-project.org/package=nlr) include tools to detecting
-    outliers in nonlinear regression.
-  - Package [CircOutlier](https://cran.r-project.org/package=CircOutlier) enables
-    detection of outliers in circular-circular regression models,
-    modifying its and estimating of models parameters.
+  - The [nlr](https://cran.r-project.org/package=nlr) package include tools to
+    detecting outliers in nonlinear regression.
+  - The [CircOutlier](https://cran.r-project.org/package=CircOutlier) package
+    enables detection of outliers in circular-circular regression
+    models, modifying its and estimating of models parameters.
   - The Residual Congruent Subset (RCS) is a method for finding outliers
     in the regression setting. RCS is supported by
     [FastRCS](https://cran.r-project.org/package=FastRCS) package.
-  - Package [oclust](https://cran.r-project.org/package=oclust) provides a function
-    to detect and trim outliers in Gaussian mixture model based
+  - The [oclust](https://cran.r-project.org/package=oclust) package provides a
+    function to detect and trim outliers in Gaussian mixture model based
     clustering using methods described in Clark and McNicholas (2019).
-  - Package [semdiag](https://cran.r-project.org/package=semdiag) implements outlier
-    and leverage diagnostics for Structural equation modeling.
-  - Package [SeleMix](https://cran.r-project.org/package=SeleMix) provides functions
-    for detection of outliers and influential errors using a latent
-    variable model. A mixture model (Gaussian contamination model) based
-    on response(s) y and a depended set of covariates is fit to the data
-    to quantify the impact of errors to the estimates.
+  - The [semdiag](https://cran.r-project.org/package=semdiag) package implements
+    outlier and leverage diagnostics for Structural equation modeling.
+  - The [SeleMix](https://cran.r-project.org/package=SeleMix) package provides
+    functions for detection of outliers and influential errors using a
+    latent variable model. A mixture model (Gaussian contamination
+    model) based on response(s) y and a depended set of covariates is
+    fit to the data to quantify the impact of errors to the estimates.
   - outlier detection for compositional data using (robust) Mahalanobis
     distances in isometric logratio coordinates is implemented in
     `outCoDa()` function of
     [robCompositions](https://cran.r-project.org/package=robCompositions) package.
-  - Package [compositions](https://cran.r-project.org/package=compositions) provides
-    functions to detect various types of outliers in compositional
-    datasets.
-  - Package [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp) performs
-    the two-sample Kuiper test to assess the anomaly of continuous,
-    one-dimensional probability distributions.
-  - The function `enpls.od()` in Package
-    [enpls](https://cran.r-project.org/package=enpls) performs outlier detection
-    with ensemble partial least squares.
-  - Package [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
+  - The [compositions](https://cran.r-project.org/package=compositions) package
+    provides functions to detect various types of outliers in
+    compositional datasets.
+  - The [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp) package
+    performs the two-sample Kuiper test to assess the anomaly of
+    continuous, one-dimensional probability distributions.
+  - The `enpls.od()` function in [enpls](https://cran.r-project.org/package=enpls)
+    package performs outlier detection with ensemble partial least
+    squares.
+  - The [surveyoutliers](https://cran.r-project.org/package=surveyoutliers) package
     helps manage outliers in sample surveys by calculating optimal
     one-sided winsorizing cutoffs.
-  - Package [faoutlier](https://cran.r-project.org/package=faoutlier) provides tools
-    for detecting and summarize influential cases that can affect
+  - The [faoutlier](https://cran.r-project.org/package=faoutlier) package provides
+    tools for detecting and summarize influential cases that can affect
     exploratory and confirmatory factor analysis models and structural
     equation
     models.
