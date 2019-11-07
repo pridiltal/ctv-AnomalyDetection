@@ -238,7 +238,7 @@ additions and extensions for this task view to the task view maintainer.
     performs the detection of point anomalies and linear trend changes
     for univariate time series by implementing the bottom-up unbalanced
     wavelet transformation.
-  - Package [anomaly](https://cran.r-project.org/package=anomaly) implements
+  - The [anomaly](https://cran.r-project.org/package=anomaly) package implements
     Collective And Point Anomaly (CAPA) , Multi-Variate Collective And
     Point Anomaly (MVCAPA), and Proportion Adaptive Segment Selection
     (PASS) methods for the detection of *anomalies* in time series data.
@@ -287,8 +287,8 @@ additions and extensions for this task view to the task view maintainer.
   - Spatial objects whose non-spatial attribute values are markedly
     different from those of their spatial neighbors are known as Spatial
     outliers or abnormal spatial patterns.
-  - Package [RWBP](https://cran.r-project.org/package=RWBP) detects spatial outliers
-    using a Random Walk on Bipartite Graph.
+  - The [RWBP](https://cran.r-project.org/package=RWBP) package detects spatial
+    outliers using a Random Walk on Bipartite Graph.
   - Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies
     in an image. Package [EFDR](https://cran.r-project.org/package=EFDR) implements
     wavelet-based Enhanced FDR for detecting signals from complete or
@@ -304,146 +304,146 @@ additions and extensions for this task view to the task view maintainer.
 **Spatio-Temporal data**
 
   - Scan statistics are used to detect anomalous clusters in spatial or
-    space-time data. Package
-    [scanstatistics](https://cran.r-project.org/package=scanstatistics) provides
-    functions for detection of anomalous space-time clusters using the
-    scan statistics methodology. Focuses on prospective surveillance of
-    data streams, scanning for clusters with ongoing anomalies.
-  - Package [solitude](https://cran.r-project.org/package=solitude) provides an
+    space-time data. The
+    [scanstatistics](https://cran.r-project.org/package=scanstatistics) package
+    provides functions for detection of anomalous space-time clusters
+    using the scan statistics methodology. It focuses on prospective
+    surveillance of data streams, scanning for clusters with ongoing
+    anomalies.
+  - The [solitude](https://cran.r-project.org/package=solitude) package provides an
     implementation of Isolation forest which detects anomalies purely
     based on the concept of isolation without employing any distance or
     density measure.
-  - Package [biogeo](https://cran.r-project.org/package=biogeo) provides functions
-    for error detection and correction in point data quality datasets
-    that are used in species distribution modelling.
-  - Package
-    [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
-    provides functions for flagging of common spatial and temporal
-    outliers (errors) in biological and paleontological collection data,
-    for the use in conservation, ecology and paleontology.
+  - Functions for error detection and correction in point data quality
+    datasets that are used in species distribution modelling are
+    available via [biogeo](https://cran.r-project.org/package=biogeo) package.
+  - The [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
+    package provides functions for flagging of common spatial and
+    temporal outliers (errors) in biological and paleontological
+    collection data, for the use in conservation, ecology and
+    paleontology.
 
 **Functional Data**
 
-  - Function `foutliers()` from package
-    [rainbow](https://cran.r-project.org/package=rainbow) provides functional
-    outlier detection methods. Bagplots and boxplots for functional data
-    can also be used to identify outliers, which have either the lowest
-    depth (distance from the centre) or the lowest density,
-    respectively.
-  - Package [adamethods](https://cran.r-project.org/package=adamethods) provides a
-    collection of several algorithms to obtain archetypoids with small
+  - The `foutliers()` function from
+    [rainbow](https://cran.r-project.org/package=rainbow) package provides
+    functional outlier detection methods. Bagplots and boxplots for
+    functional data can also be used to identify outliers, which have
+    either the lowest depth (distance from the centre) or the lowest
+    density, respectively.
+  - The [adamethods](https://cran.r-project.org/package=adamethods) package provides
+    a collection of several algorithms to obtain archetypoids with small
     and large databases and with both classical multivariate data and
     functional data (univariate and multivariate). Some of these
     algorithms also allow to detect anomalies.
-  - Function `shape.fd.outliers` in
+  - The `shape.fd.outliers` function in
     [ddalpha](https://cran.r-project.org/package=ddalpha) package detects functional
     outliers of first three orders, based on the order extended
     integrated depth for functional data.
-  - Package [fda.usc](https://cran.r-project.org/package=fda.usc) provides tool for
-    outlier detection in functional data (atypical curves detection)
+  - The [fda.usc](https://cran.r-project.org/package=fda.usc) package provides tools
+    for outlier detection in functional data (atypical curves detection)
     using different approaches such as likelihood ratio test, depth
     measures, quantiles of the bootstrap samples.
-  - Package [fdasrvf](https://cran.r-project.org/package=fdasrvf) supports outlier
-    detection in functional data using the square-root velocity
+  - The [fdasrvf](https://cran.r-project.org/package=fdasrvf) package supports
+    outlier detection in functional data using the square-root velocity
     framework which allows for elastic analysis of functional data
     through phase and amplitude separation.
 
 **Visualization of anomalies**
 
-  - Package [OutliersO3](https://cran.r-project.org/package=OutliersO3) provides
+  - The [OutliersO3](https://cran.r-project.org/package=OutliersO3) package provides
     tools to aid in the display and understanding of patterns of
     multivariate outliers. It uses the results of identifying outliers
     for every possible combination of dataset variables to provide
     insight into why particular cases are outliers.
-  - Package [Morpho](https://cran.r-project.org/package=Morpho) provides a
+  - The [Morpho](https://cran.r-project.org/package=Morpho) package provides a
     collection of tools for Geometric Morphometrics and mesh processing.
     Apart from the core functions it provides a graphical interface to
     find outliers and/or to switch mislabeled landmarks.
-  - Package [StatDA](https://cran.r-project.org/package=StatDA) provides
+  - The [StatDA](https://cran.r-project.org/package=StatDA) package provides
     visualization tools to locate outliers in environmental data.
 
 **Pre-processing methods for anomaly detection**
 
-  - Package [preprocomb](https://cran.r-project.org/package=preprocomb) provides an
-    S4 framework for creating and evaluating preprocessing combinations
-    for classification, clustering and outlier detection.
-  - Package [dobin](https://cran.r-project.org/package=dobin) provides dimension
+  - The [preprocomb](https://cran.r-project.org/package=preprocomb) package provides
+    an S4 framework for creating and evaluating preprocessing
+    combinations for classification, clustering and outlier detection.
+  - The [dobin](https://cran.r-project.org/package=dobin) package provides dimension
     reduction technique for outlier detection using neighbours,
     constructs a set of basis vectors for outlier detection. It brings
     outliers to the fore-front using fewer basis vectors.
 
 **Data sets**
 
-  - Package [anomaly](https://cran.r-project.org/package=anomaly) contains
+  - The [anomaly](https://cran.r-project.org/package=anomaly) package contains
     lightcurve time series data from the Kepler telescope.
   - Various high dimensional datasets are provided by
-    [mvoutlier](https://cran.r-project.org/package=mvoutlier).
-  - Package [leri](https://cran.r-project.org/package=leri) finds and downloads
+    [mvoutlier](https://cran.r-project.org/package=mvoutlier) package.
+  - The [leri](https://cran.r-project.org/package=leri) package finds and downloads
     Landscape Evaporative Response Index (LERI) data, then reads the
     data into R. The LERI product measures anomalies in actual
     evapotranspiration, to support drought monitoring and early warning.
     systems.
-  - Unlabeled : [cellWise](https://cran.r-project.org/package=cellWise)
+  - The [waterData](https://cran.r-project.org/package=waterData) package imports
+    U.S. Geological Survey (USGS) daily hydrologic data from USGS web
+    services and provides functions to calculate and plot anomalies.
 
 **Specific application fields**
 
-  - Package [precintcon](https://cran.r-project.org/package=precintcon) contains
+  - The [precintcon](https://cran.r-project.org/package=precintcon) package contains
     functions to analyze the precipitation intensity, concentration and
     anomaly.
-  - Package [waterData](https://cran.r-project.org/package=waterData) imports U.S.
-    Geological Survey (USGS) daily hydrologic data from USGS web
-    services and provides functions to calculate and plot anomalies.
-  - Package [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
-    provides concordance based bootstrap methods for outlier detection
-    in survival analysis.
-  - Package [pcadapt](https://cran.r-project.org/package=pcadapt) provides methods
-    to detect genetic markers involved in biological adaptation using
-    statistical tools based on Principal Component Analysis.
-  - Package [rgr](https://cran.r-project.org/package=rgr) supports exploratory data
-    analysis with applied geochemical data, with special application to
-    the estimation of background ranges and identification of anomalies
-    to support mineral exploration and environmental studies.
-  - Package [NMAoutlier](https://cran.r-project.org/package=NMAoutlier) implements
-    the forward search algorithm for the detection of outlying studies
-    (studies with extreme results) in network meta-analysis.
-  - Package [KRIS](https://cran.r-project.org/package=KRIS) provides useful
+  - The [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
+    package provides concordance based bootstrap methods for outlier
+    detection in survival analysis.
+  - The [pcadapt](https://cran.r-project.org/package=pcadapt) package provides
+    methods to detect genetic markers involved in biological adaptation
+    using statistical tools based on Principal Component Analysis.
+  - The [rgr](https://cran.r-project.org/package=rgr) package supports exploratory
+    data analysis with applied geochemical data, with special
+    application to the estimation of background ranges and
+    identification of anomalies to support mineral exploration and
+    environmental studies.
+  - The [NMAoutlier](https://cran.r-project.org/package=NMAoutlier) package
+    implements the forward search algorithm for the detection of
+    outlying studies (studies with extreme results) in network
+    meta-analysis.
+  - The [KRIS](https://cran.r-project.org/package=KRIS) package provides useful
     functions which are needed for bioinformatic analysis including
     detection of rough structures and outliers using unsupervised
     clustering.
-  - Package [dave](https://cran.r-project.org/package=dave) provides a collection of
-    functions for data analysis in vegetation ecology including outlier
-    detection using nearest neighbour distances.
-  - Package [MALDIrppa](https://cran.r-project.org/package=MALDIrppa) provides
+  - The [dave](https://cran.r-project.org/package=dave) package provides a
+    collection of functions for data analysis in vegetation ecology
+    including outlier detection using nearest neighbour distances.
+  - The [MALDIrppa](https://cran.r-project.org/package=MALDIrppa) package provides
     methods for quality control and robust pre-processing and analysis
     of MALDI mass spectrometry data.
-  - Package [MIPHENO](https://cran.r-project.org/package=MIPHENO) contains functions
-    to carry out processing of high throughput data analysis and
-    detection of putative hits/mutants.
-  - Package [OutlierDM](https://cran.r-project.org/package=OutlierDM) OutlierDM
-    provides functions to detect outlying values such as genes, peptides
-    or samples for multi-replicated high-throughput high-dimensional
-    data.
-  - Package [OutlierDC](https://cran.r-project.org/package=OutlierDC) implements
+  - The [MIPHENO](https://cran.r-project.org/package=MIPHENO) package contains
+    functions to carry out processing of high throughput data analysis
+    and detection of putative hits/mutants.
+  - The [OutlierDM](https://cran.r-project.org/package=OutlierDM) package provides
+    functions to detect outlying values such as genes, peptides or
+    samples for multi-replicated high-throughput high-dimensional data.
+  - The [OutlierDC](https://cran.r-project.org/package=OutlierDC) package implements
     algorithms to detect outliers based on quantile regression for
     censored survival data.
-  - Package [qpcR](https://cran.r-project.org/package=qpcR) implements methods for
-    kinetic outlier detection (KOD) in real-time polymerase chain
+  - The [qpcR](https://cran.r-project.org/package=qpcR) package implements methods
+    for kinetic outlier detection (KOD) in real-time polymerase chain
     reaction (qPCR).
-  - Package
-    [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
-    provides a collection of tools including outlier detcetion to allow
-    the medical professional to calculate appropriate reference ranges
-    (intervals) with confidence intervals around the limits for
+  - The [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
+    package provides a collection of tools including outlier detcetion
+    to allow the medical professional to calculate appropriate reference
+    ranges (intervals) with confidence intervals around the limits for
     diagnostic purposes.
   - The Hampel filter is a robust outlier detector using Median Absolute
-    Deviation (MAD). Package
-    [seismicRoll](https://cran.r-project.org/package=seismicRoll) provides fast
-    rolling functions for seismology including outlier detection with a
-    rolling Hampel Filter.
-  - Package [spikes](https://cran.r-project.org/package=spikes) provides tool to
+    Deviation (MAD). The
+    [seismicRoll](https://cran.r-project.org/package=seismicRoll) package provides
+    fast rolling functions for seismology including outlier detection
+    with a rolling Hampel Filter.
+  - The [spikes](https://cran.r-project.org/package=spikes) package provides tool to
     detect election fraud from irregularities in vote-share
     distributions using re-sampled kernel density method.
-  - Package [wql](https://cran.r-project.org/package=wql) stands for \`water
+  - The [wql](https://cran.r-project.org/package=wql) package stands for \`water
     quality' provides functions including anomaly detection to assist in
     the processing and exploration of data from environmental monitoring
     programs.

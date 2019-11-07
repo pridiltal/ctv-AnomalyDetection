@@ -144,7 +144,7 @@ unique and negative values to understand the distribution and quality of  data.
      </li>
       <li> The  <pkg>trendsegmentR</pkg> package performs the detection of point anomalies and linear trend changes for univariate time series by implementing the bottom-up unbalanced wavelet transformation. 
       </li>
-      <li> Package <pkg>anomaly</pkg> implements Collective And Point
+      <li> The <pkg>anomaly</pkg> package implements Collective And Point
       Anomaly (CAPA) , Multi-Variate Collective And Point Anomaly (MVCAPA),
       and Proportion Adaptive Segment Selection (PASS) methods for the
       detection of <i>anomalies</i> in time series data.  
@@ -179,7 +179,7 @@ unique and negative values to understand the distribution and quality of  data.
     <ul>
       <li> Spatial objects whose non-spatial attribute values are markedly different from those of their spatial neighbors are known as Spatial outliers or abnormal spatial patterns.
       </li>
-      <li> Package  <pkg>RWBP</pkg> detects spatial outliers using a Random Walk on Bipartite Graph.
+      <li> The  <pkg>RWBP</pkg> package detects spatial outliers using a Random Walk on Bipartite Graph.
       </li>
       <li> Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package     <pkg>EFDR</pkg> implements wavelet-based Enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
       </li>
@@ -191,13 +191,13 @@ unique and negative values to understand the distribution and quality of  data.
       <strong>Spatio-Temporal data</strong>
     </p>
     <ul>	 
-      <li>Scan statistics are used to detect anomalous clusters in spatial or space-time data. Package <pkg>scanstatistics</pkg> provides functions   for detection of anomalous space-time clusters using the scan statistics  methodology. Focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies. 
+      <li>Scan statistics are used to detect anomalous clusters in spatial or space-time data. The <pkg>scanstatistics</pkg> package  provides functions   for detection of anomalous space-time clusters using the scan statistics  methodology. It focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies. 
       </li>
-      <li> Package  <pkg>solitude</pkg>  provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
+      <li> The  <pkg>solitude</pkg>  package provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
       </li>
-      <li> Package  <pkg>biogeo</pkg> provides functions for error detection and correction in point data quality datasets that are used in species distribution modelling.
+      <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modelling are available via  <pkg>biogeo</pkg> package.
       </li>
-      <li>   Package  <pkg>CoordinateCleaner</pkg> provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
+      <li>   The  <pkg>CoordinateCleaner</pkg> package provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
       </li>
     </ul>	 
          
@@ -205,15 +205,15 @@ unique and negative values to understand the distribution and quality of  data.
       <strong>Functional Data</strong>
     </p>
     <ul>	 
-      <li> Function <code>foutliers()</code> from package  <pkg>rainbow</pkg>  provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
+      <li> The <code>foutliers()</code> function from  <pkg>rainbow</pkg>  package provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
       </li>
-      <li> Package <pkg>adamethods</pkg> provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
+      <li> The <pkg>adamethods</pkg> package provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow to detect anomalies.
       </li>
-      <li> Function <code>shape.fd.outliers</code> in    <pkg>ddalpha</pkg> package  detects functional outliers of first three orders, based on the order extended integrated depth for functional data.
+      <li> The <code>shape.fd.outliers</code> function in    <pkg>ddalpha</pkg> package  detects functional outliers of first three orders, based on the order extended integrated depth for functional data.
       </li>
-      <li> Package    <pkg>fda.usc</pkg> provides tool for  outlier detection in functional data  (atypical curves detection) using different approaches such as likelihood ratio test, depth measures, quantiles of the bootstrap samples.
+      <li> The    <pkg>fda.usc</pkg>  package provides tools for  outlier detection in functional data  (atypical curves detection) using different approaches such as likelihood ratio test, depth measures, quantiles of the bootstrap samples.
       </li>
-      <li> Package  <pkg>fdasrvf</pkg> supports outlier detection in functional data using the square-root velocity framework which allows for elastic analysis of functional data through phase and amplitude separation. 
+      <li> The  <pkg>fdasrvf</pkg> package supports outlier detection in functional data using the square-root velocity framework which allows for elastic analysis of functional data through phase and amplitude separation. 
       </li>
       
     </ul>
@@ -223,11 +223,11 @@ unique and negative values to understand the distribution and quality of  data.
     <strong>Visualization of anomalies</strong>
     </p>
      <ul>	
-    <li>  Package <pkg>OutliersO3</pkg> provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
+    <li>  The <pkg>OutliersO3</pkg>  package provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
     </li>
-    <li> Package <pkg>Morpho</pkg> provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
+    <li> The <pkg>Morpho</pkg> package provides a collection of tools for Geometric Morphometrics and mesh processing. Apart from the core functions it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
     </li>
-    <li> Package     <pkg>StatDA</pkg> provides visualization tools to locate outliers in environmental data.
+    <li> The     <pkg>StatDA</pkg>  package provides visualization tools to locate outliers in environmental data.
     </li>
 
     </ul>
@@ -236,9 +236,9 @@ unique and negative values to understand the distribution and quality of  data.
     <strong>Pre-processing methods for anomaly detection</strong>
     </p>
     <ul>	
-       <li> Package <pkg>preprocomb</pkg>  provides an S4 framework for creating and evaluating preprocessing combinations for classification, clustering and outlier detection. 
+       <li> The <pkg>preprocomb</pkg> package provides an S4 framework for creating and evaluating preprocessing combinations for classification, clustering and outlier detection. 
        </li>
-       <li> Package <pkg>dobin</pkg> provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
+       <li> The <pkg>dobin</pkg> package provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
        </li>
     </ul>
     
@@ -246,16 +246,16 @@ unique and negative values to understand the distribution and quality of  data.
     <strong>Data sets</strong>
     </p>
     <ul>	
-    <li> Package <pkg>anomaly</pkg> contains lightcurve time series data 
+    <li> The  <pkg>anomaly</pkg> package contains lightcurve time series data 
     from the Kepler telescope.
     </li>
-    <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg>.
+    <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg> package.
     </li> 
-    <li> Package     <pkg>leri</pkg>  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning. 
+    <li> The     <pkg>leri</pkg>  package  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning. 
 systems.
     </li>
-    <li> Unlabeled :     <pkg>cellWise</pkg>
-    </li>
+      <li> The <pkg>waterData</pkg>  package imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
+      </li>
     
     </ul>
          
@@ -263,40 +263,38 @@ systems.
     <strong>Specific application fields</strong>
     </p>
     <ul>
-      <li> Package <pkg>precintcon</pkg> contains functions to analyze the precipitation intensity, concentration and anomaly. 
+      <li> The <pkg>precintcon</pkg> package contains functions to analyze the precipitation intensity, concentration and anomaly. 
       </li>
-      <li> Package <pkg>waterData</pkg> imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
+      <li> The     <pkg>survBootOutliers</pkg> package provides concordance based bootstrap methods for outlier detection in survival analysis.
       </li>
-      <li> Package     <pkg>survBootOutliers</pkg> provides concordance based bootstrap methods for outlier detection in survival analysis.
-      </li>
-      <li> Package <pkg>pcadapt</pkg> provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
+      <li> The <pkg>pcadapt</pkg> package provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
 Principal Component Analysis.
       </li>
-      <li> Package <pkg>rgr</pkg> supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
+      <li> The <pkg>rgr</pkg> package supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
       </li>
-      <li> Package  <pkg>NMAoutlier</pkg> implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
+      <li> The  <pkg>NMAoutlier</pkg> package  implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
       </li>
-      <li> Package     <pkg>KRIS</pkg> provides useful functions which are needed for bioinformatic analysis including  detection of rough structures and outliers using unsupervised clustering.
+      <li> The     <pkg>KRIS</pkg> package  provides useful functions which are needed for bioinformatic analysis including  detection of rough structures and outliers using unsupervised clustering.
       </li>
-      <li> Package     <pkg>dave</pkg> provides a collection of functions for  data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
+      <li> The     <pkg>dave</pkg>  package provides a collection of functions for  data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
       </li>
-      <li> Package <pkg>MALDIrppa</pkg> provides methods for quality control and robust pre-processing and analysis of MALDI mass spectrometry data. 
+      <li> The <pkg>MALDIrppa</pkg>  package provides methods for quality control and robust pre-processing and analysis of MALDI mass spectrometry data. 
       </li>
-      <li> Package     <pkg>MIPHENO</pkg> contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
+      <li> The     <pkg>MIPHENO</pkg>  package contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
       </li>
-      <li> Package     <pkg>OutlierDM</pkg> OutlierDM provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data. 
+      <li> The      <pkg>OutlierDM</pkg> package  provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data. 
       </li>
-      <li>  Package     <pkg>OutlierDC</pkg> implements algorithms to detect outliers based on quantile regression for censored survival data.
+      <li>  The     <pkg>OutlierDC</pkg> package implements algorithms to detect outliers based on quantile regression for censored survival data.
       </li>
-      <li> Package     <pkg>qpcR</pkg>  implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
+      <li> The     <pkg>qpcR</pkg>  package  implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
       </li>
-      <li> Package  <pkg>referenceIntervals</pkg> provides a collection of tools including outlier detcetion to allow the medical professional to calculate appropriate reference ranges (intervals) with confidence intervals around the limits for diagnostic purposes.
+      <li> The  <pkg>referenceIntervals</pkg> package  provides a collection of tools including outlier detcetion to allow the medical professional to calculate appropriate reference ranges (intervals) with confidence intervals around the limits for diagnostic purposes.
       </li>
-      <li> The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). Package  <pkg>seismicRoll</pkg> provides fast rolling functions for seismology including outlier detection with a rolling Hampel Filter.
+      <li> The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). The  <pkg>seismicRoll</pkg> package  provides fast rolling functions for seismology including outlier detection with a rolling Hampel Filter.
       </li>
-      <li> Package     <pkg>spikes</pkg> provides tool to detect election fraud from irregularities in vote-share distributions using  re-sampled kernel density method.
+      <li> The     <pkg>spikes</pkg>  package provides tool to detect election fraud from irregularities in vote-share distributions using  re-sampled kernel density method.
       </li>
-      <li> Package     <pkg>wql</pkg>  stands for `water quality' provides functions including anomaly detection to assist in the processing and
+      <li> The     <pkg>wql</pkg> package   stands for `water quality' provides functions including anomaly detection to assist in the processing and
 exploration of data from environmental monitoring programs.
        </li>
     </ul>
