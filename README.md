@@ -18,7 +18,8 @@ which need to be addressed through different analytical approaches.
 
 Anomalies are often mentioned under several alternative names such as
 outliers, novelty, odd values, extreme values, faults in different
-application domains. These variants are also considered for this view.
+application domains. These variants are also considered for this task
+view.
 
 The development of this task view is fairly new and still in its early
 stages and therefore subject to changes. Please send suggestions for
@@ -61,22 +62,21 @@ additions and extensions for this task view to the task view maintainer.
 
 **Multivariate Outlier Detection**
 
-  - Under *multivariate or multidimensional scenario,* where the focus
-    is on n (\>2) - dimensional space, all attributes might be of same
-    type or might be a mixture of different types such as categorical or
-    numerical, which has a direct impact on the implementation and scope
-    of the algorithm.
-  - The problems of anomaly detection in high-dimensional data are
-    threefold, involving detection of: (a) global anomalies, (b) local
-    anomalies and (c) micro clusters or clusters of anomalies. Global
-    anomalies are very different from the dense area with respect to
-    their attributes. In contrast, a local anomaly is only an anomaly
-    when it is distinct from, and compared with, its local
-    neighbourhood. Micro clusters or clusters of anomalies may cause
-    masking problems. The [DDoutlier](https://cran.r-project.org/package=DDoutlier)
-    package provides a wide variety of distance- and density-based
-    outlier detection functions mainly focusing local outliers in
-    high-dimensional data.
+  - Under *multivariate, high-dimensional or multidimensional scenario,*
+    where the focus is on n (\>2) - dimensional space, all attributes
+    might be of same type or might be a mixture of different types such
+    as categorical or numerical, which has a direct impact on the
+    implementation and scope of the algorithm. The problems of anomaly
+    detection in high-dimensional data are threefold, involving
+    detection of: (a) global anomalies, (b) local anomalies and (c)
+    micro clusters or clusters of anomalies. Global anomalies are very
+    different from the dense area with respect to their attributes. In
+    contrast, a local anomaly is only an anomaly when it is distinct
+    from, and compared with, its local neighbourhood. Micro clusters or
+    clusters of anomalies may cause masking problems.
+  - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
+    wide variety of distance- and density-based outlier detection
+    functions mainly focusing local outliers in high-dimensional data.
   - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
     package provides different implementations for outlier detection
     namely model based, distance based, dispersion based, depth based
@@ -90,7 +90,7 @@ additions and extensions for this task view to the task view maintainer.
     [DescTools](https://cran.r-project.org/package=DescTools) package provides
     functions for outlier detection using LOF and Tukey’s boxplot
     definition. Functions `LOF()` and `GLOSH` in package
-    [dbscan](https://cran.r-project.org/package=dbscan) provides density based
+    [dbscan](https://cran.r-project.org/package=dbscan) provide density based
     anomaly detection methods using a kd-tree to speed up kNN search.
     Parallel implementation of LOF which uses multiple CPUs to
     significantly speed up the LOF computation for large datasets is
@@ -458,9 +458,8 @@ additions and extensions for this task view to the task view maintainer.
   - The [oclust](https://cran.r-project.org/package=oclust) package provides a
     function to detect and trim outliers in Gaussian mixture model based
     clustering using methods described in Clark and McNicholas (2019).
-  - The [semdiag](https://cran.r-project.org/package=semdiag)
-    packageimplementsoutlier and leverage diagnostics for Structural
-    equation modeling.
+  - The [semdiag](https://cran.r-project.org/package=semdiag) package implements
+    outlier and leverage diagnostics for Structural equation modeling.
   - The [SeleMix](https://cran.r-project.org/package=SeleMix) package provides
     functions for detection of outliers and influential errors using a
     latent variable model. A mixture model (Gaussian contamination
