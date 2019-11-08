@@ -100,7 +100,7 @@ additions and extensions for this task view to the task view maintainer.
     and outlier detection method based on departure from histogram.
   - The [SMLoutliers](https://cran.r-project.org/package=SMLoutliers) package
     provides an implementation of the Local Correlation Integral method
-    ( Lof: Identifying density-based local outliers) for outlier
+    (Lof: Identifying density-based local outliers) for outlier
     detection in multivariate data which consists of numeric values.
   - The [ldbod](https://cran.r-project.org/package=ldbod) package provides flexible
     functions for computing local density-based outlier scores. It
