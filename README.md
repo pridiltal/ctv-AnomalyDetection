@@ -24,18 +24,7 @@ The development of this task view is fairly new and still in its early
 stages and therefore subject to changes. Please send suggestions for
 additions and extensions for this task view to the task view maintainer.
 
-**High Dimensional Data**
-
-  - The problems of anomaly detection in high-dimensional data are
-    threefold, involving detection of: (a) global anomalies, (b) local
-    anomalies and (c) micro clusters or clusters of anomalies. Global
-    anomalies are very different from the dense area with respect to
-    their attributes. In contrast, a local anomaly is only an anomaly
-    when it is distinct from, and compared with, its local
-    neighbourhood. Micro clusters or clusters of anomalies may cause
-    masking problems.
-
-<sub>Univariate Outlier Detection</sub>
+**Univariate Outlier Detection**
 
   - *Univariate outlier* detection methods focus on values in a single
     feature space. Package [univOutl](https://cran.r-project.org/package=univOutl)
@@ -70,16 +59,24 @@ additions and extensions for this task view to the task view maintainer.
     provides Alpha-Outlier regions (as proposed by Davies and Gather
     (1993)) for well-known probability distributions.
 
-<sub>Multivariate Outlier Detection</sub>
+**Multivariate Outlier Detection**
 
   - Under *multivariate or multidimensional scenario,* where the focus
     is on n (\>2) - dimensional space, all attributes might be of same
     type or might be a mixture of different types such as categorical or
     numerical, which has a direct impact on the implementation and scope
     of the algorithm.
-  - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
-    wide variety of distance- and density-based outlier detection
-    functions mainly focusing local outliers in high-dimensional data.
+  - The problems of anomaly detection in high-dimensional data are
+    threefold, involving detection of: (a) global anomalies, (b) local
+    anomalies and (c) micro clusters or clusters of anomalies. Global
+    anomalies are very different from the dense area with respect to
+    their attributes. In contrast, a local anomaly is only an anomaly
+    when it is distinct from, and compared with, its local
+    neighbourhood. Micro clusters or clusters of anomalies may cause
+    masking problems. The [DDoutlier](https://cran.r-project.org/package=DDoutlier)
+    package provides a wide variety of distance- and density-based
+    outlier detection functions mainly focusing local outliers in
+    high-dimensional data.
   - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
     package provides different implementations for outlier detection
     namely model based, distance based, dispersion based, depth based
@@ -115,8 +112,6 @@ additions and extensions for this task view to the task view maintainer.
     Vector Machines for *novelty* detection.
   - The [amelie](https://cran.r-project.org/package=amelie) package implements
     anomaly detection as binary classification for multivariate
-    (cross-sectional) data using maximum likelihood estimates and normal
-    probability functions.
   - The estimated density ratio function in
     [densratio](https://cran.r-project.org/package=densratio) package can be used in
     many applications such as anomaly detection, change-point detection,
@@ -186,8 +181,7 @@ additions and extensions for this task view to the task view maintainer.
   - Artificial neural networks for anomaly detection is implemented in
     [ANN2](https://cran.r-project.org/package=ANN2) package.
   - The [probout](https://cran.r-project.org/package=probout) package estimates
-    unsupervised outlier probabilities for multivariate numeric data
-    with many observations from a nonparametric outlier statistic.
+    unsupervised outlier probabilities for multivariate numeric
   - Explainable outlier detection method through decision tree
     conditioning is facilitated by
     [outliertree](https://cran.r-project.org/package=outliertree) package .
@@ -237,7 +231,7 @@ additions and extensions for this task view to the task view maintainer.
     for univariate time series by implementing the bottom-up unbalanced
     wavelet transformation.
   - The [anomaly](https://cran.r-project.org/package=anomaly) package implements
-    Collective And Point Anomaly (CAPA) , Multi-Variate Collective And
+    Collective And Point Anomaly (CAPA), Multi-Variate Collective And
     Point Anomaly (MVCAPA), and Proportion Adaptive Segment Selection
     (PASS) methods for the detection of *anomalies* in time series data.
   - The [anomalize](https://cran.r-project.org/package=anomalize) package enables a
@@ -464,14 +458,15 @@ additions and extensions for this task view to the task view maintainer.
   - The [oclust](https://cran.r-project.org/package=oclust) package provides a
     function to detect and trim outliers in Gaussian mixture model based
     clustering using methods described in Clark and McNicholas (2019).
-  - The [semdiag](https://cran.r-project.org/package=semdiag) package implements
-    outlier and leverage diagnostics for Structural equation modeling.
+  - The [semdiag](https://cran.r-project.org/package=semdiag)
+    packageimplementsoutlier and leverage diagnostics for Structural
+    equation modeling.
   - The [SeleMix](https://cran.r-project.org/package=SeleMix) package provides
     functions for detection of outliers and influential errors using a
     latent variable model. A mixture model (Gaussian contamination
     model) based on response(s) y and a depended set of covariates is
     fit to the data to quantify the impact of errors to the estimates.
-  - outlier detection for compositional data using (robust) Mahalanobis
+  - Outlier detection for compositional data using (robust) Mahalanobis
     distances in isometric logratio coordinates is implemented in
     `outCoDa()` function of
     [robCompositions](https://cran.r-project.org/package=robCompositions) package.
@@ -517,7 +512,7 @@ additions and extensions for this task view to the task view maintainer.
   - [dave](https://cran.r-project.org/package=dave)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [ddalpha](https://cran.r-project.org/package=ddalpha)
-  - [DDoutlier](https://cran.r-project.org/package=DDoutlier)
+  - [DDoutlier](https://cran.r-project.org/package=DDoutlier) (core)
   - [densratio](https://cran.r-project.org/package=densratio)
   - [depth.plot](https://cran.r-project.org/package=depth.plot)
   - [DescTools](https://cran.r-project.org/package=DescTools)
@@ -540,7 +535,7 @@ additions and extensions for this task view to the task view maintainer.
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [funModeling](https://cran.r-project.org/package=funModeling)
   - [GmAMisc](https://cran.r-project.org/package=GmAMisc)
-  - [HDoutliers](https://cran.r-project.org/package=HDoutliers)
+  - [HDoutliers](https://cran.r-project.org/package=HDoutliers) (core)
   - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [hotspots](https://cran.r-project.org/package=hotspots)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
@@ -567,7 +562,7 @@ additions and extensions for this task view to the task view maintainer.
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
   - [outliers](https://cran.r-project.org/package=outliers)
-  - [OutliersO3](https://cran.r-project.org/package=OutliersO3)
+  - [OutliersO3](https://cran.r-project.org/package=OutliersO3) (core)
   - [outliertree](https://cran.r-project.org/package=outliertree)
   - [pcadapt](https://cran.r-project.org/package=pcadapt)
   - [precintcon](https://cran.r-project.org/package=precintcon)
