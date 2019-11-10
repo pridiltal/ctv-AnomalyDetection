@@ -52,8 +52,8 @@
      <li> Under <i>multivariate, high-dimensional or multidimensional scenario,</i> where the focus is on n (>2) - dimensional space,  all attributes might be of same type or might be a mixture of different types such as categorical or numerical, which has a direct impact on the implementation and scope of the algorithm. The problems of anomaly detection in high-dimensional data are threefold, involving detection of: (a) global anomalies, (b) local anomalies and (c) micro clusters or clusters of anomalies.  Global anomalies are very different from the dense area with respect to their attributes. In contrast, a local anomaly is only an anomaly when it is distinct from, and compared with, its local neighbourhood.  Micro clusters or clusters of anomalies may cause masking problems. 
      </li>
          
-     <p> <i> Density-based outlier detection </i>  
-     </p>
+     <strong><i> Density-based outlier detection: </i>  
+     </strong>
      <li> The <pkg>DDoutlier</pkg> package provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
      </li>
      <li> The <pkg>OutlierDetection</pkg> package provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
@@ -71,8 +71,8 @@
      <li> The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
      </li>
       
-     <p> <i> Distance-based outlier detection </i> 
-     </p>
+     <strong> <i> Distance-based outlier detection: </i>  
+     </strong>
      <li> The <pkg>HDoutliers</pkg> package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
      </li>
      <li> The <pkg>mvoutlier</pkg> package provides multivariate outlier detection based on robust methods.
@@ -88,8 +88,8 @@
      <li> Function <code>dm.mahalanobis</code> in <pkg>DJL</pkg> package implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
      </li>
       
-     <p> <i> Clustering-based outlier detection </i>  
-     </p>
+     <strong> <i> Clustering-based outlier detection: </i>  
+     </strong>
      <li> The <pkg>kmodR</pkg> package presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
      </li>
      <li> The <pkg>CrossClustering</pkg> package implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
@@ -97,15 +97,15 @@
      <li> The <pkg>DMwR2</pkg>  package uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
      </li>
 
-     <p> <i> Angle-based outlier detection </i>  
-     </p>
+     <strong> <i> Angle-based outlier detection: </i>  
+     </strong>
      <li> The <pkg>abodOutlier</pkg> package performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
      </li>
      <li> The <pkg>HighDimOut</pkg> package provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
      </li>
      
-     <p> <i> Other approaches </i> 
-     </p>
+     <strong> <i> Other approaches: </i> 
+     </strong>
      <li> A set of algorithms for detection of outliers based on frequent pattern mining is available in <pkg>fpmoutliers</pkg> package. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
      </li>
      <li> The <pkg>ICSOutlier</pkg> package performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
