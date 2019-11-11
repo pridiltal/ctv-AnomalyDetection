@@ -292,11 +292,13 @@ Principal Component Analysis.
      </li>
      <li> The <pkg>wql</pkg> package stands for `water quality' provides functions including anomaly detection to assist in the processing and exploration of data from environmental monitoring programs.
      </li>
-     <li> The Grubbs‐Beck test is recommended by the federal guidelines for detection of low outliers in flood flow frequency computation in the United States. The <pkg>MGBT</pkg> computes the multiple Grubbs-Beck low-outlier test on positively distributed data and utilities for noninterpretive U.S. Geological Survey annual peak-streamflow data processing. 
+     <li> The Grubbs‐Beck test is recommended by the federal guidelines for detection of low outliers in flood flow frequency computation in the United States. The <pkg>MGBT</pkg> computes the multiple Grubbs-Beck low-outlier test on positively distributed data and utilities for non-interpretive U.S. Geological Survey annual peak-stream flow data processing. 
      </li>
-     <li>  The <pkg>envoutliers</pkg> package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals
+     <li> The <pkg>envoutliers</pkg> package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals
      </li>
-     <li> the <pkg>rIP</pkg> package  supports detection of  fraud in online surveys by tracing, scoring, and visualizing IP Aaddresses
+     <li> The <pkg>rIP</pkg> package  supports detection of  fraud in online surveys by tracing, scoring, and visualizing IP addresses
+     </li>
+     <li> The <pkg>extremeIndex</pkg>  computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
      </li>
    </ul>
 
@@ -392,6 +394,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>enpls</pkg>
     <pkg>envoutliers</pkg>
     <pkg>evtclass</pkg>
+    <pkg>extremeIndex</pkg>
     <pkg>extremevalues</pkg>
     <pkg>FactoInvestigate</pkg>
     <pkg>faoutlier</pkg>

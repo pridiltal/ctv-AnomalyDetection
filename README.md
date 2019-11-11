@@ -433,15 +433,20 @@ additions and extensions for this task view to the task view maintainer.
     detection of low outliers in flood flow frequency computation in the
     United States. The [MGBT](https://cran.r-project.org/package=MGBT) computes the
     multiple Grubbs-Beck low-outlier test on positively distributed data
-    and utilities for noninterpretive U.S. Geological Survey annual
-    peak-streamflow data processing.
+    and utilities for non-interpretive U.S. Geological Survey annual
+    peak-stream flow data processing.
   - The [envoutliers](https://cran.r-project.org/package=envoutliers) package
     provides three semi-parametric methods for detection of outliers in
     environmental data based on kernel regression and subsequent
     analysis of smoothing residuals
-  - the [rIP](https://cran.r-project.org/package=rIP) package supports detection of
+  - The [rIP](https://cran.r-project.org/package=rIP) package supports detection of
     fraud in online surveys by tracing, scoring, and visualizing IP
-    Aaddresses
+    addresses
+  - The [extremeIndex](https://cran.r-project.org/package=extremeIndex) computes an
+    index measuring the amount of information brought by forecasts for
+    extreme events, subject to calibration. This index is originally
+    designed for weather or climate forecasts, but it may be used in
+    other forecasting contexts.
 
 **Data Sets**
 
@@ -542,6 +547,7 @@ additions and extensions for this task view to the task view maintainer.
   - [enpls](https://cran.r-project.org/package=enpls)
   - [envoutliers](https://cran.r-project.org/package=envoutliers)
   - [evtclass](https://cran.r-project.org/package=evtclass)
+  - [extremeIndex](https://cran.r-project.org/package=extremeIndex)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate)
   - [faoutlier](https://cran.r-project.org/package=faoutlier)
