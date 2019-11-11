@@ -435,6 +435,10 @@ additions and extensions for this task view to the task view maintainer.
     multiple Grubbs-Beck low-outlier test on positively distributed data
     and utilities for noninterpretive U.S. Geological Survey annual
     peak-streamflow data processing.
+  - The [envoutliers](https://cran.r-project.org/package=envoutliers) package
+    provides three semi-parametric methods for detection of outliers in
+    environmental data based on kernel regression and subsequent
+    analysis of smoothing residuals
 
 **Data Sets**
 
@@ -533,6 +537,7 @@ additions and extensions for this task view to the task view maintainer.
   - [dobin](https://cran.r-project.org/package=dobin)
   - [EFDR](https://cran.r-project.org/package=EFDR)
   - [enpls](https://cran.r-project.org/package=enpls)
+  - [envoutliers](https://cran.r-project.org/package=envoutliers)
   - [evtclass](https://cran.r-project.org/package=evtclass)
   - [extremevalues](https://cran.r-project.org/package=extremevalues)
   - [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate)
