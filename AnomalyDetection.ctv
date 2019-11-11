@@ -292,6 +292,8 @@ Principal Component Analysis.
      </li>
      <li> The <pkg>wql</pkg> package stands for `water quality' provides functions including anomaly detection to assist in the processing and exploration of data from environmental monitoring programs.
      </li>
+     <li> The Grubbs‐Beck test is recommended by the federal guidelines for detection of low outliers in flood flow frequency computation in the United States.  The <pkg>MGBT</pkg> computes the multiple Grubbs-Beck low-outlier test on positively distributed data and utilities for noninterpretive U.S. Geological Survey annual peak-streamflow data processing. 
+     </li>
    </ul>
 
 
@@ -408,6 +410,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>ldbod</pkg>
     <pkg>leri</pkg>
     <pkg>MALDIrppa</pkg>
+    <pkg>MGBT</pkg>
     <pkg>MIPHENO</pkg>
     <pkg>mmppr</pkg>
     <pkg>modi</pkg>

@@ -429,6 +429,12 @@ additions and extensions for this task view to the task view maintainer.
     quality' provides functions including anomaly detection to assist in
     the processing and exploration of data from environmental monitoring
     programs.
+  - The Grubbs‐Beck test is recommended by the federal guidelines for
+    detection of low outliers in flood flow frequency computation in the
+    United States. The [MGBT](https://cran.r-project.org/package=MGBT) computes the
+    multiple Grubbs-Beck low-outlier test on positively distributed data
+    and utilities for noninterpretive U.S. Geological Survey annual
+    peak-streamflow data processing.
 
 **Data Sets**
 
@@ -551,6 +557,7 @@ additions and extensions for this task view to the task view maintainer.
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [leri](https://cran.r-project.org/package=leri)
   - [MALDIrppa](https://cran.r-project.org/package=MALDIrppa)
+  - [MGBT](https://cran.r-project.org/package=MGBT)
   - [MIPHENO](https://cran.r-project.org/package=MIPHENO)
   - [mmppr](https://cran.r-project.org/package=mmppr)
   - [modi](https://cran.r-project.org/package=modi)
