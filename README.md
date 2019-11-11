@@ -439,6 +439,9 @@ additions and extensions for this task view to the task view maintainer.
     provides three semi-parametric methods for detection of outliers in
     environmental data based on kernel regression and subsequent
     analysis of smoothing residuals
+  - the [rIP](https://cran.r-project.org/package=rIP) package supports detection of
+    fraud in online surveys by tracing, scoring, and visualizing IP
+    Aaddresses
 
 **Data Sets**
 
@@ -590,6 +593,7 @@ additions and extensions for this task view to the task view maintainer.
   - [RaPKod](https://cran.r-project.org/package=RaPKod)
   - [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
   - [rgr](https://cran.r-project.org/package=rgr)
+  - [rIP](https://cran.r-project.org/package=rIP)
   - [Rlof](https://cran.r-project.org/package=Rlof)
   - [robCompositions](https://cran.r-project.org/package=robCompositions)
   - [Routliers](https://cran.r-project.org/package=Routliers)

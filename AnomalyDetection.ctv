@@ -296,6 +296,8 @@ Principal Component Analysis.
      </li>
      <li>  The <pkg>envoutliers</pkg> package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals
      </li>
+     <li> the <pkg>rIP</pkg> package  supports detection of  fraud in online surveys by tracing, scoring, and visualizing IP Aaddresses
+     </li>
    </ul>
 
 
@@ -441,6 +443,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>RaPKod</pkg>
     <pkg>referenceIntervals</pkg>
     <pkg>rgr</pkg>
+    <pkg>rIP</pkg>
     <pkg>Rlof</pkg>
     <pkg>robCompositions</pkg>
     <pkg>Routliers</pkg>
