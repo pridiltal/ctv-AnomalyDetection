@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="Dilini.Talagala@monash.edu">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2019-10-07</version>
+   <version>2019-12-06</version>
 
    <info>
    <p>
@@ -300,6 +300,8 @@ Principal Component Analysis.
      </li>
      <li> The <pkg>extremeIndex</pkg>  computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
      </li>
+     <li> The <pkg>clampSeg</pkg> package provides tool to identify and idealize flickering events in filtered ion channel recordings.
+     </li>
    </ul>
 
 
@@ -375,6 +377,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
     <pkg>CircOutlier</pkg>
+    <pkg>clampSeg</pkg>
     <pkg>compositions</pkg>
     <pkg>CoordinateCleaner</pkg>
     <pkg>CrossClustering</pkg>

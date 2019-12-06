@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
-**Version:**    2019-10-07                                           
+**Version:**    2019-12-06                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -447,6 +447,9 @@ additions and extensions for this task view to the task view maintainer.
     extreme events, subject to calibration. This index is originally
     designed for weather or climate forecasts, but it may be used in
     other forecasting contexts.
+  - The [clampSeg](https://cran.r-project.org/package=clampSeg) package provides
+    tool to identify and idealize flickering events in filtered ion
+    channel recordings.
 
 **Data Sets**
 
@@ -528,6 +531,7 @@ additions and extensions for this task view to the task view maintainer.
   - [cellWise](https://cran.r-project.org/package=cellWise)
   - [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
+  - [clampSeg](https://cran.r-project.org/package=clampSeg)
   - [compositions](https://cran.r-project.org/package=compositions)
   - [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
   - [CrossClustering](https://cran.r-project.org/package=CrossClustering)
