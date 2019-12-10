@@ -11,7 +11,7 @@
     This CRAN task view contains a list of packages that can be used for anomaly detection. Anomaly detection problems have many different facets and the detection techniques can be highly influenced by the way we define anomalies, the type of input data to the algorithm, the expected output, etc. This leads to wide variations in problem formulations, which need to be addressed through different analytical approaches.
    </p>
    <p>
-     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, extreme values, faults in different application domains. These variants are also considered for this task view.
+     Anomalies are often mentioned  under several alternative names such as outliers, novelty, odd values, extreme values, faults, aberration in different application domains. These variants are also considered for this task view.
    </p>
    <p>
      <strong>The development of this task view is fairly new and  still in its early stages and therefore subject to changes. Please send suggestions for additions and extensions for this task view to the task view maintainer. </strong>
@@ -170,6 +170,8 @@
      </li>
      <li> The <pkg>cbar</pkg> package  detect contextual anomalies in time-series data with Bayesian data analysis. It focuses on determining a normal range of target value, and provides simple-to-use functions to abstract the outcome.
      </li>
+     <li> The <code>detectAO</code> and <code>detectIO</code> functions in   <pkg>TSA</pkg> package support detecting additive outlier  and   innovative outlier in time series data. 
+     </li>
      <li> The <pkg>washeR</pkg> package  performs time series outlier detection using non parametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series)
      </li>
      <li> The <pkg>tsoutliers</pkg> package implements the Chen-Liu approach for detection of time series outliers such as  innovational outliers, additive outliers, level shifts, temporary changes and seasonal level shifts.
@@ -178,13 +180,13 @@
      </li>
      <li> The <pkg>npphen</pkg>  package  implements basic and high-level functions for detection of anomalies in vector data (numerical series/ time series) and raster data (satellite derived products). Processing of very large raster files is supported.
      </li>
-     <li> The <pkg>SmartSifter</pkg> package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
+     <li> The <pkg>mmppr</pkg> (Markov modulated Poisson process) package provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
      </li>
-     <li> Package <pkg>mmppr</pkg> (Markov modulated Poisson process) provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
+     <li> The <pkg>surveillance</pkg> package implements statistical methods for aberration detection in time series of counts, proportions and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The package also contains several real-world data sets, the ability to simulate outbreak data, and to visualize the results of the monitoring in a temporal, spatial or spatio-temporal fashion.
      </li>
      <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
      </li>
-     <li> The <code>detectAO</code> and <code>detectIO</code> functions in   <pkg>TSA</pkg> package support detecting additive outlier  and   innovative outlier in time series data. 
+     <li> The <pkg>SmartSifter</pkg> package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
      </li>
    </ul>
 
@@ -483,6 +485,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>spikes</pkg>
     <pkg>StatDA</pkg>
     <pkg>survBootOutliers</pkg>
+    <pkg>surveillance</pkg>
     <pkg>surveyoutliers</pkg>
     <pkg>trendsegmentR</pkg>
     <pkg>TSA</pkg>

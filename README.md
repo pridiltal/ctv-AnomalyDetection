@@ -5,7 +5,7 @@
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
 **Version:**    2019-12-10                                           
-  
+**URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
 
@@ -17,9 +17,9 @@ output, etc. This leads to wide variations in problem formulations,
 which need to be addressed through different analytical approaches.
 
 Anomalies are often mentioned under several alternative names such as
-outliers, novelty, odd values, extreme values, faults in different
-application domains. These variants are also considered for this task
-view.
+outliers, novelty, odd values, extreme values, faults, aberration in
+different application domains. These variants are also considered for
+this task view.
 
 **The development of this task view is fairly new and still in its early
 stages and therefore subject to changes. Please send suggestions for
@@ -257,6 +257,9 @@ maintainer.**
     anomalies in time-series data with Bayesian data analysis. It
     focuses on determining a normal range of target value, and provides
     simple-to-use functions to abstract the outcome.
+  - The `detectAO` and `detectIO` functions in
+    [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
+    outlier and innovative outlier in time series data.
   - The [washeR](https://cran.r-project.org/package=washeR) package performs time
     series outlier detection using non parametric test. An input can be
     a data frame (grouped time series: phenomenon+date+group+values) or
@@ -273,19 +276,23 @@ maintainer.**
     and high-level functions for detection of anomalies in vector data
     (numerical series/ time series) and raster data (satellite derived
     products). Processing of very large raster files is supported.
-  - The [SmartSifter](https://cran.r-project.org/package=SmartSifter) package
-    provides online unsupervised outlier detection methods using finite
-    mixtures with discounting learning algorithms.
-  - Package [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated
-    Poisson process) provides a framework for detecting anomalous events
+  - The [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated Poisson
+    process) package provides a framework for detecting anomalous events
     in time series of counts using an unsupervised learning approach.
+  - The [surveillance](https://cran.r-project.org/package=surveillance) package
+    implements statistical methods for aberration detection in time
+    series of counts, proportions and categorical data, as well as for
+    the modeling of continuous-time point processes of epidemic
+    phenomena. The package also contains several real-world data sets,
+    the ability to simulate outbreak data, and to visualize the results
+    of the monitoring in a temporal, spatial or spatio-temporal fashion.
   - A set of online fault (anomaly) detectors for time series using
     prediction-based and window-based techniques are available via
     [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
     stationary and non-stationary environments.
-  - The `detectAO` and `detectIO` functions in
-    [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
-    outlier and innovative outlier in time series data.
+  - The [SmartSifter](https://cran.r-project.org/package=SmartSifter) package
+    provides online unsupervised outlier detection methods using finite
+    mixtures with discounting learning algorithms.
 
 **Spatial Outliers**
 
@@ -628,6 +635,7 @@ maintainer.**
   - [spikes](https://cran.r-project.org/package=spikes)
   - [StatDA](https://cran.r-project.org/package=StatDA)
   - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
+  - [surveillance](https://cran.r-project.org/package=surveillance)
   - [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
   - [trendsegmentR](https://cran.r-project.org/package=trendsegmentR)
   - [TSA](https://cran.r-project.org/package=TSA)
