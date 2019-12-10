@@ -5,7 +5,6 @@
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
 **Version:**    2019-12-10                                           
-**URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
 
