@@ -74,7 +74,9 @@ additions and extensions for this task view to the task view maintainer.
     contrast, a local anomaly is only an anomaly when it is distinct
     from, and compared with, its local neighbourhood. Micro clusters or
     clusters of anomalies may cause masking problems.
-  - ***Density-based outlier detection:***
+
+*Multivariate Outlier Detection: Density-based outlier detection*
+
   - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
     wide variety of distance- and density-based outlier detection
     functions mainly focusing local outliers in high-dimensional data.
@@ -117,7 +119,9 @@ additions and extensions for this task view to the task view maintainer.
     [densratio](https://cran.r-project.org/package=densratio) package can be used in
     many applications such as anomaly detection, change-point detection,
     covariate shift adaptation.
-  - ***Distance-based outlier detection:***
+
+*Multivariate Outlier Detection: Distance-based outlier detection*
+
   - The [HDoutliers](https://cran.r-project.org/package=HDoutliers) package provides
     an implementation of an algorithm for univariate and multivariate
     outlier detection that can handle data with a mixed categorical and
@@ -144,7 +148,9 @@ additions and extensions for this task view to the task view maintainer.
     detection. In addition to the basic distance measure, boxplots are
     provided with potential outlier(s) to give an insight into the early
     stage of data cleansing task.
-  - ***Clustering-based outlier detection:***
+
+*Multivariate Outlier Detection: Clustering-based outlier detection*
+
   - The [kmodR](https://cran.r-project.org/package=kmodR) package presents a unified
     approach for simultaneously clustering and discovering outliers in
     high dimensional data. Their approach is formalized as a
@@ -159,7 +165,9 @@ additions and extensions for this task view to the task view maintainer.
     The ranking is obtained on the basis of the path each case follows
     within the merging steps of a agglomerative hierarchical clustering
     method.
-  - ***Angle-based outlier detection:***
+
+*Multivariate Outlier Detection: Angle-based outlier detection*
+
   - The [abodOutlier](https://cran.r-project.org/package=abodOutlier) package
     performs angle-based outlier detection on high dimensional data. A
     complete, a randomized and a knn based methods are available.
@@ -167,7 +175,9 @@ additions and extensions for this task view to the task view maintainer.
     three high-dimensional outlier detection algorithms (angle-based,
     subspace based, feature bagging-based) and an outlier unification
     scheme.
-  - ***Other approaches:***
+
+*Multivariate Outlier Detection: Other approaches*
+
   - A set of algorithms for detection of outliers based on frequent
     pattern mining is available in
     [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) package. Such
@@ -272,9 +282,6 @@ additions and extensions for this task view to the task view maintainer.
     prediction-based and window-based techniques are available via
     [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
     stationary and non-stationary environments.
-  - The [jmotif](https://cran.r-project.org/package=jmotif) package provides tools
-    based on Symbolic aggregate for finding discords (i.e. time series
-    anomaly/ unusual time series subsequence).
   - The `detectAO` and `detectIO` functions in
     [TSA](https://cran.r-project.org/package=TSA) package support detecting additive
     outlier and innovative outlier in time series data.
@@ -567,7 +574,6 @@ additions and extensions for this task view to the task view maintainer.
   - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [hotspots](https://cran.r-project.org/package=hotspots)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
-  - [jmotif](https://cran.r-project.org/package=jmotif)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
   - [KRIS](https://cran.r-project.org/package=KRIS)
