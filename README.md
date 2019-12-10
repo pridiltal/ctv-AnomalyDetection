@@ -5,6 +5,7 @@
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
 **Version:**    2019-12-10                                           
+  
 
 <div>
 
@@ -275,6 +276,9 @@ maintainer.**
     and high-level functions for detection of anomalies in vector data
     (numerical series/ time series) and raster data (satellite derived
     products). Processing of very large raster files is supported.
+  - the [ACA](https://cran.r-project.org/package=ACA) package offers an interactive
+    function for the detection of abrupt change-points or aberrations in
+    point series.
   - The [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated Poisson
     process) package provides a framework for detecting anomalous events
     in time series of counts using an unsupervised learning approach.
@@ -532,6 +536,7 @@ maintainer.**
 ### CRAN packages:
 
   - [abodOutlier](https://cran.r-project.org/package=abodOutlier)
+  - [ACA](https://cran.r-project.org/package=ACA)
   - [adamethods](https://cran.r-project.org/package=adamethods)
   - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
