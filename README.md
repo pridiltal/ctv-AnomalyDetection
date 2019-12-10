@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
-**Version:**    2019-12-06                                           
+**Version:**    2019-12-10                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -21,9 +21,10 @@ outliers, novelty, odd values, extreme values, faults in different
 application domains. These variants are also considered for this task
 view.
 
-The development of this task view is fairly new and still in its early
+**The development of this task view is fairly new and still in its early
 stages and therefore subject to changes. Please send suggestions for
-additions and extensions for this task view to the task view maintainer.
+additions and extensions for this task view to the task view
+maintainer.**
 
 **Univariate Outlier Detection**
 
