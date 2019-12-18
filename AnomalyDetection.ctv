@@ -83,6 +83,8 @@
    <ul>
      <li> The <pkg>HDoutliers</pkg> package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
      </li>
+     <li> The <pkg>stray</pkg> package implements an algorithm for detecting anomalies in high-dimensional data that addresses the limitations of 'HDoutliers' algorithm. An approach based on extreme value theory is used for the anomalous threshold calculation.
+     </li>
      <li> The <pkg>mvoutlier</pkg> package provides multivariate outlier detection based on robust methods.
      </li>
      <li> The <pkg>Routliers</pkg> package provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
@@ -122,6 +124,17 @@
    
    
    <p> 
+   <i>Multivariate Outlier Detection: Decision tree based approaches</i>
+   </p>
+   <ul> 
+     <li> Explainable outlier detection method through decision tree conditioning is facilitated by  <pkg>outliertree</pkg> package .
+     </li>
+     <li> The <pkg>isotree</pkg> package provides fast and multi-threaded implementation of Extended Isolation Forest, Fair-Cut Forest, SCiForest (a.k.a. Split-Criterion iForest), and regular Isolation Forest, for isolation-based outlier detection, clustered outlier detection, distance or similarity approximation, and imputation of missing values  based on random or guided decision tree splitting. It also supports categorical data.
+     </li>
+   </ul> 
+   
+   
+   <p> 
    <i>Multivariate Outlier Detection: Other approaches</i>
    </p>
    <ul> 
@@ -134,8 +147,6 @@
      <li> Artificial neural networks for anomaly detection is implemented in  <pkg>ANN2</pkg> package.
      </li>
      <li> The <pkg>probout</pkg> package estimates unsupervised outlier probabilities for multivariate numeric       
-     </li>
-     <li> Explainable outlier detection method through decision tree conditioning is facilitated by  <pkg>outliertree</pkg> package .
      </li>
      <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
      </li>
@@ -189,6 +200,9 @@
      <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
      </li>
      <li> The <pkg>SmartSifter</pkg> package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
+     </li>
+     <li> The <pkg>oddstream</pkg> package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data.
+ The model uses time series features as inputs, and a density-based comparison to detect any significant changes in the distribution of the features. 
      </li>
    </ul>
 
@@ -435,6 +449,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>HighDimOut</pkg>
     <pkg>hotspots</pkg>
     <pkg>ICSOutlier</pkg>
+    <pkg>isotree</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
     <pkg>KRIS</pkg>
@@ -453,6 +468,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
+    <pkg>oddstream</pkg>
     <pkg>otsad</pkg>
     <pkg>OutlierDC</pkg>
     <pkg>OutlierDetection</pkg>
@@ -487,6 +503,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>solitude</pkg>
     <pkg>spikes</pkg>
     <pkg>StatDA</pkg>
+    <pkg>stray</pkg>
     <pkg>survBootOutliers</pkg>
     <pkg>surveillance</pkg>
     <pkg>surveyoutliers</pkg>

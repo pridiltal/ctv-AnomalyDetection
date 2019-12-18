@@ -5,7 +5,7 @@
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
 **Version:**    2019-12-10                                           
-  
+**URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
 
@@ -127,6 +127,11 @@ maintainer.**
     an implementation of an algorithm for univariate and multivariate
     outlier detection that can handle data with a mixed categorical and
     continuous variables and outlier masking problem.
+  - The [stray](https://cran.r-project.org/package=stray) package implements an
+    algorithm for detecting anomalies in high-dimensional data that
+    addresses the limitations of 'HDoutliers' algorithm. An approach
+    based on extreme value theory is used for the anomalous threshold
+    calculation.
   - The [mvoutlier](https://cran.r-project.org/package=mvoutlier) package provides
     multivariate outlier detection based on robust methods.
   - The [Routliers](https://cran.r-project.org/package=Routliers) package provides
@@ -177,6 +182,19 @@ maintainer.**
     subspace based, feature bagging-based) and an outlier unification
     scheme.
 
+*Multivariate Outlier Detection: Decision tree based approaches*
+
+  - Explainable outlier detection method through decision tree
+    conditioning is facilitated by
+    [outliertree](https://cran.r-project.org/package=outliertree) package .
+  - The [isotree](https://cran.r-project.org/package=isotree) package provides fast
+    and multi-threaded implementation of Extended Isolation Forest,
+    Fair-Cut Forest, SCiForest (a.k.a. Split-Criterion iForest), and
+    regular Isolation Forest, for isolation-based outlier detection,
+    clustered outlier detection, distance or similarity approximation,
+    and imputation of missing values based on random or guided decision
+    tree splitting. It also supports categorical data.
+
 *Multivariate Outlier Detection: Other approaches*
 
   - A set of algorithms for detection of outliers based on frequent
@@ -198,9 +216,6 @@ maintainer.**
     [ANN2](https://cran.r-project.org/package=ANN2) package.
   - The [probout](https://cran.r-project.org/package=probout) package estimates
     unsupervised outlier probabilities for multivariate numeric
-  - Explainable outlier detection method through decision tree
-    conditioning is facilitated by
-    [outliertree](https://cran.r-project.org/package=outliertree) package .
   - The [mrfDepth](https://cran.r-project.org/package=mrfDepth) package provides
     tools to compute depth measures and implementations of related tasks
     such as outlier detection, data exploration and classification of
@@ -296,6 +311,11 @@ maintainer.**
   - The [SmartSifter](https://cran.r-project.org/package=SmartSifter) package
     provides online unsupervised outlier detection methods using finite
     mixtures with discounting learning algorithms.
+  - The [oddstream](https://cran.r-project.org/package=oddstream) package implements
+    an algorithm for early detection of anomalous series within a large
+    collection of streaming time series data. The model uses time series
+    features as inputs, and a density-based comparison to detect any
+    significant changes in the distribution of the features.
 
 **Spatial Outliers**
 
@@ -586,6 +606,7 @@ maintainer.**
   - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [hotspots](https://cran.r-project.org/package=hotspots)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
+  - [isotree](https://cran.r-project.org/package=isotree)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
   - [KRIS](https://cran.r-project.org/package=KRIS)
@@ -604,6 +625,7 @@ maintainer.**
   - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
+  - [oddstream](https://cran.r-project.org/package=oddstream)
   - [otsad](https://cran.r-project.org/package=otsad)
   - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
@@ -638,6 +660,7 @@ maintainer.**
   - [solitude](https://cran.r-project.org/package=solitude)
   - [spikes](https://cran.r-project.org/package=spikes)
   - [StatDA](https://cran.r-project.org/package=StatDA)
+  - [stray](https://cran.r-project.org/package=stray)
   - [survBootOutliers](https://cran.r-project.org/package=survBootOutliers)
   - [surveillance](https://cran.r-project.org/package=surveillance)
   - [surveyoutliers](https://cran.r-project.org/package=surveyoutliers)
