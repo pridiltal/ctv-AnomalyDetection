@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
-**Version:**    2019-12-19                                           
+**Version:**    2020-01-14                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -194,6 +194,13 @@ maintainer.**
     clustered outlier detection, distance or similarity approximation,
     and imputation of missing values based on random or guided decision
     tree splitting. It also supports categorical data.
+  - The [outForest](https://cran.r-project.org/package=outForest) package provides a
+    random forest based implementation for multivariate outlier
+    detection. In this method each numeric variable is regressed onto
+    all other variables by a random forest. If the scaled absolute
+    difference between observed value and out-of-bag prediction of the
+    corresponding random forest is suspiciously large, then a value is
+    considered an outlier.
 
 *Multivariate Outlier Detection: Other approaches*
 
@@ -627,6 +634,7 @@ maintainer.**
   - [oclust](https://cran.r-project.org/package=oclust)
   - [oddstream](https://cran.r-project.org/package=oddstream)
   - [otsad](https://cran.r-project.org/package=otsad)
+  - [outForest](https://cran.r-project.org/package=outForest)
   - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
