@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="Dilini.Talagala@monash.edu">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2020-01-14</version>
+   <version>2020-04-21</version>
 
    <info>
    <p>
@@ -140,6 +140,8 @@
    <i>Multivariate Outlier Detection: Other approaches</i>
    </p>
    <ul> 
+     <li> The <pkg>abnormality</pkg> package measures a Subject's Abnormality with Respect to a Reference Population. A methodology is introduced to address this bias to accurately measure overall abnormality in high dimensional spaces. It can be applied to datasets in which the number of observations is less than the number of features/variables, and it can be abstracted to practically any number of domains or dimensions.
+     </li>
      <li> A set of algorithms for detection of outliers based on frequent pattern mining is available in <pkg>fpmoutliers</pkg> package. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
      </li>
      <li> The <pkg>ICSOutlier</pkg> package performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
@@ -196,8 +198,6 @@
      <li> the <pkg>ACA</pkg> package offers an interactive function for the detection of abrupt change-points or aberrations in point series.
      </li>
      <li> The <pkg>mmppr</pkg> (Markov modulated Poisson process) package provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
-     </li>
-     <li> The <pkg>surveillance</pkg> package implements statistical methods for aberration detection in time series of counts, proportions and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The package also contains several real-world data sets, the ability to simulate outbreak data, and to visualize the results of the monitoring in a temporal, spatial or spatio-temporal fashion.
      </li>
      <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
      </li>
@@ -283,8 +283,6 @@
    <strong>Pre-processing Methods for Anomaly Detection</strong>
    </p>
    <ul>	
-     <li> The <pkg>preprocomb</pkg> package provides an S4 framework for creating and evaluating preprocessing combinations for classification, clustering and outlier detection. 
-     </li>
      <li> The <pkg>dobin</pkg> package provides dimension reduction technique for outlier detection using neighbours, constructs a set of basis vectors for outlier detection. It brings outliers to the fore-front using fewer basis vectors.
      </li>
    </ul>
@@ -294,6 +292,26 @@
 
    <p>
    <strong>Specific Application Fields</strong>
+   </p>
+   
+   <p> 
+   <i>Epidemiology</i>
+   </p>
+   <ul>
+        <li> The <pkg>ABPS</pkg> package provides an implementation of the Abnormal Blood Profile Score (ABPS, part of the Athlete Biological Passport program of the World Anti-Doping Agency), which combines several blood parameters into a single score in order to detect blood doping. The package also contains functions to calculate other scores used in anti-doping programs, such as the OFF-score 
+        </li>
+        <li> The <pkg>DengueRT</pkg> Provides functions for parameter estimation and real-time predictions of a single dengue outbreak taking into account model uncertainty using model averaging.
+        </li>
+        <li> The <pkg>surveillance</pkg> package implements statistical methods for aberration detection in time series of counts, proportions and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The package also contains several real-world data sets, the ability to simulate outbreak data, and to visualize the results of the monitoring in a temporal, spatial or spatio-temporal fashion.
+     </li>
+     <li> The <pkg>outbreaker2</pkg> package supports Bayesian reconstruction of disease outbreaks using epidemiological and genetic information.  It is applicable to various densely sampled epidemics, and improves previous approaches by detecting unobserved and imported cases, as well as allowing multiple introductions of the pathogen.  
+     </li>
+     <li> The <pkg>outbreaks</pkg> package provides empirical or simulated disease outbreak data, either as RData or as text files.  
+     </li>
+   </ul>
+   
+   <p> 
+   <i>Other</i>
    </p>
    <ul>
      <li> The <pkg>precintcon</pkg> package contains functions to analyze the precipitation intensity, concentration and anomaly. 
@@ -306,8 +324,6 @@ Principal Component Analysis.
      <li> The <pkg>rgr</pkg> package supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
      </li>
      <li> The <pkg>NMAoutlier</pkg> package implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
-     </li>
-     <li> The <pkg>KRIS</pkg> package  provides useful functions which are needed for bioinformatic analysis including  detection of rough structures and outliers using unsupervised clustering.
      </li>
      <li> The <pkg>dave</pkg> package provides a collection of functions for data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
      </li>
@@ -364,10 +380,6 @@ Principal Component Analysis.
    <p><strong>Miscellaneous</strong>
    </p>
    <ul>
-     <li> The <pkg>analytics</pkg> package provides support for (among other functions) outlier detection in a fitted linear model.
-     </li>
-     <li> The <pkg>nlr</pkg> package include tools to detecting outliers in nonlinear regression. 
-     </li>
      <li> The <pkg>CircOutlier</pkg> package enables detection of outliers in circular-circular regression models, modifying its and estimating of models parameters.
      </li>
      <li> The Residual Congruent Subset (RCS) is a method for
@@ -393,6 +405,8 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
      </li>
      <li> The <pkg>faoutlier</pkg>  package provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
      </li>
+      <li> The <pkg>crseEventStudy</pkg> package provides a robust and powerful test of abnormal stock returns in long-horizon event studies
+      </li>
    </ul>
    </info>
 
@@ -400,12 +414,13 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
 
 
   <packagelist>
+    <pkg>abnormality</pkg>
     <pkg>abodOutlier</pkg>
+    <pkg>ABPS</pkg>
     <pkg>ACA</pkg>
     <pkg>adamethods</pkg>
     <pkg>alphaOutlier</pkg>
     <pkg>amelie</pkg>
-    <pkg>analytics</pkg>
     <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
@@ -419,10 +434,12 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>compositions</pkg>
     <pkg>CoordinateCleaner</pkg>
     <pkg>CrossClustering</pkg>
+    <pkg>crseEventStudy</pkg>
     <pkg>dave</pkg>
     <pkg>dbscan</pkg>
     <pkg>ddalpha</pkg>
     <pkg priority="core">DDoutlier</pkg>
+    <pkg>DengueRT</pkg>
     <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
     <pkg>DescTools</pkg>
@@ -454,7 +471,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>isotree</pkg>
     <pkg>kernlab</pkg>
     <pkg>kmodR</pkg>
-    <pkg>KRIS</pkg>
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
     <pkg>leri</pkg>
@@ -466,12 +482,13 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>
-    <pkg>nlr</pkg>
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
     <pkg>oddstream</pkg>
     <pkg>otsad</pkg>
+    <pkg>outbreaker2</pkg>
+    <pkg>outbreaks</pkg> 
     <pkg>outForest</pkg>
     <pkg>OutlierDC</pkg>
     <pkg>OutlierDetection</pkg>
@@ -481,7 +498,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>outliertree</pkg>
     <pkg>pcadapt</pkg>
     <pkg>precintcon</pkg>
-    <pkg>preprocomb</pkg>
     <pkg>probout</pkg>
     <pkg>quokar</pkg>
     <pkg>qpcR</pkg>

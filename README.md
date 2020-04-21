@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    Dilini.Talagala at monash.edu                        
-**Version:**    2020-01-14                                           
+**Version:**    2020-04-21                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -204,6 +204,13 @@ maintainer.**
 
 *Multivariate Outlier Detection: Other approaches*
 
+  - The [abnormality](https://cran.r-project.org/package=abnormality) package
+    measures a Subject's Abnormality with Respect to a Reference
+    Population. A methodology is introduced to address this bias to
+    accurately measure overall abnormality in high dimensional spaces.
+    It can be applied to datasets in which the number of observations is
+    less than the number of features/variables, and it can be abstracted
+    to practically any number of domains or dimensions.
   - A set of algorithms for detection of outliers based on frequent
     pattern mining is available in
     [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) package. Such
@@ -304,13 +311,6 @@ maintainer.**
   - The [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated Poisson
     process) package provides a framework for detecting anomalous events
     in time series of counts using an unsupervised learning approach.
-  - The [surveillance](https://cran.r-project.org/package=surveillance) package
-    implements statistical methods for aberration detection in time
-    series of counts, proportions and categorical data, as well as for
-    the modeling of continuous-time point processes of epidemic
-    phenomena. The package also contains several real-world data sets,
-    the ability to simulate outbreak data, and to visualize the results
-    of the monitoring in a temporal, spatial or spatio-temporal fashion.
   - A set of online fault (anomaly) detectors for time series using
     prediction-based and window-based techniques are available via
     [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
@@ -407,15 +407,44 @@ maintainer.**
 
 **Pre-processing Methods for Anomaly Detection**
 
-  - The [preprocomb](https://cran.r-project.org/package=preprocomb) package provides
-    an S4 framework for creating and evaluating preprocessing
-    combinations for classification, clustering and outlier detection.
   - The [dobin](https://cran.r-project.org/package=dobin) package provides dimension
     reduction technique for outlier detection using neighbours,
     constructs a set of basis vectors for outlier detection. It brings
     outliers to the fore-front using fewer basis vectors.
 
 **Specific Application Fields**
+
+*Epidemiology*
+
+  - The [ABPS](https://cran.r-project.org/package=ABPS) package provides an
+    implementation of the Abnormal Blood Profile Score (ABPS, part of
+    the Athlete Biological Passport program of the World Anti-Doping
+    Agency), which combines several blood parameters into a single score
+    in order to detect blood doping. The package also contains functions
+    to calculate other scores used in anti-doping programs, such as the
+    OFF-score
+  - The [DengueRT](https://cran.r-project.org/package=DengueRT) Provides functions
+    for parameter estimation and real-time predictions of a single
+    dengue outbreak taking into account model uncertainty using model
+    averaging.
+  - The [surveillance](https://cran.r-project.org/package=surveillance) package
+    implements statistical methods for aberration detection in time
+    series of counts, proportions and categorical data, as well as for
+    the modeling of continuous-time point processes of epidemic
+    phenomena. The package also contains several real-world data sets,
+    the ability to simulate outbreak data, and to visualize the results
+    of the monitoring in a temporal, spatial or spatio-temporal fashion.
+  - The [outbreaker2](https://cran.r-project.org/package=outbreaker2) package
+    supports Bayesian reconstruction of disease outbreaks using
+    epidemiological and genetic information. It is applicable to various
+    densely sampled epidemics, and improves previous approaches by
+    detecting unobserved and imported cases, as well as allowing
+    multiple introductions of the pathogen.
+  - The [outbreaks](https://cran.r-project.org/package=outbreaks) package provides
+    empirical or simulated disease outbreak data, either as RData or as
+    text files.
+
+*Other*
 
   - The [precintcon](https://cran.r-project.org/package=precintcon) package contains
     functions to analyze the precipitation intensity, concentration and
@@ -435,10 +464,6 @@ maintainer.**
     implements the forward search algorithm for the detection of
     outlying studies (studies with extreme results) in network
     meta-analysis.
-  - The [KRIS](https://cran.r-project.org/package=KRIS) package provides useful
-    functions which are needed for bioinformatic analysis including
-    detection of rough structures and outliers using unsupervised
-    clustering.
   - The [dave](https://cran.r-project.org/package=dave) package provides a
     collection of functions for data analysis in vegetation ecology
     including outlier detection using nearest neighbour distances.
@@ -513,11 +538,6 @@ maintainer.**
 
 **Miscellaneous**
 
-  - The [analytics](https://cran.r-project.org/package=analytics) package provides
-    support for (among other functions) outlier detection in a fitted
-    linear model.
-  - The [nlr](https://cran.r-project.org/package=nlr) package include tools to
-    detecting outliers in nonlinear regression.
   - The [CircOutlier](https://cran.r-project.org/package=CircOutlier) package
     enables detection of outliers in circular-circular regression
     models, modifying its and estimating of models parameters.
@@ -555,19 +575,23 @@ maintainer.**
   - The [faoutlier](https://cran.r-project.org/package=faoutlier) package provides
     tools for detecting and summarize influential cases that can affect
     exploratory and confirmatory factor analysis models and structural
-    equation
-    models.
+    equation models.
+  - The [crseEventStudy](https://cran.r-project.org/package=crseEventStudy) package
+    provides a robust and powerful test of abnormal stock returns in
+    long-horizon event
+    studies
 
 </div>
 
 ### CRAN packages:
 
+  - [abnormality](https://cran.r-project.org/package=abnormality)
   - [abodOutlier](https://cran.r-project.org/package=abodOutlier)
+  - [ABPS](https://cran.r-project.org/package=ABPS)
   - [ACA](https://cran.r-project.org/package=ACA)
   - [adamethods](https://cran.r-project.org/package=adamethods)
   - [alphaOutlier](https://cran.r-project.org/package=alphaOutlier)
   - [amelie](https://cran.r-project.org/package=amelie)
-  - [analytics](https://cran.r-project.org/package=analytics)
   - [ANN2](https://cran.r-project.org/package=ANN2)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
@@ -581,10 +605,12 @@ maintainer.**
   - [compositions](https://cran.r-project.org/package=compositions)
   - [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
   - [CrossClustering](https://cran.r-project.org/package=CrossClustering)
+  - [crseEventStudy](https://cran.r-project.org/package=crseEventStudy)
   - [dave](https://cran.r-project.org/package=dave)
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [ddalpha](https://cran.r-project.org/package=ddalpha)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier) (core)
+  - [DengueRT](https://cran.r-project.org/package=DengueRT)
   - [densratio](https://cran.r-project.org/package=densratio)
   - [depth.plot](https://cran.r-project.org/package=depth.plot)
   - [DescTools](https://cran.r-project.org/package=DescTools)
@@ -616,7 +642,6 @@ maintainer.**
   - [isotree](https://cran.r-project.org/package=isotree)
   - [kernlab](https://cran.r-project.org/package=kernlab)
   - [kmodR](https://cran.r-project.org/package=kmodR)
-  - [KRIS](https://cran.r-project.org/package=KRIS)
   - [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp)
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [leri](https://cran.r-project.org/package=leri)
@@ -628,12 +653,13 @@ maintainer.**
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
-  - [nlr](https://cran.r-project.org/package=nlr)
   - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)
   - [oddstream](https://cran.r-project.org/package=oddstream)
   - [otsad](https://cran.r-project.org/package=otsad)
+  - [outbreaker2](https://cran.r-project.org/package=outbreaker2)
+  - [outbreaks](https://cran.r-project.org/package=outbreaks)
   - [outForest](https://cran.r-project.org/package=outForest)
   - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
@@ -643,7 +669,6 @@ maintainer.**
   - [outliertree](https://cran.r-project.org/package=outliertree)
   - [pcadapt](https://cran.r-project.org/package=pcadapt)
   - [precintcon](https://cran.r-project.org/package=precintcon)
-  - [preprocomb](https://cran.r-project.org/package=preprocomb)
   - [probout](https://cran.r-project.org/package=probout)
   - [qpcR](https://cran.r-project.org/package=qpcR)
   - [quokar](https://cran.r-project.org/package=quokar)
