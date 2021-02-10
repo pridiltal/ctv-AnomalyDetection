@@ -328,13 +328,6 @@ maintainer.**
 
 **Spatio-Temporal Data**
 
-  - Scan statistics are used to detect anomalous clusters in spatial or
-    space-time data. The
-    [scanstatistics](https://cran.r-project.org/package=scanstatistics) package
-    provides functions for detection of anomalous space-time clusters
-    using the scan statistics methodology. It focuses on prospective
-    surveillance of data streams, scanning for clusters with ongoing
-    anomalies.
   - The [solitude](https://cran.r-project.org/package=solitude) package provides an
     implementation of Isolation forest which detects anomalies purely
     based on the concept of isolation without employing any distance or
@@ -661,7 +654,6 @@ maintainer.**
   - [Routliers](https://cran.r-project.org/package=Routliers)
   - [rrcovHD](https://cran.r-project.org/package=rrcovHD)
   - [RWBP](https://cran.r-project.org/package=RWBP)
-  - [scanstatistics](https://cran.r-project.org/package=scanstatistics)
   - [seasonal](https://cran.r-project.org/package=seasonal)
   - [seismicRoll](https://cran.r-project.org/package=seismicRoll)
   - [SeleMix](https://cran.r-project.org/package=SeleMix)

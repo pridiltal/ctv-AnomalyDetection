@@ -224,8 +224,6 @@
    <strong>Spatio-Temporal Data</strong>
    </p>
    <ul>	 
-     <li>Scan statistics are used to detect anomalous clusters in spatial or space-time data. The <pkg>scanstatistics</pkg> package  provides functions for detection of anomalous space-time clusters using the scan statistics  methodology. It focuses on prospective surveillance of data streams, scanning for clusters with ongoing anomalies. 
-     </li>
      <li> The <pkg>solitude</pkg> package provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
      </li>
      <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modelling are available via <pkg>biogeo</pkg> package.
@@ -499,7 +497,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>Routliers</pkg>
     <pkg>rrcovHD</pkg>
     <pkg>RWBP</pkg>
-    <pkg>scanstatistics</pkg>
     <pkg>seasonal</pkg>
     <pkg>seismicRoll</pkg>
     <pkg>SeleMix</pkg>
