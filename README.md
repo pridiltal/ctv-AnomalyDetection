@@ -232,10 +232,6 @@ maintainer.**
   - The [evtclass](https://cran.r-project.org/package=evtclass) package provides two
     classifiers for open set recognition and novelty detection based on
     extreme value theory.
-  - The [RaPKod](https://cran.r-project.org/package=RaPKod) package implements a
-    kernel method that performs online outlier detection through random
-    low dimensional projections in a kernel space on the basis of a
-    reference set of non-outliers.
   - The [FastHCS](https://cran.r-project.org/package=FastHCS) package implements
     robust algorithm for principal component analysis and thereby
     provide robust PCA modelling and associated outlier detection and
@@ -657,7 +653,6 @@ maintainer.**
   - [qpcR](https://cran.r-project.org/package=qpcR)
   - [quokar](https://cran.r-project.org/package=quokar)
   - [rainbow](https://cran.r-project.org/package=rainbow)
-  - [RaPKod](https://cran.r-project.org/package=RaPKod)
   - [referenceIntervals](https://cran.r-project.org/package=referenceIntervals)
   - [rgr](https://cran.r-project.org/package=rgr)
   - [rIP](https://cran.r-project.org/package=rIP)

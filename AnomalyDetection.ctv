@@ -154,8 +154,6 @@
      </li>
      <li> The <pkg>evtclass</pkg> package provides two classifiers for open set recognition and novelty detection based on extreme value theory.
      </li>
-     <li> The <pkg>RaPKod</pkg> package implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
-     </li>
      <li> The <pkg>FastHCS</pkg> package implements robust algorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. PCA based outlier detection tools are also available via <pkg>FactoInvestigate</pkg> package. 
      </li>
      <li> <i> Cellwise outliers </i> are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them.
@@ -493,7 +491,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>quokar</pkg>
     <pkg>qpcR</pkg>
     <pkg>rainbow</pkg>
-    <pkg>RaPKod</pkg>
     <pkg>referenceIntervals</pkg>
     <pkg>rgr</pkg>
     <pkg>rIP</pkg>
