@@ -307,6 +307,14 @@ maintainer.**
     collection of streaming time series data. The model uses time series
     features as inputs, and a density-based comparison to detect any
     significant changes in the distribution of the features.
+  - The [composits](https://cran.r-project.org/package=composits) package provides
+    an ensemble of time series outlier detection methods that can be
+    used for compositional, multivariate and univariate data. It uses
+    the four R packages [forecast](https://cran.r-project.org/package=forecast),
+    [tsoutliers](https://cran.r-project.org/package=tsoutliers),
+    [otsad](https://cran.r-project.org/package=otsad) and
+    [anomalize](https://cran.r-project.org/package=anomalize) to detect time series
+    outliers.
 
 **Spatial Outliers**
 
@@ -589,6 +597,7 @@ maintainer.**
   - [CircOutlier](https://cran.r-project.org/package=CircOutlier)
   - [clampSeg](https://cran.r-project.org/package=clampSeg)
   - [compositions](https://cran.r-project.org/package=compositions)
+  - [composits](https://cran.r-project.org/package=composits)
   - [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
   - [crseEventStudy](https://cran.r-project.org/package=crseEventStudy)
   - [dave](https://cran.r-project.org/package=dave)

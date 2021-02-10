@@ -198,6 +198,8 @@
      <li> The <pkg>oddstream</pkg> package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data.
  The model uses time series features as inputs, and a density-based comparison to detect any significant changes in the distribution of the features. 
      </li>
+     <li> The <pkg>composits</pkg> package provides an  ensemble of time series outlier detection methods that can be used for compositional, multivariate and univariate data. It uses the four R packages <pkg>forecast</pkg>, <pkg>tsoutliers</pkg>, <pkg>otsad</pkg> and <pkg>anomalize</pkg> to detect time series outliers.
+     </li>
    </ul>
 
 
@@ -426,6 +428,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>CircOutlier</pkg>
     <pkg>clampSeg</pkg>
     <pkg>compositions</pkg>
+    <pkg>composits</pkg>
     <pkg>CoordinateCleaner</pkg>
     <pkg>crseEventStudy</pkg>
     <pkg>dave</pkg>
