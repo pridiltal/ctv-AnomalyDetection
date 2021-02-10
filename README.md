@@ -263,8 +263,9 @@ maintainer.**
     wavelet transformation.
   - The [anomaly](https://cran.r-project.org/package=anomaly) package implements
     Collective And Point Anomaly (CAPA), Multi-Variate Collective And
-    Point Anomaly (MVCAPA), and Proportion Adaptive Segment Selection
-    (PASS) methods for the detection of *anomalies* in time series data.
+    Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS)
+    and Bayesian Abnormal Region Detector (BARD) methods for the
+    detection of *anomalies* in time series data.
   - The [anomalize](https://cran.r-project.org/package=anomalize) package enables a
     "tidy" workflow for detecting anomalies in data. The main functions
     are `time_decompose()`, `anomalize()`, and `time_recompose()`.
