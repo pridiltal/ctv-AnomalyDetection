@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2020-04-21</version>
+   <version>2021-02-11</version>
 
    <info>
    <p>
@@ -153,8 +153,6 @@
      <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
      </li>
      <li> The <pkg>evtclass</pkg> package provides two classifiers for open set recognition and novelty detection based on extreme value theory.
-     </li>
-     <li> The <pkg>dlookr</pkg> package provides a collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and unique and negative values to understand the distribution and quality of data.
      </li>
      <li> The <pkg>RaPKod</pkg> package implements a kernel method that performs online outlier detection through random low dimensional projections in a kernel space on the basis of a reference set of non-outliers.
      </li>
@@ -442,7 +440,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>DescTools</pkg>
     <pkg>dixonTest</pkg>
     <pkg>DJL</pkg>
-    <pkg>dlookr</pkg>
     <pkg>dobin</pkg>
     <pkg>DMwR2</pkg>
     <pkg>EFDR</pkg>

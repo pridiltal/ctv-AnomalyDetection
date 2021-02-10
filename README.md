@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2020-11-21                                           
+**Version:**    2021-02-11                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -232,11 +232,6 @@ maintainer.**
   - The [evtclass](https://cran.r-project.org/package=evtclass) package provides two
     classifiers for open set recognition and novelty detection based on
     extreme value theory.
-  - The [dlookr](https://cran.r-project.org/package=dlookr) package provides a
-    collection of tools that support data diagnosis, exploration, and
-    transformation. Data diagnostics provides information and
-    visualization of missing values and outliers and unique and negative
-    values to understand the distribution and quality of data.
   - The [RaPKod](https://cran.r-project.org/package=RaPKod) package implements a
     kernel method that performs online outlier detection through random
     low dimensional projections in a kernel space on the basis of a
@@ -610,7 +605,6 @@ maintainer.**
   - [DescTools](https://cran.r-project.org/package=DescTools)
   - [dixonTest](https://cran.r-project.org/package=dixonTest)
   - [DJL](https://cran.r-project.org/package=DJL)
-  - [dlookr](https://cran.r-project.org/package=dlookr)
   - [DMwR2](https://cran.r-project.org/package=DMwR2)
   - [dobin](https://cran.r-project.org/package=dobin)
   - [EFDR](https://cran.r-project.org/package=EFDR)
