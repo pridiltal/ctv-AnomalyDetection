@@ -446,6 +446,10 @@ maintainer.**
     implements the forward search algorithm for the detection of
     outlying studies (studies with extreme results) in network
     meta-analysis.
+  - The [boutliers](https://cran.r-project.org/package=boutliers) package provides
+    methods for outlier detection and influence diagnostics for
+    meta-analysis based on Bootstrap distributions of the influence
+    statistics.
   - The [dave](https://cran.r-project.org/package=dave) package provides a
     collection of functions for data analysis in vegetation ecology
     including outlier detection using nearest neighbour distances.
