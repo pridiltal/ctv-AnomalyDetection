@@ -148,7 +148,7 @@
      </li>
      <li> Artificial neural networks for anomaly detection is implemented in  <pkg>ANN2</pkg> package.
      </li>
-     <li> The <pkg>probout</pkg> package estimates unsupervised outlier probabilities for multivariate numeric       
+     <li> The <pkg>probout</pkg> package estimates unsupervised outlier probabilities for multivariate numeric
      </li>
      <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
      </li>
@@ -248,6 +248,8 @@
      <li> The <pkg>fda.usc</pkg> package provides tools for  outlier detection in functional data  (atypical curves detection) using different approaches such as likelihood ratio test, depth measures, quantiles of the bootstrap samples.
      </li>
      <li> The <pkg>fdasrvf</pkg> package supports outlier detection in functional data using the square-root velocity framework which allows for elastic analysis of functional data through phase and amplitude separation. 
+     </li>
+     <li> The <pkg>fdaoutlier</pkg> package provides a collection of functions for outlier detection in functional data analysis. Methods implemented include directional outlyingness, MS-plot, total variation depth, and sequential transformations among others.
      </li>
    </ul>
 
@@ -447,6 +449,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>FastHCS</pkg>
     <pkg>FastPCS</pkg>
     <pkg>FastRCS</pkg>
+    <pkg>fdaoutlier</pkg>
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
     <pkg>fpmoutliers</pkg>

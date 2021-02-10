@@ -367,6 +367,11 @@ maintainer.**
     outlier detection in functional data using the square-root velocity
     framework which allows for elastic analysis of functional data
     through phase and amplitude separation.
+  - The [fdaoutlier](https://cran.r-project.org/package=fdaoutlier) package provides
+    a collection of functions for outlier detection in functional data
+    analysis. Methods implemented include directional outlyingness,
+    MS-plot, total variation depth, and sequential transformations among
+    others.
 
 **Visualization of Anomalies**
 
@@ -606,6 +611,7 @@ maintainer.**
   - [FastPCS](https://cran.r-project.org/package=FastPCS)
   - [FastRCS](https://cran.r-project.org/package=FastRCS)
   - [fda.usc](https://cran.r-project.org/package=fda.usc)
+  - [fdaoutlier](https://cran.r-project.org/package=fdaoutlier)
   - [fdasrvf](https://cran.r-project.org/package=fdasrvf)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [funModeling](https://cran.r-project.org/package=funModeling)
