@@ -193,8 +193,6 @@
      </li>
      <li> the <pkg>ACA</pkg> package offers an interactive function for the detection of abrupt change-points or aberrations in point series.
      </li>
-     <li> The <pkg>mmppr</pkg> (Markov modulated Poisson process) package provides a framework for detecting anomalous events in time series of counts using an unsupervised learning approach.
-     </li>
      <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
      </li>
      <li> The <pkg>SmartSifter</pkg> package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
@@ -471,7 +469,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>MALDIrppa</pkg>
     <pkg>MGBT</pkg>
     <pkg>MIPHENO</pkg>
-    <pkg>mmppr</pkg>
     <pkg>modi</pkg>
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>

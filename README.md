@@ -298,9 +298,6 @@ maintainer.**
   - the [ACA](https://cran.r-project.org/package=ACA) package offers an interactive
     function for the detection of abrupt change-points or aberrations in
     point series.
-  - The [mmppr](https://cran.r-project.org/package=mmppr) (Markov modulated Poisson
-    process) package provides a framework for detecting anomalous events
-    in time series of counts using an unsupervised learning approach.
   - A set of online fault (anomaly) detectors for time series using
     prediction-based and window-based techniques are available via
     [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
@@ -636,7 +633,6 @@ maintainer.**
   - [MALDIrppa](https://cran.r-project.org/package=MALDIrppa)
   - [MGBT](https://cran.r-project.org/package=MGBT)
   - [MIPHENO](https://cran.r-project.org/package=MIPHENO)
-  - [mmppr](https://cran.r-project.org/package=mmppr)
   - [modi](https://cran.r-project.org/package=modi)
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
