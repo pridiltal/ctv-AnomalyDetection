@@ -160,6 +160,8 @@
      </li>
      <li> <i>The Projection Congruent Subset (PCS) </i> is a method for finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by <pkg>FastPCS</pkg> package. 
      </li>
+     <li> The <pkg>molic</pkg> package provides an outlier detection method for high‐dimensional contingency tables using decomposable graphical models
+    </li>
    </ul>
 
 
@@ -474,6 +476,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>MGBT</pkg>
     <pkg>MIPHENO</pkg>
     <pkg>modi</pkg>
+    <pkg>molic</pkg>
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>

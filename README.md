@@ -249,6 +249,9 @@ maintainer.**
     multivariate outliers by searching for a subset which minimizes a
     criterion. PCS is supported by
     [FastPCS](https://cran.r-project.org/package=FastPCS) package.
+  - The [molic](https://cran.r-project.org/package=molic) package provides an
+    outlier detection method for high‐dimensional contingency tables
+    using decomposable graphical models
 
 **Temporal Data**
 
@@ -643,6 +646,7 @@ maintainer.**
   - [MGBT](https://cran.r-project.org/package=MGBT)
   - [MIPHENO](https://cran.r-project.org/package=MIPHENO)
   - [modi](https://cran.r-project.org/package=modi)
+  - [molic](https://cran.r-project.org/package=molic)
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
   - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
