@@ -106,8 +106,6 @@
    <ul>   
      <li> The <pkg>kmodR</pkg> package presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
      </li>
-     <li> The <pkg>CrossClustering</pkg> package implements a partial clustering algorithm that combines the Ward's minimum variance and Complete Linkage algorithms, providing automatic estimation of a suitable number of clusters and identification of outlier elements.
-     </li>
      <li> The <pkg>DMwR2</pkg>  package uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
      </li>
    </ul> 
@@ -433,7 +431,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>clampSeg</pkg>
     <pkg>compositions</pkg>
     <pkg>CoordinateCleaner</pkg>
-    <pkg>CrossClustering</pkg>
     <pkg>crseEventStudy</pkg>
     <pkg>dave</pkg>
     <pkg>dbscan</pkg>

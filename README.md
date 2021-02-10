@@ -161,11 +161,6 @@ maintainer.**
     approach for simultaneously clustering and discovering outliers in
     high dimensional data. Their approach is formalized as a
     generalization of the k-MEANS problem.
-  - The [CrossClustering](https://cran.r-project.org/package=CrossClustering)
-    package implements a partial clustering algorithm that combines the
-    Ward's minimum variance and Complete Linkage algorithms, providing
-    automatic estimation of a suitable number of clusters and
-    identification of outlier elements.
   - The [DMwR2](https://cran.r-project.org/package=DMwR2) package uses hierarchical
     clustering to obtain a ranking of outlierness for a set of cases.
     The ranking is obtained on the basis of the path each case follows
@@ -604,7 +599,6 @@ maintainer.**
   - [clampSeg](https://cran.r-project.org/package=clampSeg)
   - [compositions](https://cran.r-project.org/package=compositions)
   - [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
-  - [CrossClustering](https://cran.r-project.org/package=CrossClustering)
   - [crseEventStudy](https://cran.r-project.org/package=crseEventStudy)
   - [dave](https://cran.r-project.org/package=dave)
   - [dbscan](https://cran.r-project.org/package=dbscan)
