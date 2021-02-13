@@ -74,7 +74,7 @@
      </li>
      <li> The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
      </li>
-     <li> The <pkg>lookout</pkg> package detect outliers using leave-one-out kernel density estimates and extreme value theory. The bandwidth for kernel density estimates is computed using persistent homology, a technique in topological data analysis.
+     <li> The <pkg>lookout</pkg> package detects outliers using leave-one-out kernel density estimates and extreme value theory. The bandwidth for kernel density estimates is computed using persistent homology, a technique in topological data analysis. It also has the capability to explore the birth and the cessation of outliers with changing bandwidth and significance levels via <code>persisting_outliers().</code>
      </li>
      </ul>
      

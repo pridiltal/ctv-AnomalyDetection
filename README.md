@@ -120,10 +120,13 @@ maintainer.**
     [densratio](https://cran.r-project.org/package=densratio) package can be used in
     many applications such as anomaly detection, change-point detection,
     covariate shift adaptation.
-  - The [lookout](https://cran.r-project.org/package=lookout) package detect
+  - The [lookout](https://cran.r-project.org/package=lookout) package detects
     outliers using leave-one-out kernel density estimates and extreme
     value theory. The bandwidth for kernel density estimates is computed
     using persistent homology, a technique in topological data analysis.
+    It also has the capability to explore the birth and the cessation of
+    outliers with changing bandwidth and significance levels via
+    `persisting_outliers().`
 
 *Multivariate Outlier Detection: Distance-based outlier detection*
 
