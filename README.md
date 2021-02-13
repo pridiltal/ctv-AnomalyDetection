@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2021-02-11                                           
+**Version:**    2021-02-13                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -120,6 +120,10 @@ maintainer.**
     [densratio](https://cran.r-project.org/package=densratio) package can be used in
     many applications such as anomaly detection, change-point detection,
     covariate shift adaptation.
+  - The [lookout](https://cran.r-project.org/package=lookout) package detect
+    outliers using leave-one-out kernel density estimates and extreme
+    value theory. The bandwidth for kernel density estimates is computed
+    using persistent homology, a technique in topological data analysis.
 
 *Multivariate Outlier Detection: Distance-based outlier detection*
 
@@ -642,6 +646,7 @@ maintainer.**
   - [kuiper.2samp](https://cran.r-project.org/package=kuiper.2samp)
   - [ldbod](https://cran.r-project.org/package=ldbod)
   - [leri](https://cran.r-project.org/package=leri)
+  - [lookout](https://cran.r-project.org/package=lookout)
   - [MALDIrppa](https://cran.r-project.org/package=MALDIrppa)
   - [MGBT](https://cran.r-project.org/package=MGBT)
   - [MIPHENO](https://cran.r-project.org/package=MIPHENO)

@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2021-02-11</version>
+   <version>2021-02-13</version>
 
    <info>
    <p>
@@ -73,6 +73,8 @@
      <li> The <pkg>amelie</pkg> package implements anomaly detection as binary classification for multivariate     
      </li>
      <li> The estimated density ratio function in <pkg>densratio</pkg> package can be used in many applications such as anomaly detection, change-point detection, covariate shift adaptation. 
+     </li>
+     <li> The <pkg>lookout</pkg> package detect outliers using leave-one-out kernel density estimates and extreme value theory. The bandwidth for kernel density estimates is computed using persistent homology, a technique in topological data analysis.
      </li>
      </ul>
      
@@ -472,6 +474,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
     <pkg>leri</pkg>
+    <pkg>lookout</pkg>
     <pkg>MALDIrppa</pkg>
     <pkg>MGBT</pkg>
     <pkg>MIPHENO</pkg>
