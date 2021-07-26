@@ -74,6 +74,8 @@
      </li>
      <li> The <pkg>lookout</pkg> package detects outliers using leave-one-out kernel density estimates and extreme value theory. The bandwidth for kernel density estimates is computed using persistent homology, a technique in topological data analysis. It also has the capability to explore the birth and the cessation of outliers with changing bandwidth and significance levels via <code>persisting_outliers().</code>
      </li>
+       <li> The Weighted BACON  (blocked adaptive computationally-efficient outlier nominators) algorithms in <pkg>wbacon</pkg> implement a weighted variant of the BACON algorithms  for multivariate outlier detection and robust linear regression. The methods assume that the typical data  follows an elliptically contoured distribution. 
+     </li>
      </ul>
      
      
@@ -516,8 +518,11 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>univOutl</pkg>
     <pkg>washeR</pkg>
     <pkg>waterData</pkg>
+    <pkg>wbacon</pkg>
     <pkg>wql</pkg>
   </packagelist>
+  
+  
 
 
 

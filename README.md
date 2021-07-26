@@ -121,6 +121,12 @@ maintainer.**
     It also has the capability to explore the birth and the cessation of
     outliers with changing bandwidth and significance levels via
     `persisting_outliers().`
+  - The Weighted BACON (blocked adaptive computationally-efficient
+    outlier nominators) algorithms in
+    [wbacon](https://cran.r-project.org/package=wbacon) implement a weighted variant
+    of the BACON algorithms for multivariate outlier detection and
+    robust linear regression. The methods assume that the typical data
+    follows an elliptically contoured distribution.
 
 *Multivariate Outlier Detection: Distance-based outlier detection*
 
@@ -682,6 +688,7 @@ maintainer.**
   - [univOutl](https://cran.r-project.org/package=univOutl)
   - [washeR](https://cran.r-project.org/package=washeR)
   - [waterData](https://cran.r-project.org/package=waterData)
+  - [wbacon](https://cran.r-project.org/package=wbacon)
   - [wql](https://cran.r-project.org/package=wql)
 
 ### Related links:
