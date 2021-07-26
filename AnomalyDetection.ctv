@@ -60,8 +60,6 @@
    <ul>
      <li> The <pkg>DDoutlier</pkg> package provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
      </li>
-     <li> The <pkg>OutlierDetection</pkg> package provides different implementations for outlier detection namely model based, distance based, dispersion based, depth based and density based. This package provides labelling of observations as outliers and outlierliness of each outlier. For univariate, bivariate and trivariate data, visualization is also provided.
-     </li>
      <li> <i>Local Outlier Factor (LOF) </i>is an algorithm for detecting anomalous data points by measuring the local deviation of a given data point with respect to its neighbours. This algorithm with some variations is supported by many packages. The <pkg>DescTools</pkg> package provides functions for outlier detection using LOF and Tukey’s boxplot definition. Functions <code>LOF()</code> and <code>GLOSH</code> in package <pkg>dbscan</pkg> provide density based anomaly detection methods using a kd-tree to speed up kNN search. Parallel implementation of LOF which uses multiple CPUs to significantly speed up the LOF computation for large datasets is available in <pkg>Rlof</pkg> package. Package <pkg>bigutilsr</pkg> provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
      </li>
      <li> The <pkg>SMLoutliers</pkg> package provides an implementation of the Local Correlation Integral method (Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values. 
@@ -86,8 +84,6 @@
      <li> The <pkg>HDoutliers</pkg> package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with a mixed categorical and continuous variables and outlier masking problem.
      </li>
      <li> The <pkg>stray</pkg> package implements an algorithm for detecting anomalies in high-dimensional data that addresses the limitations of 'HDoutliers' algorithm. An approach based on extreme value theory is used for the anomalous threshold calculation.
-     </li>
-     <li> The <pkg>mvoutlier</pkg> package provides multivariate outlier detection based on robust methods.
      </li>
      <li> The <pkg>Routliers</pkg> package provides robust methods to detect  univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
      </li>
@@ -488,7 +484,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>outbreaks</pkg> 
     <pkg>outForest</pkg>
     <pkg>OutlierDC</pkg>
-    <pkg>OutlierDetection</pkg>
     <pkg>OutlierDM</pkg>
     <pkg>outliers</pkg>
     <pkg priority="core">OutliersO3</pkg>

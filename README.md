@@ -81,12 +81,6 @@ maintainer.**
   - The [DDoutlier](https://cran.r-project.org/package=DDoutlier) package provides a
     wide variety of distance- and density-based outlier detection
     functions mainly focusing local outliers in high-dimensional data.
-  - The [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
-    package provides different implementations for outlier detection
-    namely model based, distance based, dispersion based, depth based
-    and density based. This package provides labelling of observations
-    as outliers and outlierliness of each outlier. For univariate,
-    bivariate and trivariate data, visualization is also provided.
   - *Local Outlier Factor (LOF)* is an algorithm for detecting anomalous
     data points by measuring the local deviation of a given data point
     with respect to its neighbours. This algorithm with some variations
@@ -139,8 +133,6 @@ maintainer.**
     addresses the limitations of 'HDoutliers' algorithm. An approach
     based on extreme value theory is used for the anomalous threshold
     calculation.
-  - The [mvoutlier](https://cran.r-project.org/package=mvoutlier) package provides
-    multivariate outlier detection based on robust methods.
   - The [Routliers](https://cran.r-project.org/package=Routliers) package provides
     robust methods to detect univariate (Median Absolute Deviation
     method) and multivariate outliers (Mahalanobis-Minimum Covariance
@@ -661,7 +653,6 @@ maintainer.**
   - [outbreaks](https://cran.r-project.org/package=outbreaks)
   - [outForest](https://cran.r-project.org/package=outForest)
   - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
-  - [OutlierDetection](https://cran.r-project.org/package=OutlierDetection)
   - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3) (core)
