@@ -191,8 +191,6 @@
      </li>
      <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
      </li>
-     <li> The <pkg>SmartSifter</pkg> package provides online unsupervised outlier detection methods using finite mixtures with discounting learning algorithms.
-     </li>
      <li> The <pkg>oddstream</pkg> package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data.
  The model uses time series features as inputs, and a density-based comparison to detect any significant changes in the distribution of the features. 
      </li>
@@ -504,7 +502,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>SeleMix</pkg>
     <pkg>semdiag</pkg>
     <pkg>sGMRFmix</pkg>
-    <pkg>SmartSifter</pkg>
     <pkg>SMLoutliers</pkg>
     <pkg>solitude</pkg>
     <pkg>spikes</pkg>

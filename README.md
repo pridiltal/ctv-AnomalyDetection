@@ -297,9 +297,6 @@ maintainer.**
     prediction-based and window-based techniques are available via
     [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
     stationary and non-stationary environments.
-  - The [SmartSifter](https://cran.r-project.org/package=SmartSifter) package
-    provides online unsupervised outlier detection methods using finite
-    mixtures with discounting learning algorithms.
   - The [oddstream](https://cran.r-project.org/package=oddstream) package implements
     an algorithm for early detection of anomalous series within a large
     collection of streaming time series data. The model uses time series
@@ -671,7 +668,6 @@ maintainer.**
   - [SeleMix](https://cran.r-project.org/package=SeleMix)
   - [semdiag](https://cran.r-project.org/package=semdiag)
   - [sGMRFmix](https://cran.r-project.org/package=sGMRFmix)
-  - [SmartSifter](https://cran.r-project.org/package=SmartSifter)
   - [SMLoutliers](https://cran.r-project.org/package=SMLoutliers)
   - [solitude](https://cran.r-project.org/package=solitude)
   - [spikes](https://cran.r-project.org/package=spikes)
