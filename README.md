@@ -235,7 +235,7 @@ maintainer.**
     extreme value theory.
   - The [FastHCS](https://cran.r-project.org/package=FastHCS) package implements
     robust algorithm for principal component analysis and thereby
-    provide robust PCA modelling and associated outlier detection and
+    provide robust PCA modeling and associated outlier detection and
     diagnostic tools for high-dimensional data. PCA based outlier
     detection tools are also available via
     [FactoInvestigate](https://cran.r-project.org/package=FactoInvestigate) package.
@@ -253,6 +253,10 @@ maintainer.**
   - The [molic](https://cran.r-project.org/package=molic) package provides an
     outlier detection method for high‐dimensional contingency tables
     using decomposable graphical models
+  - The [outlierensembles](https://cran.r-project.org/package=outlierensembles)
+    package provides ensemble functions for outlier/anomaly detection.
+    In addition to some exiting ensemble methods for outlier detcetion,
+    it also provides an Item Response Theory based ensemble method.
 
 **Temporal Data**
 
@@ -343,7 +347,7 @@ maintainer.**
     based on the concept of isolation without employing any distance or
     density measure.
   - Functions for error detection and correction in point data quality
-    datasets that are used in species distribution modelling are
+    datasets that are used in species distribution modeling are
     available via [biogeo](https://cran.r-project.org/package=biogeo) package.
   - The [CoordinateCleaner](https://cran.r-project.org/package=CoordinateCleaner)
     package provides functions for flagging of common spatial and
@@ -653,6 +657,7 @@ maintainer.**
   - [outForest](https://cran.r-project.org/package=outForest)
   - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
+  - [outlierensembles](https://cran.r-project.org/package=outlierensembles)
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3) (core)
   - [outliertree](https://cran.r-project.org/package=outliertree)

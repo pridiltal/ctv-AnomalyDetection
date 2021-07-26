@@ -148,17 +148,18 @@
      </li>
      <li> The <pkg>probout</pkg> package estimates unsupervised outlier probabilities for multivariate numeric
      </li>
-     <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.  
-     </li>
+     <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.     </li>
      <li> The <pkg>evtclass</pkg> package provides two classifiers for open set recognition and novelty detection based on extreme value theory.
      </li>
-     <li> The <pkg>FastHCS</pkg> package implements robust algorithm for principal component analysis and thereby provide robust PCA modelling and associated outlier detection and diagnostic tools  for high-dimensional data. PCA based outlier detection tools are also available via <pkg>FactoInvestigate</pkg> package. 
+     <li> The <pkg>FastHCS</pkg> package implements robust algorithm for principal component analysis and thereby provide robust PCA modeling and associated outlier detection and diagnostic tools  for high-dimensional data. PCA based outlier detection tools are also available via <pkg>FactoInvestigate</pkg> package. 
      </li>
      <li> <i> Cellwise outliers </i> are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them.
      </li>
      <li> <i>The Projection Congruent Subset (PCS) </i> is a method for finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by <pkg>FastPCS</pkg> package. 
      </li>
      <li> The <pkg>molic</pkg> package provides an outlier detection method for high‐dimensional contingency tables using decomposable graphical models
+    </li>
+    <li> The <pkg>outlierensembles</pkg> package provides ensemble functions for outlier/anomaly detection. In addition to some exiting ensemble methods for outlier detcetion, it also provides an Item Response Theory based ensemble method. 
     </li>
    </ul>
 
@@ -226,7 +227,7 @@
    <ul>	 
      <li> The <pkg>solitude</pkg> package provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
      </li>
-     <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modelling are available via <pkg>biogeo</pkg> package.
+     <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modeling are available via <pkg>biogeo</pkg> package.
      </li>
      <li> The <pkg>CoordinateCleaner</pkg> package provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
      </li>
@@ -483,6 +484,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>outForest</pkg>
     <pkg>OutlierDC</pkg>
     <pkg>OutlierDM</pkg>
+    <pkg>outlierensembles</pkg>
     <pkg>outliers</pkg>
     <pkg priority="core">OutliersO3</pkg>
     <pkg>outliertree</pkg>
