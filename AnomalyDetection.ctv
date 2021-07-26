@@ -125,6 +125,8 @@
    <ul> 
      <li> Explainable outlier detection method through decision tree conditioning is facilitated by  <pkg>outliertree</pkg> package .
      </li>
+     <li> The <pkg>bagged.outliertrees</pkg> package provides an explainable unsupervised outlier detection method based on an ensemble implementation of the existing OutlierTree procedure in <pkg>outliertree</pkg> package. The implementation takes advantage of bootstrap aggregating (bagging) to improve robustness by reducing the possible masking effect and subsequent high variance (similarly to Isolation Forest), hence the name "Bagged OutlierTrees".
+     </li>
      <li> The <pkg>isotree</pkg> package provides fast and multi-threaded implementation of Extended Isolation Forest, Fair-Cut Forest, SCiForest (a.k.a. Split-Criterion iForest), and regular Isolation Forest, for isolation-based outlier detection, clustered outlier detection, distance or similarity approximation, and imputation of missing values  based on random or guided decision tree splitting. It also supports categorical data.
      </li>
      <li> The <pkg>outForest</pkg> package provides a random forest based implementation for multivariate outlier detection. In this method each numeric variable is regressed onto all other variables by a random forest. If the scaled absolute difference between observed value and out-of-bag prediction of the corresponding random forest is suspiciously large, then a value is considered an outlier.
@@ -415,6 +417,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>ANN2</pkg>
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
+    <pkg>bagged.outliertrees</pkg>
     <pkg>biogeo</pkg>
     <pkg>bigutilsr</pkg>
     <pkg>boutliers</pkg>

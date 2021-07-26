@@ -183,6 +183,16 @@ maintainer.**
   - Explainable outlier detection method through decision tree
     conditioning is facilitated by
     [outliertree](https://cran.r-project.org/package=outliertree) package .
+  - The
+    [bagged.outliertrees](https://cran.r-project.org/package=bagged.outliertrees)
+    package provides an explainable unsupervised outlier detection
+    method based on an ensemble implementation of the existing
+    OutlierTree procedure in
+    [outliertree](https://cran.r-project.org/package=outliertree) package. The
+    implementation takes advantage of bootstrap aggregating (bagging) to
+    improve robustness by reducing the possible masking effect and
+    subsequent high variance (similarly to Isolation Forest), hence the
+    name "Bagged OutlierTrees".
   - The [isotree](https://cran.r-project.org/package=isotree) package provides fast
     and multi-threaded implementation of Extended Isolation Forest,
     Fair-Cut Forest, SCiForest (a.k.a. Split-Criterion iForest), and
@@ -588,6 +598,7 @@ maintainer.**
   - [ANN2](https://cran.r-project.org/package=ANN2)
   - [anomalize](https://cran.r-project.org/package=anomalize)
   - [anomaly](https://cran.r-project.org/package=anomaly)
+  - [bagged.outliertrees](https://cran.r-project.org/package=bagged.outliertrees)
   - [bigutilsr](https://cran.r-project.org/package=bigutilsr)
   - [biogeo](https://cran.r-project.org/package=biogeo)
   - [boutliers](https://cran.r-project.org/package=boutliers)
