@@ -546,10 +546,6 @@ maintainer.**
     latent variable model. A mixture model (Gaussian contamination
     model) based on response(s) y and a depended set of covariates is
     fit to the data to quantify the impact of errors to the estimates.
-  - Outlier detection for compositional data using (robust) Mahalanobis
-    distances in isometric logratio coordinates is implemented in
-    `outCoDa()` function of
-    [robCompositions](https://cran.r-project.org/package=robCompositions) package.
   - The [compositions](https://cran.r-project.org/package=compositions) package
     provides functions to detect various types of outliers in
     compositional datasets.
@@ -667,7 +663,6 @@ maintainer.**
   - [rgr](https://cran.r-project.org/package=rgr)
   - [rIP](https://cran.r-project.org/package=rIP)
   - [Rlof](https://cran.r-project.org/package=Rlof)
-  - [robCompositions](https://cran.r-project.org/package=robCompositions)
   - [Routliers](https://cran.r-project.org/package=Routliers)
   - [rrcovHD](https://cran.r-project.org/package=rrcovHD)
   - [RWBP](https://cran.r-project.org/package=RWBP)

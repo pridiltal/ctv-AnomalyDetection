@@ -385,8 +385,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
      </li>
      <li> The <pkg>SeleMix</pkg> package provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
      </li>
-     <li> Outlier detection for compositional data using (robust) Mahalanobis distances in isometric logratio coordinates is implemented in  <code>outCoDa()</code> function of <pkg>robCompositions</pkg> package.
-     </li>
      <li> The <pkg>compositions</pkg> package provides functions  to detect various types of outliers in compositional datasets.
      </li>
      <li> The <pkg>kuiper.2samp</pkg> package performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
@@ -498,7 +496,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>rgr</pkg>
     <pkg>rIP</pkg>
     <pkg>Rlof</pkg>
-    <pkg>robCompositions</pkg>
     <pkg>Routliers</pkg>
     <pkg>rrcovHD</pkg>
     <pkg>RWBP</pkg>
