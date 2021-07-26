@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2021-02-13                                           
+**Version:**    2021-07-26                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -179,10 +179,6 @@ maintainer.**
   - The [abodOutlier](https://cran.r-project.org/package=abodOutlier) package
     performs angle-based outlier detection on high dimensional data. A
     complete, a randomized and a knn based methods are available.
-  - The [HighDimOut](https://cran.r-project.org/package=HighDimOut) package provides
-    three high-dimensional outlier detection algorithms (angle-based,
-    subspace based, feature bagging-based) and an outlier unification
-    scheme.
 
 *Multivariate Outlier Detection: Decision tree based approaches*
 
@@ -529,8 +525,6 @@ maintainer.**
 
   - The [anomaly](https://cran.r-project.org/package=anomaly) package contains
     lightcurve time series data from the Kepler telescope.
-  - Various high dimensional datasets are provided by
-    [mvoutlier](https://cran.r-project.org/package=mvoutlier) package.
   - The [leri](https://cran.r-project.org/package=leri) package finds and downloads
     Landscape Evaporative Response Index (LERI) data, then reads the
     data into R. The LERI product measures anomalies in actual
@@ -601,6 +595,7 @@ maintainer.**
   - [anomaly](https://cran.r-project.org/package=anomaly)
   - [bigutilsr](https://cran.r-project.org/package=bigutilsr)
   - [biogeo](https://cran.r-project.org/package=biogeo)
+  - [boutliers](https://cran.r-project.org/package=boutliers)
   - [cbar](https://cran.r-project.org/package=cbar)
   - [cellWise](https://cran.r-project.org/package=cellWise)
   - [CerioliOutlierDetection](https://cran.r-project.org/package=CerioliOutlierDetection)
@@ -636,11 +631,11 @@ maintainer.**
   - [fda.usc](https://cran.r-project.org/package=fda.usc)
   - [fdaoutlier](https://cran.r-project.org/package=fdaoutlier)
   - [fdasrvf](https://cran.r-project.org/package=fdasrvf)
+  - [forecast](https://cran.r-project.org/package=forecast)
   - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [funModeling](https://cran.r-project.org/package=funModeling)
   - [GmAMisc](https://cran.r-project.org/package=GmAMisc)
   - [HDoutliers](https://cran.r-project.org/package=HDoutliers) (core)
-  - [HighDimOut](https://cran.r-project.org/package=HighDimOut)
   - [hotspots](https://cran.r-project.org/package=hotspots)
   - [ICSOutlier](https://cran.r-project.org/package=ICSOutlier)
   - [isotree](https://cran.r-project.org/package=isotree)
@@ -657,7 +652,6 @@ maintainer.**
   - [molic](https://cran.r-project.org/package=molic)
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
-  - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
   - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)

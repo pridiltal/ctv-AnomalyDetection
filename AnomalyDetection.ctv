@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2021-02-13</version>
+   <version>2021-07-26</version>
 
    <info>
    <p>
@@ -117,8 +117,6 @@
    </p>
    <ul> 
      <li> The <pkg>abodOutlier</pkg> package performs angle-based outlier detection on high dimensional data. A complete, a randomized and a knn based methods are available.
-     </li>
-     <li> The <pkg>HighDimOut</pkg> package provides three high-dimensional outlier detection algorithms (angle-based, subspace based, feature bagging-based) and an outlier unification scheme. 
      </li>
    </ul> 
    
@@ -366,8 +364,6 @@ Principal Component Analysis.
    <ul>	
      <li> The <pkg>anomaly</pkg> package contains lightcurve time series data from the Kepler telescope.
      </li>
-     <li> Various high dimensional datasets are provided by <pkg>mvoutlier</pkg> package.
-     </li> 
      <li> The <pkg>leri</pkg> package  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning systems.
      </li>
      <li> The <pkg>waterData</pkg> package imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
@@ -426,6 +422,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>anomaly</pkg>
     <pkg>biogeo</pkg>
     <pkg>bigutilsr</pkg>
+    <pkg>boutliers</pkg>
     <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
@@ -461,11 +458,11 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>fdaoutlier</pkg>
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
+    <pkg>forecast</pkg>
     <pkg>fpmoutliers</pkg>
     <pkg>funModeling</pkg>
     <pkg>GmAMisc</pkg>
     <pkg priority="core">HDoutliers</pkg>
-    <pkg>HighDimOut</pkg>
     <pkg>hotspots</pkg>
     <pkg>ICSOutlier</pkg>
     <pkg>isotree</pkg>
@@ -482,7 +479,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>molic</pkg>
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
-    <pkg>mvoutlier</pkg>
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
