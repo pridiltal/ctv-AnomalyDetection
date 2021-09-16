@@ -133,6 +133,8 @@
      </li>
      <li> The <pkg>outForest</pkg> package provides a random forest based implementation for multivariate outlier detection. In this method each numeric variable is regressed onto all other variables by a random forest. If the scaled absolute difference between observed value and out-of-bag prediction of the corresponding random forest is suspiciously large, then a value is considered an outlier.
      </li>
+     <li> The <pkg>solitude</pkg> package provides an implementation of Isolation forest which detects anomalies in cross-sectional tabular data purely based on the concept of isolation without employing any distance or density measures.
+     </li>
    </ul> 
    
    
@@ -231,8 +233,6 @@
    <strong>Spatio-Temporal Data</strong>
    </p>
    <ul>	 
-     <li> The <pkg>solitude</pkg> package provides an implementation of Isolation forest which detects anomalies purely based on the concept of isolation without employing any distance or density measure.
-     </li>
      <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modeling are available via <pkg>biogeo</pkg> package.
      </li>
      <li> The <pkg>CoordinateCleaner</pkg> package provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.

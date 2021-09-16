@@ -212,6 +212,10 @@ maintainer.**
     difference between observed value and out-of-bag prediction of the
     corresponding random forest is suspiciously large, then a value is
     considered an outlier.
+  - The [solitude](https://cran.r-project.org/package=solitude) package provides an
+    implementation of Isolation forest which detects anomalies in
+    cross-sectional tabular data purely based on the concept of
+    isolation without employing any distance or density measures.
 
 *Multivariate Outlier Detection: Other approaches*
 
@@ -365,10 +369,6 @@ maintainer.**
 
 **Spatio-Temporal Data**
 
-  - The [solitude](https://cran.r-project.org/package=solitude) package provides an
-    implementation of Isolation forest which detects anomalies purely
-    based on the concept of isolation without employing any distance or
-    density measure.
   - Functions for error detection and correction in point data quality
     datasets that are used in species distribution modeling are
     available via [biogeo](https://cran.r-project.org/package=biogeo) package.
