@@ -201,6 +201,8 @@
      </li>
      <li> The <pkg>composits</pkg> package provides an  ensemble of time series outlier detection methods that can be used for compositional, multivariate and univariate data. It uses the four R packages <pkg>forecast</pkg>, <pkg>tsoutliers</pkg>, <pkg>otsad</pkg> and <pkg>anomalize</pkg> to detect time series outliers.
      </li>
+     <li> The <pkg>pasadr</pkg> package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process behavior. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
+     </li>
    </ul>
 
 
@@ -491,6 +493,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>outliers</pkg>
     <pkg priority="core">OutliersO3</pkg>
     <pkg>outliertree</pkg>
+    <pkg>pasadr</pkg>
     <pkg>pcadapt</pkg>
     <pkg>precintcon</pkg>
     <pkg>probout</pkg>

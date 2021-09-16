@@ -330,6 +330,14 @@ maintainer.**
     [otsad](https://cran.r-project.org/package=otsad) and
     [anomalize](https://cran.r-project.org/package=anomalize) to detect time series
     outliers.
+  - The [pasadr](https://cran.r-project.org/package=pasadr) package provides a novel
+    stealthy-attack detection mechanism that monitors time series of
+    sensor measurements in real time for structural changes in the
+    process behavior. It has the capability of detecting both
+    significant deviations in the process behavior and subtle
+    attack-indicating changes, significantly raising the bar for
+    strategic adversaries who may attempt to maintain their malicious
+    manipulation within the noise level.
 
 **Spatial Outliers**
 
@@ -672,6 +680,7 @@ maintainer.**
   - [outliers](https://cran.r-project.org/package=outliers)
   - [OutliersO3](https://cran.r-project.org/package=OutliersO3) (core)
   - [outliertree](https://cran.r-project.org/package=outliertree)
+  - [pasadr](https://cran.r-project.org/package=pasadr)
   - [pcadapt](https://cran.r-project.org/package=pcadapt)
   - [precintcon](https://cran.r-project.org/package=precintcon)
   - [probout](https://cran.r-project.org/package=probout)
