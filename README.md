@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2021-07-26                                           
+**Version:**    2021-09-16                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -154,6 +154,11 @@ maintainer.**
   - The [rrcovHD](https://cran.r-project.org/package=rrcovHD) package performs
     outlier identification using robust multivariate methods based on
     robust mahalanobis distances and principal component analysis.
+  - The [mvoutlier](https://cran.r-project.org/package=mvoutlier) package also
+    provides various robust methods based multivariate outlier detection
+    capabilities. This includes a Mahalanobis type method with an
+    adaptive outlier cutoff value, a method incorporating local
+    neighborhood and a method for compositional data.
   - Function `dm.mahalanobis` in [DJL](https://cran.r-project.org/package=DJL)
     package implements Mahalanobis distance measure for outlier
     detection. In addition to the basic distance measure, boxplots are
@@ -666,6 +671,7 @@ maintainer.**
   - [molic](https://cran.r-project.org/package=molic)
   - [Morpho](https://cran.r-project.org/package=Morpho)
   - [mrfDepth](https://cran.r-project.org/package=mrfDepth)
+  - [mvoutlier](https://cran.r-project.org/package=mvoutlier)
   - [NMAoutlier](https://cran.r-project.org/package=NMAoutlier)
   - [npphen](https://cran.r-project.org/package=npphen)
   - [oclust](https://cran.r-project.org/package=oclust)

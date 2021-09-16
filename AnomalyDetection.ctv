@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2021-07-26</version>
+   <version>2021-09-16</version>
 
    <info>
    <p>
@@ -94,6 +94,8 @@
      <li> The <pkg>CerioliOutlierDetection</pkg> package implements the iterated RMCD method of Cerioli (2010) for multivariate outlier detection via robust Mahalanobis distances. 
      </li>
      <li> The <pkg>rrcovHD</pkg>  package performs outlier identification using robust multivariate methods based on robust mahalanobis distances and principal component analysis. 
+     </li>
+     <li> The <pkg>mvoutlier</pkg> package also provides various robust methods based multivariate outlier detection capabilities. This includes  a Mahalanobis type method with an adaptive outlier cutoff value, a method incorporating local neighborhood and a method for compositional data. 
      </li>
      <li> Function <code>dm.mahalanobis</code> in <pkg>DJL</pkg> package implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
      </li>
@@ -479,6 +481,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>molic</pkg>
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
+    <pkg>mvoutlier</pkg>
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
