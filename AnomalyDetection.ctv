@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2021-09-16</version>
+   <version>2021-12-10</version>
 
    <info>
    <p>
@@ -143,8 +143,6 @@
    </p>
    <ul> 
      <li> The <pkg>abnormality</pkg> package measures a Subject's Abnormality with Respect to a Reference Population. A methodology is introduced to address this bias to accurately measure overall abnormality in high dimensional spaces. It can be applied to datasets in which the number of observations is less than the number of features/variables, and it can be abstracted to practically any number of domains or dimensions.
-     </li>
-     <li> A set of algorithms for detection of outliers based on frequent pattern mining is available in <pkg>fpmoutliers</pkg> package. Such algorithms follow the paradigm: if an instance contains more frequent patterns,it means that this data instance is unlikely to be an anomaly. 
      </li>
      <li> The <pkg>ICSOutlier</pkg> package performs multivariate outlier detection using invariant coordinates and  offers different methods to choose the appropriate components. The current implementation targets data sets with only a small percentage of outliers but future extensions are under preparation. 
      </li>
@@ -299,8 +297,6 @@
    <ul>
         <li> The <pkg>ABPS</pkg> package provides an implementation of the Abnormal Blood Profile Score (ABPS, part of the Athlete Biological Passport program of the World Anti-Doping Agency), which combines several blood parameters into a single score in order to detect blood doping. The package also contains functions to calculate other scores used in anti-doping programs, such as the OFF-score 
         </li>
-        <li> The <pkg>DengueRT</pkg> Provides functions for parameter estimation and real-time predictions of a single dengue outbreak taking into account model uncertainty using model averaging.
-        </li>
         <li> The <pkg>surveillance</pkg> package implements statistical methods for aberration detection in time series of counts, proportions and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The package also contains several real-world data sets, the ability to simulate outbreak data, and to visualize the results of the monitoring in a temporal, spatial or spatio-temporal fashion.
      </li>
      <li> The <pkg>outbreaker2</pkg> package supports Bayesian reconstruction of disease outbreaks using epidemiological and genetic information.  It is applicable to various densely sampled epidemics, and improves previous approaches by detecting unobserved and imported cases, as well as allowing multiple introductions of the pathogen.  
@@ -333,8 +329,6 @@ Principal Component Analysis.
      <li> The <pkg>MIPHENO</pkg> package contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
      </li>
      <li> The <pkg>OutlierDM</pkg> package  provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data. 
-     </li>
-     <li> The <pkg>OutlierDC</pkg> package implements algorithms to detect outliers based on quantile regression for censored survival data.
      </li>
      <li> The <pkg>qpcR</pkg> package implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
      </li>
@@ -438,7 +432,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>dbscan</pkg>
     <pkg>ddalpha</pkg>
     <pkg priority="core">DDoutlier</pkg>
-    <pkg>DengueRT</pkg>
     <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
     <pkg>DescTools</pkg>
@@ -461,7 +454,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
     <pkg>forecast</pkg>
-    <pkg>fpmoutliers</pkg>
     <pkg>funModeling</pkg>
     <pkg>GmAMisc</pkg>
     <pkg priority="core">HDoutliers</pkg>
@@ -490,7 +482,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>outbreaker2</pkg>
     <pkg>outbreaks</pkg> 
     <pkg>outForest</pkg>
-    <pkg>OutlierDC</pkg>
     <pkg>OutlierDM</pkg>
     <pkg>outlierensembles</pkg>
     <pkg>outliers</pkg>

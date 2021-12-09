@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2021-09-16                                           
+**Version:**    2021-12-10                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
@@ -226,12 +226,6 @@ maintainer.**
     It can be applied to datasets in which the number of observations is
     less than the number of features/variables, and it can be abstracted
     to practically any number of domains or dimensions.
-  - A set of algorithms for detection of outliers based on frequent
-    pattern mining is available in
-    [fpmoutliers](https://cran.r-project.org/package=fpmoutliers) package. Such
-    algorithms follow the paradigm: if an instance contains more
-    frequent patterns,it means that this data instance is unlikely to be
-    an anomaly.
   - The [ICSOutlier](https://cran.r-project.org/package=ICSOutlier) package performs
     multivariate outlier detection using invariant coordinates and
     offers different methods to choose the appropriate components. The
@@ -441,10 +435,6 @@ maintainer.**
     in order to detect blood doping. The package also contains functions
     to calculate other scores used in anti-doping programs, such as the
     OFF-score
-  - The [DengueRT](https://cran.r-project.org/package=DengueRT) Provides functions
-    for parameter estimation and real-time predictions of a single
-    dengue outbreak taking into account model uncertainty using model
-    averaging.
   - The [surveillance](https://cran.r-project.org/package=surveillance) package
     implements statistical methods for aberration detection in time
     series of counts, proportions and categorical data, as well as for
@@ -498,9 +488,6 @@ maintainer.**
   - The [OutlierDM](https://cran.r-project.org/package=OutlierDM) package provides
     functions to detect outlying values such as genes, peptides or
     samples for multi-replicated high-throughput high-dimensional data.
-  - The [OutlierDC](https://cran.r-project.org/package=OutlierDC) package implements
-    algorithms to detect outliers based on quantile regression for
-    censored survival data.
   - The [qpcR](https://cran.r-project.org/package=qpcR) package implements methods
     for kinetic outlier detection (KOD) in real-time polymerase chain
     reaction (qPCR).
@@ -628,7 +615,6 @@ maintainer.**
   - [dbscan](https://cran.r-project.org/package=dbscan)
   - [ddalpha](https://cran.r-project.org/package=ddalpha)
   - [DDoutlier](https://cran.r-project.org/package=DDoutlier) (core)
-  - [DengueRT](https://cran.r-project.org/package=DengueRT)
   - [densratio](https://cran.r-project.org/package=densratio)
   - [depth.plot](https://cran.r-project.org/package=depth.plot)
   - [DescTools](https://cran.r-project.org/package=DescTools)
@@ -651,7 +637,6 @@ maintainer.**
   - [fdaoutlier](https://cran.r-project.org/package=fdaoutlier)
   - [fdasrvf](https://cran.r-project.org/package=fdasrvf)
   - [forecast](https://cran.r-project.org/package=forecast)
-  - [fpmoutliers](https://cran.r-project.org/package=fpmoutliers)
   - [funModeling](https://cran.r-project.org/package=funModeling)
   - [GmAMisc](https://cran.r-project.org/package=GmAMisc)
   - [HDoutliers](https://cran.r-project.org/package=HDoutliers) (core)
@@ -680,7 +665,6 @@ maintainer.**
   - [outbreaker2](https://cran.r-project.org/package=outbreaker2)
   - [outbreaks](https://cran.r-project.org/package=outbreaks)
   - [outForest](https://cran.r-project.org/package=outForest)
-  - [OutlierDC](https://cran.r-project.org/package=OutlierDC)
   - [OutlierDM](https://cran.r-project.org/package=OutlierDM)
   - [outlierensembles](https://cran.r-project.org/package=outlierensembles)
   - [outliers](https://cran.r-project.org/package=outliers)
