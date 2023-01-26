@@ -4,7 +4,7 @@
 --------------- --------------------------------------------------   
 **Maintainer:** Priyanga Dilini Talagala, Rob J. Hyndman             
 **Contact:**    pritalagala at gmail.com                             
-**Version:**    2021-12-10                                           
+**Version:**    2022-12-31                                           
 **URL:**        <https://CRAN.R-project.org/view=AnomalyDetection>   
 
 <div>
