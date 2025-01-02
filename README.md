@@ -316,23 +316,11 @@ maintainer.**
   - the [ACA](https://cran.r-project.org/package=ACA) package offers an interactive
     function for the detection of abrupt change-points or aberrations in
     point series.
-  - A set of online fault (anomaly) detectors for time series using
-    prediction-based and window-based techniques are available via
-    [otsad](https://cran.r-project.org/package=otsad) package. It can handle both
-    stationary and non-stationary environments.
   - The [oddstream](https://cran.r-project.org/package=oddstream) package implements
     an algorithm for early detection of anomalous series within a large
     collection of streaming time series data. The model uses time series
     features as inputs, and a density-based comparison to detect any
     significant changes in the distribution of the features.
-  - The [composits](https://cran.r-project.org/package=composits) package provides
-    an ensemble of time series outlier detection methods that can be
-    used for compositional, multivariate and univariate data. It uses
-    the four R packages [forecast](https://cran.r-project.org/package=forecast),
-    [tsoutliers](https://cran.r-project.org/package=tsoutliers),
-    [otsad](https://cran.r-project.org/package=otsad) and
-    [anomalize](https://cran.r-project.org/package=anomalize) to detect time series
-    outliers.
   - The [pasadr](https://cran.r-project.org/package=pasadr) package provides a novel
     stealthy-attack detection mechanism that monitors time series of
     sensor measurements in real time for structural changes in the
