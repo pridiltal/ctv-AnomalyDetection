@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2021-12-10</version>
+   <version>2025-03-15</version>
 
    <info>
    <p>
@@ -28,8 +28,6 @@
      </li> 
      <li> The <pkg>dixonTest</pkg> package provides Dixon's ratio test for outlier detection in small and normally distributed samples.
      </li> 
-     <li> Univariate outliers detection is also supported by  <code>outlier()</code> function in <pkg>GmAMisc</pkg> which implements three different methods (mean-base, median-based, boxplot-based).    
-     </li>
      <li> The <pkg>hotspots</pkg> package supports univariate outlier detection by identifying values that are disproportionately high based on both the deviance of any given value from a statistical distribution and its similarity to other values.
      </li>
      <li> The <pkg>outliers</pkg> package provides a collection of tests commonly used for identifying <i>outliers</i>. For most functions the input is a numeric vector. If argument is a data frame, then outlier is calculated for each column by sapply. The same behavior is applied by apply when the matrix is given.
@@ -58,8 +56,6 @@
    <i>Multivariate Outlier Detection: Density-based outlier detection</i>
    </p>
    <ul>
-     <li> The <pkg>DDoutlier</pkg> package provides a wide variety of distance- and density-based outlier detection functions mainly focusing local outliers in high-dimensional data.
-     </li>
      <li> <i>Local Outlier Factor (LOF) </i>is an algorithm for detecting anomalous data points by measuring the local deviation of a given data point with respect to its neighbours. This algorithm with some variations is supported by many packages. The <pkg>DescTools</pkg> package provides functions for outlier detection using LOF and Tukey’s boxplot definition. Functions <code>LOF()</code> and <code>GLOSH</code> in package <pkg>dbscan</pkg> provide density based anomaly detection methods using a kd-tree to speed up kNN search. Parallel implementation of LOF which uses multiple CPUs to significantly speed up the LOF computation for large datasets is available in <pkg>Rlof</pkg> package. Package <pkg>bigutilsr</pkg> provides utility functions for outlier detection in large-scale data. It includes LOF and outlier detection method based on departure from histogram.
      </li>
      <li> The <pkg>SMLoutliers</pkg> package provides an implementation of the Local Correlation Integral method (Lof: Identifying density-based local outliers) for outlier detection in multivariate data which consists of numeric values. 
@@ -155,14 +151,10 @@
      <li> The <pkg>mrfDepth</pkg> package  provides tools to compute depth measures and implementations of related tasks such as outlier detection, data exploration and classification of multivariate, regression and functional data.     </li>
      <li> The <pkg>evtclass</pkg> package provides two classifiers for open set recognition and novelty detection based on extreme value theory.
      </li>
-     <li> The <pkg>FastHCS</pkg> package implements robust algorithm for principal component analysis and thereby provide robust PCA modeling and associated outlier detection and diagnostic tools  for high-dimensional data. PCA based outlier detection tools are also available via <pkg>FactoInvestigate</pkg> package. 
-     </li>
      <li> <i> Cellwise outliers </i> are entries in the data matrix which are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package <pkg>cellWise</pkg> provides tools for detecting cellwise outliers and robust methods to analyze data which may contain them.
      </li>
      <li> <i>The Projection Congruent Subset (PCS) </i> is a method for finding multivariate outliers by searching for a subset which minimizes a criterion. PCS is supported by <pkg>FastPCS</pkg> package. 
      </li>
-     <li> The <pkg>molic</pkg> package provides an outlier detection method for high‐dimensional contingency tables using decomposable graphical models
-    </li>
     <li> The <pkg>outlierensembles</pkg> package provides ensemble functions for outlier/anomaly detection. In addition to some exiting ensemble methods for outlier detcetion, it also provides an Item Response Theory based ensemble method. 
     </li>
    </ul>
@@ -182,8 +174,6 @@
      </li>
      <li> The <pkg>anomalize</pkg> package enables a "tidy" workflow for detecting anomalies in data. The main functions are <code>time_decompose()</code>, <code>anomalize()</code>, and <code>time_recompose()</code>.
      </li>
-     <li> The <pkg>cbar</pkg> package  detect contextual anomalies in time-series data with Bayesian data analysis. It focuses on determining a normal range of target value, and provides simple-to-use functions to abstract the outcome.
-     </li>
      <li> The <code>detectAO</code> and <code>detectIO</code> functions in   <pkg>TSA</pkg> package support detecting additive outlier  and   innovative outlier in time series data. 
      </li>
      <li> The <pkg>washeR</pkg> package  performs time series outlier detection using non parametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series)
@@ -196,12 +186,8 @@
      </li>
      <li> the <pkg>ACA</pkg> package offers an interactive function for the detection of abrupt change-points or aberrations in point series.
      </li>
-     <li> A set of online fault (anomaly) detectors for time series using prediction-based and  window-based techniques are available via <pkg>otsad</pkg> package. It can handle both stationary and  non-stationary environments.
-     </li>
      <li> The <pkg>oddstream</pkg> package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data.
  The model uses time series features as inputs, and a density-based comparison to detect any significant changes in the distribution of the features. 
-     </li>
-     <li> The <pkg>composits</pkg> package provides an  ensemble of time series outlier detection methods that can be used for compositional, multivariate and univariate data. It uses the four R packages <pkg>forecast</pkg>, <pkg>tsoutliers</pkg>, <pkg>otsad</pkg> and <pkg>anomalize</pkg> to detect time series outliers.
      </li>
      <li> The <pkg>pasadr</pkg> package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process behavior. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
      </li>
@@ -216,8 +202,6 @@
    <ul>
      <li> Spatial objects whose non-spatial attribute values are markedly different from those of their spatial neighbors are known as Spatial outliers or abnormal spatial patterns.
      </li>
-     <li> The <pkg>RWBP</pkg> package detects spatial outliers using a Random Walk on Bipartite Graph.
-     </li>
      <li> Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package <pkg>EFDR</pkg> implements wavelet-based Enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
      </li>
      <li> The function <code>spatial.outlier</code> in <pkg>depth.plot</pkg> package helps to identify multivariate spatial outlier within a p-variate data cloud or if any p-variate observation is an outlier with respect to a p-variate data cloud.
@@ -231,8 +215,6 @@
    <strong>Spatio-Temporal Data</strong>
    </p>
    <ul>	 
-     <li> Functions for error detection and correction in point data quality datasets that are used in species distribution modeling are available via <pkg>biogeo</pkg> package.
-     </li>
      <li> The <pkg>CoordinateCleaner</pkg> package provides functions for flagging of common spatial and temporal outliers (errors) in biological and paleontological collection data, for the use in conservation, ecology and paleontology.
      </li>
    </ul>	 
@@ -316,19 +298,11 @@
      <li> The <pkg>pcadapt</pkg> package provides methods to detect genetic markers involved in biological adaptation using statistical tools based on
 Principal Component Analysis.
      </li>
-     <li> The <pkg>rgr</pkg> package supports exploratory data analysis with applied geochemical data, with special application to the estimation of background ranges and identification of anomalies to support mineral exploration and environmental studies.
-     </li>
      <li> The <pkg>NMAoutlier</pkg> package implements the forward search  algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis. 
      </li>
      <li> The <pkg>boutliers</pkg> package provides methods for outlier detection and influence diagnostics for meta-analysis based on Bootstrap distributions of the influence statistics.
      </li>
-     <li> The <pkg>dave</pkg> package provides a collection of functions for data analysis in vegetation ecology including outlier detection using nearest neighbour distances. 
-     </li>
      <li> The <pkg>MALDIrppa</pkg> package provides methods for quality control and robust pre-processing and analysis of MALDI mass spectrometry data. 
-     </li>
-     <li> The <pkg>MIPHENO</pkg> package contains functions to carry out processing of high throughput data analysis and detection of putative hits/mutants.
-     </li>
-     <li> The <pkg>OutlierDM</pkg> package  provides functions to   detect outlying values such as genes, peptides or samples for multi-replicated high-throughput high-dimensional data. 
      </li>
      <li> The <pkg>qpcR</pkg> package implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction (qPCR).
      </li>
@@ -344,11 +318,7 @@ Principal Component Analysis.
      </li>
      <li> The <pkg>envoutliers</pkg> package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals
      </li>
-     <li> The <pkg>rIP</pkg> package  supports detection of  fraud in online surveys by tracing, scoring, and visualizing IP addresses
-     </li>
      <li> The <pkg>extremeIndex</pkg>  computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
-     </li>
-     <li> The <pkg>clampSeg</pkg> package provides tool to identify and idealize flickering events in filtered ion channel recordings.
      </li>
    </ul>
 
@@ -360,8 +330,6 @@ Principal Component Analysis.
    </p>
    <ul>	
      <li> The <pkg>anomaly</pkg> package contains lightcurve time series data from the Kepler telescope.
-     </li>
-     <li> The <pkg>leri</pkg> package  finds and downloads Landscape Evaporative Response Index (LERI) data, then reads the data into R. The LERI product measures anomalies in actual evapotranspiration, to support drought monitoring and early warning systems.
      </li>
      <li> The <pkg>waterData</pkg> package imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
      </li>
@@ -378,11 +346,7 @@ Principal Component Analysis.
      <li> The Residual Congruent Subset (RCS) is a method for
 finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pkg> package.
      </li>
-     <li> Package <pkg>quokar</pkg> provides quantile regression outlier diagnostics with K Left Out Analysis.
-     </li>
      <li> The <pkg>oclust</pkg> package provides a function to detect and trim outliers in Gaussian mixture model based clustering using methods described in Clark and McNicholas (2019).
-     </li>
-     <li> The <pkg>semdiag</pkg> package implements outlier and leverage diagnostics for Structural equation modeling.
      </li>
      <li> The <pkg>SeleMix</pkg> package provides functions for detection of outliers and influential errors using a latent variable model. A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to quantify the impact of errors to the estimates.
      </li>
@@ -391,8 +355,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
      <li> The <pkg>kuiper.2samp</pkg> package performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
      </li>
      <li> The <code>enpls.od()</code> function in <pkg>enpls</pkg> package performs outlier detection with ensemble partial least squares.
-     </li>
-     <li> The <pkg>surveyoutliers</pkg> package helps manage outliers in sample surveys by calculating optimal one-sided winsorizing cutoffs.
      </li>
      <li> The <pkg>faoutlier</pkg>  package provides tools for detecting and summarize influential cases that can affect exploratory and confirmatory factor analysis models and  structural equation models.
      </li>
@@ -416,22 +378,16 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>anomalize</pkg>
     <pkg>anomaly</pkg>
     <pkg>bagged.outliertrees</pkg>
-    <pkg>biogeo</pkg>
     <pkg>bigutilsr</pkg>
     <pkg>boutliers</pkg>
-    <pkg>cbar</pkg>
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
     <pkg>CircOutlier</pkg>
-    <pkg>clampSeg</pkg>
     <pkg>compositions</pkg>
-    <pkg>composits</pkg>
     <pkg>CoordinateCleaner</pkg>
     <pkg>crseEventStudy</pkg>
-    <pkg>dave</pkg>
     <pkg>dbscan</pkg>
     <pkg>ddalpha</pkg>
-    <pkg priority="core">DDoutlier</pkg>
     <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
     <pkg>DescTools</pkg>
@@ -445,17 +401,13 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>evtclass</pkg>
     <pkg>extremeIndex</pkg>
     <pkg>extremevalues</pkg>
-    <pkg>FactoInvestigate</pkg>
     <pkg>faoutlier</pkg>
-    <pkg>FastHCS</pkg>
     <pkg>FastPCS</pkg>
     <pkg>FastRCS</pkg>
     <pkg>fdaoutlier</pkg>
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
-    <pkg>forecast</pkg>
     <pkg>funModeling</pkg>
-    <pkg>GmAMisc</pkg>
     <pkg priority="core">HDoutliers</pkg>
     <pkg>hotspots</pkg>
     <pkg>ICSOutlier</pkg>
@@ -464,13 +416,10 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>kmodR</pkg>
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
-    <pkg>leri</pkg>
     <pkg>lookout</pkg>
     <pkg>MALDIrppa</pkg>
     <pkg>MGBT</pkg>
-    <pkg>MIPHENO</pkg>
     <pkg>modi</pkg>
-    <pkg>molic</pkg>
     <pkg>Morpho</pkg>
     <pkg>mrfDepth</pkg>
     <pkg>mvoutlier</pkg>
@@ -478,11 +427,9 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
     <pkg>oddstream</pkg>
-    <pkg>otsad</pkg>
     <pkg>outbreaker2</pkg>
     <pkg>outbreaks</pkg> 
     <pkg>outForest</pkg>
-    <pkg>OutlierDM</pkg>
     <pkg>outlierensembles</pkg>
     <pkg>outliers</pkg>
     <pkg priority="core">OutliersO3</pkg>
@@ -491,20 +438,15 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>pcadapt</pkg>
     <pkg>precintcon</pkg>
     <pkg>probout</pkg>
-    <pkg>quokar</pkg>
     <pkg>qpcR</pkg>
     <pkg>rainbow</pkg>
     <pkg>referenceIntervals</pkg>
-    <pkg>rgr</pkg>
-    <pkg>rIP</pkg>
     <pkg>Rlof</pkg>
     <pkg>Routliers</pkg>
     <pkg>rrcovHD</pkg>
-    <pkg>RWBP</pkg>
     <pkg>seasonal</pkg>
     <pkg>seismicRoll</pkg>
     <pkg>SeleMix</pkg>
-    <pkg>semdiag</pkg>
     <pkg>sGMRFmix</pkg>
     <pkg>SMLoutliers</pkg>
     <pkg>solitude</pkg>
@@ -513,7 +455,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>stray</pkg>
     <pkg>survBootOutliers</pkg>
     <pkg>surveillance</pkg>
-    <pkg>surveyoutliers</pkg>
     <pkg>trendsegmentR</pkg>
     <pkg>TSA</pkg>
     <pkg>tsoutliers</pkg>
