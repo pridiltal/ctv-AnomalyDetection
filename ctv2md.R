@@ -45,9 +45,17 @@ cmd <- paste0("cat ", htmlfile,
 ###  - write out mdfile
               "> ", mdfile)
 
+
+
 system(cmd)                             # run the conversion
 
+
+rmarkdown::pandoc_convert(htmlfile, to = "gfm", output = mdfile)
+
+
 unlink(htmlfile)                        # remove temporary html file
+
+
 
 cat("Done.\n")
 
