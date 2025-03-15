@@ -9,15 +9,54 @@
 
 <div>
 
-This CRAN task view contains a list of packages that can be used for
-anomaly detection. Anomaly detection problems have many different facets
-and the detection techniques can be highly influenced by the way we
-define anomalies, the type of input data to the algorithm, the expected
-output, etc. This leads to wide variations in problem formulations,
-which need to be addressed through different analytical approaches.
+This CRAN Task View provides a comprehensive list of R packages for
+anomaly detection. Anomaly detection problems have many different
+facets, and detection techniques are influenced by factors such as how
+anomalies are defined, the type of input data, and the expected output.
+These variations lead to diverse problem formulations, requiring
+different analytical approaches. This Task View aims to help users
+navigate the available tools by organizing them based on their
+applicability to different data types and detection methodologies.
 
-Anomalies are often mentioned under several alternative names such as
-outliers, novelty, odd values, extreme values, faults, aberration in
+Anomalies are often referred to by alternative names such as outliers,
+novelties, odd values, extreme values, faults, and aberrations,
+depending on the application domain. This Task View considers all these
+variations and categorizes relevant R packages accordingly. The overview
+covers methods applicable to univariate, multivariate, spatial,
+temporal, and functional data, ensuring users can find suitable tools
+for various analytical needs.
+
+Packages included in this Task View are selected based on methodological
+robustness, active maintenance, and clear documentation. R packages that
+do not primarily focus on anomaly detection but offer substantial
+functionalities for anomaly detection have been included. However,
+packages where anomaly detection is only a minor feature with very
+limited functions have been excluded. Additionally, tools that are
+outdated, redundant, or lack sufficient support have not been
+considered.
+
+To facilitate navigation, the Task View is structured into well-defined
+sections, including Univariate Outlier Detection, Multivariate Detection
+(further categorized into density-based, distance-based,
+clustering-based, angle-based, and decision tree-based methods),
+Temporal Data, Spatial and Spatio-Temporal Data, Functional Data, and
+other specialized approaches.
+
+**Please note that this Task View is in its early stages and will be
+updated periodically. Contributions, suggestions, and recommendations
+for additional packages or refinements are welcome. Contact the Task
+View maintainer for further details or to propose enhancements.**
+
+This CRAN task view contains a list of packages that can be used for
+anomaly detection. Anomaly detection problems have many different
+facets, and the detection techniques can be highly influenced by the way
+we define anomalies, the type of input data to the algorithm, the
+expected output, etc. This leads to wide variations in problem
+formulations, which need to be addressed through different analytical
+approaches.
+
+Anomalies are often mentioned under several alternative names, such as
+outliers, novelty, odd values, extreme values, faults, and aberration in
 different application domains. These variants are also considered for
 this task view.
 
