@@ -134,8 +134,6 @@
    <ul>   
      <li> The <pkg>kmodR</pkg> package presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
      </li>
-     <li> The <pkg>DMwR2</pkg>  package uses hierarchical clustering to obtain a ranking of outlierness for a set of cases. The ranking is obtained on the basis of the path each case follows within the merging steps of a agglomerative hierarchical clustering method.
-     </li>
    </ul> 
    
    <p> 
@@ -361,8 +359,6 @@ Principal Component Analysis.
    <ul>	
      <li> The <pkg>anomaly</pkg> package contains lightcurve time series data from the Kepler telescope.
      </li>
-     <li> The <pkg>waterData</pkg> package imports U.S. Geological Survey (USGS) daily hydrologic data from USGS web services and provides functions to  calculate and plot anomalies.
-     </li>
    </ul>
 
 
@@ -424,7 +420,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>dixonTest</pkg>
     <pkg>DJL</pkg>
     <pkg>dobin</pkg>
-    <pkg>DMwR2</pkg>
     <pkg>EFDR</pkg>
     <pkg>enpls</pkg>
     <pkg>envoutliers</pkg>
@@ -490,7 +485,6 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>tsoutliers</pkg>
     <pkg>univOutl</pkg>
     <pkg>washeR</pkg>
-    <pkg>waterData</pkg>
     <pkg>wbacon</pkg>
     <pkg>wql</pkg>
   </packagelist>
