@@ -4,7 +4,7 @@
    <name>AnomalyDetection</name>
    <topic>Anomaly Detection with R</topic>
    <maintainer email="pritalagala@gmail.com">Priyanga Dilini Talagala, Rob J. Hyndman</maintainer>
-   <version>2025-03-15</version>
+   <version>2025-10-02</version>
 
    <info>
    <p> 
@@ -169,6 +169,8 @@
      </li>
      <li> The <pkg>solitude</pkg> package provides an implementation of Isolation forest which detects anomalies in cross-sectional tabular data purely based on the concept of isolation without employing any distance or density measures.
      </li>
+     <li> the <pkg>bulkQC</pkg>: Includes <code>ind_multi</code> for detecting multivariate outliers using Isolation Forests. 
+      </li>
    </ul> 
    
    
@@ -276,6 +278,9 @@
      </li>
      <li> The <pkg>fdaoutlier</pkg> package provides a collection of functions for outlier detection in functional data analysis. Methods implemented include directional outlyingness, MS-plot, total variation depth, and sequential transformations among others.
      </li>
+     <li> The <pkg>DeBoinR</pkg> package detects outliers in ensembles of probability density functions using functional boxplots. The <code>deboinr()</code> function orders the functions by distance and flags outliers based on a user-defined interquartile range. 
+     </li>
+
    </ul>
 
 
@@ -358,6 +363,10 @@ Principal Component Analysis.
      </li>
      <li> The <pkg>extremeIndex</pkg>  computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
      </li>
+     <li> The <pkg>bulkQC</pkg> provides quality control and outlier identification tools for multicenter randomized trials. Functions include <code>ind_uni</code> and <code>getOutliers</code> for univariate checks, and site-level assessments with and without covariate adjustment.  
+     </li>
+     <li> The <pkg>GGoutlieR</pkg> package detects and visualizes individuals with unusual geo-genetic patterns using a K-nearest neighbor approach. It identifies outliers that deviate from the isolation-by-distance assumption and provides statistical summaries and geographic visualizations.
+     </li>
    </ul>
 
 
@@ -416,6 +425,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>bagged.outliertrees</pkg>
     <pkg>bigutilsr</pkg>
     <pkg>boutliers</pkg>
+    <pkg>bulkQC</pkg>
     <pkg>cellWise</pkg>
     <pkg>CerioliOutlierDetection</pkg>
     <pkg>CircOutlier</pkg>
@@ -424,6 +434,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>crseEventStudy</pkg>
     <pkg>dbscan</pkg>
     <pkg>ddalpha</pkg>
+    <pkg>DeBoinR</pkg>
     <pkg>densratio</pkg>
     <pkg>depth.plot</pkg>
     <pkg>DescTools</pkg>
@@ -443,6 +454,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>fdasrvf</pkg>
     <pkg>fda.usc</pkg>
     <pkg>funModeling</pkg>
+    <pkg>GGoutlieR</pkg>
     <pkg priority="core">HDoutliers</pkg>
     <pkg>hotspots</pkg>
     <pkg>ICSOutlier</pkg>
