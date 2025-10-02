@@ -135,6 +135,11 @@
      </li>
      <li> Function <code>dm.mahalanobis</code> in <pkg>DJL</pkg> package implements Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of data cleansing task.
      </li>
+     <li> The <pkg>mvout</pkg> package detects multivariate outliers using robust Mahalanobis distances based on the Minimum Covariance Determinant (MCD) estimator.
+     </li>
+     <li> The <pkg>outlierMBC</pkg> package implements sequential outlier identification for Gaussian mixture models. Outliers are detected by comparing observed Mahalanobis distances with the theoretical distribution. It also provides an extension for Gaussian linear cluster-weighted models using studentized residuals. The method emphasizes model-based, distance-driven identification of anomalies. </li>
+
+
    </ul>
    
    
@@ -143,6 +148,8 @@
    </p>
    <ul>   
      <li> The <pkg>kmodR</pkg> package presents a unified approach for simultaneously clustering and discovering outliers in high dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
+     </li>
+     <li> The <pkg>odetector</pkg> package detects multivariate outliers using soft partitioning clustering algorithms such as Fuzzy C-means and its variants. Observations with low typicality degrees are flagged as outliers.
      </li>
    </ul> 
    
@@ -231,6 +238,11 @@
      </li>
      <li> The <pkg>pasadr</pkg> package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process behavior. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
      </li>
+     <li> The <pkg>kfino</pkg> package detects impulse-noise outliers in time series using a Kalman filter. It provides robust sequential filtering and prediction on cleaned data, implementing both Maximum Likelihood (ML) and Expectation-Maximization (EM) algorithms.
+     </li>
+     <li> The <pkg>outliers.ts.oga</pkg> package provides efficient detection and cleaning of outliers in single time series as well as in large databases of homogeneous and heterogeneous time series. It uses the Orthogonal Greedy Algorithm (OGA) for saturated linear regression models, enabling scalable detection. Version 1.1.1 includes improvements in parallelization.
+     </li>
+
    </ul>
 
 
@@ -279,6 +291,8 @@
      <li> The <pkg>fdaoutlier</pkg> package provides a collection of functions for outlier detection in functional data analysis. Methods implemented include directional outlyingness, MS-plot, total variation depth, and sequential transformations among others.
      </li>
      <li> The <pkg>DeBoinR</pkg> package detects outliers in ensembles of probability density functions using functional boxplots. The <code>deboinr()</code> function orders the functions by distance and flags outliers based on a user-defined interquartile range. 
+     </li>
+     <li> The <pkg>mrct</pkg> package detects outliers in functional data using the Minimum Regularized Covariance Trace (MRCT) estimator.
      </li>
 
    </ul>
@@ -381,6 +395,12 @@ Principal Component Analysis.
    </ul>
 
 
+  <p>
+  <strong>Educational / Learning</strong>
+  </p>
+  <ul>
+    <li> The <pkg>OutliersLearn</pkg> package provides implementations of some of the most important outlier detection algorithms. Includes a tutorial mode option that shows a description of each algorithm and provides a step-by-step execution explanation of how it identifies outliers from the given data with the specified input parameters. The package covers three main types of approaches statistical, distance-based, and density/clustering approaches. </li>
+  </ul>
 
 
    <p><strong>Miscellaneous</strong>
@@ -460,6 +480,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>ICSOutlier</pkg>
     <pkg>isotree</pkg>
     <pkg>kernlab</pkg>
+    <pkg>kfino</pkg>
     <pkg>kmodR</pkg>
     <pkg>kuiper.2samp</pkg>
     <pkg>ldbod</pkg>
@@ -468,18 +489,24 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
     <pkg>MGBT</pkg>
     <pkg>modi</pkg>
     <pkg>Morpho</pkg>
+    <pkg>mrct</pkg>
     <pkg>mrfDepth</pkg>
+    <pkg>mvout</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>NMAoutlier</pkg>
     <pkg>npphen</pkg>
     <pkg>oclust</pkg>
     <pkg>oddstream</pkg>
+    <pkg>odetector</pkg>
     <pkg>outbreaker2</pkg>
     <pkg>outbreaks</pkg> 
     <pkg>outForest</pkg>
     <pkg>outlierensembles</pkg>
+    <pkg>outlierMBC</pkg> 
     <pkg>outliers</pkg>
+    <pkg>OutliersLearn</pkg>
     <pkg priority="core">OutliersO3</pkg>
+    <pkg>outliers.ts.oga</pkg>
     <pkg>outliertree</pkg>
     <pkg>pasadr</pkg>
     <pkg>pcadapt</pkg>

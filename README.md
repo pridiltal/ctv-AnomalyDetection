@@ -179,6 +179,16 @@ outlier detection, and decision tree–based approaches.
   addition to the basic distance measure, boxplots are provided with
   potential outlier(s) to give an insight into the early stage of data
   cleansing task.
+- The [mvout](../packages/mvout/index.html) package detects multivariate
+  outliers using robust Mahalanobis distances based on the Minimum
+  Covariance Determinant (MCD) estimator.
+- The [outlierMBC](../packages/outlierMBC/index.html) package implements
+  sequential outlier identification for Gaussian mixture models.
+  Outliers are detected by comparing observed Mahalanobis distances with
+  the theoretical distribution. It also provides an extension for
+  Gaussian linear cluster-weighted models using studentized residuals.
+  The method emphasizes model-based, distance-driven identification of
+  anomalies.
 
 *Multivariate Outlier Detection: Clustering-based outlier detection*
 
@@ -186,6 +196,10 @@ outlier detection, and decision tree–based approaches.
   approach for simultaneously clustering and discovering outliers in
   high dimensional data. Their approach is formalized as a
   generalization of the k-MEANS problem.
+- The [odetector](../packages/odetector/index.html) package detects
+  multivariate outliers using soft partitioning clustering algorithms
+  such as Fuzzy C-means and its variants. Observations with low
+  typicality degrees are flagged as outliers.
 
 *Multivariate Outlier Detection: Angle-based outlier detection*
 
@@ -326,6 +340,17 @@ outlier detection, and decision tree–based approaches.
   changes, significantly raising the bar for strategic adversaries who
   may attempt to maintain their malicious manipulation within the noise
   level.
+- The [kfino](../packages/kfino/index.html) package detects
+  impulse-noise outliers in time series using a Kalman filter. It
+  provides robust sequential filtering and prediction on cleaned data,
+  implementing both Maximum Likelihood (ML) and Expectation-Maximization
+  (EM) algorithms.
+- The [outliers.ts.oga](../packages/outliers.ts.oga/index.html) package
+  provides efficient detection and cleaning of outliers in single time
+  series as well as in large databases of homogeneous and heterogeneous
+  time series. It uses the Orthogonal Greedy Algorithm (OGA) for
+  saturated linear regression models, enabling scalable detection.
+  Version 1.1.1 includes improvements in parallelization.
 
 **Spatial Outliers**
 
@@ -384,6 +409,9 @@ outlier detection, and decision tree–based approaches.
   in ensembles of probability density functions using functional
   boxplots. The `deboinr()` function orders the functions by distance
   and flags outliers based on a user-defined interquartile range.
+- The [mrct](../packages/mrct/index.html) package detects outliers in
+  functional data using the Minimum Regularized Covariance Trace (MRCT)
+  estimator.
 
 **Visualization of Anomalies**
 
@@ -504,6 +532,17 @@ outlier detection, and decision tree–based approaches.
 - The [anomaly](../packages/anomaly/index.html) package contains
   lightcurve time series data from the Kepler telescope.
 
+**Educational / Learning**
+
+- The [OutliersLearn](../packages/OutliersLearn/index.html) package
+  provides implementations of some of the most important outlier
+  detection algorithms. Includes a tutorial mode option that shows a
+  description of each algorithm and provides a step-by-step execution
+  explanation of how it identifies outliers from the given data with the
+  specified input parameters. The package covers three main types of
+  approaches statistical, distance-based, and density/clustering
+  approaches.
+
 **Miscellaneous**
 
 - The [CircOutlier](../packages/CircOutlier/index.html) package enables
@@ -544,7 +583,7 @@ outlier detection, and decision tree–based approaches.
 |  |  |
 |----|----|
 | *Core:* | [HDoutliers](https://CRAN.R-project.org/package=HDoutliers), [OutliersO3](https://CRAN.R-project.org/package=OutliersO3). |
-| *Regular:* | [abnormality](https://CRAN.R-project.org/package=abnormality), [abodOutlier](https://CRAN.R-project.org/package=abodOutlier), [ABPS](https://CRAN.R-project.org/package=ABPS), [ACA](https://CRAN.R-project.org/package=ACA), [adamethods](https://CRAN.R-project.org/package=adamethods), [alphaOutlier](https://CRAN.R-project.org/package=alphaOutlier), [amelie](https://CRAN.R-project.org/package=amelie), [ANN2](https://CRAN.R-project.org/package=ANN2), [anomalize](https://CRAN.R-project.org/package=anomalize), [anomaly](https://CRAN.R-project.org/package=anomaly), [bagged.outliertrees](https://CRAN.R-project.org/package=bagged.outliertrees), [bigutilsr](https://CRAN.R-project.org/package=bigutilsr), [boutliers](https://CRAN.R-project.org/package=boutliers), [bulkQC](https://CRAN.R-project.org/package=bulkQC), [cellWise](https://CRAN.R-project.org/package=cellWise), [CerioliOutlierDetection](https://CRAN.R-project.org/package=CerioliOutlierDetection), [CircOutlier](https://CRAN.R-project.org/package=CircOutlier), [compositions](https://CRAN.R-project.org/package=compositions), [CoordinateCleaner](https://CRAN.R-project.org/package=CoordinateCleaner), [crseEventStudy](https://CRAN.R-project.org/package=crseEventStudy), [dbscan](https://CRAN.R-project.org/package=dbscan), [ddalpha](https://CRAN.R-project.org/package=ddalpha), [DeBoinR](https://CRAN.R-project.org/package=DeBoinR), [densratio](https://CRAN.R-project.org/package=densratio), [depth.plot](https://CRAN.R-project.org/package=depth.plot), [DescTools](https://CRAN.R-project.org/package=DescTools), [dixonTest](https://CRAN.R-project.org/package=dixonTest), [DJL](https://CRAN.R-project.org/package=DJL), [dobin](https://CRAN.R-project.org/package=dobin), [EFDR](https://CRAN.R-project.org/package=EFDR), [enpls](https://CRAN.R-project.org/package=enpls), [envoutliers](https://CRAN.R-project.org/package=envoutliers), [evtclass](https://CRAN.R-project.org/package=evtclass), [extremeIndex](https://CRAN.R-project.org/package=extremeIndex), [extremevalues](https://CRAN.R-project.org/package=extremevalues), [faoutlier](https://CRAN.R-project.org/package=faoutlier), [FastPCS](https://CRAN.R-project.org/package=FastPCS), [FastRCS](https://CRAN.R-project.org/package=FastRCS), [fda.usc](https://CRAN.R-project.org/package=fda.usc), [fdaoutlier](https://CRAN.R-project.org/package=fdaoutlier), [fdasrvf](https://CRAN.R-project.org/package=fdasrvf), [funModeling](https://CRAN.R-project.org/package=funModeling), [GGoutlieR](https://CRAN.R-project.org/package=GGoutlieR), [hotspots](https://CRAN.R-project.org/package=hotspots), [ICSOutlier](https://CRAN.R-project.org/package=ICSOutlier), [isotree](https://CRAN.R-project.org/package=isotree), [kernlab](https://CRAN.R-project.org/package=kernlab), [kmodR](https://CRAN.R-project.org/package=kmodR), [kuiper.2samp](https://CRAN.R-project.org/package=kuiper.2samp), [ldbod](https://CRAN.R-project.org/package=ldbod), [lookout](https://CRAN.R-project.org/package=lookout), [MALDIrppa](https://CRAN.R-project.org/package=MALDIrppa), [MGBT](https://CRAN.R-project.org/package=MGBT), [modi](https://CRAN.R-project.org/package=modi), [Morpho](https://CRAN.R-project.org/package=Morpho), [mrfDepth](https://CRAN.R-project.org/package=mrfDepth), [mvoutlier](https://CRAN.R-project.org/package=mvoutlier), [NMAoutlier](https://CRAN.R-project.org/package=NMAoutlier), [npphen](https://CRAN.R-project.org/package=npphen), [oclust](https://CRAN.R-project.org/package=oclust), [oddstream](https://CRAN.R-project.org/package=oddstream), [outbreaker2](https://CRAN.R-project.org/package=outbreaker2), [outbreaks](https://CRAN.R-project.org/package=outbreaks), [outForest](https://CRAN.R-project.org/package=outForest), [outlierensembles](https://CRAN.R-project.org/package=outlierensembles), [outliers](https://CRAN.R-project.org/package=outliers), [outliertree](https://CRAN.R-project.org/package=outliertree), [pasadr](https://CRAN.R-project.org/package=pasadr), [pcadapt](https://CRAN.R-project.org/package=pcadapt), [precintcon](https://CRAN.R-project.org/package=precintcon), [probout](https://CRAN.R-project.org/package=probout), [qpcR](https://CRAN.R-project.org/package=qpcR), [rainbow](https://CRAN.R-project.org/package=rainbow), [referenceIntervals](https://CRAN.R-project.org/package=referenceIntervals), [Rlof](https://CRAN.R-project.org/package=Rlof), [Routliers](https://CRAN.R-project.org/package=Routliers), [rrcovHD](https://CRAN.R-project.org/package=rrcovHD), [seasonal](https://CRAN.R-project.org/package=seasonal), [seismicRoll](https://CRAN.R-project.org/package=seismicRoll), [SeleMix](https://CRAN.R-project.org/package=SeleMix), [sGMRFmix](https://CRAN.R-project.org/package=sGMRFmix), [SMLoutliers](https://CRAN.R-project.org/package=SMLoutliers), [solitude](https://CRAN.R-project.org/package=solitude), [spikes](https://CRAN.R-project.org/package=spikes), [StatDA](https://CRAN.R-project.org/package=StatDA), [stray](https://CRAN.R-project.org/package=stray), [survBootOutliers](https://CRAN.R-project.org/package=survBootOutliers), [surveillance](https://CRAN.R-project.org/package=surveillance), [trendsegmentR](https://CRAN.R-project.org/package=trendsegmentR), [TSA](https://CRAN.R-project.org/package=TSA), [tsoutliers](https://CRAN.R-project.org/package=tsoutliers), [univOutl](https://CRAN.R-project.org/package=univOutl), [washeR](https://CRAN.R-project.org/package=washeR), [wbacon](https://CRAN.R-project.org/package=wbacon), [wql](https://CRAN.R-project.org/package=wql). |
+| *Regular:* | [abnormality](https://CRAN.R-project.org/package=abnormality), [abodOutlier](https://CRAN.R-project.org/package=abodOutlier), [ABPS](https://CRAN.R-project.org/package=ABPS), [ACA](https://CRAN.R-project.org/package=ACA), [adamethods](https://CRAN.R-project.org/package=adamethods), [alphaOutlier](https://CRAN.R-project.org/package=alphaOutlier), [amelie](https://CRAN.R-project.org/package=amelie), [ANN2](https://CRAN.R-project.org/package=ANN2), [anomalize](https://CRAN.R-project.org/package=anomalize), [anomaly](https://CRAN.R-project.org/package=anomaly), [bagged.outliertrees](https://CRAN.R-project.org/package=bagged.outliertrees), [bigutilsr](https://CRAN.R-project.org/package=bigutilsr), [boutliers](https://CRAN.R-project.org/package=boutliers), [bulkQC](https://CRAN.R-project.org/package=bulkQC), [cellWise](https://CRAN.R-project.org/package=cellWise), [CerioliOutlierDetection](https://CRAN.R-project.org/package=CerioliOutlierDetection), [CircOutlier](https://CRAN.R-project.org/package=CircOutlier), [compositions](https://CRAN.R-project.org/package=compositions), [CoordinateCleaner](https://CRAN.R-project.org/package=CoordinateCleaner), [crseEventStudy](https://CRAN.R-project.org/package=crseEventStudy), [dbscan](https://CRAN.R-project.org/package=dbscan), [ddalpha](https://CRAN.R-project.org/package=ddalpha), [DeBoinR](https://CRAN.R-project.org/package=DeBoinR), [densratio](https://CRAN.R-project.org/package=densratio), [depth.plot](https://CRAN.R-project.org/package=depth.plot), [DescTools](https://CRAN.R-project.org/package=DescTools), [dixonTest](https://CRAN.R-project.org/package=dixonTest), [DJL](https://CRAN.R-project.org/package=DJL), [dobin](https://CRAN.R-project.org/package=dobin), [EFDR](https://CRAN.R-project.org/package=EFDR), [enpls](https://CRAN.R-project.org/package=enpls), [envoutliers](https://CRAN.R-project.org/package=envoutliers), [evtclass](https://CRAN.R-project.org/package=evtclass), [extremeIndex](https://CRAN.R-project.org/package=extremeIndex), [extremevalues](https://CRAN.R-project.org/package=extremevalues), [faoutlier](https://CRAN.R-project.org/package=faoutlier), [FastPCS](https://CRAN.R-project.org/package=FastPCS), [FastRCS](https://CRAN.R-project.org/package=FastRCS), [fda.usc](https://CRAN.R-project.org/package=fda.usc), [fdaoutlier](https://CRAN.R-project.org/package=fdaoutlier), [fdasrvf](https://CRAN.R-project.org/package=fdasrvf), [funModeling](https://CRAN.R-project.org/package=funModeling), [GGoutlieR](https://CRAN.R-project.org/package=GGoutlieR), [hotspots](https://CRAN.R-project.org/package=hotspots), [ICSOutlier](https://CRAN.R-project.org/package=ICSOutlier), [isotree](https://CRAN.R-project.org/package=isotree), [kernlab](https://CRAN.R-project.org/package=kernlab), [kfino](https://CRAN.R-project.org/package=kfino), [kmodR](https://CRAN.R-project.org/package=kmodR), [kuiper.2samp](https://CRAN.R-project.org/package=kuiper.2samp), [ldbod](https://CRAN.R-project.org/package=ldbod), [lookout](https://CRAN.R-project.org/package=lookout), [MALDIrppa](https://CRAN.R-project.org/package=MALDIrppa), [MGBT](https://CRAN.R-project.org/package=MGBT), [modi](https://CRAN.R-project.org/package=modi), [Morpho](https://CRAN.R-project.org/package=Morpho), [mrct](https://CRAN.R-project.org/package=mrct), [mrfDepth](https://CRAN.R-project.org/package=mrfDepth), [mvout](https://CRAN.R-project.org/package=mvout), [mvoutlier](https://CRAN.R-project.org/package=mvoutlier), [NMAoutlier](https://CRAN.R-project.org/package=NMAoutlier), [npphen](https://CRAN.R-project.org/package=npphen), [oclust](https://CRAN.R-project.org/package=oclust), [oddstream](https://CRAN.R-project.org/package=oddstream), [odetector](https://CRAN.R-project.org/package=odetector), [outbreaker2](https://CRAN.R-project.org/package=outbreaker2), [outbreaks](https://CRAN.R-project.org/package=outbreaks), [outForest](https://CRAN.R-project.org/package=outForest), [outlierensembles](https://CRAN.R-project.org/package=outlierensembles), [outlierMBC](https://CRAN.R-project.org/package=outlierMBC), [outliers](https://CRAN.R-project.org/package=outliers), [outliers.ts.oga](https://CRAN.R-project.org/package=outliers.ts.oga), [OutliersLearn](https://CRAN.R-project.org/package=OutliersLearn), [outliertree](https://CRAN.R-project.org/package=outliertree), [pasadr](https://CRAN.R-project.org/package=pasadr), [pcadapt](https://CRAN.R-project.org/package=pcadapt), [precintcon](https://CRAN.R-project.org/package=precintcon), [probout](https://CRAN.R-project.org/package=probout), [qpcR](https://CRAN.R-project.org/package=qpcR), [rainbow](https://CRAN.R-project.org/package=rainbow), [referenceIntervals](https://CRAN.R-project.org/package=referenceIntervals), [Rlof](https://CRAN.R-project.org/package=Rlof), [Routliers](https://CRAN.R-project.org/package=Routliers), [rrcovHD](https://CRAN.R-project.org/package=rrcovHD), [seasonal](https://CRAN.R-project.org/package=seasonal), [seismicRoll](https://CRAN.R-project.org/package=seismicRoll), [SeleMix](https://CRAN.R-project.org/package=SeleMix), [sGMRFmix](https://CRAN.R-project.org/package=sGMRFmix), [SMLoutliers](https://CRAN.R-project.org/package=SMLoutliers), [solitude](https://CRAN.R-project.org/package=solitude), [spikes](https://CRAN.R-project.org/package=spikes), [StatDA](https://CRAN.R-project.org/package=StatDA), [stray](https://CRAN.R-project.org/package=stray), [survBootOutliers](https://CRAN.R-project.org/package=survBootOutliers), [surveillance](https://CRAN.R-project.org/package=surveillance), [trendsegmentR](https://CRAN.R-project.org/package=trendsegmentR), [TSA](https://CRAN.R-project.org/package=TSA), [tsoutliers](https://CRAN.R-project.org/package=tsoutliers), [univOutl](https://CRAN.R-project.org/package=univOutl), [washeR](https://CRAN.R-project.org/package=washeR), [wbacon](https://CRAN.R-project.org/package=wbacon), [wql](https://CRAN.R-project.org/package=wql). |
 
 ### Related links
 
