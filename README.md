@@ -4,8 +4,8 @@
 |----|----|
 | **Maintainer:** | Priyanga Dilini Talagala, Rob J. Hyndman |
 | **Contact:** | pritalagala at gmail.com |
-| **Version:** | 2025-10-02 |
-| **Citation:** | Priyanga Dilini Talagala, Rob J. Hyndman (2025). CRAN Task View: Anomaly Detection with R. Version 2025-10-02. |
+| **Version:** | 2025-03-15 |
+| **Citation:** | Priyanga Dilini Talagala, Rob J. Hyndman (2025). CRAN Task View: Anomaly Detection with R. Version 2025-03-15. |
 
 <div>
 
@@ -79,18 +79,22 @@ View maintainer for further details or to propose enhancements.**
 
 **Multivariate Outlier Detection**
 
-- Under *multivariate, high-dimensional or multidimensional scenario,*
-  where the focus is on n (\>2) - dimensional space, all attributes
-  might be of same type or might be a mixture of different types such as
-  categorical or numerical, which has a direct impact on the
-  implementation and scope of the algorithm. The problems of anomaly
-  detection in high-dimensional data are threefold, involving detection
-  of: (a) global anomalies, (b) local anomalies and (c) micro clusters
-  or clusters of anomalies. Global anomalies are very different from the
-  dense area with respect to their attributes. In contrast, a local
-  anomaly is only an anomaly when it is distinct from, and compared
-  with, its local neighbourhood. Micro clusters or clusters of anomalies
-  may cause masking problems.
+Under *multivariate, high-dimensional or multidimensional scenario,*
+where the focus is on n (\>2) - dimensional space, all attributes might
+be of same type or might be a mixture of different types such as
+categorical or numerical, which has a direct impact on the
+implementation and scope of the algorithm. The problems of anomaly
+detection in high-dimensional data are threefold, involving detection
+of: (a) global anomalies, (b) local anomalies and (c) micro clusters or
+clusters of anomalies. Global anomalies are very different from the
+dense area with respect to their attributes. In contrast, a local
+anomaly is only an anomaly when it is distinct from, and compared with,
+its local neighbourhood. Micro clusters or clusters of anomalies may
+cause masking problems. The following categorization of multivariate
+outlier detection techniques is based on the underlying methodological
+principle, including density-based outlier detection, distance-based
+outlier detection, clustering-based outlier detection, angle-based
+outlier detection, and decision tree–based approaches.
 
 *Multivariate Outlier Detection: Density-based outlier detection*
 
