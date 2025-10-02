@@ -588,6 +588,7 @@ outlier detection, and decision tree–based approaches.
 ### Related links
 
 - CRAN Task View: [Cluster](Cluster.html)
+- CRAN Task View: [Epidemiology](Epidemiology.html)
 - CRAN Task View: [ExtremeValue](ExtremeValue.html)
 - [GitHub repository for this Task
   View](https://github.com/pridiltal/ctv-AnomalyDetection)

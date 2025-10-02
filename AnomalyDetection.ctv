@@ -545,6 +545,7 @@ finding outliers in the regression setting. RCS is supported by <pkg>FastRCS</pk
 
   <links>
     <view>Cluster</view>
+    <view>Epidemiology</view>
     <view>ExtremeValue</view>
     <a href="https://github.com/pridiltal/ctv-AnomalyDetection">GitHub repository for this Task View</a>
   </links>
