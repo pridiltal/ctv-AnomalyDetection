@@ -5,8 +5,8 @@
 
 library(ctv)
 
-ctv2html("MyTopic.md")
-browseURL("MyTopic.html")
+ctv2html("AnomalyDetection.md")
+browseURL("AnomalyDetection.html")
 htmlfile <- here::here(paste0(ctv, ".html"))
 
 # Set CRAN mirror
