@@ -142,100 +142,49 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 ### Specific Application Fields
 
-*Epidemiology*
+#### Epidemiology
 
-- The [ABPS](../packages/ABPS/index.html) package provides an
-  implementation of the Abnormal Blood Profile Score (ABPS, part of the
-  Athlete Biological Passport program of the World Anti-Doping Agency),
-  which combines several blood parameters into a single score in order
-  to detect blood doping. The package also contains functions to
-  calculate other scores used in anti-doping programs, such as the
-  OFF-score
-- The [surveillance](../packages/surveillance/index.html) package
-  implements statistical methods for aberration detection in time series
-  of counts, proportions and categorical data, as well as for the
-  modeling of continuous-time point processes of epidemic phenomena. The
-  package also contains several real-world data sets, the ability to
-  simulate outbreak data, and to visualize the results of the monitoring
-  in a temporal, spatial or spatio-temporal fashion.
-- The [outbreaker2](../packages/outbreaker2/index.html) package supports
-  Bayesian reconstruction of disease outbreaks using epidemiological and
-  genetic information. It is applicable to various densely sampled
-  epidemics, and improves previous approaches by detecting unobserved
-  and imported cases, as well as allowing multiple introductions of the
-  pathogen.
-- The [outbreaks](../packages/outbreaks/index.html) package provides
-  empirical or simulated disease outbreak data, either as RData or as
-  text files.
+- The `r pkg("ABPS")` package provides an implementation of the Abnormal Blood Profile Score (ABPS, part of the Athlete Biological Passport program of the World Anti-Doping Agency), which combines several blood parameters into a single score in order to detect blood doping. The package also contains functions to calculate other scores used in anti-doping programs, such as the OFF-score.
+- The `r pkg("surveillance")` package implements statistical methods for aberration detection in time series of counts, proportions, and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The package also contains several real-world data sets and the ability to simulate outbreak data and to visualize the results of the monitoring in a temporal, spatial, or spatio-temporal fashion.
+- The `r pkg("outbreaker2")` package supports Bayesian reconstruction of disease outbreaks using epidemiological and genetic information. It is applicable to various densely sampled epidemics and improves previous approaches by detecting unobserved and imported cases, as well as allowing multiple introductions of the pathogen.
+- The `r pkg("outbreaks")` package provides empirical or simulated disease outbreak data, either as RData or as text files.
 
-*Other*
+#### Environmental Science / Hydrology / Meteorology
 
-- The [precintcon](../packages/precintcon/index.html) package contains
-  functions to analyze the precipitation intensity, concentration and
-  anomaly.
-- The [survBootOutliers](../packages/survBootOutliers/index.html)
-  package provides concordance based bootstrap methods for outlier
-  detection in survival analysis.
-- The [pcadapt](../packages/pcadapt/index.html) package provides methods
-  to detect genetic markers involved in biological adaptation using
-  statistical tools based on Principal Component Analysis.
-- The [NMAoutlier](../packages/NMAoutlier/index.html) package implements
-  the forward search algorithm for the detection of outlying studies
-  (studies with extreme results) in network meta-analysis.
-- The [boutliers](../packages/boutliers/index.html) package provides
-  methods for outlier detection and influence diagnostics for
-  meta-analysis based on Bootstrap distributions of the influence
-  statistics.
-- The [MALDIrppa](../packages/MALDIrppa/index.html) package provides
-  methods for quality control and robust pre-processing and analysis of
-  MALDI mass spectrometry data.
-- The [qpcR](../packages/qpcR/index.html) package implements methods for
-  kinetic outlier detection (KOD) in real-time polymerase chain reaction
-  (qPCR).
-- The [referenceIntervals](../packages/referenceIntervals/index.html)
-  package provides a collection of tools including outlier detcetion to
-  allow the medical professional to calculate appropriate reference
-  ranges (intervals) with confidence intervals around the limits for
-  diagnostic purposes.
-- The Hampel filter is a robust outlier detector using Median Absolute
-  Deviation (MAD). The [seismicRoll](../packages/seismicRoll/index.html)
-  package provides fast rolling functions for seismology including
-  outlier detection with a rolling Hampel Filter.
-- The [spikes](../packages/spikes/index.html) package provides tool to
-  detect election fraud from irregularities in vote-share distributions
-  using re-sampled kernel density method.
-- The [wql](../packages/wql/index.html) package stands for \`water
-  quality' provides functions including anomaly detection to assist in
-  the processing and exploration of data from environmental monitoring
-  programs.
-- The Grubbs‐Beck test is recommended by the federal guidelines for
-  detection of low outliers in flood flow frequency computation in the
-  United States. The [MGBT](../packages/MGBT/index.html) computes the
-  multiple Grubbs-Beck low-outlier test on positively distributed data
-  and utilities for non-interpretive U.S. Geological Survey annual
-  peak-stream flow data processing.
-- The [envoutliers](../packages/envoutliers/index.html) package provides
-  three semi-parametric methods for detection of outliers in
-  environmental data based on kernel regression and subsequent analysis
-  of smoothing residuals
-- The [extremeIndex](../packages/extremeIndex/index.html) computes an
-  index measuring the amount of information brought by forecasts for
-  extreme events, subject to calibration. This index is originally
-  designed for weather or climate forecasts, but it may be used in other
-  forecasting contexts.
-- The [bulkQC](../packages/bulkQC/index.html) provides quality control
-  and outlier identification tools for multicenter randomized trials.
-  Functions include `ind_uni` and `getOutliers` for univariate checks,
-  and site-level assessments with and without covariate adjustment.
-- The [GGoutlieR](../packages/GGoutlieR/index.html) package detects and
-  visualizes individuals with unusual geo-genetic patterns using a
-  K-nearest neighbor approach. It identifies outliers that deviate from
-  the isolation-by-distance assumption and provides statistical
-  summaries and geographic visualizations.
+- The `r pkg("precintcon")` package contains functions to analyze the precipitation intensity, concentration, and anomaly.
+- The  `r pkg("wql")` package, which stands for \`water quality,' provides functions including anomaly detection to assist in the processing and exploration of data from environmental monitoring programs.
+- The Grubbs‐Beck test is recommended by the federal guidelines for detection of low outliers in flood flow frequency computation in the United States. The `r pkg("MGBT")` package computes the multiple Grubbs-Beck low-outlier test on positively distributed data and utilities for non-interpretive U.S. Geological Survey annual peak-stream flow data processing.
+- The  `r pkg("envoutliers")` package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals.
+- The  `r pkg("extremeIndex")` computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
+
+#### Biomedical and Clinical Research Applications
+
+- The `r pkg("survBootOutliers")` package provides concordance-based bootstrap methods for outlier detection in survival analysis.
+- The `r pkg("referenceIntervals")` package provides a collection of tools, including outlier detection, to allow the medical professional to calculate appropriate reference ranges (intervals) with confidence intervals around the limits for diagnostic purposes.
+- The `r pkg("bulkQC")` provides tools for quality control and outlier identification in multicenter randomized trials. It analyzes data from multiple study participants across several sites, detecting outliers at both the individual (univariate and multivariate) and site levels, with or without covariate adjustment. 
+- The `r pkg("NMAoutlier")` package implements the forward search algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis.
+- The `r pkg("boutliers")` package provides methods for outlier detection and influence diagnostics for meta-analysis based on bootstrap distributions of the influence statistics.
+
+#### Genetics & Bioinformatics
+
+- The `r pkg("pcadapt")` package provides methods to detect genetic markers involved in biological adaptation using statistical tools based on principal component analysis.
+- The `r pkg("GGoutlieR")` package detects and visualizes individuals with unusual geo-genetic patterns using a K-nearest neighbor approach. It identifies outliers that deviate from the isolation-by-distance assumption and provides statistical summaries and geographic visualizations. 
+- The `r pkg("MALDIrppa")` package provides methods for quality control and robust preprocessing and analysis of MALDI mass spectrometry data. 
+- The `r pkg("qpcR")` package implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction  (qPCR).
+
+#### Seismology & Geoscience
+
+- The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). The `r pkg("seismicRoll")` package provides fast rolling functions for seismology, including outlier detection with a rolling Hampel filter.
+
+#### Political Science / Election Analysis
+
+- The `r pkg("spikes")` package provides a tool to detect election fraud from irregularities in vote-share distributions using the resampled kernel density method.
+
 
 ### Data Sets
 
 - The `r pkg("anomaly")` package contains light curve time series data from the Kepler telescope.
+- The `r pkg("outbreaks")` package provides empirical or simulated disease outbreak data, either as RData or as text files.
 
 
 ### Educational and Companion Resources
