@@ -108,87 +108,39 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 ### Spatial Data
 
-- Spatial objects whose non-spatial attribute values are markedly
-  different from those of their spatial neighbors are known as Spatial
-  outliers or abnormal spatial patterns.
-- Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in
-  an image. Package [EFDR](../packages/EFDR/index.html) implements
-  wavelet-based Enhanced FDR for detecting signals from complete or
-  incomplete spatially aggregated data. The package also provides
-  elementary tools to interpolate spatially irregular data onto a grid
-  of the required size.
-- The function `spatial.outlier` in
-  [depth.plot](../packages/depth.plot/index.html) package helps to
-  identify multivariate spatial outlier within a p-variate data cloud or
-  if any p-variate observation is an outlier with respect to a p-variate
-  data cloud.
+- Spatial objects whose non-spatial attribute values are markedly different from those of their spatial neighbors are known as spatial outliers or abnormal spatial patterns.
+- Enhanced False Discovery Rate (EFDR) is a tool to detect anomalies in an image. Package `r pkg("EFDR")` implements wavelet-based enhanced FDR for detecting signals from complete or incomplete spatially aggregated data. The package also provides elementary tools to interpolate spatially irregular data onto a grid of the required size.
+- The function `spatial.outlier()` in `r pkg("depth.plot")` package helps to identify multivariate spatial outliers within a p-variate data cloud or if any p-variate observation is an outlier with respect to a p-variate data cloud.
 
-**Spatio-Temporal Data**
 
-- The [CoordinateCleaner](../packages/CoordinateCleaner/index.html)
-  package provides functions for flagging of common spatial and temporal
-  outliers (errors) in biological and paleontological collection data,
-  for the use in conservation, ecology and paleontology.
+### Spatio-Temporal Data
 
-**Functional Data**
+- The `r pkg("CoordinateCleaner")` package provides automated tools to detect and flag common spatial and temporal errors (outliers) in biological and paleontological occurrence data. It identifies problematic coordinates such as country centroids, biodiversity institution locations, or ocean points, and flags species-level outliers and rounding errors, improving data quality for ecological and conservation analyses.
 
-- The `foutliers()` function from
-  [rainbow](../packages/rainbow/index.html) package provides functional
-  outlier detection methods. Bagplots and boxplots for functional data
-  can also be used to identify outliers, which have either the lowest
-  depth (distance from the centre) or the lowest density, respectively.
-- The [adamethods](../packages/adamethods/index.html) package provides a
-  collection of several algorithms to obtain archetypoids with small and
-  large databases and with both classical multivariate data and
-  functional data (univariate and multivariate). Some of these
-  algorithms also allow to detect anomalies.
-- The `shape.fd.outliers` function in
-  [ddalpha](../packages/ddalpha/index.html) package detects functional
-  outliers of first three orders, based on the order extended integrated
-  depth for functional data.
-- The [fda.usc](../packages/fda.usc/index.html) package provides tools
-  for outlier detection in functional data (atypical curves detection)
-  using different approaches such as likelihood ratio test, depth
-  measures, quantiles of the bootstrap samples.
-- The [fdasrvf](../packages/fdasrvf/index.html) package supports outlier
-  detection in functional data using the square-root velocity framework
-  which allows for elastic analysis of functional data through phase and
-  amplitude separation.
-- The [fdaoutlier](../packages/fdaoutlier/index.html) package provides a
-  collection of functions for outlier detection in functional data
-  analysis. Methods implemented include directional outlyingness,
-  MS-plot, total variation depth, and sequential transformations among
-  others.
-- The [DeBoinR](../packages/DeBoinR/index.html) package detects outliers
-  in ensembles of probability density functions using functional
-  boxplots. The `deboinr()` function orders the functions by distance
-  and flags outliers based on a user-defined interquartile range.
-- The [mrct](../packages/mrct/index.html) package detects outliers in
-  functional data using the Minimum Regularized Covariance Trace (MRCT)
-  estimator.
+### Functional Data
 
-**Visualization of Anomalies**
+- The `foutliers()` function from the `r pkg("rainbow")` package provides functional outlier detection methods. Bagplots and boxplots for functional data can also be used to identify outliers, which have either the lowest depth (distance from the centre) or the lowest density, respectively.
+- The `r pkg("adamethods")` package provides a collection of several algorithms to obtain archetypoids with small and large databases and with both classical multivariate data and functional data (univariate and multivariate). Some of these algorithms also allow us to detect anomalies.
+- The `shape.fd.outliers()` function in the `r pkg("ddalpha")` package detects functional outliers of the first three orders, based on the order extended integrated depth for functional data.
+- The `r pkg("fda.usc")` package provides tools for outlier detection in functional data (atypical curve detection) using different approaches such as the likelihood ratio test, depth measures, and quantiles of the bootstrap samples.
+- The `r pkg("fdasrvf")` package supports outlier detection in functional data using the square-root velocity framework, which allows for elastic analysis of functional data through phase and amplitude separation.
+- The `r pkg("fdaoutlier")` package provides a collection of functions for outlier detection in functional data analysis. Methods implemented include directional outlyingness, MS-plot, total variation depth, and sequential transformations, among others.
+- The `r pkg("DeBoinR")` package detects outliers in ensembles of probability density functions using functional boxplots. The `deboinr()` function orders the functions by distance and flags outliers based on a user-defined interquartile range.
+- The `r pkg("mrct")` package detects outliers in functional data using the Minimum Regularized Covariance Trace (MRCT) estimator.
 
-- The [OutliersO3](../packages/OutliersO3/index.html) package provides
-  tools to aid in the display and understanding of patterns of
-  multivariate outliers. It uses the results of identifying outliers for
-  every possible combination of dataset variables to provide insight
-  into why particular cases are outliers.
-- The [Morpho](../packages/Morpho/index.html) package provides a
-  collection of tools for Geometric Morphometrics and mesh processing.
-  Apart from the core functions it provides a graphical interface to
-  find outliers and/or to switch mislabeled landmarks.
-- The [StatDA](../packages/StatDA/index.html) package provides
-  visualization tools to locate outliers in environmental data.
 
-**Pre-processing Methods for Anomaly Detection**
+### Visualization of Outlier
 
-- The [dobin](../packages/dobin/index.html) package provides dimension
-  reduction technique for outlier detection using neighbours, constructs
-  a set of basis vectors for outlier detection. It brings outliers to
-  the fore-front using fewer basis vectors.
+- The `r pkg("OutliersO3")` package provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
+- The `r pkg("Morpho")` package provides a collection of tools for geometric morphometrics and mesh processing. Apart from the core functions, it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
+- The `r pkg("StatDA")` package provides visualization tools to locate outliers in environmental data.
 
-**Specific Application Fields**
+### Pre-processing Methods for Outlier Detection
+
+- The `r pkg("dobin")` package provides a dimension reduction technique for outlier detection using neighbours and constructs a set of basis vectors for outlier detection. It brings outliers to the forefront using fewer basis vectors.
+
+
+### Specific Application Fields
 
 *Epidemiology*
 
@@ -281,12 +233,12 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
   the isolation-by-distance assumption and provides statistical
   summaries and geographic visualizations.
 
-**Data Sets**
+### Data Sets
 
-- The [anomaly](../packages/anomaly/index.html) package contains
-  lightcurve time series data from the Kepler telescope.
+- The `r pkg("anomaly")` package contains light curve time series data from the Kepler telescope.
 
-**Educational and Companion Resources**
+
+### Educational and Companion Resources
 
 - The [OutliersLearn](../packages/OutliersLearn/index.html) package
   provides implementations of some of the most important outlier
