@@ -90,71 +90,23 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 ### Temporal Data
 
-- The problems of anomaly detection for temporal data are 3-fold: (a)
-  the detection of contextual anomalies (point anomalies) within a given
-  series; (b) the detection of anomalous subsequences within a given
-  series; and (c) the detection of anomalous series within a collection
-  of series
-- The [trendsegmentR](../packages/trendsegmentR/index.html) package
-  performs the detection of point anomalies and linear trend changes for
-  univariate time series by implementing the bottom-up unbalanced
-  wavelet transformation.
-- The [anomaly](../packages/anomaly/index.html) package implements
-  Collective And Point Anomaly (CAPA), Multi-Variate Collective And
-  Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS)
-  and Bayesian Abnormal Region Detector (BARD) methods for the detection
-  of *anomalies* in time series data.
-- The [anomalize](../packages/anomalize/index.html) package enables a
-  "tidy" workflow for detecting anomalies in data. The main functions
-  are `time_decompose()`, `anomalize()`, and `time_recompose()`.
-- The `detectAO` and `detectIO` functions in
-  [TSA](../packages/TSA/index.html) package support detecting additive
-  outlier and innovative outlier in time series data.
-- The [washeR](../packages/washeR/index.html) package performs time
-  series outlier detection using non parametric test. An input can be a
-  data frame (grouped time series: phenomenon+date+group+values) or a
-  vector (single time series)
-- The [tsoutliers](../packages/tsoutliers/index.html) package implements
-  the Chen-Liu approach for detection of time series outliers such as
-  innovational outliers, additive outliers, level shifts, temporary
-  changes and seasonal level shifts.
-- The [seasonal](../packages/seasonal/index.html) package provides
-  easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment
-  software by the US Census Bureau. It offers full access to almost all
-  options and outputs of X-13, including outlier detection.
-- The [npphen](../packages/npphen/index.html) package implements basic
-  and high-level functions for detection of anomalies in vector data
-  (numerical series/ time series) and raster data (satellite derived
-  products). Processing of very large raster files is supported.
-- the [ACA](../packages/ACA/index.html) package offers an interactive
-  function for the detection of abrupt change-points or aberrations in
-  point series.
-- The [oddstream](../packages/oddstream/index.html) package implements
-  an algorithm for early detection of anomalous series within a large
-  collection of streaming time series data. The model uses time series
-  features as inputs, and a density-based comparison to detect any
-  significant changes in the distribution of the features.
-- The [pasadr](../packages/pasadr/index.html) package provides a novel
-  stealthy-attack detection mechanism that monitors time series of
-  sensor measurements in real time for structural changes in the process
-  behavior. It has the capability of detecting both significant
-  deviations in the process behavior and subtle attack-indicating
-  changes, significantly raising the bar for strategic adversaries who
-  may attempt to maintain their malicious manipulation within the noise
-  level.
-- The [kfino](../packages/kfino/index.html) package detects
-  impulse-noise outliers in time series using a Kalman filter. It
-  provides robust sequential filtering and prediction on cleaned data,
-  implementing both Maximum Likelihood (ML) and Expectation-Maximization
-  (EM) algorithms.
-- The [outliers.ts.oga](../packages/outliers.ts.oga/index.html) package
-  provides efficient detection and cleaning of outliers in single time
-  series as well as in large databases of homogeneous and heterogeneous
-  time series. It uses the Orthogonal Greedy Algorithm (OGA) for
-  saturated linear regression models, enabling scalable detection.
-  Version 1.1.1 includes improvements in parallelization.
+- The problems of anomaly detection for temporal data are 3-fold: (a) the detection of contextual anomalies (point anomalies) within a given series; (b) the detection of anomalous subsequences within a given series; and (c) the detection of anomalous series within a collection of series.
+- The `r pkg("trendsegmentR")` package performs the detection of point anomalies and linear trend changes for univariate time series by implementing the bottom-up unbalanced wavelet transformation.
+- The `r pkg("anomaly")` package implements Collective And Point Anomaly (CAPA), Multi-Variate Collective And Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS), and Bayesian Abnormal Region Detector (BARD) methods for the detection of anomalies in time series data.
+- The `r pkg("anomalize")` package enables a "tidy" workflow for detecting anomalies in data. The main functions are `time_decompose()`, `anomalize()`, and `time_recompose()`.
+- The `detectAO()` and `detectIO()` functions in the `r pkg("TSA")` package support detecting additive outliers and innovative outliers in time series data.
+- The `r pkg("washeR")` package performs time series outlier detection using a nonparametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series).
+- The `r pkg("tsoutliers")` package implements the Chen-Liu approach for detection of time series outliers such as innovational outliers, additive outliers, level shifts, temporary changes, and seasonal level shifts.
+- The `r pkg("seasonal")` package provides an easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including outlier detection.
+- The `r pkg("npphen")` package implements basic and high-level functions for detection of anomalies in vector data (numerical series/time series) and raster data (satellite-derived products). Processing of very large raster files is supported.
+- The `r pkg("ACA")` package offers an interactive function for the detection of abrupt change points or aberrations in point series.
+- The `r pkg("oddstream")` package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data. The model uses time series features as inputs and a density-based comparison to detect any significant changes in the distribution of the features.
+- The `r pkg("pasadr")` package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process  behaviour. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
+- The `r pkg("kfino")` package detects impulse-noise outliers in time series using a Kalman filter. It provides robust sequential filtering and prediction on cleaned data, implementing both Maximum Likelihood (ML) and Expectation-Maximization (EM) algorithms.
+- The `r pkg("outliers.ts.oga")` package provides efficient detection and cleaning of outliers in single time series as well as in large databases of homogeneous and heterogeneous time series. It uses the Orthogonal Greedy Algorithm (OGA) for saturated linear regression models, enabling scalable detection. Version 1.1.1 includes improvements in parallelization.
 
-**Spatial Outliers**
+
+### Spatial Data
 
 - Spatial objects whose non-spatial attribute values are markedly
   different from those of their spatial neighbors are known as Spatial

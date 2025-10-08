@@ -3,10 +3,11 @@
 
 ## Check ctv is correct
 
+
 library(ctv)
 
-ctv2html("AnomalyDetection.md")
-browseURL("AnomalyDetection.html")
+ctv <- "AnomalyDetection"
+ctvfile <- here::here(paste0(ctv, ".md"))
 htmlfile <- here::here(paste0(ctv, ".html"))
 
 # Set CRAN mirror
