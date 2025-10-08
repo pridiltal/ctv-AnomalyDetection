@@ -52,6 +52,7 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The function `dm.mahalanobis()` in the `r pkg("DJL")` package implements the Mahalanobis distance measure for outlier detection. In addition to the basic distance measure, boxplots are provided with potential outlier(s) to give an insight into the early stage of the data cleansing task.
 - The `r pkg("mvout")` package detects multivariate outliers using robust Mahalanobis distances based on the Minimum Covariance Determinant (MCD) estimator.
 - The `r pkg("outlierMBC")` package implements sequential outlier identification for Gaussian mixture models.  Outliers are detected by comparing observed Mahalanobis distances with the theoretical distribution. It also provides an extension for Gaussian linear cluster-weighted models using studentized residuals. The method emphasizes model-based, distance-driven identification of anomalies.
+- The two packages `r pkg("RMSD")` and `r pkg("RMSDp")` implement Modified Stahel-Donoho (MSD) estimators for detecting outliers in elliptically distributed multivariate datasets using Mahalanobis distance. The `r pkg("RMSD")` package provides a single-core implementation, while `r pkg("RMSDp")` offers a parallelized version optimized for high-dimensional data.
 
 #### Multivariate Outlier Detection: Clustering-based outlier detection
 
@@ -86,6 +87,8 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - Cellwise outliers are entries in the data matrix that are substantially higher or lower than what could be expected based on the other cells in its column as well as the other cells in its row, taking the relations between the columns into account. Package `r pkg("cellWise")` provides tools for detecting cellwise outliers and robust methods to analyze data that may contain them.
 - The Projection Congruent Subset (PCS) is a method for finding multivariate outliers by searching for a subset that minimizes a criterion. PCS is supported by the `r pkg("FastPCS")` package.
 - The  `r pkg("outlierensembles")` package provides ensemble functions for outlier/anomaly detection. In addition to some existing ensemble methods for outlier detection, it also provides an item response theory-based ensemble method.
+- The `r pkg("ShapleyOutlier")` package uses Shapley values and Mahalanobis distances to explain multivariate outliers and detect or impute cellwise anomalies. It implements the methods described in Mayrhofer and Filzmoser (2023).
+- The `r pkg("HRTnomaly")` package provides historical, relational, and tail anomaly detection at the data-entry level. Uses distribution-free scoring, fuzzy logic, Bayesian bootstrap, and empirical likelihood tests to identify nuanced outliers that may not be easily distinguishable from other data points. Suitable for detailed cellwise anomaly detection in structured datasets.
 
 
 ### Temporal Data
@@ -95,16 +98,19 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The `r pkg("anomaly")` package implements Collective And Point Anomaly (CAPA), Multi-Variate Collective And Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS), and Bayesian Abnormal Region Detector (BARD) methods for the detection of anomalies in time series data.
 - The `r pkg("anomalize")` package enables a "tidy" workflow for detecting anomalies in data. The main functions are `time_decompose()`, `anomalize()`, and `time_recompose()`.
 - The `detectAO()` and `detectIO()` functions in the `r pkg("TSA")` package support detecting additive outliers and innovative outliers in time series data.
+- The `r pkg("AnomalyScore")`package computes anomaly scores for multivariate time series using a k-nearest neighbors approach, with multiple distance measures available for comparison.
 - The `r pkg("washeR")` package performs time series outlier detection using a nonparametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series).
 - The `r pkg("tsoutliers")` package implements the Chen-Liu approach for detection of time series outliers such as innovational outliers, additive outliers, level shifts, temporary changes, and seasonal level shifts.
 - The `r pkg("seasonal")` package provides an easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including outlier detection.
-- The `r pkg("npphen")` package implements basic and high-level functions for detection of anomalies in vector data (numerical series/time series) and raster data (satellite-derived products). Processing of very large raster files is supported.
+- The `r pkg("npphen")` package detects phenological cycles and anomalies in vegetation using non-parametric methods. Works with time series of vegetation indices from remote sensing or field measurements, supporting both vector and large raster data.
 - The `r pkg("ACA")` package offers an interactive function for the detection of abrupt change points or aberrations in point series.
 - The `r pkg("oddstream")` package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data. The model uses time series features as inputs and a density-based comparison to detect any significant changes in the distribution of the features.
+- The `r pkg("oddnet")` package detects anomalies in temporal networks using a feature-based approach. Features are extracted for each network, modeled with time series methods, and anomalies are identified from time series residuals, accounting for temporal dependencies.
 - The `r pkg("pasadr")` package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process  behaviour. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
 - The `r pkg("kfino")` package detects impulse-noise outliers in time series using a Kalman filter. It provides robust sequential filtering and prediction on cleaned data, implementing both Maximum Likelihood (ML) and Expectation-Maximization (EM) algorithms.
 - The `r pkg("outliers.ts.oga")` package provides efficient detection and cleaning of outliers in single time series as well as in large databases of homogeneous and heterogeneous time series. It uses the Orthogonal Greedy Algorithm (OGA) for saturated linear regression models, enabling scalable detection. Version 1.1.1 includes improvements in parallelization.
-
+- The `r pkg("RobKF")` package implements robust Kalman filters for additive, innovative, or combined outliers in time series, based on methods by Ruckdeschel et al. (2014), Agamennoni et al. (2018), and Fisch et al. (2020).
+- The `r pkg("spectralAnomaly")` package detects anomalies in time series using the spectral residual algorithm. Provides anomaly scores for threshold-based outlier detection or integration into predictive models (Ren et al., 2019).
 
 ### Spatial Data
 
@@ -116,6 +122,7 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 ### Spatio-Temporal Data
 
 - The `r pkg("CoordinateCleaner")` package provides automated tools to detect and flag common spatial and temporal errors (outliers) in biological and paleontological occurrence data. It identifies problematic coordinates such as country centroids, biodiversity institution locations, or ocean points, and flags species-level outliers and rounding errors, improving data quality for ecological and conservation analyses.
+- the `r pkg("scanstatistics")` package detects anomalous space-time clusters using scan statistics. Designed for prospective surveillance of data streams, it scans for ongoing clusters and supports hypothesis testing via Monte Carlo simulation.
 
 ### Functional Data
 
@@ -171,6 +178,9 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The `r pkg("GGoutlieR")` package detects and visualizes individuals with unusual geo-genetic patterns using a K-nearest neighbor approach. It identifies outliers that deviate from the isolation-by-distance assumption and provides statistical summaries and geographic visualizations. 
 - The `r pkg("MALDIrppa")` package provides methods for quality control and robust preprocessing and analysis of MALDI mass spectrometry data. 
 - The `r pkg("qpcR")` package implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction  (qPCR).
+- The `r pkg("OmicsQC")` package analyzes quality control metrics from multi-sample genomic sequencing studies to identify poor-quality samples. It transforms per-sample metrics into z-scores, models their distribution using parametric methods, and applies Cosine Similarity Outlier Detection to nominate potential outliers.
+- The `r pkg("OutSeekR")` package provides an approach to outlier detection in RNA-seq and related genomic data based on five statistics. It implements an outlier test by comparing the distributions of these statistics in observed data with those from simulated null data.
+- The `r pkg("phylter")` package detects and removes outliers in phylogenomics datasets by analyzing gene trees or matrices to identify species–gene outliers. It builds on the Distatis approach, a generalization of multidimensional scaling for multiple distance matrices.
 
 #### Seismology and Geoscience
 
@@ -189,12 +199,14 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The `r pkg("anomaly")` package contains light curve time series data from the Kepler telescope.
 - The `r pkg("outbreaks")` package provides empirical or simulated disease outbreak data, either as RData or as text files.
 - The `r pkg("weird",  priority = "core")` package provides all the datasets used in Hyndman (2024), [That's Weird: Anomaly Detection Using R](https://OTexts.com/weird/).
+- The `r pkg("SCOUTer")` package provides a method to simulate controlled outliers using principal component analysis. New observations are generated based on target values of the Squared Prediction Error (SPE) and Hotelling’s $T^2$ statistics, allowing precise creation of outliers for testing and evaluation of anomaly detection methods.
 
 
 ### Educational and Companion Resources
 
 - The `r pkg("OutliersLearn")` package provides implementations of some of the most important outlier detection algorithms. Includes a tutorial mode option that shows a description of each algorithm and provides a step-by-step execution explanation of how it identifies outliers from the given data with the specified input parameters. The package covers three main types of approaches: statistical, distance-based, and density/clustering approaches.
-- The `r pkg("weird")` package accompanies Hyndman (2024), [That's Weird: Anomaly Detection Using R](https://OTexts.com/weird/). It includes all datasets, functions, and supporting packages required to reproduce the examples presented in the book.
+- The `r pkg("weird")`  accompanies Hyndman (2024), [That's Weird: Anomaly Detection Using R](https://OTexts.com/weird/). It includes all datasets, functions, and supporting packages required to reproduce the examples presented in the book.
+- The `r pkg("UAHDataScienceO")` package provides implementations of key outlier detection algorithms with a tutorial mode. The tutorial explains each algorithm step-by-step, showing how outliers are identified from the input data. References include Boukerche et al. (2020), Smiti (2020), and Su & Tsai (2011).
 
 
 ### Miscellaneous
