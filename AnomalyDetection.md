@@ -7,13 +7,13 @@ version: 2025-10-07
 source: https://github.com/pridiltal/ctv-AnomalyDetection
 ---
 
-This CRAN Task View provides a comprehensive list of R packages for anomaly detection. Anomaly detection problems have many different facets, and detection techniques are influenced by factors such as how anomalies are defined, the type of input data, and the expected output. These variations lead to diverse problem formulations, requiring different analytical approaches. This Task View aims to help users navigate the available tools by organizing them based on their applicability to different data types and detection methodologies.
+This CRAN Task View provides a comprehensive list of R packages for anomaly detection. Anomaly detection problems have many facets, and the techniques used are influenced by factors such as how anomalies are defined, the type of input data, and the expected output. These variations lead to diverse problem formulations, requiring different analytical approaches. This Task View helps users navigate the available tools by organizing them based on their applicability to different data types and detection methodologies.
 
-Anomalies are often referred to by alternative names such as outliers, novelties, odd values, extreme values, faults, and aberrations, depending on the application domain. This Task View considers all these variations and categorizes relevant R packages accordingly. The overview covers methods applicable to univariate, multivariate, spatial, temporal, and functional data, ensuring users can identify suitable tools for various analytical needs. R packages that do not primarily focus on anomaly detection but offer substantial functionalities for anomaly detection have also been included.
+Anomalies are often referred to by alternative names such as outliers, novelties, odd values, extreme values, faults, and aberrations, depending on the application domain. In this Task View, these terms are used interchangeably. The overview covers methods applicable to univariate, multivariate, spatial, temporal, and functional data, ensuring that users can identify suitable tools for various analytical needs. Packages that do not primarily focus on anomaly detection but provide substantial functionality for it are also included.
 
-Packages where anomaly detection is only a minor feature with very limited functions have been excluded. Additionally, tools that are outdated, redundant, or lack sufficient support have not been considered.
+Packages where anomaly detection is only a minor feature or offers very limited functions have been excluded. Tools that are outdated, redundant, or lack sufficient support have also not been considered.
 
-To facilitate navigation, the Task View is structured into well-defined sections, including Univariate Outlier Detection, Multivariate Detection (further categorized into density-based, distance-based, clustering-based, angle-based, and decision tree-based methods), Temporal Data, Spatial and Spatio-Temporal Data, Functional Data, and other specialized approaches.
+To facilitate navigation, the Task View is structured into well-defined sections, including Univariate Outlier Detection, Multivariate Detection (further categorized into density-based, distance-based, clustering-based, angle-based, and decision tree–based methods), Temporal Data, Spatial and Spatio-Temporal Data, Functional Data, and other specialized approaches. There is some overlap between the tools in this Task View and those listed in the Task Views for `r view("Cluster")`, `r view("Epidemiology")`, `r view("ExtremeValue")`, and `r view("TimeSeries")`.
 
 ### Univariate Outlier Detection
 
@@ -42,7 +42,7 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 #### Multivariate Outlier Detection: Distance-based outlier detection
 
-- The `r pkg("HDoutliers")` package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with mixed categorical and continuous variables and the outlier masking problem.
+- The `r pkg("HDoutliers",  priority = "core")` package provides an implementation of an algorithm for univariate and multivariate outlier detection that can handle data with mixed categorical and continuous variables and the outlier masking problem.
 - The `r pkg("stray")` package implements an algorithm for detecting anomalies in high-dimensional data that addresses the limitations of the 'HDoutliers' algorithm. An approach based on extreme value theory is used for the anomalous threshold calculation.
 - The `r pkg("Routliers")` package provides robust methods to detect univariate (Median Absolute Deviation method) and multivariate outliers (Mahalanobis-Minimum Covariance Determinant method).
 - The `r pkg("modi")` package implements Mahalanobis distance or depth-based algorithms for multivariate outlier detection in the presence of missing values (incomplete survey data).
@@ -57,7 +57,7 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 - The `r pkg("kmodR")` package presents a unified approach for simultaneously clustering and discovering outliers in high-dimensional data. Their approach is formalized as a generalization of the k-MEANS problem.
 - The `r pkg("odetector")` package detects multivariate outliers using soft partitioning clustering algorithms such as Fuzzy C-means and its variants. Observations with low typicality degrees are flagged as outliers.
-
+- The  `r pkg("oclust")` package provides a function to detect and trim outliers in Gaussian mixture model-based clustering using methods described in Clark and McNicholas (2019).
 
 #### Multivariate Outlier Detection: Angle-based outlier detection
 
@@ -131,7 +131,7 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 ### Visualization of Outlier
 
-- The `r pkg("OutliersO3")` package provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
+- The `r pkg("OutliersO3",  priority = "core")` package provides tools to aid in the display and understanding of patterns of multivariate outliers. It uses the results of identifying outliers for every possible combination of dataset variables to provide insight into why particular cases are outliers.
 - The `r pkg("Morpho")` package provides a collection of tools for geometric morphometrics and mesh processing. Apart from the core functions, it provides a graphical interface to find outliers and/or to switch mislabeled landmarks.
 - The `r pkg("StatDA")` package provides visualization tools to locate outliers in environmental data.
 
@@ -165,14 +165,14 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The `r pkg("NMAoutlier")` package implements the forward search algorithm for the detection of outlying studies (studies with extreme results) in network meta-analysis.
 - The `r pkg("boutliers")` package provides methods for outlier detection and influence diagnostics for meta-analysis based on bootstrap distributions of the influence statistics.
 
-#### Genetics & Bioinformatics
+#### Genetics and Bioinformatics
 
 - The `r pkg("pcadapt")` package provides methods to detect genetic markers involved in biological adaptation using statistical tools based on principal component analysis.
 - The `r pkg("GGoutlieR")` package detects and visualizes individuals with unusual geo-genetic patterns using a K-nearest neighbor approach. It identifies outliers that deviate from the isolation-by-distance assumption and provides statistical summaries and geographic visualizations. 
 - The `r pkg("MALDIrppa")` package provides methods for quality control and robust preprocessing and analysis of MALDI mass spectrometry data. 
 - The `r pkg("qpcR")` package implements methods for kinetic outlier detection (KOD) in real-time polymerase chain reaction  (qPCR).
 
-#### Seismology & Geoscience
+#### Seismology and Geoscience
 
 - The Hampel filter is a robust outlier detector using Median Absolute Deviation (MAD). The `r pkg("seismicRoll")` package provides fast rolling functions for seismology, including outlier detection with a rolling Hampel filter.
 
@@ -180,75 +180,36 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 - The `r pkg("spikes")` package provides a tool to detect election fraud from irregularities in vote-share distributions using the resampled kernel density method.
 
+#### Finance and Econometrics Applications
+
+- The `r pkg("crseEventStudy")` package detects abnormal stock returns in long-horizon event studies using a robust standardized test. It accounts for heteroskedasticity, autocorrelation, volatility clustering, and cross-sectional correlation, ensuring reliable identification of anomalies in financial returns.
 
 ### Data Sets
 
 - The `r pkg("anomaly")` package contains light curve time series data from the Kepler telescope.
 - The `r pkg("outbreaks")` package provides empirical or simulated disease outbreak data, either as RData or as text files.
+- The `r pkg("weird",  priority = "core")` package provides all the datasets used in Hyndman (2024), [That's Weird: Anomaly Detection Using R](https://OTexts.com/weird/).
 
 
 ### Educational and Companion Resources
 
-- The [OutliersLearn](../packages/OutliersLearn/index.html) package
-  provides implementations of some of the most important outlier
-  detection algorithms. Includes a tutorial mode option that shows a
-  description of each algorithm and provides a step-by-step execution
-  explanation of how it identifies outliers from the given data with the
-  specified input parameters. The package covers three main types of
-  approaches statistical, distance-based, and density/clustering
-  approaches.
-  
-- The [weird](../packages/weird/index.html) package provides functions and
-  data sets for Hyndman (2024), *That's Weird: Anomaly Detection Using R* 
-  <https://OTexts.com/weird/>. It includes all functions, data sets, and 
-  required packages needed to reproduce the examples from the book.
+- The `r pkg("OutliersLearn")` package provides implementations of some of the most important outlier detection algorithms. Includes a tutorial mode option that shows a description of each algorithm and provides a step-by-step execution explanation of how it identifies outliers from the given data with the specified input parameters. The package covers three main types of approaches: statistical, distance-based, and density/clustering approaches.
+- The `r pkg("weird")` package accompanies Hyndman (2024), [That's Weird: Anomaly Detection Using R](https://OTexts.com/weird/). It includes all datasets, functions, and supporting packages required to reproduce the examples presented in the book.
 
-**Miscellaneous**
 
-- The [CircOutlier](../packages/CircOutlier/index.html) package enables
-  detection of outliers in circular-circular regression models,
-  modifying its and estimating of models parameters.
-- The Residual Congruent Subset (RCS) is a method for finding outliers
-  in the regression setting. RCS is supported by
-  [FastRCS](../packages/FastRCS/index.html) package.
-- The [oclust](../packages/oclust/index.html) package provides a
-  function to detect and trim outliers in Gaussian mixture model based
-  clustering using methods described in Clark and McNicholas (2019).
-- The [SeleMix](../packages/SeleMix/index.html) package provides
-  functions for detection of outliers and influential errors using a
-  latent variable model. A mixture model (Gaussian contamination model)
-  based on response(s) y and a depended set of covariates is fit to the
-  data to quantify the impact of errors to the estimates.
-- The [compositions](../packages/compositions/index.html) package
-  provides functions to detect various types of outliers in
-  compositional datasets.
-- The [kuiper.2samp](../packages/kuiper.2samp/index.html) package
-  performs the two-sample Kuiper test to assess the anomaly of
-  continuous, one-dimensional probability distributions.
-- The `enpls.od()` function in [enpls](../packages/enpls/index.html)
-  package performs outlier detection with ensemble partial least
-  squares.
-- The [faoutlier](../packages/faoutlier/index.html) package provides
-  tools for detecting and summarize influential cases that can affect
-  exploratory and confirmatory factor analysis models and structural
-  equation models.
-- The [crseEventStudy](../packages/crseEventStudy/index.html) package
-  provides a robust and powerful test of abnormal stock returns in
-  long-horizon event studies
+### Miscellaneous
 
-</div>
+- The `r pkg("CircOutlier")` package enables detection of outliers in circular-circular regression models, modifying it and estimating the models' parameters.
+- The Residual Congruent Subset (RCS) is a method for finding outliers in the regression setting. RCS is supported by the `r pkg("FastRCS")` package.
+- The `r pkg("SeleMix")` package provides functions for detecting outliers and influential observations using a latent variable approach. It fits a mixture model (Gaussian contamination model) based on response(s) y and associated covariates to quantify the impact of errors on parameter estimates.
+- The `r pkg("compositions")` package provides functions to detect various types of outliers in compositional datasets.
+- The `r pkg("kuiper.2samp")` package performs the two-sample Kuiper test to assess the anomaly of continuous, one-dimensional probability distributions.
+- The `enpls.od()` function in the `r pkg("enpls")` package performs outlier detection with ensemble partial least squares.
+- The `r pkg("faoutlier")` package provides tools for detecting and summarizing influential cases that can affect exploratory and confirmatory factor analysis models and structural equation models.
 
-### CRAN packages
 
-|  |  |
-|----|----|
-| *Core:* | [HDoutliers](https://CRAN.R-project.org/package=HDoutliers), [OutliersO3](https://CRAN.R-project.org/package=OutliersO3), [weird](https://cran.r-project.org/web/packages/weird/index.html) |
-| *Regular:* | [abnormality](https://CRAN.R-project.org/package=abnormality), [abodOutlier](https://CRAN.R-project.org/package=abodOutlier), [ABPS](https://CRAN.R-project.org/package=ABPS), [ACA](https://CRAN.R-project.org/package=ACA), [adamethods](https://CRAN.R-project.org/package=adamethods), [alphaOutlier](https://CRAN.R-project.org/package=alphaOutlier), [amelie](https://CRAN.R-project.org/package=amelie), [ANN2](https://CRAN.R-project.org/package=ANN2), [anomalize](https://CRAN.R-project.org/package=anomalize), [anomaly](https://CRAN.R-project.org/package=anomaly), [bagged.outliertrees](https://CRAN.R-project.org/package=bagged.outliertrees), [bigutilsr](https://CRAN.R-project.org/package=bigutilsr), [boutliers](https://CRAN.R-project.org/package=boutliers), [bulkQC](https://CRAN.R-project.org/package=bulkQC), [cellWise](https://CRAN.R-project.org/package=cellWise), [CerioliOutlierDetection](https://CRAN.R-project.org/package=CerioliOutlierDetection), [CircOutlier](https://CRAN.R-project.org/package=CircOutlier), [compositions](https://CRAN.R-project.org/package=compositions), [CoordinateCleaner](https://CRAN.R-project.org/package=CoordinateCleaner), [crseEventStudy](https://CRAN.R-project.org/package=crseEventStudy), [dbscan](https://CRAN.R-project.org/package=dbscan), [ddalpha](https://CRAN.R-project.org/package=ddalpha), [DeBoinR](https://CRAN.R-project.org/package=DeBoinR), [densratio](https://CRAN.R-project.org/package=densratio), [depth.plot](https://CRAN.R-project.org/package=depth.plot), [DescTools](https://CRAN.R-project.org/package=DescTools), [dixonTest](https://CRAN.R-project.org/package=dixonTest), [DJL](https://CRAN.R-project.org/package=DJL), [dobin](https://CRAN.R-project.org/package=dobin), [EFDR](https://CRAN.R-project.org/package=EFDR), [enpls](https://CRAN.R-project.org/package=enpls), [envoutliers](https://CRAN.R-project.org/package=envoutliers), [evtclass](https://CRAN.R-project.org/package=evtclass), [extremeIndex](https://CRAN.R-project.org/package=extremeIndex), [extremevalues](https://CRAN.R-project.org/package=extremevalues), [faoutlier](https://CRAN.R-project.org/package=faoutlier), [FastPCS](https://CRAN.R-project.org/package=FastPCS), [FastRCS](https://CRAN.R-project.org/package=FastRCS), [fda.usc](https://CRAN.R-project.org/package=fda.usc), [fdaoutlier](https://CRAN.R-project.org/package=fdaoutlier), [fdasrvf](https://CRAN.R-project.org/package=fdasrvf), [funModeling](https://CRAN.R-project.org/package=funModeling), [GGoutlieR](https://CRAN.R-project.org/package=GGoutlieR), [hotspots](https://CRAN.R-project.org/package=hotspots), [ICSOutlier](https://CRAN.R-project.org/package=ICSOutlier), [isotree](https://CRAN.R-project.org/package=isotree), [kernlab](https://CRAN.R-project.org/package=kernlab), [kfino](https://CRAN.R-project.org/package=kfino), [kmodR](https://CRAN.R-project.org/package=kmodR), [kuiper.2samp](https://CRAN.R-project.org/package=kuiper.2samp), [ldbod](https://CRAN.R-project.org/package=ldbod), [lookout](https://CRAN.R-project.org/package=lookout), [MALDIrppa](https://CRAN.R-project.org/package=MALDIrppa), [MGBT](https://CRAN.R-project.org/package=MGBT), [modi](https://CRAN.R-project.org/package=modi), [Morpho](https://CRAN.R-project.org/package=Morpho), [mrct](https://CRAN.R-project.org/package=mrct), [mrfDepth](https://CRAN.R-project.org/package=mrfDepth), [mvout](https://CRAN.R-project.org/package=mvout), [mvoutlier](https://CRAN.R-project.org/package=mvoutlier), [NMAoutlier](https://CRAN.R-project.org/package=NMAoutlier), [npphen](https://CRAN.R-project.org/package=npphen), [oclust](https://CRAN.R-project.org/package=oclust), [oddstream](https://CRAN.R-project.org/package=oddstream), [odetector](https://CRAN.R-project.org/package=odetector), [outbreaker2](https://CRAN.R-project.org/package=outbreaker2), [outbreaks](https://CRAN.R-project.org/package=outbreaks), [outForest](https://CRAN.R-project.org/package=outForest), [outlierensembles](https://CRAN.R-project.org/package=outlierensembles), [outlierMBC](https://CRAN.R-project.org/package=outlierMBC), [outliers](https://CRAN.R-project.org/package=outliers), [outliers.ts.oga](https://CRAN.R-project.org/package=outliers.ts.oga), [OutliersLearn](https://CRAN.R-project.org/package=OutliersLearn), [outliertree](https://CRAN.R-project.org/package=outliertree), [pasadr](https://CRAN.R-project.org/package=pasadr), [pcadapt](https://CRAN.R-project.org/package=pcadapt), [precintcon](https://CRAN.R-project.org/package=precintcon), [probout](https://CRAN.R-project.org/package=probout), [qpcR](https://CRAN.R-project.org/package=qpcR), [rainbow](https://CRAN.R-project.org/package=rainbow), [referenceIntervals](https://CRAN.R-project.org/package=referenceIntervals), [Rlof](https://CRAN.R-project.org/package=Rlof), [Routliers](https://CRAN.R-project.org/package=Routliers), [rrcovHD](https://CRAN.R-project.org/package=rrcovHD), [seasonal](https://CRAN.R-project.org/package=seasonal), [seismicRoll](https://CRAN.R-project.org/package=seismicRoll), [SeleMix](https://CRAN.R-project.org/package=SeleMix), [sGMRFmix](https://CRAN.R-project.org/package=sGMRFmix), [SMLoutliers](https://CRAN.R-project.org/package=SMLoutliers), [solitude](https://CRAN.R-project.org/package=solitude), [spikes](https://CRAN.R-project.org/package=spikes), [StatDA](https://CRAN.R-project.org/package=StatDA), [stray](https://CRAN.R-project.org/package=stray), [survBootOutliers](https://CRAN.R-project.org/package=survBootOutliers), [surveillance](https://CRAN.R-project.org/package=surveillance), [trendsegmentR](https://CRAN.R-project.org/package=trendsegmentR), [TSA](https://CRAN.R-project.org/package=TSA), [tsoutliers](https://CRAN.R-project.org/package=tsoutliers), [univOutl](https://CRAN.R-project.org/package=univOutl), [washeR](https://CRAN.R-project.org/package=washeR), [wbacon](https://CRAN.R-project.org/package=wbacon), [wql](https://CRAN.R-project.org/package=wql). |
+### Links
 
-### Related links
-
-- CRAN Task View: [Cluster](Cluster.html)
-- CRAN Task View: [Epidemiology](Epidemiology.html)
-- CRAN Task View: [ExtremeValue](ExtremeValue.html)
-- [GitHub repository for this Task
-  View](https://github.com/pridiltal/ctv-AnomalyDetection)
+- Articles: ["Anomaly detection: A survey" in ACM Journals (2009)](https://dl.acm.org/doi/abs/10.1145/1541880.1541882)
+- Articles: ["Visualizing Big Data Outliers Through Distributed Aggregation" in IEEE Transactions on Visualization and Computer Graphics (2018)](https://dl.acm.org/doi/abs/10.1145/1541880.1541882)
+- Book: [That's weird! Anomaly detection using R (Hyndman; 2024)](https://otexts.com/weird/)
