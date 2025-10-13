@@ -1,9 +1,9 @@
 ---
 name: AnomalyDetection
 topic: Anomaly Detection
-maintainer: Priyanga Dilini Talagala, Rob J. Hyndman
-email: pritalagala@gmail.com
-version: 2025-10-07
+maintainer: Priyanga Dilini Talagala, Rob J. Hyndman, Gaetano Romano
+email: priyangad@uom.lk
+version: 2025-10-13
 source: https://github.com/pridiltal/ctv-AnomalyDetection
 ---
 
@@ -225,3 +225,4 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - Articles: ["Anomaly detection: A survey" in ACM Journals (2009)](https://dl.acm.org/doi/abs/10.1145/1541880.1541882)
 - Articles: ["Visualizing Big Data Outliers Through Distributed Aggregation" in IEEE Transactions on Visualization and Computer Graphics (2018)](https://dl.acm.org/doi/abs/10.1145/1541880.1541882)
 - Book: [That's weird! Anomaly detection using R (Hyndman; 2024)](https://otexts.com/weird/)
+
