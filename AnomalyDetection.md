@@ -93,25 +93,39 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 
 ### Temporal Data
 
-- The problems of anomaly detection for temporal data are 3-fold: (a) the detection of contextual anomalies (point anomalies) within a given series; (b) the detection of anomalous subsequences within a given series; and (c) the detection of anomalous series within a collection of series.
-- Related algorithms for identifying structural breaks and regime shifts are discussed in the `r view("TimeSeries", "Change point detection")` section of the Time Series Task View. Change point detection methods aim to locate abrupt changes in the statistical properties of a time series, which are conceptually similar to detecting anomalous subsequences. In some contexts, such as an epidemic change that represents a temporary deviation affecting a contiguous segment of the series, this can be regarded as the detection of anomalous subsequences within a given series.
-- The `r pkg("trendsegmentR")` package performs the detection of point anomalies and linear trend changes for univariate time series by implementing the bottom-up unbalanced wavelet transformation.
-- The `r pkg("anomaly")` package implements Collective And Point Anomaly (CAPA), Multi-Variate Collective And Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS), and Bayesian Abnormal Region Detector (BARD) methods for the detection of anomalies in time series data.
-- The `r pkg("anomalize")` package enables a "tidy" workflow for detecting anomalies in data. The main functions are `time_decompose()`, `anomalize()`, and `time_recompose()`.
-- The `detectAO()` and `detectIO()` functions in the `r pkg("TSA")` package support detecting additive outliers and innovative outliers in time series data.
+The problems of anomaly detection for temporal data are three-fold: (a) the detection of contextual anomalies (point anomalies) within a given series; (b) the detection of anomalous subsequences within a given series; and (c) the detection of anomalous series within a collection of series.
+
+Related algorithms for identifying structural breaks and regime shifts are discussed in the `r view("TimeSeries", "Change point detection")` section of the Time Series Task View. Change point detection methods aim to locate abrupt changes in the statistical properties of a time series, which are conceptually similar to detecting anomalous subsequences. In some contexts, such as an epidemic change that represents a temporary deviation affecting a contiguous segment of the series, this can be regarded as the detection of anomalous subsequences within a given series.
+
+Anomaly detection methods for temporal data can be broadly divided into two categories: Offline (Batch) procedures, which analyze the complete time series retrospectively, and Online (Sequential / Real-Time) procedures, which detect anomalies as data arrives sequentially.
+
+#### Offline (Batch) Procedures
+
+These methods assume that the complete time series is available for analysis and are typically applied retrospectively to detect anomalies.
+
+- The `r pkg("trendsegmentR")` package performs detection of point anomalies and linear trend changes in univariate time series using a bottom-up unbalanced wavelet transformation. It is capable of identifying both abrupt jumps and gradual trend shifts, leveraging wavelet decomposition to separate signal from noise.
+- The `r pkg("anomaly")` package implements Collective And Point Anomaly (CAPA), Multi-Variate Collective And Point Anomaly (MVCAPA), Proportion Adaptive Segment Selection (PASS), and Bayesian Abnormal Region Detector (BARD) methods. These methods combine likelihood-based segmentation and Bayesian modeling to detect both localized and global anomalies in univariate and multivariate series.
+- The `r pkg("anomalize")` package provides a tidy workflow using time_decompose(), anomalize(), and time_recompose(). It decomposes series into trend, seasonal, and remainder components and identifies anomalies in the remainder using robust statistical thresholds, making it compatible with tidyverse pipelines.
+- The `r pkg("TSA")` package offers `detectAO()` and `detectIO()` functions to detect additive outliers (AO) and innovational outliers (IO) using classical time series models. AO detection identifies abrupt spikes, while IO detection accounts for anomalies propagating through an ARIMA model structure.
 - The `r pkg("AnomalyScore")`package computes anomaly scores for multivariate time series using a k-nearest neighbors approach, with multiple distance measures available for comparison.
 - The `r pkg("washeR")` package performs time series outlier detection using a nonparametric test. An input can be a data frame (grouped time series: phenomenon+date+group+values) or a vector (single time series).
 - The `r pkg("tsoutliers")` package implements the Chen-Liu approach for detection of time series outliers such as innovational outliers, additive outliers, level shifts, temporary changes, and seasonal level shifts.
 - The `r pkg("seasonal")` package provides an easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including outlier detection.
 - The `r pkg("npphen")` package detects phenological cycles and anomalies in vegetation using non-parametric methods. Works with time series of vegetation indices from remote sensing or field measurements, supporting both vector and large raster data.
-- The `r pkg("ACA")` package offers an interactive function for the detection of abrupt change points or aberrations in point series.
-- The `r pkg("oddstream")` package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data. The model uses time series features as inputs and a density-based comparison to detect any significant changes in the distribution of the features.
-- The `r pkg("oddnet")` package detects anomalies in temporal networks using a feature-based approach. Features are extracted for each network, modeled with time series methods, and anomalies are identified from time series residuals, accounting for temporal dependencies.
-- The `r pkg("pasadr")` package provides a novel stealthy-attack detection mechanism that monitors time series of sensor measurements in real time for structural changes in the process  behaviour. It has the capability of detecting both significant deviations in the process behavior and subtle attack-indicating changes, significantly raising the bar for strategic adversaries who may attempt to maintain their malicious manipulation within the noise level.
-- The `r pkg("kfino")` package detects impulse-noise outliers in time series using a Kalman filter. It provides robust sequential filtering and prediction on cleaned data, implementing both Maximum Likelihood (ML) and Expectation-Maximization (EM) algorithms.
-- The `r pkg("outliers.ts.oga")` package provides efficient detection and cleaning of outliers in single time series as well as in large databases of homogeneous and heterogeneous time series. It uses the Orthogonal Greedy Algorithm (OGA) for saturated linear regression models, enabling scalable detection. Version 1.1.1 includes improvements in parallelization.
+- The `r pkg("ACA")` package provides interactive tools for detecting abrupt change points or anomalies in serial (time-ordered) data. It identifies significant shifts or aberrations within point series, helping to locate where sudden changes occur in the underlying process dynamics.
+- The `r pkg("outliers.ts.oga")` package detects and cleans outliers in single or large databases of homogeneous or heterogeneous time series using the Orthogonal Greedy Algorithm (OGA) for saturated linear regression models, providing scalable detection with parallelization..
 - The `r pkg("RobKF")` package implements robust Kalman filters for additive, innovative, or combined outliers in time series, based on methods by Ruckdeschel et al. (2014), Agamennoni et al. (2018), and Fisch et al. (2020).
 - The `r pkg("spectralAnomaly")` package detects anomalies in time series using the spectral residual algorithm. Provides anomaly scores for threshold-based outlier detection or integration into predictive models (Ren et al., 2019).
+- The `r pkg("oddnet")` package detects anomalies in temporal networks using a feature-based approach. Features are extracted for each network, modeled with time series methods, and anomalies are identified from time series residuals, accounting for temporal dependencies.
+
+#### Online (Sequential / Real-Time) Procedures
+
+These methods detect anomalies as new data arrives, supporting real-time or near-real-time monitoring. Many methods include an initial offline phase for model fitting or training, followed by a sequential testing or filtering phase, often using sliding windows, adaptive thresholds, or recursive models.
+
+- The `r pkg("oddstream")` package implements an algorithm for early detection of anomalous series within a large collection of streaming time series data. The model uses time series features as inputs and a density-based comparison to detect any significant changes in the distribution of the features.
+- The `r pkg("pasadr")` package monitors sensor measurements using a dual-phase approach: an initial training phase estimates baseline process behavior, followed by sequential detection of structural changes. It can detect both abrupt deviations and subtle manipulations, including stealthy attacks, by continuously updating test statistics.
+- The `r pkg("kfino")`package  detects impulse-noise outliers in streaming or sequential time series data using a Kalman filter–based recursive estimator. The package supports both Maximum Likelihood (ML) and Expectation-Maximization (EM) algorithms for parameter estimation. It provides sequential filtering, prediction, and anomaly scoring at each time step, without requiring access to the full historical series, making it well suited for real-time monitoring of sensors or automated measurement systems.
+
 
 ### Spatial Data
 
@@ -163,7 +177,8 @@ Under *a multivariate, high-dimensional, or multidimensional scenario,* where th
 - The  `r pkg("wql")` package, which stands for \`water quality,' provides functions including anomaly detection to assist in the processing and exploration of data from environmental monitoring programs.
 - The Grubbs‐Beck test is recommended by the federal guidelines for detection of low outliers in flood flow frequency computation in the United States. The `r pkg("MGBT")` package computes the multiple Grubbs-Beck low-outlier test on positively distributed data and utilities for non-interpretive U.S. Geological Survey annual peak-stream flow data processing.
 - The  `r pkg("envoutliers")` package provides three semi-parametric methods for detection of outliers in environmental data based on kernel regression and subsequent analysis of smoothing residuals.
-- The  `r pkg("extremeIndex")` computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
+- The  `r pkg("extremeIndex")` package computes an index measuring the amount of information brought by forecasts for extreme events, subject to calibration. This index is originally designed for weather or climate forecasts, but it may be used in other forecasting contexts.
+- The  `r pkg("npphen")` package detects phenological cycles and anomalies in vegetation using nonparametric kernel-based methods, suitable for both vector and raster data, identifying deviations from expected seasonal patterns.
 
 #### Biomedical and Clinical Research Applications
 
